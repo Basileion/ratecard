@@ -1,0 +1,514 @@
+Model Gemini 4 Argon jest już dostępny. Przećwicz to samodzielnie .
+Google używa technologii AI do tłumaczenia treści na Twój preferowany język. Tłumaczenia wygenerowane przez AI mogą zawierać błędy.
+Strona główna
+Gemini API
+Dokumenty
+Ceny interfejsu Gemini Developer API
+Zacznij tworzyć bezpłatnie dzięki atrakcyjnym limitom, a następnie skaluj aplikacje gotowe do wykorzystania w środowisku produkcyjnym, korzystając z przedpłaconych i płatnych według wykorzystania cen.
+Bezpłatnie
+Dla deweloperów i małych projektów, które dopiero zaczynają korzystać z interfejsu Gemini API.
+check_circle Ograniczony dostęp do niektórych modeli
+check_circle Bezpłatne tokeny wejściowe i wyjściowe
+check_circle Dostęp do Google AI Studio
+check_circle Treści wykorzystywane do ulepszania naszych usług *
+Zacznij bezpłatnie
+Płacący
+Dla aplikacji produkcyjnych, które wymagają większych wolumenów i zaawansowanych funkcji.
+check_circle Wyższe limity ograniczania liczby żądań w środowisku produkcyjnym
+check_circle Dostęp do pamięci podręcznej kontekstu
+check_circle Batch API (50% taniej)
+check_circle Dostęp do najbardziej zaawansowanych modeli Google
+check_circle Treści nie są wykorzystywane do ulepszania naszych usług *
+Przejdź na wersję płatną
+Enterprise
+W przypadku wdrożeń w przedsiębiorstwach, obsługiwanych przez Gemini Enterprise Agent Platform .
+check_circle Wszystkie funkcje wersji płatnej oraz opcjonalny dostęp do:
+check_circle Specjalne sposoby kontaktu z zespołem pomocy
+check_circle Zaawansowane zabezpieczenia i zapewnianie zgodności
+check_circle Udostępniona przepustowość
+check_circle Rabaty ilościowe (na podstawie wykorzystania)
+check_circle ML ops, baza modeli i inne funkcje
+Skontaktuj się z zespołem sprzedaży
+Gemini 4 Argon
+gemini-4-argon
+Wypróbuj w Google AI Studio
+Nasz flagowy model rozumowania, stworzony z myślą o złożonej inżynierii oprogramowania, rozwiązywaniu skomplikowanych problemów matematycznych i naukowych, autonomicznych agentach wieloetapowych i generowaniu długich odpowiedzi do 1 mln tokenów.
+Uwaga: Gemini 4 Argon nie jest dostępny na poziomie bezpłatnym.
+Standardowy
+poziom bezpłatny
+Poziom płatny, za 1 mln tokenów w USD
+Cena danych wejściowych
+Niedostępne
+2, 00 USD do 30 listopada 2026 r.
+4, 00 USD od 1 grudnia 2026 r.
+Cena danych wyjściowych (w tym tokenów myślenia)
+10 USD do 30 listopada 2026 r.
+20 USD od 1 grudnia 2026 r.
+Cena pamięci podręcznej kontekstu
+0, 10 USD do 30 listopada 2026 r.
+0, 20 USD od 1 grudnia 2026 r.
+Tylko niejawne buforowanie (jawne buforowanie nie jest obsługiwane).
+Powiązanie ze źródłami informacji przy użyciu wyszukiwarki Google *
+5000 bezpłatnych zapytań wyszukiwania miesięcznie (udostępnianych we wszystkich modelach Gemini 3 i nowszych), a następnie 14 USD za 1000 zapytań.
+Grounding z użyciem Map Google
+5000 żądań miesięcznie (bezpłatnie, udostępniane we wszystkich modelach Gemini 3 i nowszych), a następnie 14 USD za 1000 zapytań.
+Wykorzystywane do ulepszania naszych usług
+Nie
+Wsad
+1, 00 USD do 30 listopada 2026 r.
+2, 00 USD od 1 grudnia 2026 r.
+5, 00 USD do 30 listopada 2026 r.
+10, 00 USD od 1 grudnia 2026 r.
+0, 05 USD do 30 listopada 2026 r.
+0, 10 USD od 1 grudnia 2026 r.
+Flex
+Priorytet
+3, 60 USD do 30 listopada 2026 r.
+7, 20 USD od 1 grudnia 2026 r.
+18, 00 USD do 30 listopada 2026 r.
+36, 00 USD od 1 grudnia 2026 r.
+0, 18 USD do 30 listopada 2026 r.
+0, 36 USD od 1 grudnia 2026 r.
+Contributor
+Uwaga: poziom Contributor interfejsu Gemini API jest oferowany w ramach prywatnej wersji testowej tylko na zaproszenie. Szybkość i niezawodność są takie same jak w przypadku wnioskowania na poziomie standardowym . Uprawnieni użytkownicy otrzymają zaproszenie e-mailem i zobaczą objaśnienie w AI Studio.
+Tak
+* Prośba przesłana przez klienta do Gemini może spowodować wysłanie co najmniej jednego zapytania do wyszukiwarki Google. Opłata będzie naliczana za każde wyszukiwane hasło.
+Gemini 3.8 Flash
+gemini-3.8-flash
+Nasz najbardziej inteligentny model Flash, zaprojektowany z myślą o długofalowej inżynierii oprogramowania, autonomicznych agentach i złożonych firmowych przepływach pracy.
+0, 75 USD do 31 grudnia 2026 r.
+1, 50 USD od 1 stycznia 2027 r.
+3, 75 USD do 31 grudnia 2026 r.
+7, 50 USD od 1 stycznia 2027 r.
+0,075 USD do 31 grudnia 2026 r.
+0,15 USD od 1 stycznia 2027 r.
+0,50 USD za 1 000 000 tokenów na godzinę (cena za przechowywanie) do 31 grudnia 2026 r.
+1,00 USD za 1 000 000 tokenów na godzinę (cena za przechowywanie) od 1 stycznia 2027 r.
+0, 375 USD do 31 grudnia 2026 r.
+0, 75 USD od 1 stycznia 2027 r.
+1, 875 USD do 31 grudnia 2026 r.
+3, 75 USD od 1 stycznia 2027 r.
+0,0375 USD do 31 grudnia 2026 r.
+0,075 USD od 1 stycznia 2027 r.
+0,50 USD za 1 000 000 tokenów na godzinę (cena miejsca na dane) do 31 grudnia 2026 r.
+1,00 USD za 1 000 000 tokenów na godzinę (cena miejsca na dane) od 1 stycznia 2027 r.
+1, 35 USD do 31 grudnia 2026 r.
+2, 70 USD od 1 stycznia 2027 r.
+6, 75 USD do 31 grudnia 2026 r.
+13, 50 USD od 1 stycznia 2027 r.
+0,135 USD do 31 grudnia 2026 r.
+0,27 USD od 1 stycznia 2027 r.
+Niedostępne **
+Gemini 3.6 Flash
+gemini-3.6-flash
+Nasz model Flash poprzedniej generacji, który zapewnia równowagę między szybkością a funkcjami multimodalnymi w ogólnych zadaniach agentowych i zadaniach wykonywanych na co dzień.
+** Można przetestować w Google AI Studio.
+Gemini 3.8 Live, Gemini 3.8 Live Dłuższe myślenie i Gemini 3.1 Flash Live Preview
+gemini-3.8-live , gemini-3.8-live-extended-thinking i gemini-3.1-flash-live-preview
+Nasze modele audio-audio o niskim czasie oczekiwania zoptymalizowane pod kątem agentów głosowych działających w czasie rzeczywistym i rozmów na żywo, w tym obsługi rozumowania w tle z wykorzystaniem dłuższego myślenia.
+0,75 USD (tekst)
+3,00 USD lub 0,005 USD/min (dźwięk)
+1,00 USD lub 0,002 USD/min (obraz/film)
+4,50 USD (tekst)
+12,00 USD lub 0,018 USD/min (dźwięk)
+Obsługiwane
+Gemini 3.5 Live Translate
+gemini-3.5-live-translate-preview
+Nasz model tłumaczenia mowy na mowę w czasie rzeczywistym z krótkim czasem oczekiwania, który obsługuje ponad 70 języków.
+3,50 USD lub 0,0053 USD/min * (dźwięk)
+21,00 USD lub 0,0315 USD/min * (dźwięk)
+* Płatności są naliczane na podstawie łącznego wykorzystania tokenów audio wejściowych i wyjściowych, obliczanego według stawki 25 tokenów na sekundę dźwięku, co odpowiada efektywnej cenie około 0,0368 USD za minutę.
+Gemini 3.5 Transcribe Live
+gemini-3.5-transcribe-live
+Nasz model zamiany mowy na tekst w czasie rzeczywistym z krótkim czasem oczekiwania do dwukierunkowej transkrypcji strumieniowego dźwięku przez WebSockets.
+3,50 USD lub 0,005 USD/min * (audio)
+21,00 USD lub 0,004 USD/min * (tekst)
+Powiązanie ze źródłem informacji przy użyciu wyszukiwarki Google
+Nieobsługiwane
+* Szacunkowe ceny są oparte na 25 tokenach audio na sekundę w przypadku danych wejściowych i 175 tokenach tekstowych na minutę w przypadku danych wyjściowych, co daje efektywną stawkę mieszaną wynoszącą ok.0,009 USD za minutę w przypadku Transkrypcji na żywo.
+Gemini 3.5 Transcribe
+gemini-3.5-transcribe
+Nasz model zamiany mowy na tekst z automatycznym wykrywaniem języka, rozdzielaniem rozmówców, sygnaturami czasowymi na poziomie słów i rozpoznawaniem słów z uwzględnieniem niestandardowego słownictwa.
+2,00 USD lub 0,003 USD/min * (audio)
+12,00 USD lub 0,002 USD/min * (tekst)
+* Szacunkowe ceny są oparte na 25 tokenach audio na sekundę w przypadku danych wejściowych i 175 tokenach tekstowych na minutę w przypadku danych wyjściowych, co daje efektywną stawkę mieszaną w wysokości ok.0,005 USD za minutę transkrypcji.
+Gemini 3.5 Flash-Lite
+gemini-3.5-flash-lite
+Ekonomiczny model zoptymalizowany pod kątem zadań agentowych o dużej skali, tłumaczenia i prostego przetwarzania danych.
+0,30 USD (tekst / obraz / film / dźwięk)
+7,50 PLN
+0,03 USD
+1,00 USD za 1 000 000 tokenów na godzinę (cena miejsca na dane)
+0,15 USD (tekst / obraz / film / dźwięk)
+3,50 PLN
+0,02 USD
+0,54 USD (tekst / obraz / wideo / dźwięk)
+4,50 USD
+0,05 USD
+0,015 USD
+Gemini 3.1 Flash-Lite
+gemini-3.1-flash-lite
+0,25 USD (tekst / obraz / film)
+0,50 USD (dźwięk)
+4,50 PLN
+0,025 USD (tekst / obraz / film)
+0,05 USD (dźwięk)
+1,00 USD / 1 000 000 tokenów na godzinę (cena za przechowywanie)
+0,125 USD (tekst / obraz / film)
+0,25 USD (dźwięk)
+0,75 zł
+0,0125 USD (tekst / obraz / film)
+0,025 USD (dźwięk)
+0,50 USD / 1 000 000 tokenów na godzinę (cena za przechowywanie)
+0,45 USD (tekst / obraz / film)
+0,90 USD (dźwięk)
+2,70 USD
+0,045 USD (tekst / obraz / film)
+0,09 USD (dźwięk)
+1,80 USD / 1 000 000 tokenów na godzinę (cena za przechowywanie)
+Gemini Omni Flash
+gemini-omni-1.1-flash
+Nasz model nowej generacji do generowania i edytowania filmów jest teraz ogólnie dostępny dla deweloperów korzystających z płatnej wersji interfejsu Gemini API.
+1,50 USD (tekst / obraz / film / dźwięk)
+9,00 USD (tekst)
+17,50 USD (wideo) *
+* Płatności są naliczane na podstawie łącznego zużycia tokenów wyjściowych, obliczanego według stawki 5792 tokenów na sekundę filmu w rozdzielczości 720p. W przypadku cen standardowych odpowiada to rzeczywistej cenie wynoszącej około 0, 10 USD za sekundę.
+Gemini 3.1 Pro (wersja testowa)
+gemini-3.1-pro-preview i gemini-3.1-pro-preview-customtools
+Nasz model Pro trzeciej generacji, stworzony z myślą o rozpoznawaniu multimodalnym, funkcjach agentowych i vibe codingu.
+2,00 USD, prompty <= 200 tys.tokenów
+4,00 USD, prompty > 200 tys.tokenów
+12,00 USD, prompty <= 200 tys.tokenów
+18,00 USD, prompty > 200 tys.tokenów
+0,20 USD, prompty <= 200 tys. tokenów
+0,40 USD, prompty > 200 tys.
+4,50 USD za 1 000 000 tokenów na godzinę (cena za przechowywanie)
+Nie dotyczy
+1,00 USD, prompty <= 200 tys.tokenów
+2,00 USD, prompty > 200 tys.tokenów
+6,00 USD, prompty <= 200 tys.tokenów
+9,00 USD, prompty > 200 tys.tokenów
+Tak samo jak w przypadku wersji Standard
+4,50 USD / 1 000 000 tokenów na godzinę (cena miejsca na dane)
+3,60 USD, prompty <= 200 tys.tokenów
+7,20 USD, prompty > 200 tys.tokenów
+21,60 USD, prompty <= 200 tys.tokenów
+32,40 USD, prompty > 200 tys.tokenów
+0,36 USD, prompty <= 200 tys. tokenów
+0,72 USD, prompty > 200 tys.
+8,10 USD za 1 000 000 tokenów na godzinę (cena miejsca na dane)
+0,10 USD, prompty <= 200 tys. tokenów
+0,20 USD, prompty > 200 tys. tokenów
+4,50 USD za 1 000 000 tokenów na godzinę (cena miejsca na dane)
+Gemini Nano Banana 2.1 🍌
+gemini-nano-banana-2.1
+Aktualizacja Nano Banana 2 (Gemini 3.1 Flash Image) stworzona z myślą o wysokiej wydajności generowania obrazów i konwersacyjnej edycji z ulepszoną jakością wizualną, spójnością postaci w wielu turach, dokładnym renderowaniem tekstu i generowaniem opartym na wyszukiwaniu w rozdzielczościach 1K, 2K i 4K.
+1,50 USD (tekst/obraz/film)
+Cena danych wyjściowych
+7,50 USD (tekst i myślenie)
+30,00 USD (obrazy)
+Odpowiednik 0,0336 USD za obraz 1K * ,
+0,0504 USD za obraz 2K *
+i 0,113 USD za obraz 4K * .
+Grounding z użyciem wyszukiwarki Google i wyszukiwarki grafiki Google **
+5000 bezpłatnych żądań wyszukiwania miesięcznie (współdzielonych przez wszystkie modele Gemini 3 i nowsze), a następnie 14 USD za 1000 żądań w przypadku grounding na podstawie tekstu i obrazów.
+0,75 USD (tekst/obraz/film)
+3,75 USD (tekst i rozumowanie)
+15,00 USD (obrazy)
+Odpowiednik 0,0168 USD za obraz 1K * ,
+0,0252 USD za obraz 2K *
+i 0,0567 USD za obraz 4K * .
+* Cena za wygenerowanie obrazu wynosi 30 USD za 1 000 000 tokenów (Standard) i 15 USD za 1 000 000 tokenów (Batch). Obrazy wyjściowe w rozdzielczości 1K (1024 x 1024 pikseli) zużywają 1120 tokenów, co odpowiada 0,0336 USD za obraz. Obrazy wyjściowe w rozdzielczości 2K (2048 x 2048 pikseli) zużywają 1680 tokenów i kosztują 0,0504 USD za obraz.
+Obrazy wyjściowe w rozdzielczości 4K (4096 x 4096 pikseli) zużywają 3780 tokenów i kosztują 0,113 USD za obraz.
+** Przesłana przez klienta prośba do Gemini może skutkować co najmniej jednym zapytaniem w wyszukiwarce Google. Opłata będzie naliczana za każde wyszukiwane hasło. Pobrany kontekst (tekst lub obrazy) dostarczony przez Grounding z wyszukiwarką Google nie jest rozliczany jako tokeny wejściowe.
+Gemini 3.1 Flash Image (Nano Banana 2) 🍌
+gemini-3.1-flash-image
+Model do generowania obrazów Gemini 3.1 Flash Image został zaprojektowany z myślą o szybkości i wydajności. Jest skuteczny w przypadku szybkich, interaktywnych odpowiedzi i wysokiej przepustowości.
+0,50 USD (tekst/obraz)
+3 USD (tekst i rozumowanie)
+60,00 USD (obrazy)
+Odpowiednik 0,045 USD za obraz 0,5K *
+0,067 USD za obraz 1K * ,
+0,101 USD za obraz 2K * ,
+0,151 USD za obraz 4K * .
+Niedostępne ***
+0,25 USD (tekst, obraz)
+1,50 USD (tekst i analiza)
+Odpowiednik 0,022 USD za obraz 0,5K *
+0,034 USD za obraz 1K *
+0,050 USD za obraz 2K *
+i 0,076 USD za obraz 4K * .
+* Cena za wygenerowanie obrazu wynosi 60 USD za 1 000 000 tokenów.
+Obrazy wyjściowe o rozdzielczości 0,5K (512 pikseli) zużywają 747 tokenów i kosztują 0,045 USD za obraz. Obrazy wyjściowe w rozdzielczości 1K (1024 x 1024 pikseli) zużywają 1120 tokenów i kosztują 0,067 USD za obraz. Obrazy wyjściowe w rozdzielczości 2K (2048 x 2048 pikseli) zużywają 1680 tokenów i kosztują 0,101 USD za obraz. Obrazy wyjściowe w rozdzielczości 4K (4096 x 4096 pikseli) zużywają 2520 tokenów i kosztują 0,151 USD za obraz.
+*** Można przetestować w Google AI Studio.
+Gemini 3.1 Flash Lite Image (Nano Banana 2 Lite) 🍌
+gemini-3.1-flash-lite-image
+Model Gemini 3.1 Flash Lite Image został zaprojektowany jako specjalista ds. wydajności w rodzinie modeli do generowania obrazów. Zapewnia bardzo małe opóźnienia oraz ekonomiczne generowanie i edytowanie obrazów.
+0,25 USD (tekst/obraz/film)
+1,50 USD (tekst i rozumowanie)
+Odpowiednik 0,0336 USD za obraz w rozdzielczości 1K *
+0,125 USD (tekst/obraz/film)
+0,75 USD (tekst i rozumowanie)
+Odpowiednik 0,0168 USD za obraz o rozdzielczości 1K *
+* Cena za wygenerowanie obrazu wynosi 30 USD za 1 000 000 tokenów. Obrazy wyjściowe w rozdzielczości 1K (1024 x 1024 pikseli) zużywają 1120 tokenów i kosztują 0,0336 USD za obraz.
+Gemini 3.8 Flash TTS
+gemini-3.8-flash-tts
+Nasz model audio 3.8 Flash do zamiany tekstu na mowę, zaprojektowany z myślą o studyjnej jakości głosu, ekspresyjnej grze aktorskiej i stabilności w przypadku długich treści.
+0, 50 USD (SMS) do 31 grudnia 2026 r.
+1, 00 USD (SMS) od 1 stycznia 2027 r.
+9, 00 USD (audio) do 31 grudnia 2026 r.
+18, 00 USD (audio) od 1 stycznia 2027 r.
+Odpowiednik 0, 00225 USD za 10 sekund dźwięku * do 31 grudnia 2026 r.
+Odpowiednik 0, 0045 USD za 10 sekund dźwięku * od 1 stycznia 2027 r.
+0, 25 USD (SMS) do 31 grudnia 2026 r.
+0, 50 USD (SMS) od 1 stycznia 2027 r.
+4, 50 USD (audio) do 31 grudnia 2026 r.
+9, 00 USD (audio) od 1 stycznia 2027 r.
+Równowartość 0, 001125 USD za 10 sekund dźwięku * do 31 grudnia 2026 r.
+Równowartość 0, 00225 USD za 10 sekund dźwięku * od 1 stycznia 2027 r.
+0, 90 USD (tekst) do 31 grudnia 2026 r.
+1, 80 USD (tekst) od 1 stycznia 2027 r.
+16, 20 USD (audio) do 31 grudnia 2026 r.
+32, 40 USD (audio) od 1 stycznia 2027 r.
+Równowartość 0, 00405 USD za 10 sekund dźwięku * do 31 grudnia 2026 r.
+Równowartość 0, 0081 USD za 10 sekund dźwięku * od 1 stycznia 2027 r.
+* Tokeny audio odpowiadają 25 tokenom na sekundę dźwięku.
+Gemini 3.8 Flash-Lite TTS
+gemini-3.8-flash-lite-tts
+Nasz model audio 3.8 Flash-Lite Text-to-Speech zoptymalizowany pod kątem wysokiej przepustowości, krótkiego czasu oczekiwania i ekonomicznej mowy konwersacyjnej.
+6, 00 USD (dźwięk) do 31 grudnia 2026 r.
+12, 00 USD (dźwięk) od 1 stycznia 2027 r.
+Równowartość 0, 0015 USD za 10 sekund dźwięku * do 31 grudnia 2026 r.
+Równowartość 0, 003 USD za 10 sekund dźwięku * od 1 stycznia 2027 r.
+3, 00 USD (dźwięk) do 31 grudnia 2026 r.
+6, 00 USD (dźwięk) od 1 stycznia 2027 r.
+Odpowiednik 0, 00075 USD za 10 sekund dźwięku * do 31 grudnia 2026 r.
+Odpowiednik 0, 0015 USD za 10 sekund dźwięku * od 1 stycznia 2027 r.
+10, 80 USD (audio) do 31 grudnia 2026 r.
+21, 60 USD (audio) od 1 stycznia 2027 r.
+Równowartość 0, 0027 USD za 10 sekund dźwięku * do 31 grudnia 2026 r.
+Równowartość 0, 0054 USD za 10 sekund dźwięku * od 1 stycznia 2027 r.
+Gemini 3.1 Flash TTS (wersja testowa)
+gemini-3.1-flash-tts-preview
+Nasz model audio 3.1 Flash Text-to-Speech zoptymalizowany pod kątem generowania mowy o wysokiej jakości, z krótkim czasem oczekiwania i możliwością sterowania.
+1,00 PLN (tekst)
+20,00 PLN (audio)
+0,50 USD (tekst)
+10 PLN (audio)
+Gemini 3 Flash (wersja testowa)
+gemini-3-flash-preview
+Nasz starszy model Flash, który zapewnia podstawową szybkość i inteligencję.
+0,50 USD (tekst / obraz / film)
+1,00 USD (dźwięk)
+3 USD
+0,05 USD (tekst / obraz / film)
+0,10 USD (audio)
+0,05 USD (tekst/obraz/film)
+1,00 USD za 1 000 000 tokenów na godzinę (cena za przechowywanie)
+0,90 USD (tekst / obraz / film)
+1,80 USD (dźwięk)
+5,40 USD
+0,09 USD (tekst / obraz / film)
+0,18 USD (audio)
+1,80 USD za 1 000 000 tokenów na godzinę (cena za przechowywanie)
+Gemini 3 Pro Image (Nano Banana Pro) 🍌
+gemini-3-pro-image
+Nasz natywny model generowania obrazów, zoptymalizowany pod kątem szybkości, elastyczności i rozumienia kontekstu. Dane wejściowe i wyjściowe w postaci tekstu są wyceniane tak samo jak w przypadku Gemini 3.1 Pro .
+2,00 USD (tekst/obraz),
+co odpowiada 0,0011 USD za obraz *
+12,00 USD (tekst i myślenie)
+120,00 USD (obrazy)
+Odpowiednik 0,134 USD za obraz 1K/2K **
+i 0,24 USD za obraz 4K **
+Powiązanie ze źródłami informacji przy użyciu wyszukiwarki Google ***
+Niedostępne ****
+1,00 USD (tekst),
+0,0006 USD (obraz) *
+6,00 USD (tekst i myślenie)
+0,067 USD za obraz 1K/2K **
+0,12 USD za obraz 4K **
+3,60 zł (tekst/obraz)
+21,60 USD (tekst i myślenie)
+216,00 USD (obrazy)
+* Dane wejściowe obrazu są ustawione na 560 tokenów lub 0,0011 USD za obraz.
+** Cena za wygenerowanie obrazu wynosi 120 USD za 1 000 000 tokenów. Obrazy wyjściowe o wymiarach od 1024 x 1024 pikseli (1K) do 2048 x 2048 pikseli (2K) zużywają 1120 tokenów i kosztują 0,134 USD za obraz. Obrazy wyjściowe o rozdzielczości do 4096 x 4096 pikseli (4K) zużywają 2000 tokenów i kosztują 0,24 USD za obraz.
+*** Przesłana przez klienta prośba do Gemini może skutkować co najmniej jednym zapytaniem w wyszukiwarce Google. Opłata będzie naliczana za każde wyszukiwane hasło.
+**** Można przetestować w Google AI Studio.
+Gemini 2.5 Pro
+gemini-2.5-pro
+Model Pro, który doskonale radzi sobie z kodowaniem i złożonymi zadaniami wymagającymi wnioskowania.
+1,25 USD, prompty <= 200 tys.tokenów
+2,50 USD, prompty > 200 tys.tokenów
+10,00 USD, prompty <= 200 tys.tokenów
+15,00 USD, prompty > 200 tys.tokenów
+0,125 USD, prompty <= 200 tys. tokenów
+0,25 USD, prompty > 200 tys.
+1500 RPD (bezpłatnie), potem 35 USD za 1000 promptów z groundingiem
+10 000 RPD (bezpłatnie), potem 25 USD za 1000 promptów z groundingiem
+0,625 USD, prompty <= 200 tys.tokenów
+1,25 USD, prompty > 200 tys.tokenów
+5,00 USD, prompty <= 200 tys.tokenów
+7,50 USD, prompty > 200 tys.tokenów
+2,25 USD, prompty <= 200 tys.tokenów
+4,50 USD, prompty > 200 tys.tokenów
+18,00 USD, prompty <= 200 tys.tokenów
+27,00 USD, prompty > 200 tys.tokenów
+0,225 USD, prompty <= 200 tys. tokenów
+0,45 USD, prompty > 200 tys.
+8,10 USD / 1 000 000 tokenów na godzinę (cena miejsca na dane)
+Gemini 2.5 Flash
+gemini-2.5-flash
+Nasz pierwszy hybrydowy model rozumowania, który obsługuje okno kontekstu o wielkości 1 mln tokenów i ma budżety na myślenie.
+0,30 USD (tekst / obraz / film)
+1,00 USD (audio)
+0,03 USD (tekst/obraz/wideo)
+0,1 USD (audio)
+Bezpłatnie, do 500 RPD (limit współdzielony z Flash-Lite RPD)
+1500 RPD (bezpłatnie, limit współdzielony z Flash-Lite RPD), następnie 35 USD za 1000 grounded promptów
+500 RPD
+1500 RPD (bezpłatnie), potem 25 USD za 1000 promptów z uziemieniem
+0,15 USD (tekst / obraz / film)
+0,54 USD (tekst / obraz / film)
+0,054 USD (tekst / obraz / wideo)
+1,80 USD / 1 000 000 tokenów na godzinę (cena miejsca na dane)
+Gemini 2.5 Flash-Lite
+gemini-2.5-flash-lite
+Mały i ekonomiczny model stworzony do użytku na dużą skalę.
+Cena danych wejściowych (tekst, obraz, film)
+0,10 USD (tekst / obraz / film)
+0,30 USD (dźwięk)
+0,40 zł
+0,01 USD (tekst / obraz / film)
+0,03 USD (dźwięk)
+Bezpłatnie, do 500 RPD (limit współdzielony z Flash RPD)
+1500 RPD (bezpłatnie, limit współdzielony z Flash RPD), potem 35 USD za 1000 grounded promptów
+0,15 USD (dźwięk)
+0,60 PLN
+0,18 USD (tekst / obraz / film)
+0,54 USD (dźwięk)
+0,72 USD
+0,018 USD (tekst / obraz / film)
+0,054 USD (dźwięk)
+Gemini 2.5 Flash Native Audio (Live API)
+gemini-2.5-flash-native-audio-preview-12-2025
+Nasze natywne modele audio Live API zoptymalizowane pod kątem wyższej jakości wyjść audio z lepszym tempem i nastrojem oraz większą szczegółowością i bardziej naturalnym głosami.
+3,00 USD (audio / wideo)
+2,00 USD (tekst)
+12,00 USD (audio)
+Gemini 2.5 Flash Image (Nano Banana) 🍌
+gemini-2.5-flash-image
+Ostrzeżenie: model Gemini 2.5 Flash Image ( gemini-2.5-flash-image ) został wycofany i zostanie wyłączony 2 października 2026 r. Aby uniknąć przerw w działaniu usługi, przejdź na model Gemini 3.1 Flash Image lub Gemini 3.1 Flash Lite Image .
+Natywny model generowania obrazów zoptymalizowany pod kątem szybkości, elastyczności i zrozumienia kontekstu. Ceny danych wejściowych i wyjściowych w postaci tekstu są takie same jak w przypadku 2.5 Flash .
+0,30 USD (tekst / obraz)
+0,039 USD za obraz*
+0,15 USD (tekst / obraz)
+0,0195 USD za obraz*
+0,54 USD (tekst / obraz)
+0,0702 USD za obraz*
+[*] Cena za wygenerowanie obrazu wynosi 30 USD za 1 000 000 tokenów. Obrazy wyjściowe o rozmiarze do 1024 x 1024 pikseli zużywają 1290 tokenów i kosztują 0,039 USD za obraz.
+Gemini 2.5 Flash Preview TTS
+gemini-2.5-flash-preview-tts
+Nasz model audio 2.5 Flash do zamiany tekstu na mowę, zoptymalizowany pod kątem generowania mowy o korzystnym stosunku ceny do wydajności, krótkim czasie oczekiwania i możliwości sterowania.
+0,25 USD (tekst)
+5 USD (audio)
+Gemini 2.5 Pro Preview TTS
+gemini-2.5-pro-preview-tts
+Nasz model audio 2.5 Pro do zamiany tekstu na mowę, zoptymalizowany pod kątem wydajnego generowania mowy z niskim opóźnieniem, który zapewnia bardziej naturalne wyniki i łatwiejsze do sterowania prompty.
+Lyria 3.5
+lyria-3.5
+Model Google do generowania muzyki.
+Płatny poziom, za żądanie w USD
+Lyria 3.5 (pełny utwór)
+0,08 USD za utwór
+Lyria 3
+lyria-3-clip-preview i lyria-3-pro-preview
+Rodzina starszych modeli Google do generowania muzyki.
+Lyria 3 – podgląd klipu (30 s)
+0,04 USD za utwór
+Lyria 3 Pro (wersja testowa, pełny utwór)
+Gemini Embedding 2
+gemini-embedding-2
+Wypróbuj API
+Nasz pierwszy multimodalny model wektorów dystrybucyjnych, który mapuje tekst, obrazy, filmy, dźwięk i pliki PDF na ujednoliconą przestrzeń wektorów dystrybucyjnych.
+Cena za tekst wejściowy
+Cena danych wejściowych obrazu
+0,45 USD (0,00012 USD za obraz)
+Cena wejściowych danych audio
+6,50 USD (0,00016 USD za sekundę)
+Cena wejściowa wideo
+12,00 USD (0,00079 USD za klatkę)
+0,10 USD
+0,225 USD (0,00006 USD za obraz)
+3,25 USD (0,00008 USD za sekundę)
+6,00 USD (0,000395 USD za klatkę)
+Gemini Robotics ER 2 (wersja testowa)
+gemini-robotics-er-2-preview
+Gemini Robotics ER 2 (skrót od Gemini Robotics Embodied Reasoning 2) to punkt końcowy modelu wizualno-językowego, który umożliwia robotom precyzyjne rozumienie otoczenia, wspierając agentową orkiestrację robotów, rozumienie postępów wideo, współpracę wielu robotów i zaawansowane rozumowanie przestrzenne.
+1, 00 USD (tekst / obraz / film / dźwięk) do 31 grudnia 2026 r.
+2, 00 USD (tekst / obraz / film / dźwięk) od 1 stycznia 2027 r.
+5, 00 USD do 31 grudnia 2026 r.
+10, 00 USD od 1 stycznia 2027 r.
+0,10 USD do 31 grudnia 2026 r.
+0,20 USD od 1 stycznia 2027 r.
+0, 50 USD (tekst / obraz / film / dźwięk) do 31 grudnia 2026 r.
+1, 00 USD (tekst / obraz / film / dźwięk) od 1 stycznia 2027 r.
+2, 50 USD do 31 grudnia 2026 r.
+5, 00 USD od 1 stycznia 2027 r.
+0,05 USD do 31 grudnia 2026 r.
+0,10 USD od 1 stycznia 2027 r.
+Gemini Robotics ER 2 Streaming Preview
+gemini-robotics-er-2-streaming-preview
+Gemini Robotics ER 2 Streaming to punkt końcowy modelu wizyjno-językowego do robotyki zoptymalizowany pod kątem strumieniowania tekstu w czasie rzeczywistym za pomocą interfejsu Live API. Akceptuje dane wejściowe w formie tekstu, obrazu, filmu i dźwięku oraz obsługuje dwukierunkowe strumieniowanie z wywoływaniem funkcji.
+Gemma 4
+Nasz lekki, najnowocześniejszy, otwarty model oparty na tej samej technologii, która zasila modele Gemini.
+Pamięć podręczna kontekstu (miejsce na dane)
+Cena dostrajania
+Ceny narzędzi
+Narzędzia są wyceniane według własnych stawek, które są stosowane do modelu, który ich używa.
+Sprawdź na stronie Modele , które narzędzia są dostępne dla poszczególnych modeli.
+Wyszukiwarka Google
+500 RPD bezpłatnie (limit wspólny dla modeli Flash i Flash-Lite).
+Niedostępne w przypadku modelu Pro.
+Modele Gemini 2.5:
+1500 żądań dziennie bezpłatnie (limit wspólny dla modeli Flash i Flash-Lite).
+Następnie 35 USD za 1000 promptów z ugruntowaniem.
+Gemini 3 i nowsze modele:
+5000 bezpłatnych żądań wyszukiwania miesięcznie (wspólny limit dla wszystkich modeli Gemini 3 i nowszych), a następnie 14 USD za 1000 żądań.
+Mapy Google
+Niedostępne w przypadku wersji Pro.
+1500 żądań dziennie bezpłatnie (limit wspólny dla Flash i Flash-Lite)
+10 000 żądań dziennie bezpłatnie w przypadku Pro.
+Następnie 25 USD za 1000 promptów z groundingiem
+5000 żądań miesięcznie (bezpłatnie, wspólne dla wszystkich modeli Gemini 3 i nowszych), następnie 14 USD za 1000 zapytań.
+Wykonanie kodu
+Wykonywanie kodu jest rozliczane według standardowych stawek za tokeny dla wybranego modelu.
+Koszty są określane wyłącznie na podstawie wykorzystania narzędzia, nie są naliczane żadne opłaty za czas działania sesji. Wygenerowany kod i wyniki wykonania są rozliczane jako tokeny wyjściowe w momencie utworzenia oraz jako tokeny wejściowe , gdy model używa ich w ramach iteracyjnego procesu wnioskowania.
+Kontekst adresu URL
+Opłaty są naliczane jako tokeny wejściowe zgodnie z cennikiem modelu.
+Korzystanie z komputera
+Opłaty są naliczane jak za zwykłe tokeny zgodnie z cennikiem modelu (np. standardowe ceny Gemini 3.8 Flash ).
+Wyszukiwanie plików
+Opłata za wektory dystrybucyjne wynosi 0,15 USD za 1 mln tokenów.
+Tokeny pobranych dokumentów są rozliczane jako zwykłe tokeny zgodnie z cennikiem modelu.
+Punkt końcowy narzędzi niestandardowych (Gemini 3.1 Pro Preview)
+Takie same jak ceny Gemini 3.1 Pro (wersja testowa)
+Ceny agentów
+Koszty wykorzystania agenta są obliczane na podstawie wykorzystania tokenów i narzędzi.
+Model
+Narzędzia
+Agent Deep Research w Gemini
+Wszystkie wnioskowania modelu są rozliczane według standardowych stawek Gemini, w tym tokeny wejściowe, wyjściowe i pośrednie tokeny wejściowe / rozumowania wygenerowane podczas pętli agenta.
+Opłaty za korzystanie z narzędzia są naliczane zgodnie z istniejącą strukturą cenową, z zachowaniem standardowych rozróżnień między wyszukiwarką Grounding (z wyłączeniem pobranych tokenów) a Url_context / wyszukiwarką plików (pobrane tokeny są uwzględniane we wszystkich innych narzędziach).
+Zarządzane agenty w Gemini API
+Wszystkie wnioskowania modelu są rozliczane według standardowych stawek Gemini, w tym tokeny wejściowe, wyjściowe i pośrednie tokeny wejściowe / rozumowania wygenerowane podczas pętli agenta. (Sprawdź szczegółowy cennik ).
+W okresie korzystania z wersji testowej nie obciążymy Cię opłatami za zasoby obliczeniowe środowiska (procesor, pamięć, wykonywanie w piaskownicy).
+Agent Antigravity
+Uwagi
+Agentowe rozumienie wideo: Gdy używasz agentowego rozumienia wideo, wykorzystanie tokenów jest zmienne w zależności od treści wczytanych przez model, a nie od pełnej długości wideo. Zwykle skutkuje to zmniejszeniem liczby tokenów wejściowych w przypadku długich filmów nawet o 88%, chociaż liczba tokenów zależy od złożoności zapytania i głębokości dynamicznego próbkowania (która może przekraczać 1 klatkę na sekundę w przypadku szczegółowych segmentów wizualnych). Zobacz Analizowanie filmów przez agenta .
+Rozliczanie tokenów dokumentów: tokeny dla modalności DOCUMENT (np. plików PDF) są rozliczane według stawki za tokeny obrazów. W odpowiedziach interfejsu API te tokeny pojawiają się w modalności DOCUMENT w promptTokensDetails .
+Korzystanie z Google AI Studio jest bezpłatne we wszystkich dostępnych regionach . Szczegółowe informacje znajdziesz w artykule Najczęstsze pytania dotyczące płatności .
+Ceny mogą się różnić od podanych tutaj i oferowanych na platformie Gemini Enterprise Agent Platform. Ceny Gemini Enterprise Agent Platform znajdziesz na stronie z cennikiem Gemini Enterprise Agent Platform .
+Jeśli używasz dynamicznego pobierania do optymalizacji kosztów, opłaty za powiązanie ze źródłami informacji przy użyciu wyszukiwarki Google są naliczane tylko za żądania, które zawierają w odpowiedzi co najmniej 1 adres URL z internetu obsługujący powiązanie ze źródłem informacji.
+Opłaty za Gemini obowiązują zawsze. Limity mogą ulec zmianie.
+O ile nie stwierdzono inaczej, treść tej strony jest objęta licencją Creative Commons – uznanie autorstwa 4.0 , a fragmenty kodu są dostępne na licencji Apache 2.0 . Szczegółowe informacje na ten temat zawierają zasady dotyczące witryny Google Developers . Java jest zastrzeżonym znakiem towarowym firmy Oracle i jej podmiotów stowarzyszonych.
+Ostatnia aktualizacja: 2026-10-22 UTC.

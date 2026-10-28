@@ -1,0 +1,104 @@
+## Models Overview
+## Featured Models
+## Mistral Large 4
+## OCR 4.1
+## Z.ai GLM 5.3
+## Z.ai GLM 5.3 Flash
+## Mistral Small 4
+## Voxtral Mini Transcribe 3
+## Voxtral TTS 3
+## All models
+## Generalist models
+## Z.ai GLM 5.3 Flash
+## Z.ai GLM 5.3
+## Mistral Medium 3.5
+## Mistral Small 4
+## Mistral Large 4
+## Mistral Large 3
+## Ministral 3 14B
+## Ministral 3 8B
+## Ministral 3 3B
+## OCR models
+## OCR 4.1
+## OCR 3
+## Audio models
+## Voxtral TTS
+## Voxtral Mini Transcribe 3
+## Voxtral Small Transcribe 3
+## Voxtral Mini Transcribe Realtime 3
+## Voxtral TTS 3
+## Voxtral Mini Transcribe 2
+## Voxtral Mini Transcribe Realtime
+## Voxtral Small
+## Code models
+## Codestral
+## Embedding models
+## Codestral Embed
+## Mistral Embed
+## Moderation and safety models
+## Shieldstral 1.0
+## Mistral Moderation 2
+## Time series models
+## Timestral 1.0 209M
+## Timestral 1.0 123M
+## Timestral 1.0 28M
+## Timestral 1.0 5M
+## Deprecated
+## Deprecated & retired models
+--TABLE
+Model | Version | API | Deprecation Retirement | Alternative
+--TABLE
+Z.ai GLM 5.2 ↗ | 5.2 | zai-glm-5-2 | 9/28/2026 10/30/2026 | Z.ai GLM 5.3
+Leanstral 1.5 ↗ | 1.5 | labs-leanstral-1-5 | 9/28/2026 9/29/2026 | 
+Leanstral ↗ | 26.03 | labs-leanstral-2603 | 5/21/2026 6/29/2026 | Leanstral 1.5
+Mistral Medium 3.1 ↗ | 25.08 | mistral-medium-2508 | 5/21/2026 8/30/2026 | Mistral Medium 3.5
+Mistral Small 3.2 ↗ | 25.06 | mistral-small-2506 | 4/29/2026 7/30/2026 | Mistral Small 4
+OCR 4.0 ↗ | 4.0 | mistral-ocr-4-0 | 9/28/2026 9/29/2026 | OCR 4.1
+Voxtral Mini Transcribe ↗ | 25.07 | voxtral-mini-2507 | 2/26/2026 5/30/2026 | Voxtral Mini Transcribe 2
+Devstral 2 ↗ | 25.12 | devstral-2512 | 5/21/2026 7/30/2026 | Mistral Medium 3.5
+Magistral Medium 1.1 ↗ | 25.07 | magistral-medium-2507 | 10/30/2025 11/29/2025 | Mistral Medium 3.5
+Mistral Small Creative ↗ | 25.12 | labs-mistral-small-creative | 3/30/2026 4/29/2026 | Ministral 3 8B
+Devstral Small 2 ↗ | 25.12 | labs-devstral-small-2512 | 2/26/2026 3/30/2026 | Mistral Medium 3.5
+Magistral Medium 1.2 ↗ | 25.09 | magistral-medium-2509 | 5/21/2026 7/30/2026 | Mistral Medium 3.5
+Magistral Small 1.2 ↗ | 25.09 | magistral-small-2509 | 4/30/2026 7/31/2026 | Mistral Small 4
+Magistral Small 1.1 ↗ | 25.07 | magistral-small-2507 | 10/30/2025 11/29/2025 | Mistral Small 4
+Voxtral Mini ↗ | 25.07 | voxtral-mini-2507 | 2/26/2026 5/30/2026 | Voxtral Mini Transcribe 2
+Devstral Medium 1.0 ↗ | 25.07 | devstral-medium-2507 | 2/26/2026 5/30/2026 | Mistral Medium 3.5
+Devstral Small 1.1 ↗ | 25.07 | devstral-small-2507 | 2/26/2026 5/30/2026 | Mistral Small 4
+Magistral Medium 1.0 ↗ | 25.06 | magistral-medium-2506 | 10/30/2025 11/29/2025 | Mistral Medium 3.5
+Magistral Small 1.0 ↗ | 25.06 | magistral-small-2506 | 10/30/2025 11/29/2025 | Mistral Small 4
+OCR 2 ↗ | 25.05 | mistral-ocr-2505 | 2/26/2026 5/30/2026 | OCR 4.1
+Devstral Small 1.0 ↗ | 25.05 | devstral-small-2505 | 10/30/2025 11/29/2025 | Mistral Medium 3.5
+Mistral Medium 3 ↗ | 25.05 | mistral-medium-2505 | 5/21/2026 8/30/2026 | Mistral Medium 3.5
+Mistral Small 3.1 ↗ | 25.03 | mistral-small-2503 | 11/5/2025 11/29/2025 | Mistral Small 4
+OCR ↗ | 25.03 | mistral-ocr-2503 | 12/1/2025 12/30/2025 | OCR 4.1
+Mistral Saba ↗ | 25.02 | mistral-saba-2502 | 6/9/2025 9/29/2025 | Mistral Small 4
+Mistral Small 3.0 ↗ | 25.01 | mistral-small-2501 | 11/5/2025 11/29/2025 | Mistral Small 4
+Codestral ↗ | 25.01 | codestral-2501 | 11/5/2025 11/29/2025 | Codestral
+Mistral Large 2.1 ↗ | 24.11 | mistral-large-2411 | 2/26/2026 5/30/2026 | Mistral Medium 3.5
+Pixtral Large ↗ | 24.11 | pixtral-large-2411 | 2/26/2026 5/30/2026 | Mistral Medium 3.5
+Mistral Moderation ↗ | 24.11 | mistral-moderation-2411 | 3/30/2026 6/29/2026 | Mistral Moderation 2
+Ministral 3B ↗ | 24.1 | ministral-3b-2410 | 12/1/2025 12/30/2025 | Ministral 3 3B
+Ministral 8B ↗ | 24.1 | ministral-8b-2410 | 12/1/2025 12/30/2025 | Ministral 3 8B
+Mistral Small 2.0 ↗ | 24.09 | mistral-small-2409 | 11/5/2025 11/29/2025 | Mistral Small 4
+Pixtral 12B ↗ | 24.09 | pixtral-12b-2409 | 12/1/2025 12/30/2025 | Ministral 3 14B
+Mistral Large 2.0 ↗ | 24.07 | mistral-large-2407 | 11/29/2024 3/29/2025 | Mistral Large 3
+Mistral Nemo 12B ↗ | 24.07 | open-mistral-nemo-2407 | 5/21/2026 7/30/2026 | Ministral 3 8B
+Codestral Mamba 7B ↗ | 0.1 | open-codestral-mamba | 6/5/2025 6/5/2025 | Codestral
+Mathstral 7B ↗ | 0.1 |  |  | Mistral Small 4
+Codestral ↗ | 24.05 | codestral-2405 | 12/1/2024 6/15/2025 | Codestral
+Mistral 7B ↗ | 0.3 | open-mistral-7b | 11/29/2024 3/29/2025 | Ministral 3 8B
+Mixtral 8x22B ↗ | 0.1-0.3 | open-mixtral-8x22b | 11/29/2024 3/29/2025 | Mistral Small 4
+Mistral Small 1.0 ↗ | 24.02 | mistral-small-2402 | 11/29/2024 6/15/2025 | Mistral Small 4
+Mistral Large 1.0 ↗ | 24.02 | mistral-large-2402 | 11/29/2024 6/15/2025 | Mistral Large 3
+Mistral Next ↗ |  |  |  | Mistral Large 3
+Mistral Medium 1.0 ↗ | 23.12 | mistral-medium-2312 | 11/29/2024 6/15/2025 | Mistral Medium 3.5
+Mixtral 8x7B ↗ | 0.1 | open-mixtral-8x7b | 11/29/2024 3/29/2025 | Mistral Small 4
+Mistral 7B ↗ | 0.2 | open-mistral-7b | 11/29/2024 3/29/2025 | Ministral 3 8B
+Mistral 7B ↗ | 0.1 |  | 11/29/2024 3/29/2025 | Ministral 3 8B
+## WHY MISTRAL
+## EXPLORE
+## DOCUMENTATION
+## BUILD
+## LEGAL
+## COMMUNITY

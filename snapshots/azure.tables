@@ -1,0 +1,438 @@
+## Explore Azure
+## Popular
+## AI + machine learning
+## Analytics
+## Compute
+## Containers
+## Databases
+## DevOps
+## Developer tools
+## Hybrid + multicloud
+## Identity
+## Integration
+## Internet of Things
+## Management and governance
+## Media
+## Migration
+## Mixed reality
+## Mobile
+## Networking
+## Security
+## Storage
+## Web
+## Virtual desktop infrastructure
+## Use cases
+## Application development
+## AI
+## Cloud migration and modernization
+## Data and analytics
+## Hybrid cloud and infrastructure
+## Internet of Things
+## Security and governance
+## Organization type
+## Resources
+## How to buy
+## Pricing tools and resources
+## Find a partner
+## Become a partner
+## Learning
+## Technical resources
+## Community
+## What's new
+## Azure OpenAI pricing
+## Azure OpenAI Service pricing overview
+## Explore pricing options
+## GPT-Chat Latest
+--TABLE
+Model | Pricing (1M Tokens)
+GPT-Chat Latest 08062026 Global | Input: $5 Cached Input: $0.50 Output: $30
+GPT-Chat Latest 07012026 Data Zone | Input: $5.50 Cached Input: $0.55 Output: $33
+## GPT-6.1 Series
+--TABLE
+Model | Pricing (1M Tokens) | Priority Processing (1M Tokens)
+GPT-6.1 Sol (short context) Global | Input: $2 Cached Input: $0.10 Cache writes: $2.50 Output: $10 | N/A
+GPT-6.1 Sol (short context) Data Zone | Input: $2.20 Cached Input: $0.11 Cache writes: $2.75 Output: $11 | N/A
+GPT-6.1 Sol (long context) Global | Input: $4 Cached Input: $0.20 Cache writes: $5 Output: $15 | N/A
+GPT-6.1 Sol (long context) Data Zone | Input: $4.40 Cached Input: $0.22 Cache writes: $5.50 Output: $16.50 | N/A
+## GPT-6 Series
+--TABLE
+Model | Pricing (1M Tokens) | Flex Pricing (1M Tokens) | Priority Processing (1M Tokens)
+GPT-6 Astra (short context) Global | Input: $10 Cached Input: $1 Cache writes: $12.50 Output: $50 | N/A | N/A
+GPT-6 Astra (short context) Data Zone | Input: $11 Cached Input: $1.10 Cache writes: $13.75 Output: $55 | N/A | N/A
+GPT-6 Astra (long context) Global | Input: $20 Cached Input: $2 Cache writes: $25 Output: $75 | Input: $10 Cached Input: $1 Cache writes: $12.50 Output: $37.50 | N/A
+GPT-6 Astra (long context) Data Zone | Input: $22 Cached Input: $2.20 Cache writes: $27.50 Output: $82.50 | N/A | N/A
+GPT-6 Sol (short context) Global | Input: $2 Cached Input: $0.20 Cache writes: $2.50 Output: $10 | N/A | N/A
+GPT-6 Sol (short context) Data Zone | Input: $2.20 Cached Input: $0.22 Cache writes: $2.75 Output: $11 | N/A | N/A
+GPT-6 Sol (long context) Global | Input: $4 Cached Input: $0.40 Cache writes: $5 Output: $15 | N/A | N/A
+GPT-6 Sol (long context) Data Zone | Input: $4.40 Cached Input: $0.44 Cache writes: $5.50 Output: $16.50 | N/A | N/A
+GPT-6 Luna (short context) Global | Input: $0.10 Cached Input: $0.01 Cache writes: $0.125 Output: $0.50 | N/A | N/A
+GPT-6 Luna (short context) Data Zone | Input: $0.11 Cached Input: $0.011 Cache writes: $0.138 Output: $0.55 | N/A | N/A
+GPT-6 Luna (long context) Global | Input: $0.20 Cached Input: $0.02 Cache writes: $0.25 Output: $0.75 | N/A | N/A
+GPT-6 Luna (long context) Data Zone | Input: $0.22 Cached Input: $0.022 Cache writes: $0.275 Output: $0.825 | N/A | N/A
+## GPT-5.6 Series
+--TABLE
+Model | Pricing (1M Tokens) | Flex Pricing (1M Tokens) | Priority Processing (1M Tokens)
+GPT-5.6-sol (short context) Global | Input: $4 Cached Input: $0.40 Cache writes: $5 Output: $20 | Input: $2 Cached Input: $0.20 Cache writes: $2.50 Output: $10 | Input: $8 Cached Input: $0.80 Cache writes: $10 Output: $40
+GPT-5.6-sol (short context) Data Zone | Input: $4.40 Cached Input: $0.44 Cache writes: $5.50 Output: $22 | N/A | Input: $8.80 Cached Input: $0.88 Cache writes: $11 Output: $44
+GPT-5.6-sol (long context) Global | Input: $8 Cached Input: $0.80 Cache writes: $10 Output: $30 | Input: $4 Cached Input: $0.40 Cache writes: $5 Output: $15 | Input: $16 Cached Input: $1.60 Cache writes: $20 Output: $60
+GPT-5.6-sol (long context) Data Zone | Input: $8.80 Cached Input: $0.88 Cache writes: $11 Output: $33 | N/A | Input: $17.60 Cached Input: $1.76 Cache writes: $22 Output: $66
+GPT-5.6-terra (short context) Global | Input: $2 Cached Input: $0.20 Cache writes: $2.50 Output: $12 | Input: $1 Cached Input: $0.10 Cache writes: $1.25 Output: $6 | Input: $4 Cached Input: $0.40 Cache writes: $5 Output: $24
+GPT-5.6-terra (short context) Data Zone | Input: $2.20 Cached Input: $0.22 Cache writes: $2.75 Output: $13.20 | N/A | Input: $4.40 Cached Input: $0.44 Cache writes: $5.50 Output: $26.40
+GPT-5.6-terra (long context) Global | Input: $4 Cached Input: $0.40 Cache writes: $5 Output: $18 | Input: $2 Cached Input: $0.20 Cache writes: $2.50 Output: $9 | Input: $8 Cached Input: $0.80 Cache writes: $10 Output: $36
+GPT-5.6-terra (long context) Data Zone | Input: $4.40 Cached Input: $0.44 Cache writes: $5.50 Output: $19.80 | N/A | Input: $8.80 Cached Input: $0.88 Cache writes: $11 Output: $39.60
+GPT-5.6-luna (short context) Global | Input: $0.20 Cached Input: $0.02 Cache writes: $0.25 Output: $1.20 | Input: $0.10 Cached Input: $0.01 Cache writes: $0.13 Output: $0.60 | N/A
+GPT-5.6-luna (short context) Data Zone | Input: $0.22 Cached Input: $0.03 Cache writes: $0.28 Output: $1.32 | N/A | N/A
+GPT-5.6-luna (long context) Global | Input: $0.40 Cached Input: $0.04 Cache writes: $0.50 Output: $1.80 | Input: $0.20 Cached Input: $0.02 Cache writes: $0.25 Output: $0.90 | Input: $0.80 Cached Input: $0.08 Cache writes: $1 Output: $3.60
+GPT-5.6-luna (long context) Data Zone | Input: $0.44 Cached Input: $0.05 Cache writes: $0.55 Output: $1.98 | N/A | Input: $0.88 Cached Input: $0.09 Cache writes: $1.10 Output: $3.96
+## GPT 5.5 Series
+--TABLE
+Model | Pricing (1M Tokens) | Priority Processing (1M Tokens)
+GPT-5.5 Global | Input: $5 Cached Input: $0.50 Output: $30 | Input: $12.50 Cached Input: $1.25 Output: $75
+GPT-5.5 Data Zone | Input: $5.50 Cached Input: $0.55 Output: $33 | Input: $13.75 Cached Input: $1.38 Output: $82.50
+GPT-5.5 Long Context Global | Input: $10 Cached Input: $1 Output: $45 | N/A
+GPT-5.5 Long Context Data Zone | Input: $11 Cached Input: $1.10 Output: $49.50 | N/A
+## GPT 5.4 Series
+--TABLE
+Model | Pricing (1M Tokens) | Priority Processing (1M Tokens) | Pricing with Batch API (1M Tokens)
+GPT-5.4 (<272k context length) Global | Input: $2.50 Cached Input: $0.25 Output: $15 | Input: $5 Cached Input: $0.50 Output: $30 | Input: $1.25 Cached Input: $0.13 Output: $7.50
+GPT-5.4 (<272k context length) Data Zone | Input: $2.75 Cached Input: $0.28 Output: $16.50 | Input: $5.50 Cached Input: $0.55 Output: $33 | N/A
+GPT-5.4 (>272k context length) Global | Input: $5 Cached Input: $0.50 Output: $22.50 | N/A | N/A
+GPT-5.4 Pro (<272k context length) Global | Input: $30 Output: $180 | N/A | N/A
+GPT-5.4 Pro (>272k context length) Global | Input: $60 Output: $270 | N/A | N/A
+GPT-5.4 mini Global | Input: $0.75 Cached Input: $0.08 Output: $4.50 | Input: $1.50 Cached Input: $0.15 Output: $9 | Input: $0.38 Cached Input: $0.04 Output: $2.25
+GPT-5.4 mini Data Zone | Input: $0.83 Cached Input: $0.09 Output: $4.95 | Input: $1.65 Cached Input: $0.17 Output: $9.90 | N/A
+GPT-5.4 nano Global | Input: $0.20 Cached Input: $0.02 Output: $1.25 | N/A | N/A
+## GPT-5.3 Series
+--TABLE
+Model | Pricing (1M Tokens) | Priority Processing (1M Tokens)
+GPT-5.3 Codex Global | Input: $1.75 Cached Input: $0.18 Output: $14 | N/A
+GPT-5.3 Chat Global | Input: $1.75 Cached Input: $0.18 Output: $14 | N/A
+## GPT-5.2
+--TABLE
+Model | Pricing (1M Tokens) | Priority Processing (1M Tokens)
+GPT-5.2 Codex Global | Input: $1.75 Cached Input: $0.18 Output: $14 | N/A
+GPT-5.2 Global | Input: $1.75 Cached Input: $0.18 Output: $14 | Input: $3.50 Cached Input: $0.35 Output: $28
+GPT-5.2 Data Zone | Input: $1.93 Cached Input: $0.20 Output: $15.40 | Input: $3.85 Cached Input: $0.39 Output: $30.80
+GPT-5.2-chat latest Global | Input: $1.75 Cached Input: $0.18 Output: $14 | N/A
+GPT-5.2-chat Data Zone | Input: $1.93 Cached Input: $0.20 Output: $15.40 | N/A
+## GPT-5.1
+--TABLE
+Model | Pricing (1M Tokens) | Priority Processing (1M Tokens)
+GPT-5.1 Global | Input: $1.25 Cached Input: $0.13 Output: $10 | Input: $2.50 Cached Input: $0.25 Output: $20
+GPT-5.1 Data Zone | Input: $1.38 Cached Input: $0.14 Output: $11 | Input: $2.75 Cached Input: $0.28 Output: $22
+GPT-5.1-chat Global | Input: $1.25 Cached Input: $0.13 Output: $10 | N/A
+GPT-5.1-codex Global | Input: $1.25 Cached Input: $0.13 Output: $10 | N/A
+GPT-5.1-codex-max Global | Input: $1.25 Cached Input: $0.13 Output: $10 | N/A
+GPT-5.1-codex-mini Global | Input: $0.25 Cached Input: $0.03 Output: $2 | N/A
+## GPT-5 series
+--TABLE
+Model | Pricing (1M Tokens) | Priority Processing (1M Tokens) | Pricing with Batch API (1M Tokens)
+GPT-5 2025-08-07 Global | Input: $1.25 Cached Input: $0.13 Output: $10 | N/A | Input: $0.63 Cached Input: $0.07 Output: $5
+GPT-5 Data Zone | Input: $1.38 Cached Input: $0.14 Output: $11 | N/A | Input: $0.69 Cached Input: $0.07 Output: $5.50
+GPT-5 Pro Global | Input: $15 Output: $120 | N/A | N/A
+GPT-5 Codex Global | Input: $1.25 Cached Input: $0.13 Output: $10 | N/A | N/A
+GPT-5-mini Global | Input: $0.25 Cached Input: $0.03 Output: $2 | N/A | N/A
+GPT-5-mini Data Zone | Input: $0.28 Cached Input: $0.03 Output: $2.20 | N/A | N/A
+GPT-5-nano Global | Input: $0.05 Cached Input: $0.01 Output: $0.40 | N/A | N/A
+GPT-5-nano Data Zone | Input: $0.06 Cached Input: $0.01 Output: $0.44 | N/A | N/A
+GPT-5 chat Global | Input: $1.25 Cached Input: $0.13 Output: $10 | N/A | N/A
+## Deep Research
+--TABLE
+Model | Pricing
+o3-deep research Global | Input: $10 Cached Input: $2.50 Output: $40
+## o3
+--TABLE
+Model | Pricing (1M Tokens) | Pricing with Batch API (1M Tokens)
+o3 2025-04-16 Global | Input: $2 Cached Input: $0.50 Output: $8 | Input: $1 Output: $4
+o3 2025-04-16 Data Zone | Input: $2.20 Cached Input: $0.55 Output: $8.80 | Input: $1.10 Output: $4.40
+o3 2025-04-16 Regional | Input: $2.20 Cached Input: $0.55 Output: $8.80 | N/A
+## o4-mini
+--TABLE
+Model | Pricing (1M Tokens) | Pricing with Batch API (1M Tokens)
+o4-mini 2025-04-16 Global | Input: $1.10 Cached Input: $0.28 Output: $4.40 | Input: $0.55 Output: $2.20
+o4-mini 2025-04-16 Data Zone | Input: $1.21 Cached Input: $0.31 Output: $4.84 | Input: $0.61 Output: $2.42
+o4-mini 2025-04-16 Regional | Input: $1.21 Cached Input: $0.31 Output: $4.84 | N/A
+## GPT-4.1 series
+--TABLE
+Model | Standard Pricing (1M Tokens) | Priority Processing (1M Tokens) | Pricing with Batch API (1M Tokens)
+GPT-4.1-2025-04-14 Global | Input: $2 Cached Input: $0.50 Output: $8 | Input: $3.50 Cached Input: $0.88 Output: $14 | Input: $1 Output: $4
+GPT-4.1-2025-04-14 Data Zone | Input: $2.20 Cached Input: $0.55 Output: $8.80 | Input: $3.85 Cached Input: $0.97 Output: $15.40 | Input: $1.10 Output: $4.40
+GPT-4.1-2025-04-14 Regional | Input: $2.20 Cached Input: $0.55 Output: $8.80 | N/A | N/A
+GPT-4.1-mini-2025-04-14 Global | Input: $0.40 Cached Input: $0.10 Output: $1.60 | Input: $0.70 Cached Input: $0.18 Output: $2.80 | Input: $0.20 Output: $0.80
+GPT-4.1-mini-2025-04-14 Data Zone | Input: $0.44 Cached Input: $0.11 Output: $1.76 | Input: $0.77 Cached Input: $0.20 Output: $3.08 | Input: $0.22 Output: $0.88
+GPT-4.1-mini-2025-04-14 Regional | Input: $0.44 Cached Input: $0.11 Output: $1.76 | N/A | N/A
+GPT-4.1-nano-2025-04-14 Global | Input: $0.10 Cached Input: $0.03 Output: $0.40 | N/A | Input: $0.05 Output: $0.20
+GPT-4.1-nano-2025-04-14 Data Zone | Input: $0.11 Cached Input: $0.03 Output: $0.44 | N/A | Input: $0.06 Output: $0.22
+GPT-4.1-nano-2025-04-14 Regional | Input: $0.11 Cached Input: $0.03 Output: $0.44 | N/A | N/A
+## Sora in Azure OpenAI
+## Sora 2
+--TABLE
+Model | Size: Output Resolution | Price per second
+Sora 2 Global | Portrait: 720x1280 Landscape: 1280x720 | $0.10
+## Sora
+--TABLE
+Price per second | 1-5s | 6-10s | 11-15s | 16-20s
+480 Square Global | N/A | N/A | N/A | N/A
+480p Global | N/A | N/A | N/A | N/A
+720 Square Global | N/A | N/A | N/A | N/A
+720p Global | N/A | N/A | N/A | N/A
+1080 Square Global | N/A | N/A | N/A | N/A
+1080p Global | N/A | N/A | N/A | N/A
+## GPT-Image Series
+--TABLE
+Model | Pricing (1M Tokens) | Pricing with Batch API (1M Tokens)
+Image-2.5-flare Global | Input Text: $5 Cached Input Text: $1.25 Input Image: $8 Cached Input Image: $2 Output Image: $30 | N/A
+Image-2.5-sunburst Global | Input Text: $5 Cached Input Text: $1.25 Input Image: $8 Cached Input Image: $2 Output Image: $30 | N/A
+GPT-Image-2 Global | Input Text: $5 Cached Input Text: $1.25 Input Image: $8 Cached Input Image: $2 Output Text: N/A Output Image: $30 | N/A
+GPT-Image-1.5 Global | Input Text: $5 Cached Input Text: $1.25 Input Image: $8 Cached Input Image: $2 Output Text: $10 Output Image: $32 | N/A
+GPT-Image-1.5 Data Zone | Input Text: $5.50 Cached Input Text: $1.38 Input Image: $8.80 Cached Input Image: $2.20 Output Text: $11 Output Image: $35.20 | N/A
+GPT-Image-1-mini Global | Input Text: $2 Cached Input Text: $0.20 Input Image: $2.50 Cached Input Image: $0.25 Output Image: $8 | N/A
+GPT-Image-1 Global | Input Text: $5 Cached Input Text: $1.25 Input Image: $10 Cached Input Image: $2.50 Output Image: $40 | N/A
+GPT-Image-1 Regional | Input Text: $5.50 Cached Input Text: $1.25 Input Image: $11 Cached Input Image: $2.50 Output Image: $44 | N/A
+GPT-Image-1 Data Zone | Input Text: $5.50 Input Image: $11 Output Image: $44 | N/A
+## GPT-4.5
+--TABLE
+Model | Pricing (1M Tokens) | Pricing with Batch API (1M Tokens)
+GPT-4.5-Preview-2025-02-27 Global | Input: N/A Cached Input: N/A Output: N/A | N/A
+## o1
+--TABLE
+Model | Pricing (1M Tokens) | Pricing with Batch API (1M Tokens)
+o1 2024-12-17 Global | Input: $15 Cached Input: $7.50 Output: $60 | N/A
+o1 2024-12-17 US/EU – Data Zones | Input: $16.50 Cached Input: $8.25 Output: $66 | N/A
+o1 2024-12-17 Regional | Input: $16.50 Cached Input: $8.25 Output: $66 | N/A
+o1 preview 2024-09-12 Global | Input: N/A Cached Input: N/A Output: N/A | N/A
+o1 preview 2024-09-12 US/EU – Data Zones | Input: $16.50 Cached Input: $8.25 Output: $66 | N/A
+o1 preview 2024-09-12 Regional | Input: N/A Cached Input: N/A Output: N/A | N/A
+## o3 Mini
+--TABLE
+Model | Pricing (1M Tokens) | Pricing with Batch API (1M Tokens)
+o3 mini 2025-01-31 Global | Input: $1.10 Cached Input: $0.55 Output: $4.40 | Input: $0.55 Output: $2.20
+o3 mini 2025-01-31-US/EU – Data Zones | Input: $1.21 Cached Input: $0.605 Output: $4.84 | Input: $0.605 Output: $2.42
+o3 mini 2025-01-31 Regional | Input: $1.21 Cached Input: $0.605 Output: $4.84 | N/A
+o1-mini 2024-09-12 Global | Input: $1.10 Cached Input: $0.55 Output: $4.40 | N/A
+o1-mini 2024-09-12 US/EU – Data Zones | Input: $1.21 Cached Input: $0.605 Output: $4.84 | N/A
+o1-mini 2024-09-12 Regional | Input: $1.21 Cached Input: $0.605 Output: $4.84 | N/A
+## Open Source Models
+--TABLE
+Model | Pricing (1M Tokens)
+gpt-oss-120b | Input: $0.15 Output: $0.60
+## Audio Models
+--TABLE
+Model | Pricing (1M Tokens) | Pricing with Batch API (1M Tokens)
+GPT-Realtime-2.1 Global | Text Input: $4 Cached Input: $0.40 Output: $24 Audio Input: $32 Cached Input: $0.40 Output: $64 Image Input: $5 Cached Input: $0.50 | N/A
+GPT-Realtime 2.1 Data Zone | Text Input: $4.40 Cached Input: $0.44 Output: $26.40 Audio Input: $35.20 Cached Input: $0.44 Output: $70.40 Image Input: $5.50 Cached Input: $0.55 | N/A
+GPT-Realtime 2.1 mini Global | Text Input: $0.60 Cached Input: $0.06 Output: $2.40 Audio Input: $10 Cached Input: $0.30 Output: $20 Image Input: $0.80 Cached Input: $0.08 | N/A
+GPT-Realtime 2.1 mini Data Zone | Text Input: $0.66 Cached Input: $0.07 Output: $2.64 Audio Input: $11 Cached Input: $0.33 Output: $22 Image Input: $0.88 Cached Input: $0.09 | N/A
+GPT-Realtime-2 Global | Text Input: $4 Cached Input: $0.40 Output: $24 Audio Input: $32 Cached Input: $0.40 Output: $64 Image Input: $5 Cached Input: $0.50 | N/A
+GPT-Realtime-Translate Global | Output: $2.04 /hour | N/A
+GPT-Realtime-Whisper Global | Output: $1.02 /hour | N/A
+GPT-realtime-1.5 Global | Text Input: $4 Cached Input: $0.40 Output: $16 Audio Input: $32 Cached Input: $0.40 Output: $64 Image Input: $5 Cached Input: $0.50 | N/A
+GPT-realtime-1.5 Data Zone | Text Input: $4.40 Cached Input: $0.44 Output: $17.60 Audio Input: $35.20 Cached Input: $0.44 Output: $70.40 Image Input: $5.50 Cached Input: $0.55 | N/A
+GPT-audio-1.5 Global | Text Input: $2.50 Output: $10 Audio Input: $32 Output: $64 | N/A
+GPT-realtime | Text Input: $4 Cached Input: $0.40 Output: $16 Audio Input: $32 Cached Input: $0.40 Output: $64 Image Input: $5 Cached Input: $0.50 | N/A
+GPT-realtime-mini-2025-12-15 Global | Text Input: $0.60 Cached Input: $0.06 Output: $2.40 Audio Input: $10 Cached Input: $0.30 Output: $20 Image Input: $0.80 Cached Input: $0.08 | N/A
+GPT-audio | Text Input: $2.50 Output: $10 Audio Input: $40 Output: $80 | N/A
+GPT-audio-mini-2025-12-15 Global | Text Input: $0.60 Output: $2.40 Audio Input: $10 Output: $20 | N/A
+GPT-Transcribe Global | $0.27 /1 Unit Hour | N/A
+GPT-Live-Transcribe Global | $1.02 /1 Unit Hour | N/A
+GPT-4o-Transcribe | Text Input: $2.50 Output: $10 Audio Input: $6 Output: N/A | N/A
+GPT-4o-transcribe-diarize | Text Input: $2.50 Output: $10 Audio Input: $6 Output: N/A | N/A
+GPT-4o-mini-transcribe-2025-12-15 | Text Input: $1.25 Output: $5 Audio Input: $3 Output: N/A | N/A
+GPT-4o-mini-TTS-2025-12-15 | Text Input: $0.60 Output: N/A Audio Input: N/A Output: $12 | N/A
+## Computer-Using Agent (CUA)
+--TABLE
+Model | Pricing
+computer-use-preview Global | Input: $3 /1M tokens Output: $12 /1M tokens
+## Built-in tools
+--TABLE
+Tool | Input
+Computer Use (Responses API only) | Input: $3 /1M tokens Output: $12 /1M tokens
+File Search Tool Call (Responses API only) | $2.50 /1K tool calls
+File Search * | $0.11 /GB of vector-storage per day (1 GB free)
+Code Interpreter ** | $0.033 /session
+## Realtime API
+--TABLE
+Model | Pricing (1M Tokens)
+GPT-4o-Realtime-Preview-2024-12-17-Global | Text Input: $5 Cached Input: $2.50 Output: $20 Audio Input: $40 Cached Input: $2.50 Output: $80
+GPT-4o-Realtime-Preview-2024-12-17-US/EU – Data Zones | Text Input: $5.50 Cached Input: $2.75 Output: $22 Audio Input: $44 Cached Input: $2.75 Output: $88
+GPT-4o-Realtime-Preview-2024-12-17-Regional | Text Input: $5.50 Cached Input: $2.75 Output: $22 Audio Input: $44 Cached Input: $2.75 Output: $88
+GPT-4o-Mini-Realtime-Preview-2024-12-17-Global | Text Input: $0.60 Cached Input: $0.30 Output: $2.40 Audio Input: $10 Cached Input: $0.30 Output: $20
+GPT-4o-Mini-Realtime-Preview-2024-12-17-US/EU – Data Zones | Text Input: $0.66 Cached Input: $0.33 Output: $2.64 Audio Input: $11 Cached Input: $0.33 Output: $22
+GPT-4o-Mini-Realtime-Preview-2024-12-17-Regional | Text Input: $0.66 Cached Input: $0.33 Output: $2.64 Audio Input: $11 Cached Input: $0.33 Output: $22
+GPT-4o-Realtime-Preview-2024-10-01-Global | Text Input: $5 Cached Input: $2.50 Output: $20 Audio Input: $100 Cached Input: $20 Output: $200
+GPT-4o-Realtime-Preview-2024-10-01-US/EU – Data Zones | Text Input: $5.50 Cached Input: $2.75 Output: $22 Audio Input: $110 Cached Input: $22 Output: $220
+GPT-4o-Realtime-Preview-2024-10-01-Regional | Text Input: $5.50 Cached Input: $2.75 Output: $22 Audio Input: $110 Cached Input: $22 Output: $220
+## Chat Completions API
+--TABLE
+Model | Pricing (1M Tokens)
+GPT-4o-Audio-Preview-2024-12-17-Global | Text Input: $2.50 Output: $10 Audio Input: $40 Output: $80
+GPT-4o-Audio-Preview-2024-12-17-US/EU – Data Zones | Text Input: $2.75 Output: $11 Audio Input: $44 Output: $88
+GPT-4o-Audio-Preview-2024-12-17-Regional | Text Input: $2.75 Output: $11 Audio Input: $44 Output: $88
+GPT-4o-Mini-Audio-Preview-2024-12-17-Global | Text Input: $0.15 Output: $0.60 Audio Input: $10 Output: $20
+GPT-4o-Mini-Audio-Preview-2024-12-17-US/EU – Data Zones | Text Input: $0.165 Output: $0.66 Audio Input: $11 Output: $22
+GPT-4o-Mini-Audio-Preview-2024-12-17-Regional | Text Input: $0.165 Output: $0.66 Audio Input: $11 Output: $22
+## GPT-4o
+--TABLE
+Model | Pricing (1M Tokens) | Pricing with Batch API (1M Tokens)
+GPT-4o-2024-1120 Global | Input: $2.50 Cached Input: $1.25 Output: $10 | Input: $1.25 Output: $5
+GPT-4o-2024-1120 US/EU – Data Zones | Input: $2.75 Cached Input: $1.375 Output: $11 | Input: N/A Output: N/A
+GPT-4o-2024-1120 Regional | Input: $2.75 Cached Input: $1.375 Output: $11 | N/A
+GPT-4o-2024-08-06 Global | Input: $2.50 Cached Input: $1.25 Output: $10 | Input: $1.25 Output: $5
+GPT-4o-2024-08-06 US/EU – Data Zones | Input: $2.75 Cached Input: $1.375 Output: $11 | Input: $1.375 Output: $5.50
+GPT-4o-2024-08-06 Regional | Input: $2.75 Cached Input: $1.375 Output: $11 | N/A
+GPT-4o-2024-0513 Global | Input: $5 Output: $15 | Input: $2.50 Output: $7.50
+GPT-4o-2024-0513 US/EU – Data Zones | Input: $5.50 Output: $16.50 | N/A
+GPT-4o-2024-0513 Regional | Input: $5.50 Output: $16.50 | N/A
+## GPT-4o mini
+--TABLE
+Model | Pricing (1M Tokens) | Pricing with Batch API (1M Tokens)
+GPT-4o-mini-0718 Global | Input: $0.15 Cached Input: $0.075 Output: $0.60 | Input: $0.075 Output: $0.30
+GPT-4o-mini-0718 US/EU – Data Zones | Input: $0.165 Cached Input: $0.083 Output: $0.66 | Input: N/A Output: N/A
+GPT-4o-mini-0718 Regional | Input: $0.165 Cached Input: $0.083 Output: $0.66 | N/A
+## Provisioned
+--TABLE
+Model | Min PTUs | Per PTU Hourly pricing | Per PTU Monthly Reservation Pricing | Per PTU Yearly Reservation Pricing
+GPT-6 Sol (short context) Global | 15 | $1 | $260 | $2,652
+GPT-6 Sol (short context) Data Zone | 15 | $1.10 | $286 | $2,916
+GPT-6 Astra (short context) Global | 15 | $1 | $260 | $2,652
+GPT-6 Astra (short context) Data Zone | 15 | $1.10 | $286 | $2,916
+GPT-5.6-sol (short context) Global | 15 | $1 | $260 | $2,652
+GPT-5.6-sol (short context) Data Zone | 15 | $1.10 | $286 | $2,916
+GPT-5.6 Sol (Short Context) Regional | 50 | $2 | $286 | $2,916
+GPT-5.6-terra (short context) Global | 15 | $1 | $260 | $2,652
+GPT-5.6-terra (short context) Data Zone | 15 | $1.10 | $286 | $2,916
+GPT-5.6 Terra (Short Context) Regional | 50 | $2 | $286 | $2,916
+GPT-5.5 Global | 15 | $1 | $260 | $2,652
+GPT-5.5 Data Zone | 15 | $1.10 | $286 | $2,916
+GPT-5.5 Regional | 50 | $2 | $286 | $2,916
+GPT-5.4 (<272k context length) Global | 15 | $1 | $260 | $2,652
+GPT-5.4 (<272k context length) Data Zone | 15 | $1.10 | $286 | $2,916
+GPT-5.4 (<272k context length) Regional | 50 | $2 | $286 | $2,916
+GPT-5.3 Codex Global | 15 | $1 | $260 | $2,652
+GPT-5.3 Codex Data Zone | 15 | $1.10 | $286 | $2,916
+GPT-5.3 Codex Regional | 50 | $2 | $286 | $2,916
+GPT-5.2 Codex Global | 15 | $1 | $260 | $2,652
+GPT-5.2 Codex Data Zone | 15 | $1.10 | $286 | $2,916
+GPT-5.2 Codex Regional | 50 | $2 | $286 | $2,916
+GPT-5.2 Global | 15 | $1 | $260 | $2,652
+GPT-5.2 Data Zones | 15 | $1.10 | $286 | $2,916
+GPT-5.2 Regional | 50 | $2 | $286 | $2,916
+GPT-5.1 Codex Global | 15 | $1 | $260 | $2,652
+GPT-5.1 Codex Data Zones | 15 | $1.10 | $286 | $2,916
+GPT-5.1 Codex Regional | 50 | $2 | $286 | $2,916
+GPT-5.1 Global | 15 | $1 | $260 | $2,652
+GPT-5.1 Data Zones | 15 | $1.10 | $286 | $2,916
+GPT-5.1 Regional | 50 | $2 | $286 | $2,916
+GPT-5-mini Global | 15 | $1 | $260 | $2,652
+GPT-5-mini Data Zones | 15 | $1.10 | $286 | $2,916
+GPT-5-mini Regional | 50 | $2 | $286 | $2,916
+GPT-5 Global | 15 | $1 | $260 | $2,652
+GPT-5 Data Zones | 15 | $1.10 | $286 | $2,916
+GPT-5 Regional | 50 | $2 | $286 | $2,916
+GPT-4.1 Global | 15 | $1 | $260 | $2,652
+GPT-4.1 Data Zones | 15 | $1.10 | $286 | $2,916
+GPT-4.1 Regional | 50 | $2 | $286 | $2,916
+GPT-4.1-mini Global | 15 | $1 | $260 | $2,652
+GPT-4.1-mini US/EU Data Zones | 15 | $1.10 | $286 | $2,916
+GPT-4.1-mini Regional | 25 | $2 | $286 | $2,916
+GPT-4.1-nano Global | 15 | $1 | $260 | $2,652
+GPT-4.1-nano US/EU Data Zones | 15 | $1.10 | $286 | $2,916
+GPT-4.1-nano Regional | 25 | $2 | $286 | $2,916
+o3-mini Global | 15 | $1 | $260 | $2,652
+o3-mini US/EU Data Zones | 15 | $1.10 | $286 | $2,916
+o3-mini Regional | 25 | $2 | $286 | $2,916
+o3 Global | 15 | $1 | $260 | $2,652
+o3 US/EU Data Zones | 15 | $1.10 | $286 | $2,916
+o3 Regional | 50 | $2 | $286 | $2,916
+o4-mini Global | 15 | $1 | $260 | $2,652
+o4-mini US/EU Data Zones | 15 | $1.10 | $286 | $2,916
+o4-mini Regional | 25 | $2 | $286 | $2,916
+GPT-4o Global | 15 | $1 | $260 | $2,652
+GPT-4o US/EU Data Zones | 15 | $1.10 | $286 | $2,916
+GPT-4o Regional | 50 | $2 | $286 | $2,916
+Fine-Tuned GPT-4o-Regional | 50 | $2 | $286 | $2,916
+GPT-4o Mini Global | 15 | $1 | $260 | $2,652
+GPT-4o Mini US/EU Data Zones | 15 | $1.10 | $286 | $2,916
+GPT-4o Mini Regional | 25 | $2 | $286 | $2,916
+Fine-Tuned GPT-4o-Mini Regional | 25 | $2 | $286 | $2,916
+## Base models
+--TABLE
+Models | Usage per 1,000 tokens
+Babbage-002 | N/A
+Davinci-002 | N/A
+## Fine-tuning models
+--TABLE
+Model |  | Pricing
+o4-mini (Reinforcement fine-tuning) | Regional | Input: $1.21 /1M tokens Output: $4.84 /1M tokens Training: $110 /hour Hosting: $1.7 /hour Grader input: GPT-4o: $2.75 /1M tokens o3-mini: $1.21 /1M tokens Grader cached input: GPT-4o: $1.375 /1M tokens o3-mini: $0.605 /1M tokens Grader output: GPT-4o: $11 /1M tokens o3-mini: $4.84 /1M tokens
+Global | Input: $1.10 /1M tokens Output: $4.40 /1M tokens Training: $100 /hour Hosting: $1.7 /hour Grader input: GPT-4o: $2.75 /1M tokens o3-mini: $1.21 /1M tokens Grader cached input: GPT-4o: $1.375 /1M tokens o3-mini: $0.605 /1M tokens Grader output: GPT-4o: $11 /1M tokens o3-mini: $4.84 /1M tokens
+Developer | Input: $1.10 /1M tokens Cached Input: $0.275 /1M tokens Output: $4.40 /1M tokens Training: $50 /hour
+GPT-4.1 | Regional | Input: $2.20 /1M tokens Cached Input: $0.55 /1M tokens Output: $8.80 /1M tokens Training: $27.5 /1M tokens Hosting: $1.7 /hour
+Global | Input: $2 /1M tokens Cached Input: $0.50 /1M tokens Output: $8 /1M tokens Training: $25 /1M tokens Hosting: $1.7 /hour
+Developer | Input: $2 /1M tokens Cached Input: $0.50 /1M tokens Output: $8 /1M tokens Training: $12.50 /1M tokens
+GPT-4.1-mini | Regional | Input: $0.44 /1M tokens Cached Input: $0.11 /1M tokens Output: $1.76 /1M tokens Training: $5.5 /1M tokens Hosting: $1.7 /hour
+Global | Input: $0.40 /1M tokens Cached Input: $0.10 /1M tokens Output: $1.60 /1M tokens Training: $5 /1M tokens Hosting: $1.7 /hour
+Developer | Input: $0.40 /1M tokens Cached Input: $0.10 /1M tokens Output: $1.60 /1M tokens Training: $2.50 /1M tokens
+GPT-4.1-nano | Regional | Input: $0.11 /1M tokens Cached Input: $0.028 /1M tokens Output: $0.44 /1M tokens Training: $1.7 /1M tokens Hosting: $1.7 /hour
+Global | Input: $0.10 /1M tokens Cached Input: $0.025 /1M tokens Output: $0.40 /1M tokens Training: $1.5 /1M tokens Hosting: $1.7 /hour
+Developer | Input: $0.10 /1M tokens Cached Input: $0.025 /1M tokens Output: $0.40 /1M tokens Training: $0.75 /1M tokens
+GPT-4o-2024-08-06 | Regional | Input: N/A /1M tokens Cached Input: N/A /1M tokens Output: N/A /1M tokens Training: N/A /1M tokens Hosting: N/A /hour
+Global | Input: N/A /1M tokens Cached Input: N/A /1M tokens Output: N/A /1M tokens Training: N/A /1M tokens Hosting: N/A /hour
+Developer | Training: N/A /1M tokens
+GPT-4o-mini | Regional | Input: N/A /1M tokens Cached Input: N/A /1M tokens Output: N/A /1M tokens Training: N/A /1M tokens Hosting: N/A /hour
+Global | Input: N/A /1M tokens Cached Input: N/A /1M tokens Output: N/A /1M tokens Training: N/A /1M tokens Hosting: N/A /hour
+Developer | Training: N/A /1M tokens
+GPT-3.5-Turbo (16K) | Regional | Input: N/A /1M tokens Output: N/A /1M tokens Training: N/A /1M tokens Hosting: N/A /hour
+GPT OSS 20B | Regional | Input: $0.07 /1M tokens Output: $0.3 /1M tokens Training: $3.60 /1M tokens Hosting: $0.3 /hour
+Data Zone | Input: $0.08 /1M tokens Output: $0.4 /1M tokens Training: $4 /1M tokens Hosting: $0.4 /hour
+## Image models
+--TABLE
+Models | Quality | Resolution | Price (per 100 images)
+Dall-E-3 | Standard | 1024 * 1024 | $4.40
+Standard | 1024 * 1792, 1792 * 1024 | $8.80
+Dall-E-3 | HD | 1024 * 1024 | $8.80
+HD | 1024 * 1792, 1792 * 1024 | $13.20
+Dall-E-2 | Standard | 1024 * 1024 | $2
+## Embedding models
+--TABLE
+Models | Per 1,000 tokens
+Ada | $0.00011
+Ada DataZone | $0.00011
+text-embedding-3-large | $0.000143
+text-embedding-3-large DataZone | $0.000143
+text-embedding-3-small | $0.000022
+text-embedding-3-small DataZone | $0.000022
+## Speech Models
+--TABLE
+Models | Price
+Whisper | N/A /hour
+TTS (Text to Speech) | N/A /1M characters
+TTS HD | N/A /1M characters
+## Legacy Language Models
+--TABLE
+Models | Context | Input (Per 1M Tokens) | Output (Per 1M Tokens)
+GPT-3.5-Turbo-0301 | 4K | $1.50 | $2
+GPT-3.5-Turbo-0613 | 4K | $1.50 | $2
+GPT-3.5-Turbo-0613 | 16K | $3 | $4
+GPT-3.5-Turbo-1106 | 16K | N/A | N/A
+GPT-3.5-Turbo-0125 | 16K | $0.55 | $1.65
+GPT-3.5-Turbo-Instruct | 4K | $1.65 | $2.20
+GPT-4-Turbo | 128K | $11 | $33
+GPT-4-Turbo-Vision | 128K | N/A | N/A
+GPT-4 | 8K | $30 | $60
+GPT-4 | 32K | $60 | $120
+## Azure pricing and purchasing options
+## Connect with us directly
+## See ways to purchase
+## Additional resources
+## Azure OpenAI
+## Pricing calculator
+## SLA
+## Documentation
+## Frequently asked questions
+## Additional Navigation
+## Explore Azure
+## Products and pricing
+## Solutions and support
+## Partners
+## Resources
+## Cloud computing

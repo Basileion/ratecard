@@ -1,0 +1,71 @@
+## Documentation Index
+## Getting Started
+## Orchestrator API
+## Agent API
+## Search API
+## Embeddings API
+## Decisions API
+## Perplexity SDK
+## Admin & Management
+## Resources
+## On this page
+## Pricing
+## ​ Estimate your cost
+## ​ Orchestrator API Pricing
+## ​ Agent API Pricing
+## ​ Model Pricing
+## View Complete Third-Party Model Pricing
+## ​ Tool Pricing
+--TABLE
+Tool | Price | Description
+web_search (standard) | $0.0025 per invocation | Standard web search with search_type: "web" . $2.50 per 1,000 invocations
+web_search (Fast Search) | $0.001 per invocation | The same tool with search_type: "fast" . $1.00 per 1,000 invocations. See Fast Search
+image_search | $0.0025 per successful invocation | Finds structured image results with domain, format, and safe-search filters. $2.50 per 1,000 successful invocations
+fetch_url | $0.0005 per invocation | Fetches and extracts content from specific URLs
+people_search | $0.005 per invocation | Looks up professionals, employees, and people. $5 per 1,000 tool invocations
+finance_search | $0.005 per invocation | Retrieves financial data and market information. $5 per 1,000 tool invocations
+sandbox | $0.03 per session | Isolated container for executing code during an Agent API request. A session covers up to 20 minutes of active use for billing purposes — this is the billing window, not a runtime cap. SDK search queries made from inside the sandbox are billed at $0.0025 per request (same as web_search ).
+## ​ Search API Pricing
+--TABLE
+API | Price per 1K requests | Description
+Search API | $5.00 | Raw web search results with advanced filtering
+Search API with Fast Search | $1.00 | Lower-latency web search results. Set search_type: "fast"
+## ​ Embeddings API Pricing
+## ​ Standard Embeddings
+--TABLE
+Model | Dimensions | Price ($/1M tokens)
+pplx-embed-v1-0.6b | 1024 | $0.004
+pplx-embed-v1-4b | 2560 | $0.03
+## ​ Contextualized Embeddings
+--TABLE
+Model | Dimensions | Price ($/1M tokens)
+pplx-embed-context-v1-0.6b | 1024 | $0.008
+pplx-embed-context-v1-4b | 2560 | $0.05
+## View Embeddings API Documentation
+## ​ Decisions API Pricing
+--TABLE
+Model | Price ($/1M input tokens) | Output tokens | Per-request fee
+pplx-decider-v1.2 | $0.02 | Free | None
+pplx-decider-flash-v1.2 | $0.01 | Free | None
+## View Decisions API Documentation
+## ​ Input Tokens
+## ​ Output Tokens
+## ​ Cost Examples
+## Agent API Web Search
+--TABLE
+Component | Cost
+Input tokens | $0.001
+Output tokens | $0.0024
+web_search | $0.0025
+Total | $0.0059
+## Agent API Research Effort Level
+--TABLE
+Component | Cost
+Model input tokens | $0.0002
+Model output tokens | $0.0005
+web_search (Fast Search) | $0.001
+fetch_url | $0.0005
+Total | $0.0022
+## ​ Purchase Options
+## Perplexity API Platform on AWS Marketplace
+## Contact Sales Team

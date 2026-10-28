@@ -1,0 +1,21 @@
+--TABLE
+Feature | Claude Fable 5.1 For demanding reasoning and long-horizon agentic work | Claude Opus 5.5 For long-running agentic coding and knowledge work | Claude Sonnet 5.5 The best combination of speed and intelligence | Claude Haiku 5.5 For high-volume, latency-sensitive tasks such as classification, extraction, and routing
+Comparative latency | Slower | Moderate | Fast | Fastest
+Pricing | $10 / input MTok $50 / output MTok | $4 / input MTok $20 / output MTok | $2 / input MTok $10 / output MTok | From $0.10 / input MTok From $0.50 / output MTok
+Claude API ID | claude-fable-5-1 | claude-opus-5-5 | claude-sonnet-5-5 | claude-haiku-5-5
+Capabilities | 
+Thinking | Adaptive (always on) | Adaptive (always on) | Adaptive | Adaptive
+Default effort | high | medium | high | medium
+Context window | 1M tokens | 1M tokens | 1M tokens | 1M tokens
+Max output | 128K tokens | 128K tokens | 128K tokens | 128K tokens
+Reliable knowledge cutoff | Jun 2026 | Jun 2026 | Jun 2026 | Jun 2026
+ Additional details | 
+Training data cutoff | Jun 2026 | Jun 2026 | Jun 2026 | Jun 2026
+Retirement | Not sooner than September 1, 2027 | Not sooner than September 22, 2027 | Not sooner than September 28, 2027 | Not sooner than October 7, 2027
+Model IDs | 
+Claude API alias | claude-fable-5-1 | claude-opus-5-5 | claude-sonnet-5-5 | claude-haiku-5-5
+Amazon Bedrock ID | anthropic.claude-fable-5-1 | anthropic.claude-opus-5-5 | anthropic.claude-sonnet-5-5 | anthropic.claude-haiku-5-5
+Claude Models on Google Cloud (Google managed) ID | claude-fable-5-1 | claude-opus-5-5 | claude-sonnet-5-5 | claude-haiku-5-5
+Microsoft Foundry ID | claude-fable-5-1 | claude-opus-5-5 | claude-sonnet-5-5 | claude-haiku-5-5
+Claude Platform on AWS ID | claude-fable-5-1 | claude-opus-5-5 | claude-sonnet-5-5 | claude-haiku-5-5
+Claude Models on Google Cloud (Anthropic managed) ID | claude-fable-5-1 | claude-opus-5-5 | claude-sonnet-5-5 | claude-haiku-5-5

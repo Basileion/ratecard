@@ -1,0 +1,26 @@
+# Ratecard
+
+> Published AI API list prices (USD per 1M tokens), one row per model and provider, each with a source URL and check date. 85 rows, 78 verified, 14 providers. Last checked 2026-10-26.
+
+## Data
+- [All models (JSON)](https://ratecardai.pages.dev/api/models.json)
+- [Providers (JSON)](https://ratecardai.pages.dev/api/providers.json)
+- [Change log (JSON)](https://ratecardai.pages.dev/api/changes.json)
+- [OpenAPI](https://ratecardai.pages.dev/openapi.json)
+
+## Cheapest verified text models (input+output per 1M)
+- OpenRouter Qwen3.7 Flash (Qwen): in $0.030, out $0.130 (source https://openrouter.ai/qwen/qwen3.7-flash, 2026-10-26)
+- Fireworks NVIDIA Nemotron 3.5 Lightning 30B A3B: in $0.050, out $0.200 (source https://docs.fireworks.ai/serverless/pricing, 2026-10-26)
+- Together Llama 3 8B Instruct Lite: in $0.140, out $0.140 (source https://www.together.ai/pricing, 2026-10-26)
+- Groq openai/gpt-oss-20b: in $0.075, out $0.300 (source https://console.groq.com/docs/models, 2026-10-26)
+- OpenRouter Llama 4 Scout (Meta): in $0.100, out $0.300 (source https://openrouter.ai/meta-llama/llama-4-scout, 2026-10-26)
+- OpenAI gpt-6-luna: in $0.100, out $0.500 (source https://platform.openai.com/docs/pricing, 2026-10-26)
+- Anthropic Claude Haiku 5.5: in $0.100, out $0.500 (source https://docs.anthropic.com/en/docs/about-claude/pricing, 2026-10-26)
+- Azure OpenAI GPT-6 Luna (short context, Global): in $0.100, out $0.500 (source https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/, 2026-10-26)
+- Azure OpenAI GPT-6 Luna (short context, Data Zone): in $0.110, out $0.550 (source https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/, 2026-10-26)
+- Together gpt-oss-120B: in $0.150, out $0.600 (source https://www.together.ai/pricing, 2026-10-26)
+
+## Pages
+- [Calculator](https://ratecardai.pages.dev/calculator.html)
+- [Compare](https://ratecardai.pages.dev/compare.html)
+- [Methodology](https://ratecardai.pages.dev/methodology.html)

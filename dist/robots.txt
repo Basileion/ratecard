@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ratecardai.pages.dev/sitemap.xml

@@ -1,0 +1,142 @@
+{
+ "openapi": "3.1.0",
+ "info": {
+  "title": "Ratecard AI API pricing",
+  "version": "1.0.0",
+  "description": "Static, read-only JSON of published AI API list prices."
+ },
+ "servers": [
+  {
+   "url": "https://ratecardai.pages.dev"
+  }
+ ],
+ "paths": {
+  "/api/models.json": {
+   "get": {
+    "summary": "All model price rows",
+    "responses": {
+     "200": {
+      "description": "OK",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "models": {
+           "type": "array",
+           "items": {
+            "$ref": "#/components/schemas/Model"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/providers.json": {
+   "get": {
+    "summary": "Providers",
+    "responses": {
+     "200": {
+      "description": "OK"
+     }
+    }
+   }
+  },
+  "/api/changes.json": {
+   "get": {
+    "summary": "Change log",
+    "responses": {
+     "200": {
+      "description": "OK"
+     }
+    }
+   }
+  }
+ },
+ "components": {
+  "schemas": {
+   "Model": {
+    "type": "object",
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "provider": {
+      "type": "string"
+     },
+     "model": {
+      "type": "string"
+     },
+     "kind": {
+      "enum": [
+       "text",
+       "image",
+       "audio",
+       "embedding"
+      ]
+     },
+     "input": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "output": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "cached": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "batch_input": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "batch_output": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "context": {
+      "type": [
+       "integer",
+       "null"
+      ]
+     },
+     "other": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "status": {
+      "enum": [
+       "verified",
+       "unverified"
+      ]
+     },
+     "source": {
+      "type": "string",
+      "format": "uri"
+     },
+     "checked": {
+      "type": "string",
+      "format": "date"
+     }
+    }
+   }
+  }
+ }
+}

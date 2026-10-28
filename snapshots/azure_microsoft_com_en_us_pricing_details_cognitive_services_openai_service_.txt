@@ -1,0 +1,522 @@
+Home
+Azure pricing
+Azure OpenAI pricing
+Request a pricing quote
+Try Azure for free
+Azure OpenAI Service pricing overview
+Azure OpenAI Service delivers enterprise-ready generative AI featuring powerful models from OpenAI, enabling organizations to innovate with text, audio, and vision capabilities. Beyond the cutting-edge models, companies choose Azure OpenAI Service for built-in data privacy, regional/area/global flexibility, and seamless integration into the Azure ecosystem including Fabric, Cosmos DB and Azure AI Search. Companies of all sizes can confidently scale AI solutions to enhance customer experience, automate workflows, and unlock creative potential, driving measurable impact and competitive differentiation.
+To help customers in the journey, we offer pricing and cost management solutions to meet your needs. including:
+Standard (On-Demand): Pay-as-you-go for input and output tokens.
+Provisioned (PTUs): Allocate throughput with predictable costs, with monthly and annual reservations available to reduce overall spend.
+Batch API: Language models are also now available in the Batch API for global deployments and three regions , that returns completions within 24 hours for a 50% discount on Global Standard Pricing.
+You can choose from the following deployment types for Standard and Provisioned, which enable greater flexibility and control of pricing and performance. This flexibility helps when there is increasingly more restrictive data processing boundaries and need for increased throughput and lower price.
+Global Deployment – Global SKU
+Data Zone Deployment – Geographic based (EU or US)
+Regional Deployment – Local Region (up to 27 regions)
+Explore pricing options
+Apply filters to customize pricing options to your needs.
+Prices are estimates only and are not intended as actual price quotes. Actual pricing may vary depending on the type of agreement entered with Microsoft, date of purchase, and the currency exchange rate. Prices are calculated based on US dollars and converted using London closing spot rates that are captured in the two business days prior to the last business day of the previous month end. If the two business days prior to the end of the month fall on a bank holiday in major markets, the rate setting day is generally the day immediately preceding the two business days. This rate applies to all transactions during the upcoming month. Sign in to the Azure pricing calculator to see pricing based on your current program/offer with Microsoft. Contact an Azure sales specialist for more information on pricing or to request a price quote. See frequently asked questions about Azure pricing.
+Region:
+Central US
+East US
+East US 2
+North Central US
+South Central US
+West Central US
+West US
+West US 2
+West US 3
+UK South
+UK West
+UAE Central
+UAE North
+Taiwan North
+Switzerland North
+Switzerland West
+Sweden Central
+Sweden South
+Spain Central
+Qatar Central
+Poland Central
+Norway East
+Norway West
+New Zealand North
+Mexico Central
+Malaysia West
+Korea Central
+Korea South
+Japan East
+Japan West
+Italy North
+Israel Central
+Indonesia Central
+Central India
+India South Central
+South India
+West India
+Germany North
+Germany West Central
+France Central
+France South
+North Europe
+West Europe
+Denmark East
+Chile Central
+Canada Central
+Canada East
+Brazil South
+Brazil Southeast
+Belgium Central
+US Gov Arizona
+US Gov Texas
+US Gov Virginia
+Austria East
+Australia Central
+Australia Central 2
+Australia East
+Australia Southeast
+East Asia
+Southeast Asia
+South Africa North
+South Africa West
+Currency:
+United States – Dollar ($) USD
+Australia – Dollar ($) AUD
+Brazil – Real (R$) BRL
+Canada – Dollar ($) CAD
+Denmark – Krone (kr) DKK
+Euro Zone – Euro (€) EUR
+India – Rupee (₹) INR
+Japan – Yen (&#165;) JPY
+Korea – Won (₩) KRW
+New Zealand – Dollar ($) NZD
+Norway – Krone (kr) NOK
+Russia – Ruble (руб) RUB
+Sweden – Krona (kr) SEK
+Switzerland – Franc (chf) CHF
+Taiwan – Dollar (NT$) TWD
+United Kingdom – Pound (&#163;) GBP
+US government entities are eligible to purchase Azure Government services from a licensing solution provider with no upfront financial commitment, or directly through a pay-as-you-go online subscription.
+Learn more
+Important—The price in R$ is merely a reference; this is an international transaction and the final price is subject to exchange rates and the inclusion of IOF taxes. An eNF will not be issued.
+Notice: GPT-6 Sol and Luna prices are currently in processing for publishing on this page. Please find the model pricing in the blog.
+GPT-Chat Latest
+Model
+Pricing (1M Tokens)
+GPT-Chat Latest 08062026 Global
+Input: $-
+Cached Input: $-
+Output: $-
+GPT-Chat Latest 07012026 Data Zone
+GPT-6.1 Series
+Priority Processing (1M Tokens)
+GPT-6.1 Sol (short context) Global
+Cache writes: $-
+N/A
+GPT-6.1 Sol (short context) Data Zone
+GPT-6.1 Sol (long context) Global
+GPT-6.1 Sol (long context) Data Zone
+GPT-6 Series
+GPT-6 Astra, OpenAI's newest frontier model, is built to decide for organization, it reasons before it acts, commits to a course of action, and executes across the applications customers already run. Computer use is the marquee capability of this release.
+Flex Pricing (1M Tokens)
+GPT-6 Astra (short context) Global
+GPT-6 Astra (short context) Data Zone
+GPT-6 Astra (long context) Global
+GPT-6 Astra (long context) Data Zone
+GPT-6 Sol (short context) Global
+GPT-6 Sol (short context) Data Zone
+GPT-6 Sol (long context) Global
+GPT-6 Sol (long context) Data Zone
+GPT-6 Luna (short context) Global
+GPT-6 Luna (short context) Data Zone
+GPT-6 Luna (long context) Global
+GPT-6 Luna (long context) Data Zone
+GPT-5.6 Series
+GPT-5.6-sol (short context) Global
+GPT-5.6-sol (short context) Data Zone
+GPT-5.6-sol (long context) Global
+GPT-5.6-sol (long context) Data Zone
+GPT-5.6-terra (short context) Global
+GPT-5.6-terra (short context) Data Zone
+GPT-5.6-terra (long context) Global
+GPT-5.6-terra (long context) Data Zone
+GPT-5.6-luna (short context) Global
+GPT-5.6-luna (short context) Data Zone
+GPT-5.6-luna (long context) Global
+GPT-5.6-luna (long context) Data Zone
+GPT 5.5 Series
+GPT-5.5 delivers advanced reasoning, instruction following, and agentic capabilities for production AI workloads.
+GPT-5.5 Global
+GPT-5.5 Data Zone
+GPT-5.5 Long Context Global
+GPT-5.5 Long Context Data Zone
+GPT 5.4 Series
+Built for Reliable AI Production: Stronger reasoning, dependable execution, and agentic workflows at scale.
+Pricing with Batch API (1M Tokens)
+GPT-5.4 (<272k context length) Global
+GPT-5.4 (<272k context length) Data Zone
+GPT-5.4 (>272k context length) Global
+GPT-5.4 Pro (<272k context length) Global
+GPT-5.4 Pro (>272k context length) Global
+GPT-5.4 mini Global
+GPT-5.4 mini Data Zone
+GPT-5.4 nano Global
+GPT-5.3 Series
+Unifies the frontier coding performance of GPT-5.2-Codex with the reasoning and professional knowledge capabilities of GPT-5.2.
+GPT-5.3 Codex Global
+GPT-5.3 Chat Global
+GPT-5.2
+GPT-5.2 delivers the deep reasoning and expanded context handling necessary for building sophisticated AI agents capable of automating complex, long-running tasks across all business functions.
+GPT-5.2 Codex Global
+GPT-5.2 Global
+GPT-5.2 Data Zone
+GPT-5.2-chat latest Global
+GPT-5.2-chat Data Zone
+GPT-5.1
+The GPT-5.1 series is built to respond faster to users in a variety of situations with adaptive reasoning, improving latency and cost efficiency across the series by varying thinking time more significantly. This, combined with other tooling improvements, enhanced stepwise reasoning visibility, multimodal intelligence, and enterprise-grade compliance.
+GPT-5.1 Global
+GPT-5.1 Data Zone
+GPT-5.1-chat Global
+GPT-5.1-codex Global
+GPT-5.1-codex-max Global
+GPT-5.1-codex-mini Global
+GPT-5 series
+GPT-5 2025-08-07 Global
+GPT-5 Data Zone
+GPT-5 Pro Global
+GPT-5 Codex Global
+GPT-5-mini Global
+GPT-5-mini Data Zone
+GPT-5-nano Global
+GPT-5-nano Data Zone
+GPT-5 chat Global
+Deep Research
+Deep Research enables developers and enterprises to automate complex research tasks with structured, citation-rich answers. It is suitable for building customer support bots, internal knowledge assistants, or market analysis tools. Deep Research delivers transparent, auditable insights grounded in real-time web data. Search context tokens are charged input token prices for the model being used. You’ll separately incur charges for Grounding with Bing Search and the base GPT model being used for clarifying questions.
+Pricing
+o3-deep research Global
+o3
+o3 is a powerful reasoning model from the o-series of reasoning models, pushing the frontier across coding, math, science, and visual perception. It excels in complex queries requiring multi-faceted analysis and performs strongly in visual tasks like analyzing images, charts, and graphics. The model features a 200K token context window and has a knowledge cutoff of June 2024.
+o3 2025-04-16 Global
+o3 2025-04-16 Data Zone
+o3 2025-04-16 Regional
+o4-mini
+o4-mini is a compact, efficient, and cost-effective reasoning model from OpenAI's o-series. It excels in math, coding, and visual tasks. The model features a 200K token context window and has a knowledge cutoff of June 2024.
+o4-mini 2025-04-16 Global
+o4-mini 2025-04-16 Data Zone
+o4-mini 2025-04-16 Regional
+GPT-4.1 series
+GPT-4.1 series is a highly advanced general-purpose model with extensive world knowledge and an enhanced ability to understand user intent, making it particularly adept at creative tasks and agentic planning. The series features a 1 million token context window and has a knowledge cutoff of June 2024.
+Standard Pricing (1M Tokens)
+GPT-4.1-2025-04-14 Global
+GPT-4.1-2025-04-14 Data Zone
+GPT-4.1-2025-04-14 Regional
+GPT-4.1-mini-2025-04-14 Global
+GPT-4.1-mini-2025-04-14 Data Zone
+GPT-4.1-mini-2025-04-14 Regional
+GPT-4.1-nano-2025-04-14 Global
+GPT-4.1-nano-2025-04-14 Data Zone
+GPT-4.1-nano-2025-04-14 Regional
+Sora in Azure OpenAI
+Sora is a multimodal generative AI model now available in Azure AI Foundry, designed to help creative teams bring ideas to life through seamless API-first integration. Built on Azure’s enterprise-grade infrastructure, it offers secure, scalable deployment for transforming concepts into high-quality visual content.
+Sora 2
+Size: Output Resolution
+Price per second
+Sora 2 Global
+Portrait: 720x1280
+Landscape: 1280x720
+$-
+Sora
+1-5s
+6-10s
+11-15s
+16-20s
+480 Square Global
+480p Global
+720 Square Global
+720p Global
+1080 Square Global
+1080p Global
+GPT-Image Series
+GPT-Image models enhance DALL-E with better instruction following accurate text rendering, and support for image input and editing. The model is priced per token, with different pricing for text and image tokens.
+Image-2.5-flare Global
+Input Text: $-
+Cached Input Text: $-
+Input Image: $-
+Cached Input Image: $-
+Output Image: $-
+Image-2.5-sunburst Global
+GPT-Image-2 Global
+Output Text: $-
+GPT-Image-1.5 Global
+GPT-Image-1.5 Data Zone
+GPT-Image-1-mini Global
+GPT-Image-1 Global
+GPT-Image-1 Regional
+GPT-Image-1 Data Zone
+GPT-4.5
+GPT-4.5-preview is the latest general purpose model with deep world knowledge and better understanding of user intent that makes it good at creative tasks and agentic planning. The model has 128K context and an October 2023 knowledge cutoff.
+GPT-4.5-Preview-2025-02-27 Global
+o1
+o1 is the new reasoning model series for complex tasks. The model has 200K context and an October 2023 knowledge cutoff.
+o1 2024-12-17 Global
+o1 2024-12-17 US/EU – Data Zones
+o1 2024-12-17 Regional
+o1 preview 2024-09-12 Global
+o1 preview 2024-09-12 US/EU – Data Zones
+o1 preview 2024-09-12 Regional
+Plan with the Pricing Calculator
+o3 Mini
+The o3 mini is the updated version of o1 mini model. o3-mini is a fast, cost-efficient reasoning model tailored to coding, math, and science use cases.
+The o3-mini model now boasts an expanded context input window of 200K tokens and a maximum output of 100K tokens, providing ample space for complex and detailed responses. The o1 mini model has 128K context input. Both o3 and o1 models have a knowledge cutoff of October 2023.
+o3 mini 2025-01-31 Global
+o3 mini 2025-01-31-US/EU – Data Zones
+o3 mini 2025-01-31 Regional
+o1-mini 2024-09-12 Global
+o1-mini 2024-09-12 US/EU – Data Zones
+o1-mini 2024-09-12 Regional
+Open Source Models
+gpt-oss-120b offers a high-performing, open and controllable LLM—blending frontier reasoning skills with enterprise-grade flexibility and deployment autonomy.
+gpt-oss-120b
+Audio Models
+GPT-realtime and GPT-audio models are now available via Azure AI Foundry and Azure OpenAI Service, enabling high-fidelity, low-latency voice interactions for production-grade applications. Additional audio models include GPT-4o, transcribe mini, and mini-tts, which deliver advanced speech-to-text and text-to-speech capabilities with emotionally expressive voices, customizable outputs, and superior accuracy—ideal for live customer call centers, real-time captioning, and interactive voice agents. The models leverage pretraining and distillation techniques to support natural turn-taking and stable APIs for multimodal deployments.
+GPT-Realtime-2.1 Global
+Text
+Audio
+Image
+GPT-Realtime 2.1 Data Zone
+GPT-Realtime 2.1 mini Global
+GPT-Realtime 2.1 mini Data Zone
+GPT-Realtime-2 Global
+GPT-Realtime-Translate Global
+Output: $- /hour
+GPT-Realtime-Whisper Global
+GPT-realtime-1.5 Global
+GPT-realtime-1.5 Data Zone
+GPT-audio-1.5 Global
+GPT-realtime
+GPT-realtime-mini-2025-12-15 Global
+GPT-audio
+GPT-audio-mini-2025-12-15 Global
+GPT-Transcribe Global
+$- /1 Unit Hour
+GPT-Live-Transcribe Global
+GPT-4o-Transcribe
+Output: N/A
+GPT-4o-transcribe-diarize
+GPT-4o-mini-transcribe-2025-12-15
+GPT-4o-mini-TTS-2025-12-15
+Input: N/A
+Computer-Using Agent (CUA)
+The Computer-Using Agent (CUA) is a specialized AI model that allows AI to interact with graphical user interfaces (GUIs), navigate applications, and automate multi-step tasks—all through natural language instructions. The CUA model can be used as a tool in the Responses API.
+computer-use-preview Global
+Input: $- /1M tokens
+Output: $- /1M tokens
+Built-in tools
+The Responses API and the Assistants API enable seamless interaction with tools like computer use, code interpreter, function calling, and file search, making it easy for developers to build AI agents.
+Tool
+Input
+Computer Use (Responses API only)
+File Search Tool Call (Responses API only)
+$- /1K tool calls
+File Search *
+$- /GB of vector-storage per day (1 GB free)
+Code Interpreter **
+$- /session
+* GB refers to binary gigabytes, where 1 gb is 2^30 bytes.
+** If your assistant calls Code Interpreter simultaneously in two different threads, this would create two Code Interpreter sessions (2 * $- ). Each session is active by default for one hour, which means that you would only pay this fee once if your user keeps giving instructions to Code Interpreter in the same thread for up to one hour.
+Inference cost (input and output) varies based on the GPT model used with each Assistant. If your assistant calls Code Interpreter simultaneously in two different threads, this would create two Code Interpreter sessions (2 * $- ). Each session is active by default for one hour, which means that the price is for up to one hour of giving instructions to Code Interpreter in the same thread.
+Realtime API
+Featured in the Realtime API, the GPT-4o-Realtime-Preview supports multilingual speech-to-speech capabilities. Optimized for real-time, low-latency conversations, it enables natural interactions with minimal delay, ideal for chatbots and conversational AI. GPT-4o is the comprehensive, more powerful version designed for complex tasks, while GPT-4o Mini is a smaller, more affordable option ideal for simpler applications where cost-efficiency and speed are priorities.
+GPT-4o-Realtime-Preview-2024-12-17-Global
+GPT-4o-Realtime-Preview-2024-12-17-US/EU – Data Zones
+GPT-4o-Realtime-Preview-2024-12-17-Regional
+GPT-4o-Mini-Realtime-Preview-2024-12-17-Global
+GPT-4o-Mini-Realtime-Preview-2024-12-17-US/EU – Data Zones
+GPT-4o-Mini-Realtime-Preview-2024-12-17-Regional
+GPT-4o-Realtime-Preview-2024-10-01-Global
+GPT-4o-Realtime-Preview-2024-10-01-US/EU – Data Zones
+GPT-4o-Realtime-Preview-2024-10-01-Regional
+Chat Completions API
+Featured in the Chat Completions API, the GPT 4o-Audio-Preview model processes and generates audio content. It supports advanced features like speech recognition and audio synthesis, ideal for asynchronous speech interactions and sentiment analysis. GPT-4o is the comprehensive, more powerful version designed for complex tasks, while GPT-4o Mini is a smaller, more affordable option ideal for simpler applications where cost-efficiency and speed are priorities.
+GPT-4o-Audio-Preview-2024-12-17-Global
+GPT-4o-Audio-Preview-2024-12-17-US/EU – Data Zones
+GPT-4o-Audio-Preview-2024-12-17-Regional
+GPT-4o-Mini-Audio-Preview-2024-12-17-Global
+GPT-4o-Mini-Audio-Preview-2024-12-17-US/EU – Data Zones
+GPT-4o-Mini-Audio-Preview-2024-12-17-Regional
+GPT-4o
+GPT-4o is the most advanced multimodal model that’s faster and cheaper than GPT-4 Turbo with stronger vision capabilities. The model has 128K context and an October 2023 knowledge cutoff.
+GPT-4o-2024-1120 Global
+GPT-4o-2024-1120 US/EU – Data Zones
+GPT-4o-2024-1120 Regional
+GPT-4o-2024-08-06 Global
+GPT-4o-2024-08-06 US/EU – Data Zones
+GPT-4o-2024-08-06 Regional
+GPT-4o-2024-0513 Global
+GPT-4o-2024-0513 US/EU – Data Zones
+GPT-4o-2024-0513 Regional
+GPT-4o mini
+GPT-4o mini is the most cost-efficient small model, and has vision capabilities. The model has 128K context and an October 2023 knowledge cutoff.
+GPT-4o-mini-0718 Global
+GPT-4o-mini-0718 US/EU – Data Zones
+GPT-4o-mini-0718 Regional
+Provisioned
+You can allocate and manage throughput for deployments, ensuring predictable performance and stable capacity. You are charged an hourly rate per model regardless of usage, but you can also secure additional savings through monthly and annual reservations. Discover how to transition your regional deployments and provisioned reservations to global and data zones on this Learn page . To understand if your desired model is available in your specific region for provisioned pricing please visit this Learn page or contact your local sales rep for more details.
+Min PTUs
+Per PTU Hourly pricing
+Per PTU Monthly Reservation Pricing
+Per PTU Yearly Reservation Pricing
+15
+GPT-5.6 Sol (Short Context) Regional
+50
+GPT-5.6 Terra (Short Context) Regional
+GPT-5.5 Regional
+GPT-5.4 (<272k context length) Regional
+GPT-5.3 Codex Data Zone
+GPT-5.3 Codex Regional
+GPT-5.2 Codex Data Zone
+GPT-5.2 Codex Regional
+GPT-5.2 Data Zones
+GPT-5.2 Regional
+GPT-5.1 Codex Global
+GPT-5.1 Codex Data Zones
+GPT-5.1 Codex Regional
+GPT-5.1 Data Zones
+GPT-5.1 Regional
+GPT-5-mini Data Zones
+GPT-5-mini Regional
+GPT-5 Global
+GPT-5 Data Zones
+GPT-5 Regional
+GPT-4.1 Global
+GPT-4.1 Data Zones
+GPT-4.1 Regional
+GPT-4.1-mini Global
+GPT-4.1-mini US/EU Data Zones
+GPT-4.1-mini Regional
+25
+GPT-4.1-nano Global
+GPT-4.1-nano US/EU Data Zones
+GPT-4.1-nano Regional
+o3-mini Global
+o3-mini US/EU Data Zones
+o3-mini Regional
+o3 Global
+o3 US/EU Data Zones
+o3 Regional
+o4-mini Global
+o4-mini US/EU Data Zones
+o4-mini Regional
+GPT-4o Global
+GPT-4o US/EU Data Zones
+GPT-4o Regional
+Fine-Tuned GPT-4o-Regional
+GPT-4o Mini Global
+GPT-4o Mini US/EU Data Zones
+GPT-4o Mini Regional
+Fine-Tuned GPT-4o-Mini Regional
+Base models
+Models
+Usage per 1,000 tokens
+Babbage-002
+Davinci-002
+Fine-tuning models
+o4-mini (Reinforcement fine-tuning)
+Regional
+Training: $- /hour
+Hosting: $- /hour
+Grader input:
+GPT-4o: $- /1M tokens
+o3-mini: $- /1M tokens
+Grader cached input:
+Grader output:
+Global
+Developer
+Cached Input: $- /1M tokens
+GPT-4.1
+Training: $- /1M tokens
+GPT-4.1-mini
+GPT-4.1-nano
+GPT-4o-2024-08-06
+GPT-4o-mini
+GPT-3.5-Turbo (16K)
+GPT OSS 20B
+Data Zone
+Image models
+Quality
+Resolution
+Price (per 100 images)
+Dall-E-3
+Standard
+1024 * 1024
+1024 * 1792,
+1792 * 1024
+HD
+Dall-E-2
+Embedding models
+Per 1,000 tokens
+Ada
+Ada DataZone
+text-embedding-3-large
+text-embedding-3-large DataZone
+text-embedding-3-small
+text-embedding-3-small DataZone
+Speech Models
+Price
+Whisper
+$- /hour
+TTS (Text to Speech)
+$- /1M characters
+TTS HD
+Legacy Language Models
+Context
+Input (Per 1M Tokens)
+Output (Per 1M Tokens)
+GPT-3.5-Turbo-0301
+4K
+GPT-3.5-Turbo-0613
+16K
+GPT-3.5-Turbo-1106
+GPT-3.5-Turbo-0125
+GPT-3.5-Turbo-Instruct
+GPT-4-Turbo
+128K
+GPT-4-Turbo-Vision
+GPT-4
+8K
+32K
+Azure pricing and purchasing options
+Connect with us directly
+Get a walkthrough of Azure pricing. Understand pricing for your cloud solution, learn about cost optimization and request a custom proposal.
+Talk to a sales specialist
+See ways to purchase
+Purchase Azure services through the Azure website, a Microsoft representative, or an Azure partner.
+Explore your options
+Additional resources
+Azure OpenAI
+Learn more about Azure OpenAI features and capabilities.
+Pricing calculator
+Estimate your expected monthly costs for using any combination of Azure products.
+SLA
+Review the Service Level Agreement for Azure OpenAI.
+Documentation
+Review technical tutorials, videos, and more Azure OpenAI resources.
+Frequently asked questions
+Frequently asked questions about Azure pricing
+How is Azure OpenAI Service priced?
+Azure OpenAI Service offers pricing based on both Pay-As-You-Go and Provisioned Throughput Units (PTUs). Pay-As-You-Go allows you to pay for the resources you consume, making it flexible for variable workloads. PTUs offers a predictable pricing model where you reserve and deploy a specific amount of model processing capacity. This model is ideal for workloads with consistent or predictable usage patterns, providing stability and cost control.
+Where is Azure OpenAI Service available?
+Azure Products by Region | Microsoft Azure
+What is the SLA for Azure OpenAI Service?
+SLA for Azure AI Services | Microsoft Azure
+How can I learn more about provisioned throughput units (PTUs)?
+To learn more about PTUs and Azure OpenAI pricing please read PTU documentation or contact our sales specialist .
+Talk to a sales specialist for a walk-through of Azure pricing. Understand pricing for your cloud solution.
+Get free cloud services and a $200 credit to explore Azure for 30 days.
+Added to estimate.
+Press 'v' to view on calculator
+View on calculator
+Chat with Sales
+Can we help you?
+Chat Now
+No thanks

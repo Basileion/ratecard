@@ -1,0 +1,6 @@
+/sw.js
+  Cache-Control: no-cache
+/api/*
+  Access-Control-Allow-Origin: *
+/assets/*
+  Cache-Control: public, max-age=86400

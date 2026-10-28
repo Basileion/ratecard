@@ -1,0 +1,113 @@
+[
+ {
+  "id": "platform_openai_com_docs_pricing",
+  "status": "baseline"
+ },
+ {
+  "id": "docs_anthropic_com_en_docs_about_claude_pricing",
+  "status": "baseline"
+ },
+ {
+  "id": "ai_google_dev_gemini_api_docs_pricing",
+  "status": "baseline"
+ },
+ {
+  "id": "docs_x_ai_docs_models",
+  "status": "baseline"
+ },
+ {
+  "id": "api_docs_deepseek_com_quick_start_pricing",
+  "status": "baseline"
+ },
+ {
+  "id": "www_together_ai_pricing",
+  "status": "baseline"
+ },
+ {
+  "id": "docs_fireworks_ai_serverless_pricing",
+  "status": "baseline"
+ },
+ {
+  "id": "console_groq_com_docs_models",
+  "status": "baseline"
+ },
+ {
+  "id": "docs_perplexity_ai_getting_started_models",
+  "status": "baseline"
+ },
+ {
+  "id": "docs_perplexity_ai_getting_started_pricing",
+  "status": "baseline"
+ },
+ {
+  "id": "cohere_com_pricing",
+  "status": "baseline"
+ },
+ {
+  "id": "azure_microsoft_com_en_us_pricing_details_cognitive_services_openai_service_",
+  "status": "baseline"
+ },
+ {
+  "id": "aws_amazon_com_bedrock_pricing_",
+  "status": "baseline"
+ },
+ {
+  "id": "mistral_ai_pricing",
+  "status": "baseline"
+ },
+ {
+  "id": "openrouter_ai_meta_llama_llama_4_maverick",
+  "status": "error",
+  "err": "spawnSync /usr/bin/google-chrome ETIMEDOUT"
+ },
+ {
+  "id": "openrouter_ai_meta_llama_llama_4_scout",
+  "status": "error",
+  "err": "spawnSync /usr/bin/google-chrome ETIMEDOUT"
+ },
+ {
+  "id": "openrouter_ai_mistralai_mistral_large_4_0",
+  "status": "error",
+  "err": "spawnSync /usr/bin/google-chrome ETIMEDOUT"
+ },
+ {
+  "id": "openrouter_ai_mistralai_mistral_medium_3_5",
+  "status": "error",
+  "err": "spawnSync /usr/bin/google-chrome ETIMEDOUT"
+ },
+ {
+  "id": "openrouter_ai_mistralai_mistral_small_2603",
+  "status": "error",
+  "err": "spawnSync /usr/bin/google-chrome ETIMEDOUT"
+ },
+ {
+  "id": "openrouter_ai_mistralai_codestral_2508",
+  "status": "error",
+  "err": "spawnSync /usr/bin/google-chrome ETIMEDOUT"
+ },
+ {
+  "id": "openrouter_ai_cohere_command_a_plus",
+  "status": "error",
+  "err": "spawnSync /usr/bin/google-chrome ETIMEDOUT"
+ },
+ {
+  "id": "openrouter_ai_qwen_qwen3_8_max_0902",
+  "status": "error",
+  "err": "spawnSync /usr/bin/google-chrome ETIMEDOUT"
+ },
+ {
+  "id": "openrouter_ai_qwen_qwen3_7_flash",
+  "status": "error",
+  "err": "spawnSync /usr/bin/google-chrome ETIMEDOUT"
+ },
+ {
+  "id": "openrouter_ai_moonshotai_kimi_k3_1_pro",
+  "status": "error",
+  "err": "spawnSync /usr/bin/google-chrome ETIMEDOUT"
+ },
+ {
+  "id": "openrouter_ai_x_ai_grok_4_7",
+  "status": "error",
+  "err": "spawnSync /usr/bin/google-chrome ETIMEDOUT"
+ }
+]

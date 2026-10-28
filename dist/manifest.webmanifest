@@ -1,0 +1,38 @@
+{
+ "name": "Ratecard — AI API rates",
+ "short_name": "Ratecard",
+ "description": "AI API pricing, calculator and change alerts.",
+ "start_url": "/?source=pwa",
+ "scope": "/",
+ "display": "standalone",
+ "background_color": "#fbfaf7",
+ "theme_color": "#0f1729",
+ "icons": [
+  {
+   "src": "/assets/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/assets/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "/assets/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ],
+ "shortcuts": [
+  {
+   "name": "Calculator",
+   "url": "/calculator.html"
+  },
+  {
+   "name": "Compare",
+   "url": "/compare.html"
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+## Documentation Index
+## Getting Started
+## Orchestrator API
+## Agent API
+## Search API
+## Embeddings API
+## Decisions API
+## Perplexity SDK
+## Admin & Management
+## Resources
+## Agent API Models
+## ​ Available Models
+## Anthropic
+--TABLE
+Model | Input ($/1M) | Output ($/1M) | Cache read ($/1M) | Service tiers | Docs
+anthropic/claude-fable-5 | 10.00 | 50.00 | 1.00 | — | Claude Fable 5
+anthropic/claude-fable-5-1 | 10.00 | 50.00 | 0.25 | — | Claude Fable 5.1
+anthropic/claude-opus-5-5 | 4.00 | 20.00 | 0.20 | — | Claude Opus 5.5
+anthropic/claude-opus-5 | 5.00 | 25.00 | 0.50 | — | Claude Opus 5
+anthropic/claude-sonnet-5-5 | 2.00 | 10.00 | 0.10 | — | Claude Sonnet 5.5
+anthropic/claude-sonnet-5 | 2.00 | 10.00 | 0.20 | — | Claude Sonnet 5
+anthropic/claude-haiku-5-5 | 0.10 (≤100k) 0.50 (>100k) | 0.50 (≤100k) 2.50 (>100k) | 0.01 (≤100k) 0.05 (>100k) | — | Claude Haiku 5.5
+## OpenAI
+--TABLE
+Model | Input ($/1M) | Output ($/1M) | Cache read ($/1M) | Service tiers | Docs
+openai/gpt-6.1-sol | 2.00 (≤272k) 4.00 (>272k) | 10.00 (≤272k) 15.00 (>272k) | 95% off input | flex , priority | GPT-6.1 Sol
+openai/gpt-6-astra | 10.00 (≤272k) 20.00 (>272k) | 50.00 (≤272k) 75.00 (>272k) | 90% off input | flex , priority | OpenAI models
+openai/gpt-6-sol | 2.00 (≤272k) 4.00 (>272k) | 10.00 (≤272k) 15.00 (>272k) | 90% off input | flex , priority | OpenAI models
+openai/gpt-6-luna | 0.10 (≤272k) 0.20 (>272k) | 0.50 (≤272k) 0.75 (>272k) | 90% off input | flex , priority | OpenAI models
+openai/gpt-5.6-sol | 4.00 (≤272k) 8.00 (>272k) | 20.00 (≤272k) 30.00 (>272k) | 90% off input | flex , priority | GPT-5.6
+openai/gpt-5.6-terra | 2.00 (≤272k) 4.00 (>272k) | 12.00 (≤272k) 18.00 (>272k) | 90% off input | flex , priority | GPT-5.6
+openai/gpt-5.6-luna | 0.20 (≤272k) 0.40 (>272k) | 1.20 (≤272k) 1.80 (>272k) | 90% off input | flex , priority | GPT-5.6
+openai/gpt-5.5 | 5.00 (≤272k) 10.00 (>272k) | 30.00 (≤272k) 45.00 (>272k) | 90% off input | flex , priority | GPT-5.5
+## Google
+--TABLE
+Model | Input ($/1M) | Output ($/1M) | Cache read ($/1M) | Service tiers | Docs
+google/gemini-4-argon | 2.00 | 10.00 | 0.10 | Default only | Gemini 4 Argon
+google/gemini-3.6-flash | 1.50 | 7.50 | 0.15 | — | Gemini 3.6 Flash
+google/gemini-3.7-flash | 0.75 | 3.75 | 0.075 | — | Gemini 3.7 Flash
+google/gemini-3.8-flash | 0.75 | 3.75 | 0.075 | — | Gemini models
+## xAI
+--TABLE
+Model | Input ($/1M) | Output ($/1M) | Cache read ($/1M) | Service tiers | Docs
+xai/grok-4.7 | 2.00 (<200k) 4.00 (≥200k) | 6.00 (<200k) 12.00 (≥200k) | 0.50 (<200k) 1.00 (≥200k) | — | Grok 4.7
+xai/grok-4.6 | 2.00 (<200k) 4.00 (≥200k) | 6.00 (<200k) 12.00 (≥200k) | 0.50 (<200k) 1.00 (≥200k) | — | Grok 4.6
+xai/grok-4.5 | 2.00 (<200k) 4.00 (≥200k) | 6.00 (<200k) 12.00 (≥200k) | 0.30 (<200k) 0.60 (≥200k) | — | Grok 4.5
+## Z.AI
+--TABLE
+Model | Input ($/1M) | Output ($/1M) | Cache read ($/1M) | Service tiers | Docs
+perplexity/glm-5.3 | 1.40 | 4.40 | 0.26 | — | GLM
+perplexity/glm-5.3-flash | 0.15 | 0.50 | 0.03 | — | GLM-5.3 Flash
+## DeepSeek
+--TABLE
+Model | Input ($/1M) | Output ($/1M) | Cache read ($/1M) | Service tiers | Docs
+perplexity/deepseek-v4-pro-0813 | 1.32 | 3.96 | 0.044 | — | —
+## Moonshot AI
+--TABLE
+Model | Input ($/1M) | Output ($/1M) | Cache read ($/1M) | Service tiers | Docs
+perplexity/kimi-k3 | 3.00 | 15.00 | 0.30 | — | Kimi K3
+## NVIDIA
+--TABLE
+Model | Input ($/1M) | Output ($/1M) | Cache read ($/1M) | Service tiers | Docs
+perplexity/nemotron-3.5-super-120b-a12b | 0.20 | 0.50 | 0.04 | — | —
+## Perplexity
+--TABLE
+Model | Input ($/1M) | Output ($/1M) | Cache read ($/1M) | Service tiers | Docs
+perplexity/sonar | 0.25 | 2.50 | 0.0625 | — | —
+## ​ Service tiers
+## ​ Estimate your cost
+## ​ Using a Model
+## ​ Model Fallback
+## Model Fallback Chain
+## ​ Next Steps
+## Web Search
+## Prompt Guide
+## Output Control
+## Finance Search

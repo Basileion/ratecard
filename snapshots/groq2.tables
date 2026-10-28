@@ -1,0 +1,49 @@
+## Documentation
+## Docs
+## Getting Started
+## Core Features
+## Tools & Integrations
+## Guides
+## Service Tiers
+## Advanced
+## Production Readiness
+## Account and Console
+## Developer Resources
+## Legal
+## Getting Started
+## Core Features
+## Tools & Integrations
+## Guides
+## Service Tiers
+## Advanced
+## Production Readiness
+## Account and Console
+## Developer Resources
+## Legal
+## Supported Models
+## Featured Models
+## OpenAI GPT-OSS 120B
+## Production Models
+--TABLE
+MODEL ID | SPEED (T/SEC) | PRICE PER 1M TOKENS | RATE LIMITS (DEVELOPER PLAN) | CONTEXT WINDOW (TOKENS) | MAX COMPLETION TOKENS | MAX FILE SIZE
+Llama 3.1 8B Enterprise llama-3.1-8b-instant | 560 | Contact Sales | Contact Sales | 131,072 | 131,072 | -
+Llama 3.3 70B Enterprise llama-3.3-70b-versatile | 280 | Contact Sales | Contact Sales | 131,072 | 32,768 | -
+GPT OSS 120B openai/gpt-oss-120b | 500 | $0.15 input $0.60 output | 250K TPM 1K RPM | 131,072 | 65,536 | -
+GPT OSS 20B openai/gpt-oss-20b | 1000 | $0.075 input $0.30 output | 250K TPM 1K RPM | 131,072 | 65,536 | -
+Whisper whisper-large-v3 | - | $0.111 per hour | 200K ASH 300 RPM | - | - | 100 MB
+Whisper Large V3 Turbo whisper-large-v3-turbo | - | $0.04 per hour | 400K ASH 400 RPM | - | - | 100 MB
+## Preview Models
+--TABLE
+MODEL ID | SPEED (T/SEC) | PRICE PER 1M TOKENS | RATE LIMITS (DEVELOPER PLAN) | CONTEXT WINDOW (TOKENS) | MAX COMPLETION TOKENS | MAX FILE SIZE
+Canopy Labs Orpheus Arabic Saudi canopylabs/orpheus-arabic-saudi | - | $40.00 per 1M characters | 50K TPM 250 RPM | 4,000 | 50,000 | -
+Canopy Labs Orpheus V1 English canopylabs/orpheus-v1-english | - | $22.00 per 1M characters | 50K TPM 250 RPM | 4,000 | 50,000 | -
+Llama Prompt Guard 2 22M meta-llama/llama-prompt-guard-2-22m | - | $0.03 input $0.03 output | 30K TPM 100 RPM | 512 | 512 | -
+Prompt Guard 2 86M meta-llama/llama-prompt-guard-2-86m | - | $0.04 input $0.04 output | 30K TPM 100 RPM | 512 | 512 | -
+Muse Spark Open Enterprise meta-models/muse-spark-open | 350 | Contact Sales | Contact Sales | 131,072 | 131,072 | -
+MiniMax M2.7 Enterprise minimaxai/minimax-m2.7 | 260 | Contact Sales | Contact Sales | 196,608 | 131,072 | -
+Safety GPT OSS 20B openai/gpt-oss-safeguard-20b | 1000 | $0.075 input $0.30 output | 150K TPM 1K RPM | 131,072 | 65,536 | -
+Qwen/Qwen3.8-27B qwen/qwen3.8-27b | 450 | $0.80 input $4.00 output | 250K TPM 1K RPM | 131,072 | 16,384 | 20 MB
+## Deprecated Models
+## Get All Available Models
+## Was this page helpful?
+## On this page

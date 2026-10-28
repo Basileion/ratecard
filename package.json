@@ -1,0 +1,13 @@
+{
+ "name": "ratecard",
+ "private": true,
+ "type": "module",
+ "scripts": {
+  "check": "CHROME_BIN=${CHROME_BIN:-/usr/bin/google-chrome} node scripts/check.mjs",
+  "baseline": "CHROME_BIN=${CHROME_BIN:-/usr/bin/google-chrome} node scripts/check.mjs --baseline",
+  "visuals": "node scripts/visuals.mjs",
+  "build": "node scripts/build.mjs",
+  "build:prod": "SITE_URL=${SITE_URL:-https://ratecardai.pages.dev} node scripts/build.mjs",
+  "preview": "node scripts/build.mjs && python3 -m http.server 8787 -d dist"
+ }
+}

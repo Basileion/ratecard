@@ -1,0 +1,572 @@
+## Select your cookie preferences
+## Customize cookie preferences
+## Essential
+## Performance
+## Functional
+## Advertising
+## Your privacy choices
+## Unable to save cookie preferences
+## Amazon Bedrock pricing
+## Model Pricing
+## AI21 Labs
+## Amazon Nova
+## Pricing for Understanding Models
+## Global Cross-region Inference
+## Geo Cross-region inference and in-region
+## Built-In-Tools
+## Pricing for Creative Content Generation models
+## Pricing for Speech Understanding and Generation Models
+## On-Demand pricing for speech to speech foundation models
+## Pricing for Embedding models
+## Amazon Titan
+## Anthropic
+## Reserved Tier Pricing
+## Cohere
+--TABLE
+Cohere models | Price per 1,000 queries**
+Rerank 3.5 | $2.00
+** You are charged for number of queries where a query can contain up to 100 document chunks. If the query contains more than 100 document chunks, it is counted as multiple queries. For example, if a request contains 350 documents, it will be treated as 4 queries. Please note that each document can only contain upto 500 tokens (inclusive of the query and document’s total tokens), and if the token length is higher than 512 tokens, it is broken down into multiple documents.
+--TABLE
+Cohere models | Price per hour per model with no commitment | Price per hour per model unit for 1-month commitment | Price per hour per model unit for 6-month commitment
+Cohere Command | $49.50 | $39.60 | $23.77
+Cohere Command - Light | $8.56 | $6.85 | $4.11
+Embed 3 English | $7.12 | $6.76 | $6.41
+Embed 3 Multilingual | $7.12 | $6.76 | $6.41
+## DeepSeek
+--TABLE
+DeepSeek models | Price per 1M input tokens | Price per 1M output tokens
+DeepSeek v3.2 | $ 0.62 | $ 1.85
+--TABLE
+DeepSeek models | Price per 1M input tokens | Price per 1M output tokens
+DeepSeek v3.2 | $ 0.74 | $ 2.22
+--TABLE
+DeepSeek models | Price per 1M input tokens | Price per 1M output tokens
+DeepSeek v3.1 | $ 0.5974 | $ 1.7304
+DeepSeek v3.2 | $ 0.6386 | $ 1.9055
+--TABLE
+DeepSeek models | Price per 1M input tokens | Price per 1M output tokens
+DeepSeek v3.1 | $ 1.0455 | $ 3.0282
+--TABLE
+DeepSeek models | Price per 1M input tokens | Price per 1M output tokens
+DeepSeek v3.1 | $ 0.2987 | $ 0.8652
+## Google
+--TABLE
+Google models | Price per 1M input tokens | Price per 1M output tokens
+Gemma 4 31B | $0.14 | $0.40
+Gemma 4 26B A4B | $0.13 | $0.40
+Gemma 4 E2B | $0.04 | $ 0.08
+Gemma 3 4B | $ 0.04 | $ 0.08
+Gemma 3 12B | $ 0.09 | $ 0.29
+Gemma 3 27B | $ 0.23 | $ 0.38
+--TABLE
+Google models | Price per 1M input tokens | Price per 1M output tokens
+Gemma 4 31B | $ 0.17 | $ 0.48
+Gemma 4 26B A4B | $ 0.16 | $ 0.48
+Gemma 4 E2B | $ 0.05 | $ 0.10
+--TABLE
+Google models | Price per 1M input tokens | Price per 1M output tokens
+Gemma 3 4B | $ 0.05 | $ 0.09
+Gemma 3 12B | $ 0.11 | $ 0.34
+Gemma 3 27B | $ 0.27 | $ 0.45
+--TABLE
+Google models | Price per 1M input tokens | Price per 1M output tokens
+Gemma 3 4B | $ 0.05 | $ 0.10
+Gemma 3 12B | $ 0.11 | $ 0.35
+Gemma 3 27B | $ 0.28 | $ 0.46
+--TABLE
+Google models | Price per 1M input tokens | Price per 1M output tokens
+Gemma 3 4B | $ 0.06 | $ 0.12
+Gemma 3 12B | $ 0.14 | $ 0.45
+Gemma 3 27B | $ 0.36 | $ 0.59
+--TABLE
+Google models | Price per 1M input tokens | Price per 1M output tokens
+Gemma 3 4B | $ 0.0412 | $ 0.0824
+Gemma 3 12B | $ 0.0927 | $ 0.2987
+Gemma 3 27B | $ 0.2369 | $ 0.3914
+## Luma AI
+## Meta
+--TABLE
+Meta models | Price per 1M input tokens | Price per 1M output tokens
+Llama 2 Chat (13B) | $0.75 | $1.00
+Llama 2 Chat (70B) | $1.95 | $2.56
+--TABLE
+Meta models | Price to train 1M tokens | Price to store each custom model* per month | Price to infer from a custom model for 1 model unit per hour (with no-commit Provisioned Throughput pricing)
+Llama 2 Pretrained (13B) | $1.49 | $1.95 | $23.50
+Llama 2 Pretrained (70B) | $7.99 | $1.95 | $23.50
+--TABLE
+Meta models | Price per hour per model unit for 1-month commitment | Price per hour per model unit for 6-month commitment
+Llama 2 Pretrained and Chat (13B) | $21.18 | $13.08
+Llama 2 Pretrained (70B) | $21.18 | $13.08
+## MiniMax AI
+--TABLE
+Minimax models | Price per 1M input tokens | Price per 1M output tokens
+Minimax M2 | $ 0.30 | $ 1.20
+Minimax M2.1 | $ 0.30 | $ 1.20
+MiniMax M2.5 | $ 0.30 | $ 1.20
+--TABLE
+Minimax models | Price per 1M input tokens | Price per 1M output tokens
+Minimax M2 | $ 0.35 | $ 1.41
+Minimax M2.1 | $ 0.36 | $ 1.44
+Minimax M2.5 | $ 0.36 | $ 1.44
+--TABLE
+Minimax models | Price per 1M input tokens | Price per 1M output tokens
+Minimax M2 | $ 0.36 | $ 1.45
+Minimax M2.1 | $ 0.36 | $ 1.44
+Minimax M2.5 | $ 0.36 | $ 1.44
+--TABLE
+Minimax models | Price per 1M input tokens | Price per 1M output tokens
+Minimax M2 | $ 0.47 | $ 1.86
+Minimax M2.1 | $ 0.47 | $ 1.86
+Minimax M2.5 | $ 0.47 | $ 1.86
+--TABLE
+Minimax models | Price per 1M input tokens | Price per 1M output tokens
+Minimax M2.1 | $ 0.36 | $ 1.44
+Minimax M2.5 | $ 0.36 | $ 1.44
+--TABLE
+Minimax models | Price per 1M input tokens | Price per 1M output tokens
+Minimax M2 | $ 0.3090 | $ 1.2360
+Minimax M2.1 | $ 0.3090 | $ 1.2360
+Minimax M2.5 | $ 0.31 | $ 1.24
+## Mistral AI
+--TABLE
+Mistral models | Price per 1M input tokens | Price per 1M output tokens
+Devstral 2 123B | $ 0.40 | $ 2.00
+Magistral Small 1.2 | $ 0.50 | $ 1.50
+Voxtral Mini 1.0 | $ 0.04 | $ 0.04
+Voxtral Small 1.0 | $ 0.10 | $ 0.30
+Ministral 3B 3.0 | $ 0.10 | $ 0.10
+Ministral 8B 3.0 | $ 0.15 | $ 0.15
+Ministral 14B 3.0 | $ 0.20 | $ 0.20
+Mistral Large 3 | $ 0.50 | $ 1.50
+--TABLE
+Mistral models | Price per 1M input tokens | Price per 1M output tokens
+Devstral 2 123B | $ 0.48 | $ 2.40
+Magistral Small 1.2 | $ 0.59 | $ 1.76
+Voxtral Mini 1.0 | $ 0.05 | $ 0.05
+Voxtral Small 1.0 | $ 0.12 | $ 0.35
+Ministral 3B 3.0 | $ 0.12 | $ 0.12
+Ministral 8B 3.0 | $ 0.18 | $ 0.18
+Ministral 14B 3.0 | $ 0.24 | $ 0.24
+Mistral Large 3 | $ 0.59 | $ 1.76
+--TABLE
+Mistral models | Price per 1M input tokens | Price per 1M output tokens
+Devstral 2 123B | $ 0.48 | $ 2.40
+Magistral Small 1.2 | $ 0.61 | $ 1.82
+Voxtral Mini 1.0 | $ 0.05 | $ 0.05
+Voxtral Small 1.0 | $ 0.12 | $ 0.36
+Ministral 3B 3.0 | $ 0.12 | $ 0.12
+Ministral 8B 3.0 | $ 0.18 | $ 0.18
+Ministral 14B 3.0 | $ 0.24 | $ 0.24
+Mistral Large 3 | $ 0.61 | $ 1.82
+--TABLE
+Mistral models | Price per 1M input tokens | Price per 1M output tokens
+Devstral 2 123B | $ 0.48 | $ 2.40
+Magistral Small 1.2 | $ 0.59 | $ 1.76
+Voxtral Mini 1.0 | $ 0.05 | $ 0.05
+Voxtral Small 1.0 | $ 0.12 | $ 0.35
+Ministral 3B 3.0 | $ 0.12 | $ 0.12
+Ministral 8B 3.0 | $ 0.18 | $ 0.18
+Ministral 14B 3.0 | $ 0.24 | $ 0.24
+--TABLE
+Mistral models | Price per 1M input tokens | Price per 1M output tokens
+Devstral 2 123B | $ 0.62 | $ 3.10
+Magistral Small 1.2 | $ 0.78 | $ 2.33
+Voxtral Mini 1.0 | $ 0.06 | $ 0.06
+Voxtral Small 1.0 | $ 0.16 | $ 0.47
+Ministral 3B 3.0 | $ 0.16 | $ 0.16
+Ministral 8B 3.0 | $ 0.23 | $ 0.23
+Ministral 14B 3.0 | $ 0.31 | $ 0.31
+--TABLE
+Mistral models | Price per 1M input tokens | Price per 1M output tokens
+Devstral 2 123B | $ 0.41 | $ 2.06
+Magistral Small 1.2 | $ 0.5150 | $ 1.5450
+Voxtral Mini 1.0 | $ 0.0412 | $ 0.0412
+Voxtral Small 1.0 | $ 0.1030 | $ 0.3090
+Ministral 3B 3.0 | $ 0.1030 | $ 0.1030
+Ministral 8B 3.0 | $ 0.1545 | $ 0.1545
+Ministral 14B 3.0 | $ 0.2060 | $ 0.2060
+Mistral Large 3 | $ 0.5150 | $ 1.5450
+--TABLE
+Mistral models | Price per 1M input tokens | Price per 1M output tokens
+Devstral 2 123B | $ 0.48 | $ 2.40
+## Moonshot AI
+--TABLE
+Inference option | Input | Output | Cache read | Cache write (30 min)
+Global CRIS | $3.00 | $15.00 | $0.30 | $3.75
+US CRIS | $3.30 | $16.50 | $0.33 | $4.125
+--TABLE
+Kimi models | Price per 1M input tokens | Price per 1M output tokens
+Kimi K2 Thinking | $ 0.60 | $ 2.50
+Kimi K2.5 | $ 0.60 | $ 3.00
+--TABLE
+Kimi models | Price per 1M input tokens | Price per 1M output tokens
+Kimi K2 Thinking | $ 0.71 | $ 2.94
+Kimi K2.5 | $ 0.72 | $ 3.60
+--TABLE
+Kimi models | Price per 1M input tokens | Price per 1M output tokens
+Kimi K2 Thinking | $ 0.73 | $ 3.03
+Kimi K2.5 | $ 0.72 | $ 3.60
+--TABLE
+Kimi models | Price per 1M input tokens | Price per 1M output tokens
+Kimi K2.5 | $ 0.72 | $ 3.60
+--TABLE
+Kimi models | Price per 1M input tokens | Price per 1M output tokens
+Kimi K2 Thinking | $ 0.6180 | $ 2.5750
+Kimi K2.5 | $ 0.6180 | $ 3.0900
+## NVIDIA
+--TABLE
+NVIDIA models | Price per 1M input tokens | Price per 1M output tokens
+NVIDIA Nemotron Nano 2 | $ 0.06 | $ 0.23
+NVIDIA Nemotron Nano 2 VL | $ 0.20 | $ 0.60
+NVIDIA Nemotron 3 Nano 30B A3B | $ 0.06 | $ 0.24
+NVIDIA Nemotron 3 Super 120B A12B | $ 0.15 | $ 0.65
+--TABLE
+NVIDIA models | Price per 1M input tokens | Price per 1M output tokens
+NVIDIA Nemotron Nano 2 | $ 0.072 | $ 0.276
+NVIDIA Nemotron Nano 2 VL | $ 0.240 | $ 0.720
+NVIDIA Nemotron 3 Nano 30B A3B | $ 0.072 | $ 0.288
+NVIDIA Nemotron 3 Super 120B A12B | $ 0.180 | $ 0.780
+--TABLE
+NVIDIA models | Price per 1M input tokens | Price per 1M output tokens
+NVIDIA Nemotron Nano 2 | $ 0.07 | $ 0.27
+NVIDIA Nemotron Nano 2 VL | $ 0.24 | $ 0.71
+NVIDIA Nemotron 3 Nano 30B A3B | $ 0.07 | $ 0.28
+NVIDIA Nemotron 3 Super 120B A12B | $ 0.18 | $ 0.78
+--TABLE
+NVIDIA models | Price per 1M input tokens | Price per 1M output tokens
+NVIDIA Nemotron Nano 2 | $ 0.07 | $ 0.28
+NVIDIA Nemotron Nano 2 VL | $ 0.24 | $ 0.73
+NVIDIA Nemotron 3 Nano 30B A3B | $ 0.07 | $ 0.29
+NVIDIA Nemotron 3 Super 120B A12B | $ 0.18 | $ 0.78
+--TABLE
+NVIDIA models | Price per 1M input tokens | Price per 1M output tokens
+NVIDIA Nemotron Nano 2 | $ 0.09 | $ 0.36
+NVIDIA Nemotron Nano 2 VL | $ 0.31 | $ 0.93
+NVIDIA Nemotron 3 Nano 30B A3B | $ 0.09 | $ 0.37
+NVIDIA Nemotron 3 Super 120B A12B | $ 0.23 | $ 1.01
+--TABLE
+NVIDIA models | Price per 1M input tokens | Price per 1M output tokens
+NVIDIA Nemotron Nano 2 | $ 0.0618 | $ 0.2369
+NVIDIA Nemotron Nano 2 VL | $ 0.2060 | $ 0.6180
+NVIDIA Nemotron 3 Nano 30B A3B | $ 0.0618 | $ 0.2472
+NVIDIA Nemotron 3 Super 120B A12B | $ 0.15 | $ 0.67
+--TABLE
+NVIDIA models | Price per 1M input tokens | Price per 1M output tokens
+NVIDIA Nemotron 3 Super 120B A12B | $ 0.18 | $ 0.78
+## OpenAI
+--TABLE
+OpenAI models | Price per 1M input tokens | Price per 1M output tokens
+gpt-oss-20b | $ 0.0721 | $ 0.3090
+gpt-oss-120b | $ 0.1545 | $ 0.6180
+--TABLE
+OpenAI models | Price per 1M input tokens | Price per 1M output tokens
+gpt-oss-20b | $ 0.1262 | $ 0.5408
+gpt-oss-120b | $ 0.2704 | $ 1.0815
+--TABLE
+OpenAI models | Price per 1M input tokens | Price per 1M output tokens
+gpt-oss-20b | $ 0.0361 | $ 0.1545
+gpt-oss-120b | $ 0.0773 | $ 0.3090
+--TABLE
+OpenAI models | Price per 1M input tokens | Price per 1M output tokens
+gpt-oss-20b | $ 0.0361 | $ 0.1545
+gpt-oss-120b | $ 0.0773 | $ 0.3090
+--TABLE
+OpenAI models | Price per training hours | Price per 1M input tokens | Price per 1M output tokens | Price to store each trained model per month
+gpt-oss-20b | $ 80.00 | $ 0.09 | $ 0.39 | $ 1.95
+--TABLE
+OpenAI models | Price per 1M input tokens | Price per 1M output tokens
+GPT OSS Safeguard 20B | $ 0.07 | $ 0.20
+GPT OSS Safeguard 120B | $ 0.15 | $ 0.60
+--TABLE
+OpenAI models | Price per 1M input tokens | Price per 1M output tokens
+GPT OSS Safeguard 20B | $ 0.08 | $ 0.24
+GPT OSS Safeguard 120B | $ 0.18 | $ 0.71
+--TABLE
+OpenAI models | Price per 1M input tokens | Price per 1M output tokens
+GPT OSS Safeguard 20B | $ 0.08 | $ 0.23
+GPT OSS Safeguard 120B | $ 0.18 | $ 0.70
+--TABLE
+OpenAI models | Price per 1M input tokens | Price per 1M output tokens
+GPT OSS Safeguard 20B | $ 0.11 | $ 0.31
+GPT OSS Safeguard 120B | $ 0.23 | $ 0.93
+--TABLE
+OpenAI models | Price per 1M input tokens | Price per 1M output tokens
+GPT OSS Safeguard 20B | $ 0.0721 | $ 0.2060
+GPT OSS Safeguard 120B | $ 0.1545 | $ 0.6180
+## Qwen
+--TABLE
+Qwen models | Price per 1M input tokens | Price per 1M output tokens
+Qwen3 Coder 30B A3B | $ 0.1545 | $ 0.6180
+Qwen3 32B | $ 0.1545 | $ 0.6180
+Qwen3 235B A22B 2507 | $ 0.2266 | $ 0.9064
+--TABLE
+Qwen models | Price per 1M input tokens | Price per 1M output tokens
+Qwen3 Coder 30B A3B | $ 0.2704 | $ 1.0815
+Qwen3 32B | $ 0.2704 | $ 1.0815
+Qwen3 235B A22B 2507 | $ 0.3966 | $ 1.5862
+--TABLE
+Qwen models | Price per 1M input tokens | Price per 1M output tokens
+Qwen3 Coder 30B A3B | $ 0.0773 | $ 0.3090
+Qwen3 32B | $ 0.0773 | $ 0.3090
+Qwen3 235B A22B 2507 | $ 0.1133 | $ 0.4532
+--TABLE
+Qwen models | Price per 1M input tokens | Price per 1M output tokens
+Qwen3 Coder 30B A3B | $ 0.0773 | $ 0.3090
+Qwen3 32B | $ 0.0773 | $ 0.3090
+Qwen3 235B A22B 2507 | $ 0.1133 | $ 0.4532
+--TABLE
+Qwen models | Price per training hours | Price per 1M input tokens | Price per 1M output tokens | Price to store each trained model per month
+Qwen3 32B | $ 80.00 | $ 0.20 | $ 0.78 | $ 1.95
+--TABLE
+Qwen models | Price per 1M input tokens | Price per 1M output tokens
+Qwen3 Next 80B A3B | $ 0.15 | $ 1.20
+Qwen3 VL 235B A22B | $ 0.53 | $ 2.66
+Qwen3 Coder Next | $ 0.50 | $ 1.20
+--TABLE
+Qwen models | Price per 1M input tokens | Price per 1M output tokens
+Qwen3 Next 80B A3B | $ 0.18 | $ 1.41
+Qwen3 VL 235B A22B | $ 0.62 | $ 3.13
+Qwen3 Coder Next | $ 0.60 | $ 1.44
+--TABLE
+Qwen models | Price per 1M input tokens | Price per 1M output tokens
+Qwen3 Next 80B A3B | $ 0.18 | $ 1.45
+Qwen3 VL 235B A22B | $ 0.64 | $ 3.22
+Qwen3 Coder Next | $ 0.60 | $ 1.44
+--TABLE
+Qwen models | Price per 1M input tokens | Price per 1M output tokens
+Qwen3 Next 80B A3B | $ 0.23 | $ 1.86
+Qwen3 VL 235B A22B | $ 0.82 | $ 4.12
+Qwen3 Coder Next | $ 0.78 | $ 1.86
+--TABLE
+Qwen models | Price per 1M input tokens | Price per 1M output tokens
+Qwen3 Coder Next | $ 0.60 | $ 1.44
+--TABLE
+Qwen models | Price per 1M input tokens | Price per 1M output tokens
+Qwen3 Next 80B A3B | $ 0.1545 | $ 1.2360
+Qwen3 VL 235B A22B | $ 0.5459 | $ 2.7398
+Qwen3 Coder Next | $ 0.5150 | $ 1.2360
+## Stability AI
+--TABLE
+Stability AI Image Services | Price per generation for each model | 
+Stable Image Remove Background | $0.07 | 
+Stable Image Erase Object | $0.07 | 
+Stable Image Control Structure | $0.07 | 
+Stable Image Control Sketch | $0.07 | 
+Stable Image Style Guide | $0.07 | 
+Stable Image Search and Replace | $0.07 | 
+Stable Image Inpaint | $0.07 | 
+Stable Image Search and Recolor | $0.07 | 
+Stable Image Style Transfer | $0.08 | 
+Stable Image Conservative Upscale | $0.40 | 
+Stable Image Creative upscale | $0.60 | 
+Stable Image Fast Upscale | $0.03 | 
+Stable Image Outpaint | $0.06 | 
+## TwelveLabs
+## Writer
+--TABLE
+Writer models | Price per 1M input tokens | Price per 1M output tokens
+Palmyra X4 | $2.50 | $10.00
+Palmyra X5 | $0.60 | $6.00
+Palmyra Vision 7B | $0.15 | $0.60
+## xAI
+## Z AI
+--TABLE
+Inference option | Price per 1M input tokens | Price per 1M output tokens | Cache read | Cache write - 30m
+Global CRIS | $ 1.68 | $ 5.28 | $ 0.312 | $ 2.10
+US CRIS | $ 1.848 | $ 5.808 | $ 0.3432 | $ 2.31
+--TABLE
+Z AI models | Price per 1M input tokens | Price per 1M output tokens
+GLM 5 | $ 1.00 | $ 3.20
+--TABLE
+Z AI models | Price per 1M input tokens | Price per 1M output tokens
+GLM 5 | $ 1.20 | $ 3.84
+--TABLE
+Z AI models | Price per 1M input tokens | Price per 1M output tokens
+GLM 5 | $ 1.55 | $ 4.96
+--TABLE
+Z AI models | Price per 1M input tokens | Price per 1M output tokens
+GLM 5 | $ 1.03 | $ 3.30
+--TABLE
+Z AI models | Price per 1M input tokens | Price per 1M output tokens
+GLM 4.7 | $ 0.60 | $ 2.20
+--TABLE
+Z AI models | Price per 1M input tokens | Price per 1M output tokens
+GLM 4.7 | $ 0.72 | $ 2.64
+--TABLE
+Z AI models | Price per 1M input tokens | Price per 1M output tokens
+GLM 4.7 | $ 0.6180 | $ 2.2660
+--TABLE
+Z AI models | Price per 1M input tokens | Price per 1M output tokens
+GLM 4.7 Flash | $ 0.07 | $ 0.40
+GLM 5 | $ 1.00 | $ 3.20
+--TABLE
+Z AI models | Price per 1M input tokens | Price per 1M output tokens
+GLM 4.7 Flash | $ 0.08 | $ 0.48
+--TABLE
+Z AI models | Price per 1M input tokens | Price per 1M output tokens
+GLM 5 | $ 1.20 | $ 3.84
+--TABLE
+Z AI models | Price per 1M input tokens | Price per 1M output tokens
+GLM 4.7 Flash | $ 0.11 | $ 0.62
+GLM 5 | $ 1.55 | $ 4.96
+--TABLE
+Z AI models | Price per 1M input tokens | Price per 1M output tokens
+GLM 4.7 Flash | $ 0.0721 | $ 0.4120
+GLM 5 | $ 1.03 | $ 3.30
+## Custom Model Import
+--TABLE
+Custom Model Unit version | v1.0
+Price per Custom Model Unit per min* | $0.05718
+Monthly storage cost per Custom Model Unit | $1.95
+--TABLE
+Custom Model Unit version | v1.0
+Price per Custom Model Unit per min* | $0.07144
+Monthly storage cost per Custom Model Unit | $1.95
+--TABLE
+Custom Model Unit version | v1.0
+Price per Custom Model Unit per min* | $0.05718
+Monthly storage cost per Custom Model Unit | $1.95
+--TABLE
+Custom Model Unit version | v1.0
+Price per Custom Model Unit per min* | $0.07144
+Monthly storage cost per Custom Model Unit | $1.95
+--TABLE
+Custom Model Unit version | v1.0
+Price per Custom Model Unit per min* | $0.05718
+Monthly storage cost per Custom Model Unit | $1.95
+--TABLE
+Custom Model Unit version | v1.0
+Price per Custom Model Unit per min* | $0.07144
+Monthly storage cost per Custom Model Unit | $1.95
+--TABLE
+Custom Model Unit version | v1.0
+Price per Custom Model Unit per min* | $0.05718
+Monthly storage cost per Custom Model Unit | $1.95
+--TABLE
+Custom Model Unit version | v1.0
+Price per Custom Model Unit per min* | $0.07144
+Monthly storage cost per Custom Model Unit | $1.95
+--TABLE
+Custom Model Unit version | v1.0
+Price per Custom Model Unit per min* | $0.05718
+Monthly storage cost per Custom Model Unit | $1.95
+--TABLE
+Custom Model Unit version | v1.0
+Price per Custom Model Unit per min* | $0.07144
+Monthly storage cost per Custom Model Unit | $1.95
+--TABLE
+Custom Model Unit version | v1.0
+Price per Custom Model Unit per min* | $0.05718
+Monthly storage cost per Custom Model Unit | $1.95
+--TABLE
+Custom Model Unit version | v1.0
+Price per Custom Model Unit per min* | $0.07144
+Monthly storage cost per Custom Model Unit | $1.95
+--TABLE
+Custom Model Unit version | v2.0
+Price per Custom Model Unit per min* | $0.1433
+Monthly storage cost per Custom Model Unit | $1.95
+--TABLE
+Feature | Description | Price
+Index Storage | Managed search index with native connectors to sync data from S3, SharePoint, Confluence, and more. | $5.00 per GB of raw data / month
+Multimodal Document Parsing (managed parser) | Parses text, PDFs, images, tables, audio, and video into searchable content. | $0
+Embeddings Generation (managed model) | Converts your content into searchable vectors using the built-in model. | $0
+Standard Retrieval (Retrieve API) | Hybrid search combining semantic and keyword search over your indexed content. | $1.00 per 1,000 API calls
+Re-ranking (managed reranker)* | Re-orders retrieved passages by relevance. | $0
+Agentic Retrieval — Managed LLM planning** | Multi-hop retrieval using the built-in LLM for query planning. | $4.00 per 1,000 Agentic Retrieve API calls + $1.00 per 1,000 underlying Retrieve API calls
+## Amazon Bedrock Guardrails
+--TABLE
+Bedrock Guardrails safeguard/filter* | Price
+Content filters for both standard tier and classic tier (text content) | $0.15 per 1,000 text units
+Content filters (image content) | $0.00075 per image processed
+Denied topics for both standard tier and classic tier | $0.15 per 1,000 text units
+Sensitive information filters | $0.10 per 1,000 text units
+Sensitive information filters (regular expression) | Free
+Word filters | Free
+Contextual grounding checks** | $0.10 per 1,000 text units
+Automated Reasoning checks | $0.17 per 1,000 text units per Automated Reasoning policy
+--TABLE
+Bedrock Guardrails safeguard/filter* | Price
+Content filters (text content only) | $0.07 per 1,000 text units
+Prompt attack (text content only) *** | $0.08 per 1,000 text units
+Sensitive information filters | $0.10 per 1,000 text units
+## Model Evaluation
+--TABLE
+Model | Price per 1,000 input tokens | Price per 1,000 output tokens | Price per human task | 
+Model selected for evaluation | Based on model selected | Based on model selected | $0.21 | 
+## Data Automation
+--TABLE
+Price Point | Pricing Dimension | Pricing Plan
+Intelligent Prompt Routing | $1 per 1,000 requests | On-Demand
+## Prompt Optimization for Amazon Bedrock
+## Web Search
+## Pricing examples
+## AI21 labs
+## Amazon
+## On-Demand pricing
+## Customization (fine-tuning and continued pretraining) pricing
+## Provisioned Throughput pricing
+## Amazon Bedrock Guardrails
+## Amazon Bedrock Knowledge Bases
+## Pricing Examples
+--TABLE
+Line Item | Calculation | Cost
+Index Storage | 50 GB × $5.00 | $250.00
+Multimodal Document Parsing (managed parser) | Included | $0
+Embeddings Generation (managed model) | Included | $0
+Standard Retrieval | 100,000 ÷ 1,000 × $1.00 | $100.00
+Re-ranking (managed reranker) | Included | $0
+Monthly Total |  | $350.00
+--TABLE
+Line Item | Calculation | Cost
+Index Storage | 50 GB × $5.00 | $250.00
+Multimodal Document Parsing (managed parser) | Included | $0
+Embeddings Generation (managed model) | Included | $0
+Agentic Retrieve API calls | 100,000 ÷ 1,000 × $4.00 | $400.00
+Underlying Retrieve API calls | (100,000 × 2) ÷ 1,000 × $1.00 | $200.00
+Re-ranking (managed reranker) | Included | $0
+Monthly Total |  | $850.00
+## Anthropic
+## On-Demand pricing
+## Provisioned Throughput pricing
+## Cohere
+## On-Demand pricing
+## Customization (fine-tuning) pricing
+## Custom Model Import
+## Data Automation
+## DeepSeek
+## Flows
+## Meta
+## On-Demand pricing
+## Customization (fine-tuning) pricing
+## Provisioned Throughput pricing
+## Mistral AI
+## On-Demand pricing
+## Model evaluation
+## Model evaluation example 1:
+--TABLE
+Item | Number of input tokens | Price per 1000 input tokens | Cost of input | Number of output tokens | Price per 1000 output tokens | Cost of output | Number of human tasks | Price per human task | Cost of human tasks | Total
+Claude Instant Inference | 5000 | $0.0008 | $0.004 | 15000 | $0.0024 | $0.036 |  |  |  | $0.04
+Claude 2.1 Inference | 5000 | $0.008 | $0.04 | 20000 | $0.024 | $0.48 |  |  |  | $0.52
+Human Tasks |  |  |  |  |  |  | 50 | $0.21 | $10.50 | $10.50
+Total |  |  |  |  |  |  |  |  |  | $11.06
+## Model evaluation example 2:
+--TABLE
+Item | Number of input tokens | Price per 1000 input tokens | Cost of input | Number of output tokens | Price per 1000 output tokens | Cost of output | Number of human tasks | Price per human task | Cost of human tasks | Total
+Claude Instant Inference | 5000 | $0.0008 | $0.0040 | 15000 | $0.0024 | $0.036 |  |  |  | $0.04
+Claude 2.1 Inference | 5000 | $0.008 | $0.0400 | 20000 | $0.024 | $0.48 |  |  |  | $0.52
+Human Tasks |  |  |  |  |  |  | 100 | $0.21 | $21.00 | $21.00
+Total |  |  |  |  |  |  |  |  |  | $21.56
+## Prompt Optimization
+## Stability AI
+## On-Demand pricing
+## Provisioned Throughput pricing
+## TwelveLabs
+## Writer
+## Next steps
+## Explore common Amazon Bedrock use cases with a guided workshop
+## View demos of Amazon Bedrock capabilities
+## Learn
+## Resources
+## Developers
+## Help
