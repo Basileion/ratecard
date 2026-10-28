@@ -3,11 +3,11 @@ import fs from 'node:fs';import path from 'node:path';
 const root=path.resolve(path.dirname(new URL(import.meta.url).pathname),'..');const R=p=>path.join(root,p);const D=R('dist');
 const SITE=(process.env.SITE_URL||'https://ratecardai.pages.dev').replace(/\/$/,'');
 // ---- Go-live constants (replace '#pending' when Kit / checkout exist)
-const FORM_ACTION='#pending';            // Kit form action URL, e.g. https://app.kit.com/forms/XXXX/subscriptions
-const CHECKOUT_PRO_MONTHLY='#pending';   // $9/mo
-const CHECKOUT_PRO_ANNUAL='#pending';    // $90/yr
-const CHECKOUT_SPONSOR='#pending';       // founding sponsor slot
-const CONTACT='#pending';                // mailto: once an inbox exists
+const FORM_ACTION='https://app.kit.com/forms/10107382/subscriptions';            // Kit form action URL, e.g. https://app.kit.com/forms/XXXX/subscriptions
+const CHECKOUT_PRO_MONTHLY='https://o11y-watch.kit.com/products/ratecard-pro';   // $9/mo
+const CHECKOUT_PRO_ANNUAL='https://o11y-watch.kit.com/products/ratecard-pro';    // $90/yr
+const CHECKOUT_SPONSOR='https://o11y-watch.kit.com/products/ratecard-sponsor-slot-founding';       // founding sponsor slot
+const CONTACT='mailto:basileion.ops@gmail.com';                // mailto: once an inbox exists
 const NAME='Ratecard';
 // SEO head slot: tags pasted into seo/head-extra.html (HTML comments stripped) are injected into every page's <head>.
 const HEADSLOT='<!-- seo-meta-slot: edit seo/head-extra.html -->'+(fs.existsSync(R('seo/head-extra.html'))?fs.readFileSync(R('seo/head-extra.html'),'utf8'):'').replace(/<!--[\s\S]*?-->/g,'').trim();
