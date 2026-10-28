@@ -2,11 +2,22 @@
 
 > Published AI API list prices (USD per 1M tokens), one row per model and provider, each with a source URL and check date. 85 rows, 78 verified, 14 providers. Last checked 2026-10-26.
 
-## Data
+## Methodology
+Prices come only from each provider's own pricing page, docs, or public pricing API. Unverified means we could not read a number on the check date — the cell stays blank. We never invent rates. Details: https://ratecardai.pages.dev/methodology.html
+
+## Data (CC BY 4.0 — please attribute "Ratecard" + link https://ratecardai.pages.dev/)
 - [All models (JSON)](https://ratecardai.pages.dev/api/models.json)
+- [All models (CSV)](https://ratecardai.pages.dev/api/models.csv)
 - [Providers (JSON)](https://ratecardai.pages.dev/api/providers.json)
 - [Change log (JSON)](https://ratecardai.pages.dev/api/changes.json)
+- [Change log (CSV)](https://ratecardai.pages.dev/api/changes.csv)
 - [OpenAPI](https://ratecardai.pages.dev/openapi.json)
+- [Full dump](https://ratecardai.pages.dev/llms-full.txt)
+
+## Dataset summary
+- Units: USD per 1M tokens (unless unit/other says otherwise)
+- Fields: input, output, cached, batch_input, batch_output, context, status, source, checked
+- Cheapest verified text (in+out): OpenRouter Qwen3.7 Flash (Qwen) ($0.030 / $0.130)
 
 ## Cheapest verified text models (input+output per 1M)
 - OpenRouter Qwen3.7 Flash (Qwen): in $0.030, out $0.130 (source https://openrouter.ai/qwen/qwen3.7-flash, 2026-10-26)
@@ -23,4 +34,5 @@
 ## Pages
 - [Calculator](https://ratecardai.pages.dev/calculator.html)
 - [Compare](https://ratecardai.pages.dev/compare.html)
+- [Developers / cite](https://ratecardai.pages.dev/developers.html)
 - [Methodology](https://ratecardai.pages.dev/methodology.html)

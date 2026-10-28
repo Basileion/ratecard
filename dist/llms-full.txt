@@ -1,0 +1,1031 @@
+# Ratecard — full rate card
+
+85 models, 78 verified, 14 providers. Last checked 2026-10-26. License CC BY 4.0.
+
+## Providers
+### OpenAI
+- id: openai
+- summary: Batch / Flex tier at 50%. Fast mode 2x. Fine-tuning closed to new users.
+- source: https://platform.openai.com/docs/pricing
+- checked: 2026-10-26
+
+### Anthropic
+- id: anthropic
+- summary: Batch API 50% off. Cache hits 0.025x–0.1x input depending on model.
+- source: https://docs.anthropic.com/en/docs/about-claude/pricing
+- checked: 2026-10-26
+
+### Google
+- id: google
+- summary: Free tier on many Flash models (data may be used to improve products). Batch 50% off.
+- source: https://ai.google.dev/gemini-api/docs/pricing
+- checked: 2026-10-26
+
+### xAI
+- id: xai
+- summary: 
+- source: https://docs.x.ai/docs/models
+- checked: 2026-10-26
+
+### DeepSeek
+- id: deepseek
+- summary: Off-peak pricing ~50% of peak.
+- source: https://api-docs.deepseek.com/quick_start/pricing
+- checked: 2026-10-26
+
+### Together
+- id: together
+- summary: 
+- source: https://www.together.ai/pricing
+- checked: 2026-10-26
+
+### Fireworks
+- id: fireworks
+- summary: 
+- source: https://docs.fireworks.ai/serverless/pricing
+- checked: 2026-10-26
+
+### Groq
+- id: groq
+- summary: Developer plan rate limits published per model.
+- source: https://console.groq.com/docs/models
+- checked: 2026-10-26
+
+### Perplexity
+- id: perplexity
+- summary: Search tool calls billed per 1K invocations.
+- source: https://docs.perplexity.ai/getting-started/models
+- checked: 2026-10-26
+
+### Cohere
+- id: cohere
+- summary: 
+- source: https://cohere.com/pricing
+- checked: 2026-10-26
+
+### Azure OpenAI
+- id: azure-openai
+- summary: Global vs Data Zone deployments priced separately.
+- source: https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/
+- checked: 2026-10-26
+
+### AWS Bedrock
+- id: aws-bedrock
+- summary: Prices vary by region and cross-region inference type.
+- source: https://aws.amazon.com/bedrock/pricing/
+- checked: 2026-10-26
+
+### Mistral
+- id: mistral
+- summary: 
+- source: https://mistral.ai/pricing#api-pricing
+- checked: 2026-10-26
+
+### OpenRouter
+- id: openrouter
+- summary: Reseller / gateway; list price per model.
+- source: https://openrouter.ai/meta-llama/llama-4-maverick
+- checked: 2026-10-26
+
+## Models
+### OpenAI gpt-6-astra
+- id: openai-gpt-6-astra
+- kind: text
+- input/output/cached: 10 / 50 / 1
+- batch in/out: 5 / 25
+- context: null
+- other: 
+- status: verified
+- source: https://platform.openai.com/docs/pricing (2026-10-26)
+- notes: Flex/Batch tier shown as batch. Fast mode 2x, Ultrafast 6x standard. Data-residency endpoints +10%.
+
+### OpenAI gpt-6.1-sol
+- id: openai-gpt-6-1-sol
+- kind: text
+- input/output/cached: 2 / 10 / 0.1
+- batch in/out: 1 / 5
+- context: null
+- other: 
+- status: verified
+- source: https://platform.openai.com/docs/pricing (2026-10-26)
+- notes: Flex/Batch tier shown as batch. Fast mode 2x, Ultrafast 6x standard. Data-residency endpoints +10%.
+
+### OpenAI gpt-6-luna
+- id: openai-gpt-6-luna
+- kind: text
+- input/output/cached: 0.1 / 0.5 / 0.01
+- batch in/out: 0.05 / 0.25
+- context: null
+- other: 
+- status: verified
+- source: https://platform.openai.com/docs/pricing (2026-10-26)
+- notes: Flex/Batch tier shown as batch. Fast mode 2x, Ultrafast 6x standard. Data-residency endpoints +10%.
+
+### OpenAI gpt-5.6-sol
+- id: openai-gpt-5-6-sol
+- kind: text
+- input/output/cached: 4 / 20 / 0.4
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://platform.openai.com/docs/pricing (2026-10-26)
+- notes: Listed under Cyber models. Promotional pricing available at least through 2026-11-21.
+
+### OpenAI gpt-5.3-codex
+- id: openai-gpt-5-3-codex
+- kind: text
+- input/output/cached: 1.75 / 14 / 0.175
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://platform.openai.com/docs/pricing (2026-10-26)
+- notes: Codex. Fast tier $3.50 / $28.
+
+### OpenAI chat-latest
+- id: openai-chat-latest
+- kind: text
+- input/output/cached: 5 / 30 / 0.5
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://platform.openai.com/docs/pricing (2026-10-26)
+- notes: 
+
+### OpenAI gpt-realtime-2.1 (audio)
+- id: openai-gpt-realtime-2-1-audio
+- kind: audio
+- input/output/cached: 32 / 64 / 0.4
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://platform.openai.com/docs/pricing (2026-10-26)
+- notes: Text tokens $4 / $24.
+
+### OpenAI gpt-realtime-2.1-mini (audio)
+- id: openai-gpt-realtime-2-1-mini-audio
+- kind: audio
+- input/output/cached: 10 / 20 / 0.3
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://platform.openai.com/docs/pricing (2026-10-26)
+- notes: Text tokens $0.60 / $2.40.
+
+### OpenAI gpt-transcribe
+- id: openai-gpt-transcribe
+- kind: audio
+- input/output/cached: null / null / null
+- batch in/out: null / null
+- context: null
+- other: $0.0045 / min
+- status: verified
+- source: https://platform.openai.com/docs/pricing (2026-10-26)
+- notes: 
+
+### OpenAI gpt-4o-mini-transcribe
+- id: openai-gpt-4o-mini-transcribe
+- kind: audio
+- input/output/cached: 1.25 / 5 / null
+- batch in/out: null / null
+- context: null
+- other: ≈$0.003 / min
+- status: verified
+- source: https://platform.openai.com/docs/pricing (2026-10-26)
+- notes: 
+
+### OpenAI gpt-image-2
+- id: openai-gpt-image-2
+- kind: image
+- input/output/cached: 4 / 15 / 1
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://platform.openai.com/docs/pricing (2026-10-26)
+- notes: Image tokens; text input $2.50.
+
+### OpenAI gpt-image-2.5-sunburst
+- id: openai-gpt-image-2-5-sunburst
+- kind: image
+- input/output/cached: 8 / 30 / 2
+- batch in/out: 4 / 15
+- context: null
+- other: 
+- status: verified
+- source: https://platform.openai.com/docs/pricing (2026-10-26)
+- notes: Image tokens; text input $5.
+
+### Anthropic Claude Fable 5.1
+- id: anthropic-claude-fable-5-1
+- kind: text
+- input/output/cached: 10 / 50 / 0.25
+- batch in/out: 5 / 25
+- context: 1000000
+- other: 
+- status: verified
+- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-10-26)
+- notes: Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x. Context per models overview.
+
+### Anthropic Claude Opus 5.5
+- id: anthropic-claude-opus-5-5
+- kind: text
+- input/output/cached: 4 / 20 / 0.2
+- batch in/out: 2 / 10
+- context: 1000000
+- other: 
+- status: verified
+- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-10-26)
+- notes: Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x. Context per models overview.
+
+### Anthropic Claude Sonnet 5.5
+- id: anthropic-claude-sonnet-5-5
+- kind: text
+- input/output/cached: 2 / 10 / 0.1
+- batch in/out: 1 / 5
+- context: 1000000
+- other: 
+- status: verified
+- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-10-26)
+- notes: Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x. Context per models overview.
+
+### Anthropic Claude Haiku 5.5
+- id: anthropic-claude-haiku-5-5
+- kind: text
+- input/output/cached: 0.1 / 0.5 / 0.01
+- batch in/out: 0.05 / 0.25
+- context: 1000000
+- other: 
+- status: verified
+- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-10-26)
+- notes: Prompts over 100K tokens: $0.50 in / $2.50 out. Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x. Context per models overview.
+
+### Anthropic Claude Mythos 5.1
+- id: anthropic-claude-mythos-5-1
+- kind: text
+- input/output/cached: 10 / 50 / 0.25
+- batch in/out: 5 / 25
+- context: null
+- other: 
+- status: verified
+- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-10-26)
+- notes: Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x.
+
+### Anthropic Claude Opus 5
+- id: anthropic-claude-opus-5
+- kind: text
+- input/output/cached: 5 / 25 / 0.5
+- batch in/out: 2.5 / 12.5
+- context: null
+- other: 
+- status: verified
+- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-10-26)
+- notes: Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x.
+
+### Anthropic Claude Opus 4.8
+- id: anthropic-claude-opus-4-8
+- kind: text
+- input/output/cached: 5 / 25 / 0.5
+- batch in/out: 2.5 / 12.5
+- context: null
+- other: 
+- status: verified
+- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-10-26)
+- notes: Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x.
+
+### Anthropic Claude Sonnet 5
+- id: anthropic-claude-sonnet-5
+- kind: text
+- input/output/cached: 2 / 10 / 0.2
+- batch in/out: 1 / 5
+- context: null
+- other: 
+- status: verified
+- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-10-26)
+- notes: Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x.
+
+### Anthropic Claude Sonnet 4.6
+- id: anthropic-claude-sonnet-4-6
+- kind: text
+- input/output/cached: 3 / 15 / 0.3
+- batch in/out: 1.5 / 7.5
+- context: null
+- other: 
+- status: verified
+- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-10-26)
+- notes: Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x.
+
+### Anthropic Claude Haiku 4.5
+- id: anthropic-claude-haiku-4-5
+- kind: text
+- input/output/cached: 1 / 5 / 0.1
+- batch in/out: 0.5 / 2.5
+- context: null
+- other: 
+- status: verified
+- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-10-26)
+- notes: Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x.
+
+### Anthropic Claude Opus 4.1
+- id: anthropic-claude-opus-4-1
+- kind: text
+- input/output/cached: 15 / 75 / 1.5
+- batch in/out: 7.5 / 37.5
+- context: null
+- other: 
+- status: verified
+- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-10-26)
+- notes: Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x.
+
+### Google Gemini 4 Argon
+- id: google-gemini-4-argon
+- kind: text
+- input/output/cached: 2 / 10 / 0.1
+- batch in/out: 1 / 5
+- context: null
+- other: 
+- status: verified
+- source: https://ai.google.dev/gemini-api/docs/pricing (2026-10-26)
+- notes: Promotional: rises to $4 / $20 on 2026-12-01. Cache storage billed per hour where listed.
+
+### Google Gemini 3.8 Flash
+- id: google-gemini-3-8-flash
+- kind: text
+- input/output/cached: 0.75 / 3.75 / 0.075
+- batch in/out: 0.375 / 1.875
+- context: null
+- other: 
+- status: verified
+- source: https://ai.google.dev/gemini-api/docs/pricing (2026-10-26)
+- notes: Rises to $1.50 / $7.50 on 2027-01-01. Free tier available. Cache storage billed per hour where listed.
+
+### Google Gemini 3.6 Flash
+- id: google-gemini-3-6-flash
+- kind: text
+- input/output/cached: 0.75 / 3.75 / 0.075
+- batch in/out: 0.375 / 1.875
+- context: null
+- other: 
+- status: verified
+- source: https://ai.google.dev/gemini-api/docs/pricing (2026-10-26)
+- notes: Free tier available. Cache storage billed per hour where listed.
+
+### Google Gemini 3.5 Flash-Lite
+- id: google-gemini-3-5-flash-lite
+- kind: text
+- input/output/cached: 0.3 / 2.5 / 0.03
+- batch in/out: 0.15 / 1.25
+- context: null
+- other: 
+- status: verified
+- source: https://ai.google.dev/gemini-api/docs/pricing (2026-10-26)
+- notes: Free tier available. Cache storage billed per hour where listed.
+
+### Google Gemini 3.1 Flash-Lite
+- id: google-gemini-3-1-flash-lite
+- kind: text
+- input/output/cached: 0.25 / 1.5 / 0.025
+- batch in/out: 0.125 / 0.75
+- context: null
+- other: 
+- status: verified
+- source: https://ai.google.dev/gemini-api/docs/pricing (2026-10-26)
+- notes: Audio input $0.50. Free tier available. Cache storage billed per hour where listed.
+
+### Google Gemini 3.1 Pro Preview
+- id: google-gemini-3-1-pro-preview
+- kind: text
+- input/output/cached: 2 / 12 / 0.2
+- batch in/out: 1 / 6
+- context: null
+- other: 
+- status: verified
+- source: https://ai.google.dev/gemini-api/docs/pricing (2026-10-26)
+- notes: Prompts >200K: $4 / $18. Cache storage billed per hour where listed.
+
+### Google Gemini 3 Flash Preview
+- id: google-gemini-3-flash-preview
+- kind: text
+- input/output/cached: 0.5 / 3 / 0.05
+- batch in/out: 0.25 / 1.5
+- context: null
+- other: 
+- status: verified
+- source: https://ai.google.dev/gemini-api/docs/pricing (2026-10-26)
+- notes: Audio input $1. Free tier available. Cache storage billed per hour where listed.
+
+### Google Gemini Nano Banana 2.1
+- id: google-gemini-nano-banana-2-1
+- kind: image
+- input/output/cached: 1.5 / 30 / null
+- batch in/out: 0.75 / 15
+- context: null
+- other: $0.0336 per 1K image
+- status: verified
+- source: https://ai.google.dev/gemini-api/docs/pricing (2026-10-26)
+- notes: Output priced per image tokens; text output $7.50.
+
+### Google Gemini 3.1 Flash Image (Nano Banana 2)
+- id: google-gemini-3-1-flash-image-nano-banana-2
+- kind: image
+- input/output/cached: 0.5 / 60 / null
+- batch in/out: 0.25 / 30
+- context: null
+- other: $0.067 per 1K image
+- status: verified
+- source: https://ai.google.dev/gemini-api/docs/pricing (2026-10-26)
+- notes: 
+
+### Google Gemini 3.5 Transcribe
+- id: google-gemini-3-5-transcribe
+- kind: audio
+- input/output/cached: 2 / 12 / null
+- batch in/out: null / null
+- context: null
+- other: ≈$0.003/min in + $0.002/min out
+- status: verified
+- source: https://ai.google.dev/gemini-api/docs/pricing (2026-10-26)
+- notes: 
+
+### Google Gemini 3.8 Flash TTS
+- id: google-gemini-3-8-flash-tts
+- kind: audio
+- input/output/cached: 0.5 / 9 / null
+- batch in/out: 0.25 / 4.5
+- context: null
+- other: ≈$0.00225 per 10s audio
+- status: verified
+- source: https://ai.google.dev/gemini-api/docs/pricing (2026-10-26)
+- notes: Doubles on 2027-01-01.
+
+### xAI grok-4.7
+- id: xai-grok-4-7
+- kind: text
+- input/output/cached: 2 / 6 / null
+- batch in/out: null / null
+- context: 500000
+- other: 
+- status: verified
+- source: https://docs.x.ai/docs/models (2026-10-26)
+- notes: 
+
+### xAI Grok Voice TTS
+- id: xai-grok-voice-tts
+- kind: audio
+- input/output/cached: null / null / null
+- batch in/out: null / null
+- context: null
+- other: $15.00 / 1M chars
+- status: verified
+- source: https://docs.x.ai/docs/models (2026-10-26)
+- notes: STS $0.08/min; STT batch $0.10/hr, streaming $0.20/hr.
+
+### xAI Grok Imagine Image 2.0
+- id: xai-grok-imagine-image-2-0
+- kind: image
+- input/output/cached: null / null / null
+- batch in/out: null / null
+- context: null
+- other: from $0.02 / image
+- status: verified
+- source: https://docs.x.ai/docs/models (2026-10-26)
+- notes: 
+
+### DeepSeek deepseek-flash (V4.1 Flash)
+- id: deepseek-deepseek-flash-v4-1-flash
+- kind: text
+- input/output/cached: 0.3 / 1.2 / 0.006
+- batch in/out: null / null
+- context: 1000000
+- other: 
+- status: verified
+- source: https://api-docs.deepseek.com/quick_start/pricing (2026-10-26)
+- notes: Peak price. Off-peak: $0.15 in / $0.003 cached / $0.60 out.
+
+### DeepSeek deepseek-v4-pro
+- id: deepseek-deepseek-v4-pro
+- kind: text
+- input/output/cached: 1.32 / 3.96 / 0.044
+- batch in/out: null / null
+- context: 1000000
+- other: 
+- status: verified
+- source: https://api-docs.deepseek.com/quick_start/pricing (2026-10-26)
+- notes: Peak price. Off-peak: $0.66 / $0.022 / $1.98.
+
+### Together Kimi K3
+- id: together-kimi-k3
+- kind: text
+- input/output/cached: 3 / 15 / 0.3
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://www.together.ai/pricing (2026-10-26)
+- notes: 
+
+### Together Qwen3.8-2.4T-A95B
+- id: together-qwen3-8-2-4t-a95b
+- kind: text
+- input/output/cached: 2 / 6 / 0.25
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://www.together.ai/pricing (2026-10-26)
+- notes: 
+
+### Together GLM-5.3
+- id: together-glm-5-3
+- kind: text
+- input/output/cached: 1.4 / 4.4 / 0.26
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://www.together.ai/pricing (2026-10-26)
+- notes: 
+
+### Together DeepSeek V4.1 Flash
+- id: together-deepseek-v4-1-flash
+- kind: text
+- input/output/cached: 0.3 / 1.2 / 0.006
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://www.together.ai/pricing (2026-10-26)
+- notes: 
+
+### Together DeepSeek V4 Pro
+- id: together-deepseek-v4-pro
+- kind: text
+- input/output/cached: 1.32 / 3.96 / 0.13
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://www.together.ai/pricing (2026-10-26)
+- notes: 
+
+### Together gpt-oss-120B
+- id: together-gpt-oss-120b
+- kind: text
+- input/output/cached: 0.15 / 0.6 / null
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://www.together.ai/pricing (2026-10-26)
+- notes: 
+
+### Together MiniMax M3
+- id: together-minimax-m3
+- kind: text
+- input/output/cached: 0.3 / 1.2 / 0.06
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://www.together.ai/pricing (2026-10-26)
+- notes: 
+
+### Together Llama 3 8B Instruct Lite
+- id: together-llama-3-8b-instruct-lite
+- kind: text
+- input/output/cached: 0.14 / 0.14 / null
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://www.together.ai/pricing (2026-10-26)
+- notes: 
+
+### Together Qwen3.5-397B-A17B
+- id: together-qwen3-5-397b-a17b
+- kind: text
+- input/output/cached: 0.6 / 3.6 / 0.35
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://www.together.ai/pricing (2026-10-26)
+- notes: 
+
+### Together FLUX.2 [pro]
+- id: together-flux-2-pro
+- kind: image
+- input/output/cached: null / null / null
+- batch in/out: null / null
+- context: null
+- other: $0.03 / image
+- status: verified
+- source: https://www.together.ai/pricing (2026-10-26)
+- notes: 
+
+### Fireworks Kimi K3
+- id: fireworks-kimi-k3
+- kind: text
+- input/output/cached: 3 / 15 / 0.3
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://docs.fireworks.ai/serverless/pricing (2026-10-26)
+- notes: Standard tier; Priority tier ~1.25x.
+
+### Fireworks DeepSeek V4.1 Flash
+- id: fireworks-deepseek-v4-1-flash
+- kind: text
+- input/output/cached: 0.3 / 1.2 / 0.006
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://docs.fireworks.ai/serverless/pricing (2026-10-26)
+- notes: Standard tier; Priority tier ~1.25x.
+
+### Fireworks GLM 5.3
+- id: fireworks-glm-5-3
+- kind: text
+- input/output/cached: 1.4 / 4.4 / 0.26
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://docs.fireworks.ai/serverless/pricing (2026-10-26)
+- notes: Standard tier; Priority tier ~1.25x.
+
+### Fireworks OpenAI GPT OSS 120B
+- id: fireworks-openai-gpt-oss-120b
+- kind: text
+- input/output/cached: 0.15 / 0.6 / 0.015
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://docs.fireworks.ai/serverless/pricing (2026-10-26)
+- notes: Standard tier; Priority tier ~1.25x.
+
+### Fireworks NVIDIA Nemotron 3.5 Lightning 30B A3B
+- id: fireworks-nvidia-nemotron-3-5-lightning-30b-a3b
+- kind: text
+- input/output/cached: 0.05 / 0.2 / 0.01
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://docs.fireworks.ai/serverless/pricing (2026-10-26)
+- notes: Standard tier; Priority tier ~1.25x.
+
+### Fireworks Qwen 3.8 Max
+- id: fireworks-qwen-3-8-max
+- kind: text
+- input/output/cached: 2 / 6 / 0.25
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://docs.fireworks.ai/serverless/pricing (2026-10-26)
+- notes: Standard tier; Priority tier ~1.25x.
+
+### Fireworks Embeddings (150M-350M params)
+- id: fireworks-embeddings-150m-350m-params
+- kind: embedding
+- input/output/cached: 0.016 / 0 / null
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://docs.fireworks.ai/serverless/pricing (2026-10-26)
+- notes: 
+
+### Groq openai/gpt-oss-120b
+- id: groq-openai-gpt-oss-120b
+- kind: text
+- input/output/cached: 0.15 / 0.6 / null
+- batch in/out: null / null
+- context: 131072
+- other: 
+- status: verified
+- source: https://console.groq.com/docs/models (2026-10-26)
+- notes: Developer plan rate limits: 250K TPM, 1K RPM.
+
+### Groq openai/gpt-oss-20b
+- id: groq-openai-gpt-oss-20b
+- kind: text
+- input/output/cached: 0.075 / 0.3 / null
+- batch in/out: null / null
+- context: 131072
+- other: 
+- status: verified
+- source: https://console.groq.com/docs/models (2026-10-26)
+- notes: Developer plan: 250K TPM, 1K RPM.
+
+### Groq whisper-large-v3-turbo
+- id: groq-whisper-large-v3-turbo
+- kind: audio
+- input/output/cached: null / null / null
+- batch in/out: null / null
+- context: null
+- other: $0.04 / hour
+- status: verified
+- source: https://console.groq.com/docs/models (2026-10-26)
+- notes: 
+
+### Groq Llama 3.3 70B (llama-3.3-70b-versatile)
+- id: groq-llama-3-3-70b-llama-3-3-70b-versatile
+- kind: text
+- input/output/cached: null / null / null
+- batch in/out: null / null
+- context: 131072
+- other: 
+- status: unverified
+- source: https://console.groq.com/docs/models (2026-10-26)
+- notes: Price listed as "Contact Sales" on 2026-10-26.
+
+### Perplexity sonar
+- id: perplexity-sonar
+- kind: text
+- input/output/cached: 0.25 / 2.5 / 0.0625
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://docs.perplexity.ai/getting-started/models (2026-10-26)
+- notes: Tool calls billed separately (web_search $2.50 / 1K).
+
+### Perplexity pplx-embed-v1-4b
+- id: perplexity-pplx-embed-v1-4b
+- kind: embedding
+- input/output/cached: 0.03 / 0 / null
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://docs.perplexity.ai/getting-started/pricing (2026-10-26)
+- notes: 
+
+### Perplexity pplx-embed-v1-0.6b
+- id: perplexity-pplx-embed-v1-0-6b
+- kind: embedding
+- input/output/cached: 0.004 / 0 / null
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://docs.perplexity.ai/getting-started/pricing (2026-10-26)
+- notes: 
+
+### Cohere Command A+
+- id: cohere-command-a
+- kind: text
+- input/output/cached: null / null / null
+- batch in/out: null / null
+- context: null
+- other: 
+- status: unverified
+- source: https://cohere.com/pricing (2026-10-26)
+- notes: First-party price not shown in fetched page text; OpenRouter lists $0.30 / $1.50.
+
+### Cohere Command R+ 08-2024
+- id: cohere-command-r-08-2024
+- kind: text
+- input/output/cached: 2.5 / 10 / null
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://cohere.com/pricing (2026-10-26)
+- notes: Legacy model, stated in pricing FAQ.
+
+### Azure OpenAI GPT-6 Astra (short context, Global)
+- id: azure-openai-gpt-6-astra-short-context-global
+- kind: text
+- input/output/cached: 10 / 50 / 1
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/ (2026-10-26)
+- notes: Data Zone deployments ~+10%. Long-context rates higher.
+
+### Azure OpenAI GPT-6.1 Sol (short context, Global)
+- id: azure-openai-gpt-6-1-sol-short-context-global
+- kind: text
+- input/output/cached: 2 / 10 / 0.1
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/ (2026-10-26)
+- notes: Data Zone deployments ~+10%. Long-context rates higher.
+
+### Azure OpenAI GPT-6 Luna (short context, Global)
+- id: azure-openai-gpt-6-luna-short-context-global
+- kind: text
+- input/output/cached: 0.1 / 0.5 / 0.01
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/ (2026-10-26)
+- notes: Data Zone deployments ~+10%. Long-context rates higher.
+
+### Azure OpenAI GPT-6 Luna (short context, Data Zone)
+- id: azure-openai-gpt-6-luna-short-context-data-zone
+- kind: text
+- input/output/cached: 0.11 / 0.55 / 0.011
+- batch in/out: null / null
+- context: null
+- other: 
+- status: verified
+- source: https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/ (2026-10-26)
+- notes: Data Zone deployments ~+10%. Long-context rates higher.
+
+### AWS Bedrock DeepSeek v3.2
+- id: aws-bedrock-deepseek-v3-2
+- kind: text
+- input/output/cached: 0.62 / 1.85 / null
+- batch in/out: null / null
+- context: null
+- other: 
+- status: unverified
+- source: https://aws.amazon.com/bedrock/pricing/ (2026-10-26)
+- notes: Rendered from regional price widget; region not confirmed.
+
+### AWS Bedrock Mistral Large 3
+- id: aws-bedrock-mistral-large-3
+- kind: text
+- input/output/cached: 0.5 / 1.5 / null
+- batch in/out: null / null
+- context: null
+- other: 
+- status: unverified
+- source: https://aws.amazon.com/bedrock/pricing/ (2026-10-26)
+- notes: Rendered from regional price widget; region not confirmed.
+
+### AWS Bedrock Llama 4 Maverick 17B
+- id: aws-bedrock-llama-4-maverick-17b
+- kind: text
+- input/output/cached: null / null / null
+- batch in/out: null / null
+- context: null
+- other: 
+- status: unverified
+- source: https://aws.amazon.com/bedrock/pricing/ (2026-10-26)
+- notes: Price rendered client-side; not captured.
+
+### AWS Bedrock Amazon Nova Pro
+- id: aws-bedrock-amazon-nova-pro
+- kind: text
+- input/output/cached: null / null / null
+- batch in/out: null / null
+- context: null
+- other: 
+- status: unverified
+- source: https://aws.amazon.com/bedrock/pricing/ (2026-10-26)
+- notes: Price rendered client-side; not captured.
+
+### Mistral Mistral Large 4
+- id: mistral-mistral-large-4
+- kind: text
+- input/output/cached: null / null / null
+- batch in/out: null / null
+- context: null
+- other: 
+- status: unverified
+- source: https://mistral.ai/pricing#api-pricing (2026-10-26)
+- notes: API price tab is client-rendered; see OpenRouter row.
+
+### OpenRouter Llama 4 Maverick (Meta)
+- id: openrouter-llama-4-maverick-meta
+- kind: text
+- input/output/cached: 0.1875 / 0.6525 / 0.05
+- batch in/out: null / null
+- context: 524288
+- other: 
+- status: verified
+- source: https://openrouter.ai/meta-llama/llama-4-maverick (2026-10-26)
+- notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.
+
+### OpenRouter Llama 4 Scout (Meta)
+- id: openrouter-llama-4-scout-meta
+- kind: text
+- input/output/cached: 0.1 / 0.3 / null
+- batch in/out: null / null
+- context: 1310720
+- other: 
+- status: verified
+- source: https://openrouter.ai/meta-llama/llama-4-scout (2026-10-26)
+- notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.
+
+### OpenRouter Mistral Large 4 (Mistral)
+- id: openrouter-mistral-large-4-mistral
+- kind: text
+- input/output/cached: 1.36 / 4.18 / 0.14
+- batch in/out: null / null
+- context: 1048576
+- other: 
+- status: verified
+- source: https://openrouter.ai/mistralai/mistral-large-4-0 (2026-10-26)
+- notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.
+
+### OpenRouter Mistral Medium 3.5 (Mistral)
+- id: openrouter-mistral-medium-3-5-mistral
+- kind: text
+- input/output/cached: 1.5 / 7.5 / null
+- batch in/out: 0.75 / 3.75
+- context: 262144
+- other: 
+- status: verified
+- source: https://openrouter.ai/mistralai/mistral-medium-3-5 (2026-10-26)
+- notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.
+
+### OpenRouter Mistral Small 4 (Mistral)
+- id: openrouter-mistral-small-4-mistral
+- kind: text
+- input/output/cached: 0.15 / 0.6 / 0.015
+- batch in/out: 0.075 / 0.3
+- context: 262144
+- other: 
+- status: verified
+- source: https://openrouter.ai/mistralai/mistral-small-2603 (2026-10-26)
+- notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.
+
+### OpenRouter Codestral 2508 (Mistral)
+- id: openrouter-codestral-2508-mistral
+- kind: text
+- input/output/cached: 0.3 / 0.9 / 0.03
+- batch in/out: 0.15 / 0.45
+- context: 256000
+- other: 
+- status: verified
+- source: https://openrouter.ai/mistralai/codestral-2508 (2026-10-26)
+- notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.
+
+### OpenRouter Command A+ (Cohere)
+- id: openrouter-command-a-cohere
+- kind: text
+- input/output/cached: 0.3 / 1.5 / 0.15
+- batch in/out: null / null
+- context: 192000
+- other: 
+- status: verified
+- source: https://openrouter.ai/cohere/command-a-plus (2026-10-26)
+- notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.
+
+### OpenRouter Qwen3.8 Max (0902) (Qwen)
+- id: openrouter-qwen3-8-max-0902-qwen
+- kind: text
+- input/output/cached: 2 / 6 / 0.25
+- batch in/out: null / null
+- context: 1000000
+- other: 
+- status: verified
+- source: https://openrouter.ai/qwen/qwen3.8-max-0902 (2026-10-26)
+- notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.
+
+### OpenRouter Qwen3.7 Flash (Qwen)
+- id: openrouter-qwen3-7-flash-qwen
+- kind: text
+- input/output/cached: 0.03 / 0.13 / 0.006
+- batch in/out: null / null
+- context: 1000000
+- other: 
+- status: verified
+- source: https://openrouter.ai/qwen/qwen3.7-flash (2026-10-26)
+- notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.
+
+### OpenRouter Kimi K3.1 Pro (MoonshotAI)
+- id: openrouter-kimi-k3-1-pro-moonshotai
+- kind: text
+- input/output/cached: 2 / 10 / 0.2
+- batch in/out: null / null
+- context: 1048576
+- other: 
+- status: verified
+- source: https://openrouter.ai/moonshotai/kimi-k3.1-pro (2026-10-26)
+- notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.
+
+### OpenRouter Grok 4.7 (SpaceXAI)
+- id: openrouter-grok-4-7-spacexai
+- kind: text
+- input/output/cached: 2 / 6 / 0.5
+- batch in/out: null / null
+- context: 500000
+- other: 
+- status: verified
+- source: https://openrouter.ai/x-ai/grok-4.7 (2026-10-26)
+- notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.
+
+## Changes
+- 2026-07-30 OpenAI (tier renamed): "Priority processing" renamed "Fast mode" (2x standard token price). [https://platform.openai.com/docs/pricing]
+- 2026-10-05 OpenAI (billing start): Billing for gpt-rosalind-research began ($5.00 in / $25.00 out per 1M tokens). [https://platform.openai.com/docs/pricing]
+- 2026-11-21 OpenAI (promotion end (earliest)): GPT-5.6 Sol promotional pricing guaranteed "at least through November 21, 2026" ($4.00 in / $20.00 out). [https://platform.openai.com/docs/pricing]
+- 2026-12-01 Google (scheduled increase): Gemini 4 Argon promotional pricing ends: input $2.00→$4.00, output $10.00→$20.00, cached $0.10→$0.20 per 1M tokens. [https://ai.google.dev/gemini-api/docs/pricing]
+- 2027-01-01 Google (scheduled increase): Gemini 3.8 Flash paid tier: input $0.75→$1.50, output $3.75→$7.50 per 1M tokens. Gemini 3.8 Flash TTS doubles the same day. [https://ai.google.dev/gemini-api/docs/pricing]
