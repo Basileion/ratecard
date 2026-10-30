@@ -1,6 +1,6 @@
 # Growth event tracker
 
-Privacy-friendly custom events via Pages Function `functions/api/e.js` → Workers Analytics Engine.
+Privacy-friendly custom events via Pages Function `functions/grow/e.js` → Workers Analytics Engine.
 
 **Binding (required for persistence):** In Cloudflare Pages → Settings → Bindings → Add Analytics Engine:
 - Variable name: `GROWTH`
