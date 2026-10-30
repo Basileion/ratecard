@@ -1,6 +1,6 @@
 # Ratecard
 
-> Published AI API list prices (USD per 1M tokens), one row per model and provider, each with a source URL and check date. 85 rows, 78 verified, 14 providers. Last checked 2026-10-26.
+> Published AI API list prices (USD per 1M tokens), one row per model and provider, each with a source URL and check date. 86 rows, 57 verified, 14 providers. Last checked 2026-10-30.
 
 ## Methodology
 Prices come only from each provider's own pricing page, docs, or public pricing API. Unverified means we could not read a number on the check date — the cell stays blank. We never invent rates. Details: https://ratecardai.pages.dev/methodology.html
@@ -16,20 +16,20 @@ Prices come only from each provider's own pricing page, docs, or public pricing 
 
 ## Dataset summary
 - Units: USD per 1M tokens (unless unit/other says otherwise)
-- Fields: input, output, cached, batch_input, batch_output, context, status, source, checked
-- Cheapest verified text (in+out): OpenRouter Qwen3.7 Flash (Qwen) ($0.030 / $0.130)
+- Fields: input, output, cached, batch_input, batch_output, context, long_context, status, source, checked
+- Cheapest verified text (in+out): OpenRouter Qwen3.7 Flash (Qwen) ($0.030 / $0.13)
 
 ## Cheapest verified text models (input+output per 1M)
-- OpenRouter Qwen3.7 Flash (Qwen): in $0.030, out $0.130 (source https://openrouter.ai/qwen/qwen3.7-flash, 2026-10-26)
-- Fireworks NVIDIA Nemotron 3.5 Lightning 30B A3B: in $0.050, out $0.200 (source https://docs.fireworks.ai/serverless/pricing, 2026-10-26)
-- Together Llama 3 8B Instruct Lite: in $0.140, out $0.140 (source https://www.together.ai/pricing, 2026-10-26)
-- Groq openai/gpt-oss-20b: in $0.075, out $0.300 (source https://console.groq.com/docs/models, 2026-10-26)
-- OpenRouter Llama 4 Scout (Meta): in $0.100, out $0.300 (source https://openrouter.ai/meta-llama/llama-4-scout, 2026-10-26)
-- OpenAI gpt-6-luna: in $0.100, out $0.500 (source https://platform.openai.com/docs/pricing, 2026-10-26)
-- Anthropic Claude Haiku 5.5: in $0.100, out $0.500 (source https://docs.anthropic.com/en/docs/about-claude/pricing, 2026-10-26)
-- Azure OpenAI GPT-6 Luna (short context, Global): in $0.100, out $0.500 (source https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/, 2026-10-26)
-- Azure OpenAI GPT-6 Luna (short context, Data Zone): in $0.110, out $0.550 (source https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/, 2026-10-26)
-- Together gpt-oss-120B: in $0.150, out $0.600 (source https://www.together.ai/pricing, 2026-10-26)
+- OpenRouter Qwen3.7 Flash (Qwen): in $0.030, out $0.13 (source https://openrouter.ai/qwen/qwen3.7-flash, 2026-10-30)
+- Fireworks NVIDIA Nemotron 3.5 Lightning 30B A3B: in $0.050, out $0.20 (source https://docs.fireworks.ai/serverless/pricing, 2026-10-30)
+- OpenRouter Llama 4 Scout (Meta): in $0.10, out $0.30 (source https://openrouter.ai/meta-llama/llama-4-scout, 2026-10-30)
+- OpenAI gpt-6-luna: in $0.10, out $0.50 (source https://platform.openai.com/docs/pricing, 2026-10-30)
+- Anthropic Claude Haiku 5.5: in $0.10, out $0.50 (source https://docs.anthropic.com/en/docs/about-claude/pricing, 2026-10-30)
+- Fireworks OpenAI GPT OSS 120B: in $0.15, out $0.60 (source https://docs.fireworks.ai/serverless/pricing, 2026-10-30)
+- OpenRouter Mistral Small 4 (Mistral): in $0.15, out $0.60 (source https://openrouter.ai/mistralai/mistral-small-2603, 2026-10-30)
+- OpenRouter Llama 4 Maverick (Meta): in $0.19, out $0.65 (source https://openrouter.ai/meta-llama/llama-4-maverick, 2026-10-30)
+- OpenRouter Codestral 2508 (Mistral): in $0.30, out $0.90 (source https://openrouter.ai/mistralai/codestral-2508, 2026-10-30)
+- DeepSeek deepseek-flash (V4.1 Flash): in $0.30, out $1.20 (source https://api-docs.deepseek.com/quick_start/pricing, 2026-10-30)
 
 ## Pages
 - [Calculator](https://ratecardai.pages.dev/calculator.html)

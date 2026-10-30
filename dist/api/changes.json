@@ -1,9 +1,57 @@
 {
- "generated": "2026-10-30T19:22:49.552Z",
+ "generated": "2026-10-30T19:45:42.670Z",
  "site": "https://ratecardai.pages.dev",
  "license": "CC-BY-4.0",
  "units": "USD per 1M tokens unless unit/other says otherwise",
  "changes": [
+  {
+   "date": "2026-10-30",
+   "provider": "OpenAI",
+   "kind": "correction",
+   "summary": "gpt-image-2 standard was incorrectly set to batch rates; corrected to $8/$30/$2 (batch $4/$15).",
+   "source": "https://platform.openai.com/docs/pricing",
+   "observed": "2026-10-30"
+  },
+  {
+   "date": "2026-10-30",
+   "provider": "OpenAI",
+   "kind": "new model",
+   "summary": "Added gpt-image-2.5-flare at standard $8/$30/$2 (batch $4/$15).",
+   "source": "https://platform.openai.com/docs/pricing",
+   "observed": "2026-10-30"
+  },
+  {
+   "date": "2026-10-30",
+   "provider": "Anthropic",
+   "kind": "logic",
+   "summary": "Haiku 5.5 long-context tier (>100K) now applied in finder/calculator via long_context field.",
+   "source": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+   "observed": "2026-10-30"
+  },
+  {
+   "date": "2026-10-30",
+   "provider": "Google",
+   "kind": "logic",
+   "summary": "Gemini 3.1 Pro Preview long-context tier (>200K) now applied via long_context field.",
+   "source": "https://ai.google.dev/gemini-api/docs/pricing",
+   "observed": "2026-10-30"
+  },
+  {
+   "date": "2026-10-30",
+   "provider": "Mistral",
+   "kind": "correction",
+   "summary": "Filled Mistral Large 4 first-party row from 2026-10-29 launch post: $0.70/$2.10 ($0.07 cached).",
+   "source": "https://mistral.ai/news/mistral-large-4-oss/",
+   "observed": "2026-10-30"
+  },
+  {
+   "date": "2026-10-30",
+   "provider": "OpenRouter",
+   "kind": "correction",
+   "summary": "Mistral Large 4 OpenRouter row $1.36/$4.18 → $0.70/$2.10 ($0.07 cached).",
+   "source": "https://openrouter.ai/mistralai/mistral-large-4-0",
+   "observed": "2026-10-30"
+  },
   {
    "date": "2026-07-30",
    "kind": "tier renamed",

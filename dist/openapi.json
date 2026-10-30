@@ -115,6 +115,41 @@
        "null"
       ]
      },
+     "long_context": {
+      "type": [
+       "object",
+       "null"
+      ],
+      "properties": {
+       "threshold": {
+        "type": "integer"
+       },
+       "input": {
+        "type": "number"
+       },
+       "output": {
+        "type": "number"
+       },
+       "cached": {
+        "type": [
+         "number",
+         "null"
+        ]
+       },
+       "batch_input": {
+        "type": [
+         "number",
+         "null"
+        ]
+       },
+       "batch_output": {
+        "type": [
+         "number",
+         "null"
+        ]
+       }
+      }
+     },
      "other": {
       "type": [
        "string",

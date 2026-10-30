@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T19:22:49.552Z",
+ "generated": "2026-10-30T19:45:42.670Z",
  "site": "https://ratecardai.pages.dev",
  "license": "CC-BY-4.0",
  "units": "USD per 1M tokens unless unit/other says otherwise",
@@ -8,98 +8,98 @@
    "id": "openai",
    "name": "OpenAI",
    "source": "https://platform.openai.com/docs/pricing",
-   "checked": "2026-10-26",
+   "checked": "2026-10-30",
    "summary": "Batch / Flex tier at 50%. Fast mode 2x. Fine-tuning closed to new users."
   },
   {
    "id": "anthropic",
    "name": "Anthropic",
    "source": "https://docs.anthropic.com/en/docs/about-claude/pricing",
-   "checked": "2026-10-26",
+   "checked": "2026-10-30",
    "summary": "Batch API 50% off. Cache hits 0.025x–0.1x input depending on model."
   },
   {
    "id": "google",
    "name": "Google",
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "checked": "2026-10-26",
+   "checked": "2026-10-30",
    "summary": "Free tier on many Flash models (data may be used to improve products). Batch 50% off."
   },
   {
    "id": "xai",
    "name": "xAI",
    "source": "https://docs.x.ai/docs/models",
-   "checked": "2026-10-26",
+   "checked": "2026-10-30",
    "summary": ""
   },
   {
    "id": "deepseek",
    "name": "DeepSeek",
    "source": "https://api-docs.deepseek.com/quick_start/pricing",
-   "checked": "2026-10-26",
+   "checked": "2026-10-30",
    "summary": "Off-peak pricing ~50% of peak."
   },
   {
    "id": "together",
    "name": "Together",
    "source": "https://www.together.ai/pricing",
-   "checked": "2026-10-26",
+   "checked": "2026-10-30",
    "summary": ""
   },
   {
    "id": "fireworks",
    "name": "Fireworks",
    "source": "https://docs.fireworks.ai/serverless/pricing",
-   "checked": "2026-10-26",
+   "checked": "2026-10-30",
    "summary": ""
   },
   {
    "id": "groq",
    "name": "Groq",
    "source": "https://console.groq.com/docs/models",
-   "checked": "2026-10-26",
+   "checked": "2026-10-30",
    "summary": "Developer plan rate limits published per model."
   },
   {
    "id": "perplexity",
    "name": "Perplexity",
    "source": "https://docs.perplexity.ai/getting-started/models",
-   "checked": "2026-10-26",
+   "checked": "2026-10-30",
    "summary": "Search tool calls billed per 1K invocations."
   },
   {
    "id": "cohere",
    "name": "Cohere",
    "source": "https://cohere.com/pricing",
-   "checked": "2026-10-26",
+   "checked": "2026-10-30",
    "summary": ""
   },
   {
    "id": "azure-openai",
    "name": "Azure OpenAI",
    "source": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
-   "checked": "2026-10-26",
+   "checked": "2026-10-30",
    "summary": "Global vs Data Zone deployments priced separately."
   },
   {
    "id": "aws-bedrock",
    "name": "AWS Bedrock",
    "source": "https://aws.amazon.com/bedrock/pricing/",
-   "checked": "2026-10-26",
+   "checked": "2026-10-30",
    "summary": "Prices vary by region and cross-region inference type."
   },
   {
    "id": "mistral",
    "name": "Mistral",
    "source": "https://mistral.ai/pricing#api-pricing",
-   "checked": "2026-10-26",
+   "checked": "2026-10-30",
    "summary": ""
   },
   {
    "id": "openrouter",
    "name": "OpenRouter",
    "source": "https://openrouter.ai/meta-llama/llama-4-maverick",
-   "checked": "2026-10-26",
+   "checked": "2026-10-30",
    "summary": "Reseller / gateway; list price per model."
   }
  ]

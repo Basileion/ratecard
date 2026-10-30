@@ -1,42 +1,90 @@
 [
- {
-  "date": "2026-12-01",
-  "kind": "scheduled increase",
-  "provider": "Google",
-  "summary": "Gemini 4 Argon promotional pricing ends: input $2.00→$4.00, output $10.00→$20.00, cached $0.10→$0.20 per 1M tokens.",
-  "source": "https://ai.google.dev/gemini-api/docs/pricing",
-  "observed": "2026-10-26"
- },
- {
-  "date": "2027-01-01",
-  "kind": "scheduled increase",
-  "provider": "Google",
-  "summary": "Gemini 3.8 Flash paid tier: input $0.75→$1.50, output $3.75→$7.50 per 1M tokens. Gemini 3.8 Flash TTS doubles the same day.",
-  "source": "https://ai.google.dev/gemini-api/docs/pricing",
-  "observed": "2026-10-26"
- },
- {
-  "date": "2026-11-21",
-  "kind": "promotion end (earliest)",
-  "provider": "OpenAI",
-  "summary": "GPT-5.6 Sol promotional pricing guaranteed \"at least through November 21, 2026\" ($4.00 in / $20.00 out).",
-  "source": "https://platform.openai.com/docs/pricing",
-  "observed": "2026-10-26"
- },
- {
-  "date": "2026-10-05",
-  "kind": "billing start",
-  "provider": "OpenAI",
-  "summary": "Billing for gpt-rosalind-research began ($5.00 in / $25.00 out per 1M tokens).",
-  "source": "https://platform.openai.com/docs/pricing",
-  "observed": "2026-10-26"
- },
- {
-  "date": "2026-07-30",
-  "kind": "tier renamed",
-  "provider": "OpenAI",
-  "summary": "\"Priority processing\" renamed \"Fast mode\" (2x standard token price).",
-  "source": "https://platform.openai.com/docs/pricing",
-  "observed": "2026-10-26"
- }
+  {
+    "date": "2026-12-01",
+    "kind": "scheduled increase",
+    "provider": "Google",
+    "summary": "Gemini 4 Argon promotional pricing ends: input $2.00\u2192$4.00, output $10.00\u2192$20.00, cached $0.10\u2192$0.20 per 1M tokens.",
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
+    "observed": "2026-10-26"
+  },
+  {
+    "date": "2027-01-01",
+    "kind": "scheduled increase",
+    "provider": "Google",
+    "summary": "Gemini 3.8 Flash paid tier: input $0.75\u2192$1.50, output $3.75\u2192$7.50 per 1M tokens. Gemini 3.8 Flash TTS doubles the same day.",
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
+    "observed": "2026-10-26"
+  },
+  {
+    "date": "2026-11-21",
+    "kind": "promotion end (earliest)",
+    "provider": "OpenAI",
+    "summary": "GPT-5.6 Sol promotional pricing guaranteed \"at least through November 21, 2026\" ($4.00 in / $20.00 out).",
+    "source": "https://platform.openai.com/docs/pricing",
+    "observed": "2026-10-26"
+  },
+  {
+    "date": "2026-10-05",
+    "kind": "billing start",
+    "provider": "OpenAI",
+    "summary": "Billing for gpt-rosalind-research began ($5.00 in / $25.00 out per 1M tokens).",
+    "source": "https://platform.openai.com/docs/pricing",
+    "observed": "2026-10-26"
+  },
+  {
+    "date": "2026-07-30",
+    "kind": "tier renamed",
+    "provider": "OpenAI",
+    "summary": "\"Priority processing\" renamed \"Fast mode\" (2x standard token price).",
+    "source": "https://platform.openai.com/docs/pricing",
+    "observed": "2026-10-26"
+  },
+  {
+    "date": "2026-10-30",
+    "provider": "OpenAI",
+    "kind": "correction",
+    "summary": "gpt-image-2 standard was incorrectly set to batch rates; corrected to $8/$30/$2 (batch $4/$15).",
+    "source": "https://platform.openai.com/docs/pricing",
+    "observed": "2026-10-30"
+  },
+  {
+    "date": "2026-10-30",
+    "provider": "OpenAI",
+    "kind": "new model",
+    "summary": "Added gpt-image-2.5-flare at standard $8/$30/$2 (batch $4/$15).",
+    "source": "https://platform.openai.com/docs/pricing",
+    "observed": "2026-10-30"
+  },
+  {
+    "date": "2026-10-30",
+    "provider": "Anthropic",
+    "kind": "logic",
+    "summary": "Haiku 5.5 long-context tier (>100K) now applied in finder/calculator via long_context field.",
+    "source": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+    "observed": "2026-10-30"
+  },
+  {
+    "date": "2026-10-30",
+    "provider": "Google",
+    "kind": "logic",
+    "summary": "Gemini 3.1 Pro Preview long-context tier (>200K) now applied via long_context field.",
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
+    "observed": "2026-10-30"
+  },
+  {
+    "date": "2026-10-30",
+    "provider": "Mistral",
+    "kind": "correction",
+    "summary": "Filled Mistral Large 4 first-party row from 2026-10-29 launch post: $0.70/$2.10 ($0.07 cached).",
+    "source": "https://mistral.ai/news/mistral-large-4-oss/",
+    "observed": "2026-10-30"
+  },
+  {
+    "date": "2026-10-30",
+    "provider": "OpenRouter",
+    "kind": "correction",
+    "summary": "Mistral Large 4 OpenRouter row $1.36/$4.18 \u2192 $0.70/$2.10 ($0.07 cached).",
+    "source": "https://openrouter.ai/mistralai/mistral-large-4-0",
+    "observed": "2026-10-30"
+  }
 ]
