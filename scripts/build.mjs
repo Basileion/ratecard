@@ -125,6 +125,7 @@ page({file:'offline.html',title:`Offline | ${NAME}`,desc:'Offline',body:`<sectio
 page({file:'404.html',title:`Not found | ${NAME}`,desc:'Not found',body:`<section class="hero"><h1>Page not found.</h1><a class="btn" href="/">Back to rates</a></section>`});
 const urls=['','calculator.html','compare.html','changes.html','pro.html','sponsor.html','developers.html','methodology.html','providers/',...providers.map(p=>`providers/${p.id}.html`),...models.map(m=>`models/${m.id}.html`)];
 if(INDEXNOW_KEY)W(INDEXNOW_KEY+'.txt',INDEXNOW_KEY);
+W('googlefe7fedd09bd884a4.html','google-site-verification: googlefe7fedd09bd884a4.html');
 W('sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(u=>`<url><loc>${SITE}/${u}</loc><lastmod>${lastChecked}</lastmod></url>`).join('')}</urlset>`);
 W('robots.txt',`User-agent: *\nAllow: /\n\n${['GPTBot','OAI-SearchBot','ChatGPT-User','PerplexityBot','ClaudeBot','Google-Extended','Applebot-Extended','Bingbot'].map(b=>`User-agent: ${b}\nAllow: /`).join('\n\n')}\n\nSitemap: ${SITE}/sitemap.xml\n`);W('_headers',`/sw.js\n  Cache-Control: no-cache\n/api/*\n  Access-Control-Allow-Origin: *\n/assets/*\n  Cache-Control: public, max-age=86400\n`);
 for(const f of ['style.css','app.js'])fs.copyFileSync(R('src/'+f),path.join(D,'assets',f));
