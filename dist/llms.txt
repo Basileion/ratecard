@@ -1,6 +1,6 @@
 # Ratecard
 
-> Published AI API list prices (USD per 1M tokens), one row per model and provider, each with a source URL and check date. 86 rows, 57 verified, 14 providers. Last checked 2026-10-30.
+> Published AI API list prices (USD per 1M tokens), one row per model and provider, each with a source URL and check date. 89 rows, 60 verified, 14 providers. Last checked 2026-10-30.
 
 ## Methodology
 Prices come only from each provider's own pricing page, docs, or public pricing API. Unverified means we could not read a number on the check date — the cell stays blank. We never invent rates. Details: https://ratecardai.pages.dev/methodology
@@ -36,3 +36,7 @@ Prices come only from each provider's own pricing page, docs, or public pricing 
 - [Compare](https://ratecardai.pages.dev/compare)
 - [Developers / cite](https://ratecardai.pages.dev/developers)
 - [Methodology](https://ratecardai.pages.dev/methodology)
+
+## Scheduled price increases
+- [Scheduled AI API price increases](https://ratecardai.pages.dev/scheduled-increases): 18 announced price changes with effective dates, old → new prices, % change and sources (last checked 2026-10-30)
+- [Scheduled increases (JSON)](https://ratecardai.pages.dev/api/scheduled.json)

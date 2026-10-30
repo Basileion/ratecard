@@ -1,6 +1,6 @@
 # Ratecard — full rate card
 
-86 models, 57 verified, 14 providers. Last checked 2026-10-30. License CC BY 4.0.
+89 models, 60 verified, 14 providers. Last checked 2026-10-30. License CC BY 4.0.
 
 ## Providers
 ### OpenAI
@@ -386,7 +386,7 @@
 - other: 
 - status: verified
 - source: https://ai.google.dev/gemini-api/docs/pricing (2026-10-30)
-- notes: Promotional: rises to $4 / $20 on 2026-12-01. Cache storage billed per hour where listed.
+- notes: Promotional through 2026-11-30: rises to $4 / $20 (cached $0.20; batch $2 / $10) on 2026-12-01. Implicit caching only.
 
 ### Google Gemini 3.8 Flash
 - id: google-gemini-3-8-flash
@@ -398,7 +398,7 @@
 - other: 
 - status: verified
 - source: https://ai.google.dev/gemini-api/docs/pricing (2026-10-30)
-- notes: Rises to $1.50 / $7.50 on 2027-01-01. Free tier available. Cache storage billed per hour where listed.
+- notes: Rises to $1.50 / $7.50 on 2027-01-01 (cached $0.075→$0.15; batch $0.375→$0.75 in, $1.875→$3.75 out; cache storage $0.50→$1.00 per 1M tokens/hour). Free tier available.
 
 ### Google Gemini 3.6 Flash
 - id: google-gemini-3-6-flash
@@ -410,7 +410,7 @@
 - other: 
 - status: verified
 - source: https://ai.google.dev/gemini-api/docs/pricing (2026-10-30)
-- notes: Free tier available. Cache storage billed per hour where listed.
+- notes: Rises to $1.50 / $7.50 on 2027-01-01 (cached $0.075→$0.15; batch $0.375→$0.75 in, $1.875→$3.75 out; cache storage $0.50→$1.00 per 1M tokens/hour). Free tier available.
 
 ### Google Gemini 3.5 Flash-Lite
 - id: google-gemini-3-5-flash-lite
@@ -506,7 +506,43 @@
 - other: ≈$0.00225 per 10s audio
 - status: verified
 - source: https://ai.google.dev/gemini-api/docs/pricing (2026-10-30)
-- notes: Doubles on 2027-01-01.
+- notes: Doubles on 2027-01-01: input $0.50→$1.00 (text), output $9.00→$18.00 (audio); batch $0.25→$0.50 / $4.50→$9.00.
+
+### Google Gemini 3.8 Flash-Lite TTS
+- id: google-gemini-3-8-flash-lite-tts
+- kind: audio
+- input/output/cached: 0.5 / 6 / null
+- batch in/out: 0.25 / 3
+- long_context: 
+- context: null
+- other: ≈$0.0015 per 10s audio
+- status: verified
+- source: https://ai.google.dev/gemini-api/docs/pricing (2026-10-30)
+- notes: Doubles on 2027-01-01: input $0.50→$1.00 (text), output $6.00→$12.00 (audio); batch $0.25→$0.50 / $3.00→$6.00.
+
+### Google Gemini Robotics ER 2 Preview
+- id: google-gemini-robotics-er-2-preview
+- kind: text
+- input/output/cached: 1 / 5 / 0.1
+- batch in/out: null / null
+- long_context: 
+- context: null
+- other: 
+- status: verified
+- source: https://ai.google.dev/gemini-api/docs/pricing (2026-10-30)
+- notes: Doubles on 2027-01-01: input $1.00→$2.00, output $5.00→$10.00, cached $0.10→$0.20 (cache storage $0.50→$1.00 per 1M tokens/hour). Free tier available.
+
+### Google Gemini Robotics ER 2 Streaming Preview
+- id: google-gemini-robotics-er-2-streaming-preview
+- kind: text
+- input/output/cached: 1 / 5 / null
+- batch in/out: null / null
+- long_context: 
+- context: null
+- other: 
+- status: verified
+- source: https://ai.google.dev/gemini-api/docs/pricing (2026-10-30)
+- notes: Live API streaming endpoint. Doubles on 2027-01-01: input $1.00→$2.00, output $5.00→$10.00. Free tier available.
 
 ### xAI grok-4.7
 - id: xai-grok-4-7
@@ -1127,8 +1163,34 @@
 - 2026-10-30 Google (logic): Gemini 3.1 Pro Preview long-context tier (>200K) now applied via long_context field. [https://ai.google.dev/gemini-api/docs/pricing]
 - 2026-10-30 Mistral (correction): Filled Mistral Large 4 first-party row from 2026-10-29 launch post: $0.70/$2.10 ($0.07 cached). [https://mistral.ai/news/mistral-large-4-oss/]
 - 2026-10-30 OpenRouter (correction): Mistral Large 4 OpenRouter row $1.36/$4.18 → $0.70/$2.10 ($0.07 cached). [https://openrouter.ai/mistralai/mistral-large-4-0]
+- 2027-01-01 Google (scheduled increase): Gemini 3.6 Flash paid tier: input $0.75→$1.50, output $3.75→$7.50, cached $0.075→$0.15 per 1M tokens (batch $0.375→$0.75 / $1.875→$3.75). [https://ai.google.dev/gemini-api/docs/pricing]
+- 2027-01-01 Google (scheduled increase): Gemini 3.8 Flash-Lite TTS paid tier: input $0.50→$1.00 (text), output $6.00→$12.00 (audio) per 1M tokens. Row added to the dataset. [https://ai.google.dev/gemini-api/docs/pricing]
+- 2027-01-01 Google (scheduled increase): Gemini Robotics ER 2 Preview and ER 2 Streaming Preview: input $1.00→$2.00, output $5.00→$10.00 per 1M tokens (ER 2 cached $0.10→$0.20). Rows added to the dataset. [https://ai.google.dev/gemini-api/docs/pricing]
 - 2026-07-30 OpenAI (tier renamed): "Priority processing" renamed "Fast mode" (2x standard token price). [https://platform.openai.com/docs/pricing]
 - 2026-10-05 OpenAI (billing start): Billing for gpt-rosalind-research began ($5.00 in / $25.00 out per 1M tokens). [https://platform.openai.com/docs/pricing]
 - 2026-11-21 OpenAI (promotion end (earliest)): GPT-5.6 Sol promotional pricing guaranteed "at least through November 21, 2026" ($4.00 in / $20.00 out). [https://platform.openai.com/docs/pricing]
 - 2026-12-01 Google (scheduled increase): Gemini 4 Argon promotional pricing ends: input $2.00→$4.00, output $10.00→$20.00, cached $0.10→$0.20 per 1M tokens. [https://ai.google.dev/gemini-api/docs/pricing]
-- 2027-01-01 Google (scheduled increase): Gemini 3.8 Flash paid tier: input $0.75→$1.50, output $3.75→$7.50 per 1M tokens. Gemini 3.8 Flash TTS doubles the same day. [https://ai.google.dev/gemini-api/docs/pricing]
+- 2027-01-01 Google (scheduled increase): Gemini 3.8 Flash paid tier: input $0.75→$1.50, output $3.75→$7.50, cached $0.075→$0.15 per 1M tokens. Gemini 3.8 Flash TTS doubles the same day ($0.50→$1.00 in, $9.00→$18.00 out). [https://ai.google.dev/gemini-api/docs/pricing]
+
+
+## Scheduled price increases (last checked 2026-10-30)
+Page: https://ratecardai.pages.dev/scheduled-increases — data: https://ratecardai.pages.dev/api/scheduled.json
+- 2026-12-01 · Google Gemini 4 Argon · input: $2 → $4 per 1M tokens (+100%) · source https://ai.google.dev/gemini-api/docs/pricing
+- 2026-12-01 · Google Gemini 4 Argon · output: $10 → $20 per 1M tokens (+100%) · source https://ai.google.dev/gemini-api/docs/pricing
+- 2026-12-01 · Google Gemini 4 Argon · cached input: $0.1 → $0.2 per 1M tokens (+100%) · source https://ai.google.dev/gemini-api/docs/pricing
+- 2027-01-01 · Google Gemini 3.8 Flash · input: $0.75 → $1.5 per 1M tokens (+100%) · source https://ai.google.dev/gemini-api/docs/pricing
+- 2027-01-01 · Google Gemini 3.8 Flash · output: $3.75 → $7.5 per 1M tokens (+100%) · source https://ai.google.dev/gemini-api/docs/pricing
+- 2027-01-01 · Google Gemini 3.8 Flash · cached input: $0.075 → $0.15 per 1M tokens (+100%) · source https://ai.google.dev/gemini-api/docs/pricing
+- 2027-01-01 · Google Gemini 3.6 Flash · input: $0.75 → $1.5 per 1M tokens (+100%) · source https://ai.google.dev/gemini-api/docs/pricing
+- 2027-01-01 · Google Gemini 3.6 Flash · output: $3.75 → $7.5 per 1M tokens (+100%) · source https://ai.google.dev/gemini-api/docs/pricing
+- 2027-01-01 · Google Gemini 3.6 Flash · cached input: $0.075 → $0.15 per 1M tokens (+100%) · source https://ai.google.dev/gemini-api/docs/pricing
+- 2027-01-01 · Google Gemini 3.8 Flash TTS · input (text): $0.5 → $1 per 1M tokens (+100%) · source https://ai.google.dev/gemini-api/docs/pricing
+- 2027-01-01 · Google Gemini 3.8 Flash TTS · output (audio): $9 → $18 per 1M tokens (+100%) · source https://ai.google.dev/gemini-api/docs/pricing
+- 2027-01-01 · Google Gemini 3.8 Flash-Lite TTS · input (text): $0.5 → $1 per 1M tokens (+100%) · source https://ai.google.dev/gemini-api/docs/pricing
+- 2027-01-01 · Google Gemini 3.8 Flash-Lite TTS · output (audio): $6 → $12 per 1M tokens (+100%) · source https://ai.google.dev/gemini-api/docs/pricing
+- 2027-01-01 · Google Gemini Robotics ER 2 Preview · input: $1 → $2 per 1M tokens (+100%) · source https://ai.google.dev/gemini-api/docs/pricing
+- 2027-01-01 · Google Gemini Robotics ER 2 Preview · output: $5 → $10 per 1M tokens (+100%) · source https://ai.google.dev/gemini-api/docs/pricing
+- 2027-01-01 · Google Gemini Robotics ER 2 Preview · cached input: $0.1 → $0.2 per 1M tokens (+100%) · source https://ai.google.dev/gemini-api/docs/pricing
+- 2027-01-01 · Google Gemini Robotics ER 2 Streaming Preview · input: $1 → $2 per 1M tokens (+100%) · source https://ai.google.dev/gemini-api/docs/pricing
+- 2027-01-01 · Google Gemini Robotics ER 2 Streaming Preview · output: $5 → $10 per 1M tokens (+100%) · source https://ai.google.dev/gemini-api/docs/pricing
+- Promotion window · OpenAI gpt-5.6-sol: $4.00 in / $20.00 out per 1M tokens (promotional), at least through 2026-11-21; new price not yet published · source https://platform.openai.com/docs/pricing

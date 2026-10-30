@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T20:23:50.963Z",
+ "generated": "2026-10-30T22:18:42.227Z",
  "site": "https://ratecardai.pages.dev",
  "license": "CC-BY-4.0",
  "units": "USD per 1M tokens unless unit/other says otherwise",
@@ -53,6 +53,30 @@
    "observed": "2026-10-30"
   },
   {
+   "date": "2027-01-01",
+   "kind": "scheduled increase",
+   "provider": "Google",
+   "summary": "Gemini 3.6 Flash paid tier: input $0.75→$1.50, output $3.75→$7.50, cached $0.075→$0.15 per 1M tokens (batch $0.375→$0.75 / $1.875→$3.75).",
+   "source": "https://ai.google.dev/gemini-api/docs/pricing",
+   "observed": "2026-10-30"
+  },
+  {
+   "date": "2027-01-01",
+   "kind": "scheduled increase",
+   "provider": "Google",
+   "summary": "Gemini 3.8 Flash-Lite TTS paid tier: input $0.50→$1.00 (text), output $6.00→$12.00 (audio) per 1M tokens. Row added to the dataset.",
+   "source": "https://ai.google.dev/gemini-api/docs/pricing",
+   "observed": "2026-10-30"
+  },
+  {
+   "date": "2027-01-01",
+   "kind": "scheduled increase",
+   "provider": "Google",
+   "summary": "Gemini Robotics ER 2 Preview and ER 2 Streaming Preview: input $1.00→$2.00, output $5.00→$10.00 per 1M tokens (ER 2 cached $0.10→$0.20). Rows added to the dataset.",
+   "source": "https://ai.google.dev/gemini-api/docs/pricing",
+   "observed": "2026-10-30"
+  },
+  {
    "date": "2026-07-30",
    "kind": "tier renamed",
    "provider": "OpenAI",
@@ -88,7 +112,7 @@
    "date": "2027-01-01",
    "kind": "scheduled increase",
    "provider": "Google",
-   "summary": "Gemini 3.8 Flash paid tier: input $0.75→$1.50, output $3.75→$7.50 per 1M tokens. Gemini 3.8 Flash TTS doubles the same day.",
+   "summary": "Gemini 3.8 Flash paid tier: input $0.75→$1.50, output $3.75→$7.50, cached $0.075→$0.15 per 1M tokens. Gemini 3.8 Flash TTS doubles the same day ($0.50→$1.00 in, $9.00→$18.00 out).",
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
    "observed": "2026-10-26"
   }
