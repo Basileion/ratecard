@@ -57,6 +57,14 @@
     return pick;
   }
 
+  function isGrowTest() {
+    try {
+      if (cfg.test) return true;
+      if (qs("grow_test") === "1") return true;
+    } catch (e) {}
+    return false;
+  }
+
   function send(event, extra) {
     extra = extra || {};
     var utm = readUtm();
@@ -70,6 +78,7 @@
       utm_medium: utm.utm_medium || "",
       variant: extra.variant || (cfg.variant || ""),
       referrer: document.referrer || "",
+      test: isGrowTest() || !!extra.test,
     };
     var body = JSON.stringify(payload);
     try {

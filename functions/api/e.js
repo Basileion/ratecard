@@ -3,9 +3,12 @@
  * POST /api/e  JSON body → Workers Analytics Engine (binding GROWTH).
  * No cookies. No PII. Free-tier Analytics Engine write.
  *
- * blobs: [site, event, path, cta, utm_source, utm_campaign, utm_medium, variant, referrer_host]
- * doubles: [1]  (count)
- * indexes: [site]  (for filtering)
+ * blobs: [site, event, path, cta, utm_source, utm_campaign, utm_medium, variant, referrer_host, test_tag]
+ * doubles: [1, is_test]  (count, 1 if test else 0)
+ * indexes: [site]
+ *
+ * Test events: body.test === true | "1" | 1, or cta/utm_campaign starting with __grow_test
+ * analyze.py excludes rows where test_tag = "test" or is_test = 1.
  */
 const ALLOWED = new Set([
   "page_view",
@@ -26,6 +29,14 @@ function cors(origin) {
     "Access-Control-Allow-Headers": "Content-Type",
     "Access-Control-Max-Age": "86400",
   };
+}
+
+function isTestPayload(body) {
+  if (body.test === true || body.test === 1 || body.test === "1" || body.test === "true") return true;
+  const cta = String(body.cta || "");
+  const camp = String(body.utm_campaign || "");
+  if (cta.startsWith("__grow_test") || camp.startsWith("__grow_test") || camp === "ACT-TEST") return true;
+  return false;
 }
 
 export async function onRequestOptions(context) {
@@ -61,14 +72,17 @@ export async function onRequestPost(context) {
   } catch {
     referrer_host = String(body.referrer || "").slice(0, 80);
   }
+  const test = isTestPayload(body);
+  const test_tag = test ? "test" : "";
 
   const ae = context.env.GROWTH;
   if (ae && typeof ae.writeDataPoint === "function") {
     ae.writeDataPoint({
       indexes: [site || "unknown"],
-      blobs: [site, event, path, cta, utm_source, utm_campaign, utm_medium, variant, referrer_host],
-      doubles: [1],
+      blobs: [site, event, path, cta, utm_source, utm_campaign, utm_medium, variant, referrer_host, test_tag],
+      doubles: [1, test ? 1 : 0],
     });
   }
-  return new Response(JSON.stringify({ ok: true }), { status: 204, headers });
+  // 200 with JSON so curl verification is unambiguous (204 has empty body)
+  return new Response(JSON.stringify({ ok: true, test: !!test, bound: !!(ae && ae.writeDataPoint) }), { status: 200, headers });
 }
