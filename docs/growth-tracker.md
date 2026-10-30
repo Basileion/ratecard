@@ -1,12 +1,9 @@
 # Growth event tracker
 
-Privacy-friendly custom events via Pages Function `functions/grow/e.js` → Workers Analytics Engine.
+Client `grow.js` posts to Worker **https://growth-ingest.basileion-ops.workers.dev**.
 
-**Binding (required for persistence):** In Cloudflare Pages → Settings → Bindings → Add Analytics Engine:
-- Variable name: `GROWTH`
-- Dataset: `growth_events`
-Then redeploy. Free tier only.
+Test events: `{ "test": true }` or cta/utm_campaign `__grow_test` / `ACT-TEST`.
 
-Client: `grow.js` (or inlined). Test events: `{ "test": true }` or `cta`/`utm_campaign` starting with `__grow_test` / `ACT-TEST` → excluded by `analyze.py`.
+Enable Analytics Engine (free) to persist: https://dash.cloudflare.com/552c4ecb2438c0156cd65d0fc269c83c/workers/analytics-engine
 
-See `/workspace/growth/tracker/README.md` and `/workspace/growth/utm-convention.md`.
+Pages `functions/` removed — deploys failed while AE disabled.

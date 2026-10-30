@@ -2,14 +2,14 @@
  * grow.js — tiny shared event + A/B helper (no cookies, privacy-friendly).
  * Include once per page. Config via window.__GROW__ = { site, experiments? }.
  *
- * Events POSTed to same-origin /grow/e (Pages Function → Analytics Engine).
+ * Events POSTed to Worker https://growth-ingest.basileion-ops.workers.dev (Pages Function → Analytics Engine).
  * UTM params persisted in localStorage for the session attribution window.
  * A/B: sticky via localStorage key grow:ab:<experimentId>.
  */
 (function () {
   var cfg = window.__GROW__ || {};
   var SITE = cfg.site || location.hostname;
-  var ENDPOINT = cfg.endpoint || "/grow/e";
+  var ENDPOINT = cfg.endpoint || "https://growth-ingest.basileion-ops.workers.dev";
   var L = null;
   try { L = window.localStorage; } catch (e) {}
 
