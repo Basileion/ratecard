@@ -70,3 +70,18 @@ details{border-bottom:1px solid var(--line);padding:12px 0}summary{cursor:pointe
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}html{scroll-behavior:auto}}
 @media print{header.top,footer,.filters{display:none}}
 html[data-ab-design-standard-v1=control] .plan.feat{border-color:var(--line);box-shadow:var(--shadow)}
+
+/* Portfolio cross-links */
+footer.ds-foot .portfolio{grid-column:1/-1;border-top:1px solid var(--line);padding-top:var(--s3,16px);margin-top:var(--s2,8px)}
+footer.ds-foot .portfolio .eyebrow{margin:0 0 10px}
+footer.ds-foot .portfolio ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+@media(min-width:720px){footer.ds-foot .portfolio ul{grid-template-columns:1fr 1fr}}
+footer.ds-foot .portfolio li{font-size:13px;line-height:1.45;color:var(--mut,var(--mute))}
+footer.ds-foot .portfolio a{font-weight:600;color:var(--ink);text-decoration:none}
+footer.ds-foot .portfolio a:hover{color:var(--acc);text-decoration:underline}
+body.embed header.top,body.embed .top,body.embed footer.ds-foot,body.embed .signup,body.embed .mail,body.embed a.skip{display:none!important}
+body.embed main,#embed-main{padding-top:12px}
+.calc-share{display:grid;gap:12px;margin-top:16px}
+.calc-share textarea{width:100%;min-height:72px;font:12px/1.45 var(--f-mono,ui-monospace,monospace);padding:10px;border:1px solid var(--line);border-radius:var(--r-sm,6px);background:var(--surface);color:var(--ink)}
+.calc-share .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+

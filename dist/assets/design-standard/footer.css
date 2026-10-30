@@ -9,3 +9,14 @@
 .ds-footer a{color:var(--ds-ink-2);text-decoration:none}
 .ds-footer a:hover{color:var(--ds-acc);text-decoration:underline}
 .ds-footer .legal{grid-column:1/-1;border-top:1px solid var(--ds-line);padding-top:var(--ds-s3);margin-top:var(--ds-s2);font-size:12px}
+
+/* Portfolio cross-links (distribution) */
+.ds-footer .portfolio,.ds-foot .portfolio{grid-column:1/-1;border-top:1px solid var(--ds-line,var(--line));padding-top:var(--ds-s3,16px);margin-top:var(--ds-s2,8px)}
+.ds-footer .portfolio .eyebrow,.ds-foot .portfolio .eyebrow{margin:0 0 10px;font:600 11px/1.4 var(--ds-f-mono,var(--f-mono,ui-monospace,monospace));letter-spacing:.1em;text-transform:uppercase;color:var(--ds-ink-2,var(--ink-2,var(--ink)))}
+.ds-footer .portfolio ul,.ds-foot .portfolio ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+@media(min-width:720px){.ds-footer .portfolio ul,.ds-foot .portfolio ul{grid-template-columns:1fr 1fr}}
+.ds-footer .portfolio li,.ds-foot .portfolio li{font-size:13px;line-height:1.45;color:var(--ds-mut,var(--mute,var(--mut)))}
+.ds-footer .portfolio a,.ds-foot .portfolio a{font-weight:600;color:var(--ds-ink,var(--ink));text-decoration:none}
+.ds-footer .portfolio a:hover,.ds-foot .portfolio a:hover{color:var(--ds-acc,var(--acc));text-decoration:underline}
+body.embed header.top,body.embed footer.ds-foot,body.embed .signup,body.embed .mail,body.embed a.skip{display:none!important}
+body.embed main.wrap{padding-top:12px}
