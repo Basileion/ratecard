@@ -3,7 +3,7 @@
 > Published AI API list prices (USD per 1M tokens), one row per model and provider, each with a source URL and check date. 86 rows, 57 verified, 14 providers. Last checked 2026-10-30.
 
 ## Methodology
-Prices come only from each provider's own pricing page, docs, or public pricing API. Unverified means we could not read a number on the check date — the cell stays blank. We never invent rates. Details: https://ratecardai.pages.dev/methodology.html
+Prices come only from each provider's own pricing page, docs, or public pricing API. Unverified means we could not read a number on the check date — the cell stays blank. We never invent rates. Details: https://ratecardai.pages.dev/methodology
 
 ## Data (CC BY 4.0 — please attribute "Ratecard" + link https://ratecardai.pages.dev/)
 - [All models (JSON)](https://ratecardai.pages.dev/api/models.json)
@@ -32,7 +32,7 @@ Prices come only from each provider's own pricing page, docs, or public pricing 
 - DeepSeek deepseek-flash (V4.1 Flash): in $0.30, out $1.20 (source https://api-docs.deepseek.com/quick_start/pricing, 2026-10-30)
 
 ## Pages
-- [Calculator](https://ratecardai.pages.dev/calculator.html)
-- [Compare](https://ratecardai.pages.dev/compare.html)
-- [Developers / cite](https://ratecardai.pages.dev/developers.html)
-- [Methodology](https://ratecardai.pages.dev/methodology.html)
+- [Calculator](https://ratecardai.pages.dev/calculator)
+- [Compare](https://ratecardai.pages.dev/compare)
+- [Developers / cite](https://ratecardai.pages.dev/developers)
+- [Methodology](https://ratecardai.pages.dev/methodology)

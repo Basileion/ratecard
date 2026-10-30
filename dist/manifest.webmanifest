@@ -28,11 +28,11 @@
  "shortcuts": [
   {
    "name": "Calculator",
-   "url": "/calculator.html"
+   "url": "/calculator"
   },
   {
    "name": "Compare",
-   "url": "/compare.html"
+   "url": "/compare"
   }
  ]
 }
