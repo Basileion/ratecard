@@ -1,9 +1,0 @@
-# Pages + Analytics Engine binding (dataset shared across sites).
-# Binding must also be added in CF dashboard if toml alone is not picked up.
-name = "ratecardai"
-compatibility_date = "2026-10-01"
-pages_build_output_dir = "dist"
-
-[[analytics_engine_datasets]]
-binding = "GROWTH"
-dataset = "growth_events"

@@ -1,0 +1,10 @@
+# OPTIONAL — apply via Cloudflare dashboard (Settings → Bindings) preferred until
+# MCP has Pages Write. Dataset is free-tier Workers Analytics Engine.
+#
+# Dashboard: Variable name GROWTH, dataset growth_events (production + preview).
+# Then redeploy. Equivalent wrangler (do not commit pages_build_output_dir unless
+# build_command is also defined to match the dashboard):
+#
+# [[analytics_engine_datasets]]
+# binding = "GROWTH"
+# dataset = "growth_events"
