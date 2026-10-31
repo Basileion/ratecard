@@ -85,3 +85,6 @@ body.embed main,#embed-main{padding-top:12px}
 .calc-share textarea{width:100%;min-height:72px;font:12px/1.45 var(--f-mono,ui-monospace,monospace);padding:10px;border:1px solid var(--line);border-radius:var(--r-sm,6px);background:var(--surface);color:var(--ink)}
 .calc-share .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 
+
+/* RT-20261031-63: keep the finder's Monthly cost column on-screen at 390px */
+@media(max-width:520px){#finder th,#finder td{padding:8px 5px}#finder th{white-space:normal}#finder td:nth-child(2){white-space:normal;overflow-wrap:break-word}#finder td:nth-child(2) .mut{display:block}}

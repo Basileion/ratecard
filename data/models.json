@@ -9,12 +9,12 @@
     "cached": 1,
     "batch_input": 5,
     "batch_output": 25,
-    "context": null,
+    "context": 1050000,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Flex/Batch tier shown as batch. Fast mode 2x, Ultrafast 6x standard. Data-residency endpoints +10%. Long-context (>272K input tokens): $20/$75.",
     "status": "verified",
-    "checked": "2026-10-30",
+    "checked": "2026-10-31",
     "source": "https://platform.openai.com/docs/pricing",
     "long_context": {
       "threshold": 272000,
@@ -23,7 +23,8 @@
       "cached": 2,
       "batch_input": 10,
       "batch_output": 37.5
-    }
+    },
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-6-astra"
   },
   {
     "id": "openai-gpt-6-1-sol",
@@ -35,12 +36,12 @@
     "cached": 0.1,
     "batch_input": 1,
     "batch_output": 5,
-    "context": null,
+    "context": 1050000,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Flex/Batch tier shown as batch. Fast mode 2x, Ultrafast 6x standard. Data-residency endpoints +10%. Long-context (>272K input tokens): $4/$15.",
     "status": "verified",
-    "checked": "2026-10-30",
+    "checked": "2026-10-31",
     "source": "https://platform.openai.com/docs/pricing",
     "long_context": {
       "threshold": 272000,
@@ -49,7 +50,8 @@
       "cached": 0.2,
       "batch_input": 2,
       "batch_output": 7.5
-    }
+    },
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol"
   },
   {
     "id": "openai-gpt-6-luna",
@@ -61,12 +63,12 @@
     "cached": 0.01,
     "batch_input": 0.05,
     "batch_output": 0.25,
-    "context": null,
+    "context": 1050000,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Flex/Batch tier shown as batch. Fast mode 2x, Ultrafast 6x standard. Data-residency endpoints +10%. Long-context (>272K input tokens): $0.2/$0.75.",
     "status": "verified",
-    "checked": "2026-10-30",
+    "checked": "2026-10-31",
     "source": "https://platform.openai.com/docs/pricing",
     "long_context": {
       "threshold": 272000,
@@ -75,7 +77,8 @@
       "cached": 0.02,
       "batch_input": 0.1,
       "batch_output": 0.375
-    }
+    },
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-6-luna"
   },
   {
     "id": "openai-gpt-5-6-sol",
@@ -87,12 +90,12 @@
     "cached": 0.4,
     "batch_input": 2,
     "batch_output": 10,
-    "context": null,
+    "context": 1050000,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Listed under Cyber models. Promotional pricing available at least through 2026-11-21. Long-context (>272K input tokens): $8/$30.",
     "status": "verified",
-    "checked": "2026-10-30",
+    "checked": "2026-10-31",
     "source": "https://platform.openai.com/docs/pricing",
     "long_context": {
       "threshold": 272000,
@@ -101,7 +104,8 @@
       "cached": 0.8,
       "batch_input": 4,
       "batch_output": 15
-    }
+    },
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-5.6-sol"
   },
   {
     "id": "openai-gpt-5-3-codex",
@@ -113,13 +117,14 @@
     "cached": 0.175,
     "batch_input": null,
     "batch_output": null,
-    "context": null,
+    "context": 400000,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Codex. Fast tier $3.50 / $28.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://platform.openai.com/docs/pricing"
+    "source": "https://platform.openai.com/docs/pricing",
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-5.3-codex"
   },
   {
     "id": "openai-chat-latest",
@@ -131,13 +136,14 @@
     "cached": 0.5,
     "batch_input": null,
     "batch_output": null,
-    "context": null,
+    "context": 400000,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://platform.openai.com/docs/pricing"
+    "source": "https://platform.openai.com/docs/pricing",
+    "context_source": "https://developers.openai.com/api/docs/models/chat-latest"
   },
   {
     "id": "openai-gpt-realtime-2-1-audio",
@@ -266,6 +272,239 @@
     "source": "https://platform.openai.com/docs/pricing"
   },
   {
+    "id": "openai-gpt-6-1-terra",
+    "provider": "OpenAI",
+    "model": "gpt-6.1-terra",
+    "kind": "text",
+    "input": 1,
+    "output": 5,
+    "cached": 0.05,
+    "batch_input": 0.5,
+    "batch_output": 2.5,
+    "context": 1050000,
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+    "long_context": {
+      "threshold": 272000,
+      "input": 2,
+      "output": 7.5,
+      "cached": 0.1,
+      "batch_input": 1,
+      "batch_output": 3.75
+    },
+    "unit": "$/1M tokens",
+    "other": null,
+    "notes": "Flex/Batch tier shown as batch. Fast mode $2/$10. 30-minute cache write $1.25. Long-context (>272K input tokens): $2/$7.5 (cached $0.1); batch $1/$3.75. Data-residency endpoints +10%.",
+    "status": "verified",
+    "checked": "2026-10-31",
+    "source": "https://platform.openai.com/docs/pricing"
+  },
+  {
+    "id": "openai-gpt-6-sol",
+    "provider": "OpenAI",
+    "model": "gpt-6-sol",
+    "kind": "text",
+    "input": 2,
+    "output": 10,
+    "cached": 0.2,
+    "batch_input": 1,
+    "batch_output": 5,
+    "context": 1050000,
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-6-sol",
+    "long_context": {
+      "threshold": 272000,
+      "input": 4,
+      "output": 15,
+      "cached": 0.4,
+      "batch_input": 2,
+      "batch_output": 7.5
+    },
+    "unit": "$/1M tokens",
+    "other": null,
+    "notes": "Flex/Batch tier shown as batch. Fast mode $4/$20. 30-minute cache write $2.5. Long-context (>272K input tokens): $4/$15 (cached $0.4); batch $2/$7.5. Data-residency endpoints +10%.",
+    "status": "verified",
+    "checked": "2026-10-31",
+    "source": "https://platform.openai.com/docs/pricing"
+  },
+  {
+    "id": "openai-gpt-5-6-terra",
+    "provider": "OpenAI",
+    "model": "gpt-5.6-terra",
+    "kind": "text",
+    "input": 2,
+    "output": 12,
+    "cached": 0.2,
+    "batch_input": 1,
+    "batch_output": 6,
+    "context": 1050000,
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-5.6-terra",
+    "long_context": {
+      "threshold": 272000,
+      "input": 4,
+      "output": 18,
+      "cached": 0.4,
+      "batch_input": 2,
+      "batch_output": 9
+    },
+    "unit": "$/1M tokens",
+    "other": null,
+    "notes": "Flex/Batch tier shown as batch. Fast mode $4/$24. 30-minute cache write $2.5. Long-context (>272K input tokens): $4/$18 (cached $0.4); batch $2/$9. Data-residency endpoints +10%.",
+    "status": "verified",
+    "checked": "2026-10-31",
+    "source": "https://platform.openai.com/docs/pricing"
+  },
+  {
+    "id": "openai-gpt-5-6-luna",
+    "provider": "OpenAI",
+    "model": "gpt-5.6-luna",
+    "kind": "text",
+    "input": 0.2,
+    "output": 1.2,
+    "cached": 0.02,
+    "batch_input": 0.1,
+    "batch_output": 0.6,
+    "context": 1050000,
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-5.6-luna",
+    "long_context": {
+      "threshold": 272000,
+      "input": 0.4,
+      "output": 1.8,
+      "cached": 0.04,
+      "batch_input": 0.2,
+      "batch_output": 0.9
+    },
+    "unit": "$/1M tokens",
+    "other": null,
+    "notes": "Flex/Batch tier shown as batch. Fast mode $0.4/$2.4. 30-minute cache write $0.25. Long-context (>272K input tokens): $0.4/$1.8 (cached $0.04); batch $0.2/$0.9. Data-residency endpoints +10%.",
+    "status": "verified",
+    "checked": "2026-10-31",
+    "source": "https://platform.openai.com/docs/pricing"
+  },
+  {
+    "id": "openai-gpt-5-5",
+    "provider": "OpenAI",
+    "model": "gpt-5.5",
+    "kind": "text",
+    "input": 5,
+    "output": 30,
+    "cached": 0.5,
+    "batch_input": 2.5,
+    "batch_output": 15,
+    "context": 1050000,
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+    "long_context": {
+      "threshold": 272000,
+      "input": 10,
+      "output": 45,
+      "cached": 1,
+      "batch_input": 5,
+      "batch_output": 22.5
+    },
+    "unit": "$/1M tokens",
+    "other": null,
+    "notes": "Flex/Batch tier shown as batch. Fast mode $12.5/$75. Long-context (>272K input tokens): $10/$45 (cached $1); batch $5/$22.5. Data-residency endpoints +10%.",
+    "status": "verified",
+    "checked": "2026-10-31",
+    "source": "https://platform.openai.com/docs/pricing"
+  },
+  {
+    "id": "openai-gpt-5-5-pro",
+    "provider": "OpenAI",
+    "model": "gpt-5.5-pro",
+    "kind": "text",
+    "input": 30,
+    "output": 180,
+    "cached": null,
+    "batch_input": 15,
+    "batch_output": 90,
+    "context": 1050000,
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-5.5-pro",
+    "long_context": {
+      "threshold": 272000,
+      "input": 60,
+      "output": 270,
+      "cached": null
+    },
+    "unit": "$/1M tokens",
+    "other": null,
+    "notes": "Flex/Batch tier shown as batch. Long-context (>272K input tokens): $60/$270. Data-residency endpoints +10%.",
+    "status": "verified",
+    "checked": "2026-10-31",
+    "source": "https://platform.openai.com/docs/pricing"
+  },
+  {
+    "id": "openai-gpt-5-4",
+    "provider": "OpenAI",
+    "model": "gpt-5.4",
+    "kind": "text",
+    "input": 2.5,
+    "output": 15,
+    "cached": 0.25,
+    "batch_input": 1.25,
+    "batch_output": 7.5,
+    "context": 1050000,
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-5.4",
+    "long_context": {
+      "threshold": 272000,
+      "input": 5,
+      "output": 22.5,
+      "cached": 0.5,
+      "batch_input": 2.5,
+      "batch_output": 11.25
+    },
+    "unit": "$/1M tokens",
+    "other": null,
+    "notes": "Flex/Batch tier shown as batch. Fast mode $5/$30. Long-context (>272K input tokens): $5/$22.5 (cached $0.5); batch $2.5/$11.25. Data-residency endpoints +10%.",
+    "status": "verified",
+    "checked": "2026-10-31",
+    "source": "https://platform.openai.com/docs/pricing"
+  },
+  {
+    "id": "openai-gpt-5-4-pro",
+    "provider": "OpenAI",
+    "model": "gpt-5.4-pro",
+    "kind": "text",
+    "input": 30,
+    "output": 180,
+    "cached": null,
+    "batch_input": 15,
+    "batch_output": 90,
+    "context": 1050000,
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-5.4-pro",
+    "long_context": {
+      "threshold": 272000,
+      "input": 60,
+      "output": 270,
+      "cached": null,
+      "batch_input": 30,
+      "batch_output": 135
+    },
+    "unit": "$/1M tokens",
+    "other": null,
+    "notes": "Flex/Batch tier shown as batch. Long-context (>272K input tokens): $60/$270; batch $30/$135. Data-residency endpoints +10%.",
+    "status": "verified",
+    "checked": "2026-10-31",
+    "source": "https://platform.openai.com/docs/pricing"
+  },
+  {
+    "id": "openai-gpt-5-6-cyber",
+    "provider": "OpenAI",
+    "model": "gpt-5.6-cyber",
+    "kind": "text",
+    "input": 12.5,
+    "output": 75,
+    "cached": 1.25,
+    "batch_input": null,
+    "batch_output": null,
+    "context": 400000,
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-5.6-cyber",
+    "unit": "$/1M tokens",
+    "other": null,
+    "notes": "No Batch price published. 30-minute cache write $15.625. No long-context price published (shown as \"-\"). Listed under OpenAI \"Cyber models\" (Daybreak). Data-residency endpoints +10%.",
+    "status": "verified",
+    "checked": "2026-10-31",
+    "source": "https://platform.openai.com/docs/pricing"
+  },
+  {
     "id": "anthropic-claude-fable-5-1",
     "provider": "Anthropic",
     "model": "Claude Fable 5.1",
@@ -281,7 +520,8 @@
     "notes": "Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x. Context per models overview.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    "source": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+    "context_source": "https://platform.claude.com/docs/en/models/fable-5-1/overview"
   },
   {
     "id": "anthropic-claude-opus-5-5",
@@ -299,7 +539,8 @@
     "notes": "Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x. Context per models overview.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    "source": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+    "context_source": "https://platform.claude.com/docs/en/models/opus-5-5/overview"
   },
   {
     "id": "anthropic-claude-sonnet-5-5",
@@ -317,7 +558,8 @@
     "notes": "Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x. Context per models overview.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    "source": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+    "context_source": "https://platform.claude.com/docs/en/models/sonnet-5-5/overview"
   },
   {
     "id": "anthropic-claude-haiku-5-5",
@@ -343,7 +585,8 @@
       "cached": 0.05,
       "batch_input": 0.25,
       "batch_output": 1.25
-    }
+    },
+    "context_source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview"
   },
   {
     "id": "anthropic-claude-mythos-5-1",
@@ -355,13 +598,14 @@
     "cached": 0.25,
     "batch_input": 5,
     "batch_output": 25,
-    "context": null,
+    "context": 1000000,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    "source": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+    "context_source": "https://platform.claude.com/docs/en/models/mythos-5-1/overview"
   },
   {
     "id": "anthropic-claude-opus-5",
@@ -373,13 +617,14 @@
     "cached": 0.5,
     "batch_input": 2.5,
     "batch_output": 12.5,
-    "context": null,
+    "context": 1000000,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    "source": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+    "context_source": "https://platform.claude.com/docs/en/models/opus-5/overview"
   },
   {
     "id": "anthropic-claude-opus-4-8",
@@ -391,13 +636,14 @@
     "cached": 0.5,
     "batch_input": 2.5,
     "batch_output": 12.5,
-    "context": null,
+    "context": 1000000,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    "source": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+    "context_source": "https://platform.claude.com/docs/en/models/opus-4-8/overview"
   },
   {
     "id": "anthropic-claude-sonnet-5",
@@ -409,13 +655,14 @@
     "cached": 0.2,
     "batch_input": 1,
     "batch_output": 5,
-    "context": null,
+    "context": 1000000,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    "source": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+    "context_source": "https://platform.claude.com/docs/en/models/sonnet-5/overview"
   },
   {
     "id": "anthropic-claude-sonnet-4-6",
@@ -427,13 +674,14 @@
     "cached": 0.3,
     "batch_input": 1.5,
     "batch_output": 7.5,
-    "context": null,
+    "context": 1000000,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    "source": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+    "context_source": "https://platform.claude.com/docs/en/models/sonnet-4-6/overview"
   },
   {
     "id": "anthropic-claude-haiku-4-5",
@@ -445,13 +693,14 @@
     "cached": 0.1,
     "batch_input": 0.5,
     "batch_output": 2.5,
-    "context": null,
+    "context": 200000,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    "source": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+    "context_source": "https://platform.claude.com/docs/en/models/haiku-4-5/overview"
   },
   {
     "id": "anthropic-claude-opus-4-1",
@@ -469,7 +718,9 @@
     "notes": "Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    "source": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+    "context_unpublished": true,
+    "context_note": "Anthropic model-deprecations page lists claude-opus-4-1-20250805 as retired on the Claude API (2026-08-05); no current model page."
   },
   {
     "id": "google-gemini-4-argon",
@@ -481,14 +732,15 @@
     "cached": 0.1,
     "batch_input": 1,
     "batch_output": 5,
-    "context": null,
+    "context": 1048576,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Promotional through 2026-11-30: rises to $4 / $20 (cached $0.20; batch $2 / $10) on 2026-12-01. Implicit caching only.",
     "status": "verified",
     "checked": "2026-10-30",
     "source": "https://ai.google.dev/gemini-api/docs/pricing",
-    "free": false
+    "free": false,
+    "context_source": "https://ai.google.dev/gemini-api/docs/models/gemini-4-argon"
   },
   {
     "id": "google-gemini-3-8-flash",
@@ -500,14 +752,15 @@
     "cached": 0.075,
     "batch_input": 0.375,
     "batch_output": 1.875,
-    "context": null,
+    "context": 1048576,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Rises to $1.50 / $7.50 on 2027-01-01 (cached $0.075→$0.15; batch $0.375→$0.75 in, $1.875→$3.75 out; cache storage $0.50→$1.00 per 1M tokens/hour). Free tier available.",
     "status": "verified",
     "checked": "2026-10-30",
     "source": "https://ai.google.dev/gemini-api/docs/pricing",
-    "free": true
+    "free": true,
+    "context_source": "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash"
   },
   {
     "id": "google-gemini-3-7-flash",
@@ -519,13 +772,14 @@
     "cached": 0.075,
     "batch_input": null,
     "batch_output": null,
-    "context": null,
+    "context": 1048576,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Listed on Google Cloud Agent Platform (Vertex AI) pricing, global endpoint; non-global endpoints $0.825/$4.125 (cached $0.0825). Introductory price through 2026-12-31; rises to $1.50 / $7.50 (cached $0.15) on 2027-01-01. Not listed on the Gemini API (ai.google.dev) pricing page as of 2026-10-31.",
     "status": "verified",
     "checked": "2026-10-31",
-    "source": "https://cloud.google.com/model-garden/pricing"
+    "source": "https://cloud.google.com/model-garden/pricing",
+    "context_source": "https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash"
   },
   {
     "id": "google-gemini-3-6-flash",
@@ -537,14 +791,15 @@
     "cached": 0.075,
     "batch_input": 0.375,
     "batch_output": 1.875,
-    "context": null,
+    "context": 1048576,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Rises to $1.50 / $7.50 on 2027-01-01 (cached $0.075→$0.15; batch $0.375→$0.75 in, $1.875→$3.75 out; cache storage $0.50→$1.00 per 1M tokens/hour). Free tier available.",
     "status": "verified",
     "checked": "2026-10-30",
     "source": "https://ai.google.dev/gemini-api/docs/pricing",
-    "free": true
+    "free": true,
+    "context_source": "https://ai.google.dev/gemini-api/docs/models/gemini-3.6-flash"
   },
   {
     "id": "google-gemini-3-5-flash-lite",
@@ -556,14 +811,15 @@
     "cached": 0.03,
     "batch_input": 0.15,
     "batch_output": 1.25,
-    "context": null,
+    "context": 1048576,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Free tier available. Cache storage billed per hour where listed.",
     "status": "verified",
     "checked": "2026-10-30",
     "source": "https://ai.google.dev/gemini-api/docs/pricing",
-    "free": true
+    "free": true,
+    "context_source": "https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash-lite"
   },
   {
     "id": "google-gemini-3-1-flash-lite",
@@ -575,14 +831,15 @@
     "cached": 0.025,
     "batch_input": 0.125,
     "batch_output": 0.75,
-    "context": null,
+    "context": 1048576,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Audio input $0.50. Free tier available. Cache storage billed per hour where listed.",
     "status": "verified",
     "checked": "2026-10-30",
     "source": "https://ai.google.dev/gemini-api/docs/pricing",
-    "free": true
+    "free": true,
+    "context_source": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite"
   },
   {
     "id": "google-gemini-3-1-pro-preview",
@@ -594,7 +851,7 @@
     "cached": 0.2,
     "batch_input": 1,
     "batch_output": 6,
-    "context": null,
+    "context": 1048576,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Prompts ≤200K: $2/$12 (cached $0.20). Prompts >200K: $4/$18 (cached $0.40; batch $2/$9). Cache storage billed per hour where listed.",
@@ -609,7 +866,8 @@
       "cached": 0.4,
       "batch_input": 2,
       "batch_output": 9
-    }
+    },
+    "context_source": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-pro-preview"
   },
   {
     "id": "google-gemini-3-flash-preview",
@@ -621,14 +879,15 @@
     "cached": 0.05,
     "batch_input": 0.25,
     "batch_output": 1.5,
-    "context": null,
+    "context": 1048576,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Audio input $1. Free tier available. Cache storage billed per hour where listed.",
     "status": "verified",
     "checked": "2026-10-30",
     "source": "https://ai.google.dev/gemini-api/docs/pricing",
-    "free": true
+    "free": true,
+    "context_source": "https://ai.google.dev/gemini-api/docs/models/gemini-3-flash-preview"
   },
   {
     "id": "google-gemini-nano-banana-2-1",
@@ -733,14 +992,15 @@
     "cached": 0.1,
     "batch_input": null,
     "batch_output": null,
-    "context": null,
+    "context": 131072,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Doubles on 2027-01-01: input $1.00→$2.00, output $5.00→$10.00, cached $0.10→$0.20 (cache storage $0.50→$1.00 per 1M tokens/hour). Free tier available.",
     "status": "verified",
     "checked": "2026-10-30",
     "source": "https://ai.google.dev/gemini-api/docs/pricing",
-    "free": true
+    "free": true,
+    "context_source": "https://ai.google.dev/gemini-api/docs/models/gemini-robotics-er-2-preview"
   },
   {
     "id": "google-gemini-robotics-er-2-streaming-preview",
@@ -752,14 +1012,15 @@
     "cached": null,
     "batch_input": null,
     "batch_output": null,
-    "context": null,
+    "context": 131072,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Live API streaming endpoint. Doubles on 2027-01-01: input $1.00→$2.00, output $5.00→$10.00. Free tier available.",
     "status": "verified",
     "checked": "2026-10-30",
     "source": "https://ai.google.dev/gemini-api/docs/pricing",
-    "free": true
+    "free": true,
+    "context_source": "https://ai.google.dev/gemini-api/docs/models/gemini-robotics-er-2-streaming-preview"
   },
   {
     "id": "xai-grok-4-7",
@@ -785,7 +1046,8 @@
       "cached": 1,
       "batch_input": 3.2,
       "batch_output": 9.6
-    }
+    },
+    "context_source": "https://docs.x.ai/developers/models"
   },
   {
     "id": "xai-grok-voice-tts",
@@ -839,7 +1101,8 @@
     "notes": "Peak price. Off-peak: $0.15 in / $0.003 cached / $0.60 out.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://api-docs.deepseek.com/quick_start/pricing"
+    "source": "https://api-docs.deepseek.com/quick_start/pricing",
+    "context_source": "https://api-docs.deepseek.com/quick_start/pricing"
   },
   {
     "id": "deepseek-deepseek-v4-pro",
@@ -857,7 +1120,8 @@
     "notes": "Peak price. Off-peak: $0.66 / $0.022 / $1.98.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://api-docs.deepseek.com/quick_start/pricing"
+    "source": "https://api-docs.deepseek.com/quick_start/pricing",
+    "context_source": "https://api-docs.deepseek.com/quick_start/pricing"
   },
   {
     "id": "together-kimi-k3",
@@ -869,13 +1133,14 @@
     "cached": 0.3,
     "batch_input": null,
     "batch_output": null,
-    "context": null,
+    "context": 1048576,
     "unit": "$/1M tokens",
     "other": null,
     "notes": " Not re-confirmed from an official source on 2026-10-30; marked unverified pending refresh.",
     "status": "unverified",
     "checked": "2026-10-30",
-    "source": "https://www.together.ai/pricing"
+    "source": "https://www.together.ai/pricing",
+    "context_source": "https://docs.together.ai/docs/serverless/models"
   },
   {
     "id": "together-qwen3-8-2-4t-a95b",
@@ -893,7 +1158,9 @@
     "notes": " Not re-confirmed from an official source on 2026-10-30; marked unverified pending refresh.",
     "status": "unverified",
     "checked": "2026-10-30",
-    "source": "https://www.together.ai/pricing"
+    "source": "https://www.together.ai/pricing",
+    "context_unpublished": true,
+    "context_note": "Not on Together serverless models table on 2026-10-31."
   },
   {
     "id": "together-glm-5-3",
@@ -905,13 +1172,14 @@
     "cached": 0.26,
     "batch_input": null,
     "batch_output": null,
-    "context": null,
+    "context": 1048575,
     "unit": "$/1M tokens",
     "other": null,
     "notes": " Not re-confirmed from an official source on 2026-10-30; marked unverified pending refresh.",
     "status": "unverified",
     "checked": "2026-10-30",
-    "source": "https://www.together.ai/pricing"
+    "source": "https://www.together.ai/pricing",
+    "context_source": "https://docs.together.ai/docs/serverless/models"
   },
   {
     "id": "together-deepseek-v4-1-flash",
@@ -923,13 +1191,14 @@
     "cached": 0.006,
     "batch_input": null,
     "batch_output": null,
-    "context": null,
+    "context": 1000000,
     "unit": "$/1M tokens",
     "other": null,
     "notes": " Not re-confirmed from an official source on 2026-10-30; marked unverified pending refresh.",
     "status": "unverified",
     "checked": "2026-10-30",
-    "source": "https://www.together.ai/pricing"
+    "source": "https://www.together.ai/pricing",
+    "context_source": "https://docs.together.ai/docs/serverless/models"
   },
   {
     "id": "together-deepseek-v4-pro",
@@ -941,13 +1210,15 @@
     "cached": 0.13,
     "batch_input": null,
     "batch_output": null,
-    "context": null,
+    "context": 1048576,
     "unit": "$/1M tokens",
     "other": null,
     "notes": " Not re-confirmed from an official source on 2026-10-30; marked unverified pending refresh.",
     "status": "unverified",
     "checked": "2026-10-30",
-    "source": "https://www.together.ai/pricing"
+    "source": "https://www.together.ai/pricing",
+    "context_source": "https://docs.together.ai/docs/serverless/models",
+    "context_note": "Together serverless table row \"DeepSeek V4 Pro 0813\" ($1.32/$0.13/$3.96)."
   },
   {
     "id": "together-gpt-oss-120b",
@@ -959,13 +1230,14 @@
     "cached": null,
     "batch_input": null,
     "batch_output": null,
-    "context": null,
+    "context": 131072,
     "unit": "$/1M tokens",
     "other": null,
     "notes": " Not re-confirmed from an official source on 2026-10-30; marked unverified pending refresh.",
     "status": "unverified",
     "checked": "2026-10-30",
-    "source": "https://www.together.ai/pricing"
+    "source": "https://www.together.ai/pricing",
+    "context_source": "https://docs.together.ai/docs/serverless/models"
   },
   {
     "id": "together-minimax-m3",
@@ -983,7 +1255,9 @@
     "notes": " Not re-confirmed from an official source on 2026-10-30; marked unverified pending refresh.",
     "status": "unverified",
     "checked": "2026-10-30",
-    "source": "https://www.together.ai/pricing"
+    "source": "https://www.together.ai/pricing",
+    "context_unpublished": true,
+    "context_note": "Not on Together serverless models table on 2026-10-31."
   },
   {
     "id": "together-llama-3-8b-instruct-lite",
@@ -1001,7 +1275,9 @@
     "notes": " Not re-confirmed from an official source on 2026-10-30; marked unverified pending refresh.",
     "status": "unverified",
     "checked": "2026-10-30",
-    "source": "https://www.together.ai/pricing"
+    "source": "https://www.together.ai/pricing",
+    "context_unpublished": true,
+    "context_note": "Not on Together serverless models table on 2026-10-31."
   },
   {
     "id": "together-qwen3-5-397b-a17b",
@@ -1019,7 +1295,9 @@
     "notes": " Not re-confirmed from an official source on 2026-10-30; marked unverified pending refresh.",
     "status": "unverified",
     "checked": "2026-10-30",
-    "source": "https://www.together.ai/pricing"
+    "source": "https://www.together.ai/pricing",
+    "context_unpublished": true,
+    "context_note": "Not on Together serverless models table on 2026-10-31."
   },
   {
     "id": "together-flux-2-pro",
@@ -1049,13 +1327,15 @@
     "cached": 0.3,
     "batch_input": null,
     "batch_output": null,
-    "context": null,
+    "context": 1048576,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Standard tier; Priority tier ~1.25x.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://docs.fireworks.ai/serverless/pricing"
+    "source": "https://docs.fireworks.ai/serverless/pricing",
+    "context_source": "https://fireworks.ai/models/fireworks/kimi-k3",
+    "context_note": "Fireworks FAQ: \"1,048,576 tokens\"."
   },
   {
     "id": "fireworks-deepseek-v4-1-flash",
@@ -1067,13 +1347,15 @@
     "cached": 0.006,
     "batch_input": null,
     "batch_output": null,
-    "context": null,
+    "context": 1040000,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Standard tier; Priority tier ~1.25x.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://docs.fireworks.ai/serverless/pricing"
+    "source": "https://docs.fireworks.ai/serverless/pricing",
+    "context_source": "https://fireworks.ai/models/deepseek-ai/deepseek-v4p1-flash",
+    "context_note": "Fireworks lists \"1040k tokens\"; stored as 1,040,000."
   },
   {
     "id": "fireworks-glm-5-3",
@@ -1085,13 +1367,15 @@
     "cached": 0.26,
     "batch_input": null,
     "batch_output": null,
-    "context": null,
+    "context": 1040000,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Standard tier; Priority tier ~1.25x.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://docs.fireworks.ai/serverless/pricing"
+    "source": "https://docs.fireworks.ai/serverless/pricing",
+    "context_source": "https://fireworks.ai/models/fireworks/glm-5p3",
+    "context_note": "Fireworks lists \"1040k tokens\"; stored as 1,040,000."
   },
   {
     "id": "fireworks-openai-gpt-oss-120b",
@@ -1103,13 +1387,15 @@
     "cached": 0.015,
     "batch_input": null,
     "batch_output": null,
-    "context": null,
+    "context": 131000,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Standard tier; Priority tier ~1.25x.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://docs.fireworks.ai/serverless/pricing"
+    "source": "https://docs.fireworks.ai/serverless/pricing",
+    "context_source": "https://fireworks.ai/models/fireworks/gpt-oss-120b",
+    "context_note": "Fireworks lists \"131k tokens\"; stored as 131,000."
   },
   {
     "id": "fireworks-nvidia-nemotron-3-5-lightning-30b-a3b",
@@ -1127,7 +1413,9 @@
     "notes": "Standard tier; Priority tier ~1.25x.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://docs.fireworks.ai/serverless/pricing"
+    "source": "https://docs.fireworks.ai/serverless/pricing",
+    "context_unpublished": true,
+    "context_note": "No Fireworks model page found for this model on 2026-10-31."
   },
   {
     "id": "fireworks-qwen-3-8-max",
@@ -1145,7 +1433,9 @@
     "notes": "Standard tier; Priority tier ~1.25x.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://docs.fireworks.ai/serverless/pricing"
+    "source": "https://docs.fireworks.ai/serverless/pricing",
+    "context_unpublished": true,
+    "context_note": "Fireworks model page shows Context Length \"N/A\"."
   },
   {
     "id": "fireworks-embeddings-150m-350m-params",
@@ -1181,7 +1471,8 @@
     "notes": "Developer plan rate limits: 250K TPM, 1K RPM. Not re-confirmed from an official source on 2026-10-30; marked unverified pending refresh.",
     "status": "unverified",
     "checked": "2026-10-30",
-    "source": "https://console.groq.com/docs/models"
+    "source": "https://console.groq.com/docs/models",
+    "context_source": "https://console.groq.com/docs/models"
   },
   {
     "id": "groq-openai-gpt-oss-20b",
@@ -1199,7 +1490,8 @@
     "notes": "Developer plan: 250K TPM, 1K RPM. Not re-confirmed from an official source on 2026-10-30; marked unverified pending refresh.",
     "status": "unverified",
     "checked": "2026-10-30",
-    "source": "https://console.groq.com/docs/models"
+    "source": "https://console.groq.com/docs/models",
+    "context_source": "https://console.groq.com/docs/models"
   },
   {
     "id": "groq-whisper-large-v3-turbo",
@@ -1235,7 +1527,8 @@
     "notes": "Price listed as \"Contact Sales\" on 2026-10-26.",
     "status": "unverified",
     "checked": "2026-10-30",
-    "source": "https://console.groq.com/docs/models"
+    "source": "https://console.groq.com/docs/models",
+    "context_source": "https://console.groq.com/docs/models"
   },
   {
     "id": "perplexity-sonar",
@@ -1253,7 +1546,9 @@
     "notes": "Tool calls billed separately (web_search $2.50 / 1K). Not re-confirmed from an official source on 2026-10-30; marked unverified pending refresh.",
     "status": "unverified",
     "checked": "2026-10-30",
-    "source": "https://docs.perplexity.ai/getting-started/models"
+    "source": "https://docs.perplexity.ai/getting-started/models",
+    "context_unpublished": true,
+    "context_note": "Perplexity Agent API models page lists perplexity/sonar pricing but no context window."
   },
   {
     "id": "perplexity-pplx-embed-v1-4b",
@@ -1319,13 +1614,15 @@
     "cached": null,
     "batch_input": null,
     "batch_output": null,
-    "context": null,
+    "context": 128000,
     "unit": "$/1M tokens",
     "other": null,
     "notes": "Legacy model, stated in pricing FAQ. Not re-confirmed from an official source on 2026-10-30; marked unverified pending refresh.",
     "status": "unverified",
     "checked": "2026-10-30",
-    "source": "https://cohere.com/pricing"
+    "source": "https://cohere.com/pricing",
+    "context_source": "https://docs.cohere.com/docs/models",
+    "context_note": "Cohere models table: command-r-plus-08-2024 \"128k\"; stored as 128,000."
   },
   {
     "id": "azure-openai-gpt-6-astra-short-context-global",
@@ -1343,7 +1640,9 @@
     "notes": "Data Zone deployments ~+10%. Long-context rates higher. Not re-confirmed from an official source on 2026-10-30; marked unverified pending refresh.",
     "status": "unverified",
     "checked": "2026-10-30",
-    "source": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/"
+    "source": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
+    "context_unpublished": true,
+    "context_note": "Row is Azure’s short-context price category only; long-context rates are a separate Azure category not yet ingested, so it is kept out of the context finder."
   },
   {
     "id": "azure-openai-gpt-6-1-sol-short-context-global",
@@ -1361,7 +1660,9 @@
     "notes": "Data Zone deployments ~+10%. Long-context rates higher. Not re-confirmed from an official source on 2026-10-30; marked unverified pending refresh.",
     "status": "unverified",
     "checked": "2026-10-30",
-    "source": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/"
+    "source": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
+    "context_unpublished": true,
+    "context_note": "Row is Azure’s short-context price category only; long-context rates are a separate Azure category not yet ingested, so it is kept out of the context finder."
   },
   {
     "id": "azure-openai-gpt-6-luna-short-context-global",
@@ -1379,7 +1680,9 @@
     "notes": "Data Zone deployments ~+10%. Long-context rates higher. Not re-confirmed from an official source on 2026-10-30; marked unverified pending refresh.",
     "status": "unverified",
     "checked": "2026-10-30",
-    "source": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/"
+    "source": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
+    "context_unpublished": true,
+    "context_note": "Row is Azure’s short-context price category only; long-context rates are a separate Azure category not yet ingested, so it is kept out of the context finder."
   },
   {
     "id": "azure-openai-gpt-6-luna-short-context-data-zone",
@@ -1397,7 +1700,9 @@
     "notes": "Data Zone deployments ~+10%. Long-context rates higher. Not re-confirmed from an official source on 2026-10-30; marked unverified pending refresh.",
     "status": "unverified",
     "checked": "2026-10-30",
-    "source": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/"
+    "source": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
+    "context_unpublished": true,
+    "context_note": "Row is Azure’s short-context price category only; long-context rates are a separate Azure category not yet ingested, so it is kept out of the context finder."
   },
   {
     "id": "aws-bedrock-deepseek-v3-2",
@@ -1415,7 +1720,9 @@
     "notes": "Rendered from regional price widget; region not confirmed.",
     "status": "unverified",
     "checked": "2026-10-30",
-    "source": "https://aws.amazon.com/bedrock/pricing/"
+    "source": "https://aws.amazon.com/bedrock/pricing/",
+    "context_unpublished": true,
+    "context_note": "AWS Bedrock pricing page does not state a context window; not yet read from the Bedrock model card."
   },
   {
     "id": "aws-bedrock-mistral-large-3",
@@ -1433,7 +1740,9 @@
     "notes": "Rendered from regional price widget; region not confirmed.",
     "status": "unverified",
     "checked": "2026-10-30",
-    "source": "https://aws.amazon.com/bedrock/pricing/"
+    "source": "https://aws.amazon.com/bedrock/pricing/",
+    "context_unpublished": true,
+    "context_note": "AWS Bedrock pricing page does not state a context window; not yet read from the Bedrock model card."
   },
   {
     "id": "aws-bedrock-llama-4-maverick-17b",
@@ -1487,7 +1796,8 @@
     "notes": "From Mistral Large 4 open-weight launch post (2026-10-29): $0.70 in / $0.07 cached / $2.10 out per 1M. Pricing page tab is client-rendered.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://mistral.ai/news/mistral-large-4-oss/"
+    "source": "https://mistral.ai/news/mistral-large-4-oss/",
+    "context_source": "https://mistral.ai/news/mistral-large-4-oss/"
   },
   {
     "id": "openrouter-llama-4-maverick-meta",
@@ -1505,7 +1815,8 @@
     "notes": "OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://openrouter.ai/meta-llama/llama-4-maverick"
+    "source": "https://openrouter.ai/meta-llama/llama-4-maverick",
+    "context_source": "https://openrouter.ai/meta-llama/llama-4-maverick"
   },
   {
     "id": "openrouter-llama-4-scout-meta",
@@ -1523,7 +1834,8 @@
     "notes": "OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://openrouter.ai/meta-llama/llama-4-scout"
+    "source": "https://openrouter.ai/meta-llama/llama-4-scout",
+    "context_source": "https://openrouter.ai/meta-llama/llama-4-scout"
   },
   {
     "id": "openrouter-mistral-large-4-mistral",
@@ -1541,7 +1853,8 @@
     "notes": "OpenRouter list price from its public /api/v1/models endpoint (matches Mistral first-party launch price); may route to multiple upstream hosts.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://openrouter.ai/mistralai/mistral-large-4-0"
+    "source": "https://openrouter.ai/mistralai/mistral-large-4-0",
+    "context_source": "https://openrouter.ai/mistralai/mistral-large-4-0"
   },
   {
     "id": "openrouter-mistral-medium-3-5-mistral",
@@ -1559,7 +1872,8 @@
     "notes": "OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://openrouter.ai/mistralai/mistral-medium-3-5"
+    "source": "https://openrouter.ai/mistralai/mistral-medium-3-5",
+    "context_source": "https://openrouter.ai/mistralai/mistral-medium-3-5"
   },
   {
     "id": "openrouter-mistral-small-4-mistral",
@@ -1577,7 +1891,8 @@
     "notes": "OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://openrouter.ai/mistralai/mistral-small-2603"
+    "source": "https://openrouter.ai/mistralai/mistral-small-2603",
+    "context_source": "https://openrouter.ai/mistralai/mistral-small-2603"
   },
   {
     "id": "openrouter-codestral-2508-mistral",
@@ -1595,7 +1910,8 @@
     "notes": "OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://openrouter.ai/mistralai/codestral-2508"
+    "source": "https://openrouter.ai/mistralai/codestral-2508",
+    "context_source": "https://openrouter.ai/mistralai/codestral-2508"
   },
   {
     "id": "openrouter-command-a-cohere",
@@ -1613,7 +1929,8 @@
     "notes": "OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://openrouter.ai/cohere/command-a-plus"
+    "source": "https://openrouter.ai/cohere/command-a-plus",
+    "context_source": "https://openrouter.ai/cohere/command-a-plus"
   },
   {
     "id": "openrouter-qwen3-8-max-0902-qwen",
@@ -1631,7 +1948,8 @@
     "notes": "OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://openrouter.ai/qwen/qwen3.8-max-0902"
+    "source": "https://openrouter.ai/qwen/qwen3.8-max-0902",
+    "context_source": "https://openrouter.ai/qwen/qwen3.8-max-0902"
   },
   {
     "id": "openrouter-qwen3-7-flash-qwen",
@@ -1649,7 +1967,8 @@
     "notes": "OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://openrouter.ai/qwen/qwen3.7-flash"
+    "source": "https://openrouter.ai/qwen/qwen3.7-flash",
+    "context_source": "https://openrouter.ai/qwen/qwen3.7-flash"
   },
   {
     "id": "openrouter-kimi-k3-1-pro-moonshotai",
@@ -1667,7 +1986,8 @@
     "notes": "OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.",
     "status": "verified",
     "checked": "2026-10-30",
-    "source": "https://openrouter.ai/moonshotai/kimi-k3.1-pro"
+    "source": "https://openrouter.ai/moonshotai/kimi-k3.1-pro",
+    "context_source": "https://openrouter.ai/moonshotai/kimi-k3.1-pro"
   },
   {
     "id": "openrouter-grok-4-7-spacexai",
@@ -1691,6 +2011,7 @@
       "input": 4,
       "output": 12,
       "cached": 1
-    }
+    },
+    "context_source": "https://openrouter.ai/x-ai/grok-4.7"
   }
 ]

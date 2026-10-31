@@ -1,6 +1,6 @@
 # Ratecard
 
-> Published AI API list prices (USD per 1M tokens), one row per model and provider, each with a source URL and check date. 90 rows, 61 verified, 14 providers. Last checked 2026-10-31.
+> Published AI API list prices (USD per 1M tokens), one row per model and provider, each with a source URL and check date. 99 rows, 70 verified, 14 providers. Last checked 2026-10-31.
 
 ## Methodology
 Prices come only from each provider's own pricing page, docs, or public pricing API. Unverified means we could not read a number on the check date — the cell stays blank. We never invent rates. Details: https://ratecardai.pages.dev/methodology
@@ -23,13 +23,13 @@ Prices come only from each provider's own pricing page, docs, or public pricing 
 - OpenRouter Qwen3.7 Flash (Qwen): in $0.030, out $0.13 (source https://openrouter.ai/qwen/qwen3.7-flash, 2026-10-30)
 - Fireworks NVIDIA Nemotron 3.5 Lightning 30B A3B: in $0.050, out $0.20 (source https://docs.fireworks.ai/serverless/pricing, 2026-10-30)
 - OpenRouter Llama 4 Scout (Meta): in $0.10, out $0.30 (source https://openrouter.ai/meta-llama/llama-4-scout, 2026-10-30)
-- OpenAI gpt-6-luna: in $0.10, out $0.50 (source https://platform.openai.com/docs/pricing, 2026-10-30)
+- OpenAI gpt-6-luna: in $0.10, out $0.50 (source https://platform.openai.com/docs/pricing, 2026-10-31)
 - Anthropic Claude Haiku 5.5: in $0.10, out $0.50 (source https://docs.anthropic.com/en/docs/about-claude/pricing, 2026-10-30)
 - Fireworks OpenAI GPT OSS 120B: in $0.15, out $0.60 (source https://docs.fireworks.ai/serverless/pricing, 2026-10-30)
 - OpenRouter Mistral Small 4 (Mistral): in $0.15, out $0.60 (source https://openrouter.ai/mistralai/mistral-small-2603, 2026-10-30)
 - OpenRouter Llama 4 Maverick (Meta): in $0.19, out $0.65 (source https://openrouter.ai/meta-llama/llama-4-maverick, 2026-10-30)
 - OpenRouter Codestral 2508 (Mistral): in $0.30, out $0.90 (source https://openrouter.ai/mistralai/codestral-2508, 2026-10-30)
-- DeepSeek deepseek-flash (V4.1 Flash): in $0.30, out $1.20 (source https://api-docs.deepseek.com/quick_start/pricing, 2026-10-30)
+- OpenAI gpt-5.6-luna: in $0.20, out $1.20 (source https://platform.openai.com/docs/pricing, 2026-10-31)
 
 ## Pages
 - [Calculator](https://ratecardai.pages.dev/calculator)

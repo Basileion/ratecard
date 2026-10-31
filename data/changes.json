@@ -142,5 +142,21 @@
     "summary": "grok-4.7 long-context tier added: above 200K prompt tokens $4.00 in / $12.00 out (cached $1.00); standard cached $0.50; Batch API 20% off. Finder/calculator now price long prompts at the higher tier (OpenRouter Grok 4.7 row too).",
     "source": "https://docs.x.ai/developers/models",
     "observed": "2026-10-31"
+  },
+  {
+    "date": "2026-10-31",
+    "kind": "new model",
+    "provider": "OpenAI",
+    "summary": "Added 9 text models from OpenAI's pricing table (standard / batch per 1M tokens; long-context >272K input tokens where published): gpt-6.1-terra $1/$5 (cached $0.05; batch $0.50/$2.50; >272K $2/$7.50), gpt-6-sol $2/$10 (cached $0.20; >272K $4/$15), gpt-5.6-terra $2/$12 (>272K $4/$18), gpt-5.6-luna $0.20/$1.20 (>272K $0.40/$1.80), gpt-5.5 $5/$30 (>272K $10/$45), gpt-5.5-pro $30/$180 (>272K $60/$270), gpt-5.4 $2.50/$15 (>272K $5/$22.50), gpt-5.4-pro $30/$180 (>272K $60/$270), gpt-5.6-cyber $12.50/$75 (cached $1.25; no batch or long-context price listed). Context windows from each model page: 1,050,000 tokens (gpt-5.6-cyber 400,000).",
+    "source": "https://platform.openai.com/docs/pricing",
+    "observed": "2026-10-31"
+  },
+  {
+    "date": "2026-10-31",
+    "kind": "data",
+    "provider": "All",
+    "summary": "Context windows filled for 32 priced text rows from vendor model pages (OpenAI 1,050,000 for GPT-6.x/5.6 Sol, 400,000 for gpt-5.3-codex and chat-latest; Gemini 1,048,576, Robotics ER 2 131,072; Anthropic 1M, Haiku 4.5 200K; Fireworks and Together model tables; Cohere 128k). The cheapest-model finder now includes OpenAI and Google and shows verified rows only by default. 14 rows with no readable context are flagged unpublished, including Claude Opus 4.1, which Anthropic lists as retired on 2026-08-05.",
+    "source": "https://ratecardai.pages.dev/methodology",
+    "observed": "2026-10-31"
   }
 ]

@@ -2,7 +2,7 @@
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
 const usd=(v,d)=>v==null||isNaN(v)?'—':'$'+(d!=null?v.toFixed(d):v>=100?Math.round(v).toLocaleString('en-US'):v>=0.1?v.toFixed(2):v>=0.01?v.toFixed(3):v.toFixed(4));
 const money=v=>v==null||isNaN(v)?'—':'$'+v.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
-const ctx=v=>v?(v>=1e6?(v/1e6).toFixed(v%1e6?1:0)+'M':Math.round(v/1e3)+'K'):'—';
+const ctx=v=>v?(v>=1e6?(+(v/1e6).toFixed(2))+'M':Math.round(v/1e3)+'K'):'—';
 let DATA=null;const load=async()=>DATA||(DATA=await (await fetch('/api/models.json')).json()).models;
 /** Resolve standard vs long-context rates. promptTokens = typical prompt size (tokens). */
 export function rates(m,promptTokens=0){
@@ -29,11 +29,11 @@ async function table(){const t=$('#models');if(!t)return;const ms=await load();c
   $('#count').textContent=r.length+' of '+ms.length+' rows';};
  $$('th[data-k]',t).forEach(th=>$('button',th).onclick=()=>{const k=th.dataset.k;dir=sortK===k?-dir:1;sortK=k;$$('th[data-k]',t).forEach(x=>x.removeAttribute('aria-sort'));th.setAttribute('aria-sort',dir>0?'ascending':'descending');draw()});
  [q,pv,kd,mc,st].forEach(e=>e.oninput=draw);draw();}
-// ---- cheapest-that-meets finder
-async function finder(){const f=$('#finder');if(!f)return;const ms=(await load()).filter(m=>m.kind==='text'&&m.input!=null&&m.context);
- const run=()=>{const need=+$('#f-ctx').value,inM=+$('#f-in').value||0,outM=+$('#f-out').value||0;
-  const r=ms.filter(m=>m.context>=need).map(m=>{const c=cost(m,{inM,outM,promptTokens:need}), tiered=!!(m.long_context&&need>m.long_context.threshold);return {m,c,tiered}}).sort((a,b)=>a.c-b.c).slice(0,5);
-  $('#f-out-list').innerHTML=r.length?r.map((x,i)=>`<tr><td>${i+1}</td><td><a href="/models/${x.m.id}">${x.m.model}</a> <span class="mut">· ${x.m.provider}</span>${x.tiered?' <span class="tag k" title="Priced at long-context tier">long tier</span>':''}</td><td class="n">${ctx(x.m.context)}</td><td class="n">${money(x.c)}</td></tr>`).join(''):'<tr><td colspan=4 class=mut>No model with a verified context window meets this requirement.</td></tr>'};
+// ---- cheapest-that-meets finder (RT-20261031-63: verified rows only unless the user opts in; unverified rows are tagged)
+async function finder(){const f=$('#finder');if(!f)return;const ms=(await load()).filter(m=>m.kind==='text'&&m.input!=null&&m.output!=null&&m.context&&!m.context_unpublished);
+ const run=()=>{const need=+$('#f-ctx').value,inM=+$('#f-in').value||0,outM=+$('#f-out').value||0,unv=!!$('#f-unv')?.checked;
+  const r=ms.filter(m=>m.context>=need&&(unv||m.status==='verified')).map(m=>{const c=cost(m,{inM,outM,promptTokens:need}), tiered=!!(m.long_context&&need>m.long_context.threshold);return {m,c,tiered}}).sort((a,b)=>a.c-b.c||(a.m.status==='verified'?-1:1)).slice(0,5);
+  $('#f-out-list').innerHTML=r.length?r.map((x,i)=>`<tr><td>${i+1}</td><td><a href="/models/${x.m.id}">${x.m.model}</a> <span class="mut">· ${x.m.provider}</span>${x.tiered?' <span class="tag k" title="Priced at long-context tier">long tier</span>':''}${x.m.status!=='verified'?' <span class="tag u" title="Price or context not verified against the official page">unverified</span>':''}</td><td class="n">${ctx(x.m.context)}</td><td class="n">${money(x.c)}</td></tr>`).join(''):`<tr><td colspan=4 class=mut>No ${unv?'':'verified '}model with a published context window meets this requirement.</td></tr>`};
  $$('input,select',f).forEach(e=>e.oninput=run);run();}
 // ---- calculator
 async function calc(){const f=$('#calc');if(!f)return;const ms=(await load()).filter(m=>m.kind==='text'&&m.input!=null);

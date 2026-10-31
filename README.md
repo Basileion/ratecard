@@ -7,6 +7,7 @@ Static, dependency-free (Node 20). Proposed live URL: https://ratecardai.pages.d
 - `scripts/seed-data.mjs` — one-off seed from the 2026-10-26 readings (keep for reference; edit JSON directly afterwards).
 - `scripts/build.mjs` — builds `dist/`: rate table, finder, calculator, compare, model pages, provider pages, change log, RSS, Pro, sponsor, developers, methodology, `/api/*.json`, `openapi.json`, `llms.txt`, manifest + service worker, sitemap, `_headers`.
 - `scripts/visuals.mjs` — icons + OG images (headless Chrome).
+- `scripts/ingest-openai.mjs` — parses OpenAI’s official pricing page (standard/batch/fast tables + >272K long-context tables from its bundle) and each model page’s context window into `data/models.json`; dry run by default, `--write` to apply.
 - `scripts/check.mjs` — weekly: snapshots every unique source page, diffs, writes `reports/diff-DATE.md`.
 
 ## Weekly routine (~30 min)

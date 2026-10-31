@@ -115,6 +115,19 @@
        "null"
       ]
      },
+     "context_source": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "format": "uri"
+     },
+     "context_unpublished": {
+      "type": "boolean"
+     },
+     "context_note": {
+      "type": "string"
+     },
      "long_context": {
       "type": [
        "object",
