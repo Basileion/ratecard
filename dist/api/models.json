@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31T12:19:49.251Z",
+ "generated": "2026-10-31T13:20:00.389Z",
  "site": "https://ratecardai.pages.dev",
  "license": "CC-BY-4.0",
  "units": "USD per 1M tokens unless unit/other says otherwise",
@@ -1157,9 +1157,34 @@
    "other": null,
    "notes": "Peak price. Off-peak: $0.15 in / $0.003 cached / $0.60 out.",
    "status": "verified",
-   "checked": "2026-10-30",
+   "checked": "2026-10-31",
    "source": "https://api-docs.deepseek.com/quick_start/pricing",
    "context_source": "https://api-docs.deepseek.com/quick_start/pricing",
+   "offpeak": {
+    "input": 0.15,
+    "output": 0.6,
+    "cached": 0.003,
+    "hours": "Peak 01:00-04:00 and 06:00-10:00 UTC Mon-Fri (excl. Chinese public holidays); all other hours off-peak (half the peak rate)",
+    "source": "https://api-docs.deepseek.com/quick_start/pricing"
+   },
+   "tool_fees": [
+    {
+     "tool": "Search API",
+     "usd_per_1k": 0.75,
+     "unit": "per 1,000 successful requests",
+     "billing_start_utc": "2026-10-31T16:00:00Z",
+     "source": "https://api-docs.deepseek.com/quick_start/pricing",
+     "rules_source": "https://api-docs.deepseek.com/guides/search"
+    },
+    {
+     "tool": "Fetch API",
+     "usd_per_1k": 0.75,
+     "unit": "per 1,000 successful requests",
+     "billing_start_utc": "2026-10-31T16:00:00Z",
+     "source": "https://api-docs.deepseek.com/quick_start/pricing",
+     "rules_source": "https://api-docs.deepseek.com/guides/search"
+    }
+   ],
    "provider_id": "deepseek"
   },
   {
@@ -1177,9 +1202,34 @@
    "other": null,
    "notes": "Peak price. Off-peak: $0.66 / $0.022 / $1.98.",
    "status": "verified",
-   "checked": "2026-10-30",
+   "checked": "2026-10-31",
    "source": "https://api-docs.deepseek.com/quick_start/pricing",
    "context_source": "https://api-docs.deepseek.com/quick_start/pricing",
+   "offpeak": {
+    "input": 0.66,
+    "output": 1.98,
+    "cached": 0.022,
+    "hours": "Peak 01:00-04:00 and 06:00-10:00 UTC Mon-Fri (excl. Chinese public holidays); all other hours off-peak (half the peak rate)",
+    "source": "https://api-docs.deepseek.com/quick_start/pricing"
+   },
+   "tool_fees": [
+    {
+     "tool": "Search API",
+     "usd_per_1k": 0.75,
+     "unit": "per 1,000 successful requests",
+     "billing_start_utc": "2026-10-31T16:00:00Z",
+     "source": "https://api-docs.deepseek.com/quick_start/pricing",
+     "rules_source": "https://api-docs.deepseek.com/guides/search"
+    },
+    {
+     "tool": "Fetch API",
+     "usd_per_1k": 0.75,
+     "unit": "per 1,000 successful requests",
+     "billing_start_utc": "2026-10-31T16:00:00Z",
+     "source": "https://api-docs.deepseek.com/quick_start/pricing",
+     "rules_source": "https://api-docs.deepseek.com/guides/search"
+    }
+   ],
    "provider_id": "deepseek"
   },
   {

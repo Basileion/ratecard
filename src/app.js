@@ -15,11 +15,17 @@ export function rates(m,promptTokens=0){
   const bc=baseCached!=null&&baseBi!=null&&baseIn?baseCached*baseBi/baseIn:cached;
   return {input,output,cached,bi,bo,bc,tiered:use};
 }
-export function cost(m,{inM,outM,hit=0,batch=0,promptTokens=0}){if(m.input==null||m.output==null)return null;
+function tokenCost(m,{inM,outM,hit=0,batch=0,promptTokens=0}){
   const r=rates(m,promptTokens);
   const std=inM*((1-hit)*r.input+hit*r.cached)+outM*r.output, bat=inM*((1-hit)*r.bi+hit*r.bc)+outM*r.bo;
   return (1-batch)*std+batch*bat}
-window.Ratecard={cost,rates,usd,money};
+/** offpeak = share (0-1) of tokens billed at a published off-peak rate (DeepSeek); tools = Search/Fetch requests per month (billed only where the provider publishes a per-request fee). */
+export function toolFee(m,tools=0){return (m.tool_fees&&tools>0)?tools/1000*m.tool_fees[0].usd_per_1k:0}
+export function cost(m,{inM,outM,hit=0,batch=0,promptTokens=0,offpeak=0,tools=0}){if(m.input==null||m.output==null)return null;
+  const u={inM,outM,hit,batch,promptTokens},op=m.offpeak?Math.min(Math.max(offpeak,0),1):0;
+  const t=op?(1-op)*tokenCost(m,u)+op*tokenCost({...m,...m.offpeak,batch_input:null,batch_output:null,long_context:null},u):tokenCost(m,u);
+  return t+toolFee(m,tools)}
+window.Ratecard={cost,rates,toolFee,usd,money};
 // ---- price table
 async function table(){const t=$('#models');if(!t)return;const ms=await load();const tb=$('tbody',t);
  const q=$('#q'),pv=$('#prov'),kd=$('#kind'),mc=$('#minctx'),st=$('#ver');let sortK='input',dir=1;
@@ -39,13 +45,13 @@ async function finder(){const f=$('#finder');if(!f)return;const ms=(await load()
 async function calc(){const f=$('#calc');if(!f)return;const ms=(await load()).filter(m=>m.kind==='text'&&m.input!=null);
  const opts=ms.map(m=>`<option value="${m.id}">${m.provider} · ${m.model}</option>`).join('');$('#c-cur').innerHTML=opts;$$('.c-alt').forEach(s=>s.innerHTML='<option value="">—</option>'+opts);
  const p=new URLSearchParams(location.search);const set=(id,v)=>{if(v!=null&&$(id))$(id).value=v};
- set('#c-in',p.get('in'));set('#c-out',p.get('out'));set('#c-hit',p.get('hit'));set('#c-batch',p.get('batch'));set('#c-prompt',p.get('prompt'));
+ set('#c-in',p.get('in'));set('#c-out',p.get('out'));set('#c-hit',p.get('hit'));set('#c-batch',p.get('batch'));set('#c-prompt',p.get('prompt'));set('#c-op',p.get('op'));set('#c-tools',p.get('tools'));
  $('#c-cur').value=p.get('cur')||'anthropic-claude-sonnet-4-6';(p.get('alt')||'anthropic-claude-sonnet-5-5,google-gemini-3-8-flash,deepseek-deepseek-flash-v4-1-flash').split(',').forEach((v,i)=>{const s=$$('.c-alt')[i];if(s)s.value=v});
- const run=()=>{const promptTokens=+$('#c-prompt')?.value||0;const u={inM:+$('#c-in').value||0,outM:+$('#c-out').value||0,hit:(+$('#c-hit').value||0)/100,batch:(+$('#c-batch').value||0)/100,promptTokens};
+ const run=()=>{const promptTokens=+$('#c-prompt')?.value||0;const u={inM:+$('#c-in').value||0,outM:+$('#c-out').value||0,hit:(+$('#c-hit').value||0)/100,batch:(+$('#c-batch').value||0)/100,promptTokens,offpeak:(+$('#c-op')?.value||0)/100,tools:+$('#c-tools')?.value||0};
   const cur=ms.find(m=>m.id===$('#c-cur').value),base=cost(cur,u);const rows=[cur,...$$('.c-alt').map(s=>ms.find(m=>m.id===s.value)).filter(Boolean)];
-  $('#c-res').innerHTML=rows.map((m,i)=>{const c=cost(m,u),d=base-c,tiered=!!(m.long_context&&promptTokens>m.long_context.threshold);return `<tr><td>${i?'':'<span class="tag k">Current</span> '}<a href="/models/${m.id}">${m.model}</a> <span class="mut">· ${m.provider}</span>${tiered?' <span class="tag k">long tier</span>':''}</td><td class="n">${money(c)}</td><td class="n">${money(c*12)}</td><td class="n ${i?(d>=0?'pos':'neg'):''}">${i?(d>=0?money(d*12)+' saved':money(-d*12)+' more'):'—'}</td><td class="n">${i&&base?((d/base)*100).toFixed(1)+'%':'—'}</td><td class="src"><a href="${m.source}" target="_blank" rel="noopener">source</a> · ${m.checked}</td></tr>`}).join('');
+  $('#c-res').innerHTML=rows.map((m,i)=>{const c=cost(m,u),d=base-c,tiered=!!(m.long_context&&promptTokens>m.long_context.threshold);return `<tr><td>${i?'':'<span class="tag k">Current</span> '}<a href="/models/${m.id}">${m.model}</a> <span class="mut">· ${m.provider}</span>${tiered?' <span class="tag k">long tier</span>':''}${toolFee(m,u.tools)?` <span class="tag k" title="DeepSeek Search/Fetch: $0.75 per 1,000 successful requests">+${money(toolFee(m,u.tools))} tools</span>`:''}${m.offpeak&&u.offpeak?` <span class="tag k">${Math.round(u.offpeak*100)}% off-peak</span>`:''}</td><td class="n">${money(c)}</td><td class="n">${money(c*12)}</td><td class="n ${i?(d>=0?'pos':'neg'):''}">${i?(d>=0?money(d*12)+' saved':money(-d*12)+' more'):'—'}</td><td class="n">${i&&base?((d/base)*100).toFixed(1)+'%':'—'}</td><td class="src"><a href="${m.source}" target="_blank" rel="noopener">source</a> · ${m.checked}</td></tr>`}).join('');
   $('#c-mo').textContent=money(base);$('#c-yr').textContent=money(base*12);
-  const q=new URLSearchParams({in:$('#c-in').value,out:$('#c-out').value,hit:$('#c-hit').value,batch:$('#c-batch').value,prompt:$('#c-prompt')?.value||'0',cur:$('#c-cur').value,alt:$$('.c-alt').map(s=>s.value).join(',')});history.replaceState(null,'','?'+q)};
+  const q=new URLSearchParams({in:$('#c-in').value,out:$('#c-out').value,hit:$('#c-hit').value,batch:$('#c-batch').value,prompt:$('#c-prompt')?.value||'0',op:$('#c-op')?.value||'0',tools:$('#c-tools')?.value||'0',cur:$('#c-cur').value,alt:$$('.c-alt').map(s=>s.value).join(',')});history.replaceState(null,'','?'+q)};
  $$('input,select',f).forEach(e=>e.oninput=run);run();
  $('#c-csv')&&($('#c-csv').onclick=()=>{const rows=[['model','provider','monthly_usd','annual_usd','source','checked']];$$('#c-res tr').forEach(tr=>{const td=$$('td',tr);rows.push([td[0].querySelector('a').textContent,td[0].querySelector('.mut').textContent.replace('· ',''),td[1].textContent,td[2].textContent,td[5].querySelector('a').href,td[5].textContent.split('· ')[1]])});const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([rows.map(r=>r.map(x=>'"'+String(x).replace(/"/g,'""')+'"').join(',')).join('\n')],{type:'text/csv'}));a.download='ratecard-estimate.csv';a.click()});}
 // ---- compare

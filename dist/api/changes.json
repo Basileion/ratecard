@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31T12:19:49.251Z",
+ "generated": "2026-10-31T13:20:00.389Z",
  "site": "https://ratecardai.pages.dev",
  "license": "CC-BY-4.0",
  "units": "USD per 1M tokens unless unit/other says otherwise",
@@ -32,7 +32,7 @@
    "date": "2026-11-01",
    "kind": "billing start",
    "provider": "DeepSeek",
-   "summary": "Search and Fetch APIs start per-request billing at 00:00 Beijing time (2026-10-31 16:00 UTC): $0.75 per 1,000 successful requests each. Server-side tool calls via DeepSeek Harness, Claude Code and Codex were free until then.",
+   "summary": "Search and Fetch APIs start per-request billing at 00:00 Beijing time 2026-11-01 (= 2026-10-31 16:00 UTC / 12:00 PM ET): $0.75 per 1,000 successful requests each ($0.00075 per request); failed requests, empty search results and timeouts are not billed. Server-side tool calls via DeepSeek Harness, Claude Code and Codex were free until then. Re-confirmed on the pricing page and Search & Fetch guide 2026-10-31; cost math at /guides/deepseek-search-fetch-pricing.",
    "source": "https://api-docs.deepseek.com/quick_start/pricing",
    "observed": "2026-10-31"
   },

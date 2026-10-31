@@ -709,7 +709,7 @@
 - context: 1000000 (source: https://api-docs.deepseek.com/quick_start/pricing)
 - other: 
 - status: verified
-- source: https://api-docs.deepseek.com/quick_start/pricing (2026-10-30)
+- source: https://api-docs.deepseek.com/quick_start/pricing (2026-10-31)
 - notes: Peak price. Off-peak: $0.15 in / $0.003 cached / $0.60 out.
 
 ### DeepSeek deepseek-v4-pro
@@ -721,7 +721,7 @@
 - context: 1000000 (source: https://api-docs.deepseek.com/quick_start/pricing)
 - other: 
 - status: verified
-- source: https://api-docs.deepseek.com/quick_start/pricing (2026-10-30)
+- source: https://api-docs.deepseek.com/quick_start/pricing (2026-10-31)
 - notes: Peak price. Off-peak: $0.66 / $0.022 / $1.98.
 
 ### Together Kimi K3
@@ -1280,7 +1280,7 @@
 - 2026-10-31 xAI (correction): grok-4.7 long-context tier added: above 200K prompt tokens $4.00 in / $12.00 out (cached $1.00); standard cached $0.50; Batch API 20% off. Finder/calculator now price long prompts at the higher tier (OpenRouter Grok 4.7 row too). [https://docs.x.ai/developers/models]
 - 2026-10-31 OpenAI (new model): Added 9 text models from OpenAI's pricing table (standard / batch per 1M tokens; long-context >272K input tokens where published): gpt-6.1-terra $1/$5 (cached $0.05; batch $0.50/$2.50; >272K $2/$7.50), gpt-6-sol $2/$10 (cached $0.20; >272K $4/$15), gpt-5.6-terra $2/$12 (>272K $4/$18), gpt-5.6-luna $0.20/$1.20 (>272K $0.40/$1.80), gpt-5.5 $5/$30 (>272K $10/$45), gpt-5.5-pro $30/$180 (>272K $60/$270), gpt-5.4 $2.50/$15 (>272K $5/$22.50), gpt-5.4-pro $30/$180 (>272K $60/$270), gpt-5.6-cyber $12.50/$75 (cached $1.25; no batch or long-context price listed). Context windows from each model page: 1,050,000 tokens (gpt-5.6-cyber 400,000). [https://platform.openai.com/docs/pricing]
 - 2026-10-31 All (data): Context windows filled for 32 priced text rows from vendor model pages (OpenAI 1,050,000 for GPT-6.x/5.6 Sol, 400,000 for gpt-5.3-codex and chat-latest; Gemini 1,048,576, Robotics ER 2 131,072; Anthropic 1M, Haiku 4.5 200K; Fireworks and Together model tables; Cohere 128k). The cheapest-model finder now includes OpenAI and Google and shows verified rows only by default. 14 rows with no readable context are flagged unpublished, including Claude Opus 4.1, which Anthropic lists as retired on 2026-08-05. [https://ratecardai.pages.dev/methodology]
-- 2026-11-01 DeepSeek (billing start): Search and Fetch APIs start per-request billing at 00:00 Beijing time (2026-10-31 16:00 UTC): $0.75 per 1,000 successful requests each. Server-side tool calls via DeepSeek Harness, Claude Code and Codex were free until then. [https://api-docs.deepseek.com/quick_start/pricing]
+- 2026-11-01 DeepSeek (billing start): Search and Fetch APIs start per-request billing at 00:00 Beijing time 2026-11-01 (= 2026-10-31 16:00 UTC / 12:00 PM ET): $0.75 per 1,000 successful requests each ($0.00075 per request); failed requests, empty search results and timeouts are not billed. Server-side tool calls via DeepSeek Harness, Claude Code and Codex were free until then. Re-confirmed on the pricing page and Search & Fetch guide 2026-10-31; cost math at /guides/deepseek-search-fetch-pricing. [https://api-docs.deepseek.com/quick_start/pricing]
 - 2026-11-13 Google (billing rule change): Google Cloud Agent Platform: Gemini 4 (incl. Argon) completions over 32K tokens are charged for retrievable token usage even if the request fails on a client or server timeout. [https://cloud.google.com/model-garden/pricing]
 - 2027-01-01 Google (scheduled increase): Gemini 3.7 Flash (Google Cloud Agent Platform, global): input $0.75→$1.50, output $3.75→$7.50, cached $0.075→$0.15 per 1M tokens. Row added to Ratecard. [https://cloud.google.com/model-garden/pricing]
 - 2026-10-30 OpenAI (correction): gpt-image-2 standard was incorrectly set to batch rates; corrected to $8/$30/$2 (batch $4/$15). [https://platform.openai.com/docs/pricing]
@@ -1327,3 +1327,18 @@ Page: https://ratecardai.pages.dev/scheduled-increases — data: https://ratecar
 - 2026-11-01 (00:00 Beijing time on 2026-11-01 (= 2026-10-31 16:00 UTC)) · DeepSeek · Search API and Fetch API (incl. server-side tool calls via DeepSeek Harness, Claude Code, Codex): Server-side Search and Fetch tool calls, currently free, start per-request billing. Price: $0.75 per 1,000 successful requests (Search); $0.75 per 1,000 successful requests (Fetch) · source https://api-docs.deepseek.com/quick_start/pricing (checked 2026-10-31)
 - 2026-11-13 (2026-11-13) · Google · Gemini 4 (incl. Gemini 4 Argon) on Google Cloud Agent Platform: When a completion exceeds 32K tokens, retrievable token usage is charged even if the request ultimately fails due to client or server timeouts (today only 200 responses are charged). Price: Standard token rates for retrievable tokens · source https://cloud.google.com/model-garden/pricing (checked 2026-10-31)
 - Promotion window · OpenAI gpt-5.6-sol: $4.00 in / $20.00 out per 1M tokens (promotional), at least through 2026-11-21; new price not yet published · source https://platform.openai.com/docs/pricing
+
+
+## DeepSeek Search & Fetch tool fees (checked 2026-10-31)
+Page: https://ratecardai.pages.dev/guides/deepseek-search-fetch-pricing
+- Q: What does DeepSeek web search cost per request?
+  A: DeepSeek charges $0.75 per 1,000 successful Search API requests and $0.75 per 1,000 successful Fetch API requests, i.e. $0.00075 per request. Billing is per successful request, not per token or per result returned. Server-side tool calls through DeepSeek Harness, Claude Code and Codex were free until 00:00 Beijing time on 2026-11-01 (2026-10-31 16:00 UTC, 12:00 PM ET). Source: DeepSeek pricing page, checked 2026-10-31.
+- Q: Which DeepSeek tool requests are billed?
+  A: Only requests that return HTTP 200 with a result: Search must return a non-empty results array and Fetch must return page content. Failed requests, empty search results and timeouts are not billed, and the count parameter (1-50 results) does not change the per-request price. Source: DeepSeek Search & Fetch guide, checked 2026-10-31.
+- Q: When did DeepSeek start charging for Search and Fetch?
+  A: At 00:00 Beijing time on 2026-11-01, which is 16:00 UTC (12:00 PM ET) on 2026-10-31. Before that, server-side tool calls via DeepSeek Harness, Claude Code and Codex were free.
+- Q: How much do 100,000 DeepSeek searches cost?
+  A: 100,000 successful Search requests cost $75.00. 1,000,000 cost $750.00. Fetch is billed at the same rate, separately.
+- Q: Do DeepSeek off-peak discounts apply to Search and Fetch?
+  A: DeepSeek’s pricing page lists one flat Search/Fetch price; its “off-peak rates are half of the peak rates” note is attached to the token price table. We model tool fees at the flat rate at all hours.
+- Per 1,000/10,000/100,000/1,000,000 successful requests: $0.7500 / $7.50 / $75.00 / $750.00 (per API).

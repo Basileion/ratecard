@@ -42,3 +42,6 @@ Prices come only from each provider's own pricing page, docs, or public pricing 
 - [Scheduled increases (JSON)](https://ratecardai.pages.dev/api/scheduled.json)
 - Billing rule change 2026-11-01: DeepSeek — Server-side Search and Fetch tool calls, currently free, start per-request billing. $0.75 per 1,000 successful requests (Search); $0.75 per 1,000 successful requests (Fetch). Source: https://api-docs.deepseek.com/quick_start/pricing
 - Billing rule change 2026-11-13: Google — When a completion exceeds 32K tokens, retrievable token usage is charged even if the request ultimately fails due to client or server timeouts (today only 200 responses are charged). Standard token rates for retrievable tokens. Source: https://cloud.google.com/model-garden/pricing
+
+## Guides
+- [DeepSeek Search & Fetch API pricing](https://ratecardai.pages.dev/guides/deepseek-search-fetch-pricing): $0.75 per 1,000 successful requests each, billed from 2026-10-31 16:00 UTC.

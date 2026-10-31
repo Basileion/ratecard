@@ -88,3 +88,8 @@ body.embed main,#embed-main{padding-top:12px}
 
 /* RT-20261031-63: keep the finder's Monthly cost column on-screen at 390px */
 @media(max-width:520px){#finder th,#finder td{padding:8px 5px}#finder th{white-space:normal}#finder td:nth-child(2){white-space:normal;overflow-wrap:break-word}#finder td:nth-child(2) .mut{display:block}}
+
+/* 390px fit (calculator inputs overflowed to 512px) */
+.grid2>*,.grid3>*{min-width:0}
+#calc .filters label{flex:1 1 150px;min-width:0}
+#calc .filters input,#calc .filters select{width:100%;max-width:100%;box-sizing:border-box}
