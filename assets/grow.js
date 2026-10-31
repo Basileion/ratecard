@@ -3,6 +3,8 @@
  * Include once per page. Config via window.__GROW__ = { site, experiments? }.
  *
  * Events POSTed to Worker https://growth-ingest.basileion-ops.workers.dev (Pages Function → Analytics Engine).
+ * Beacon body is JSON sent as text/plain (CORS-safelisted, no preflight): an application/json Blob
+ * triggered a credentialed preflight that the endpoint rejects, so Chrome dropped every beacon.
  * UTM params persisted in localStorage for the session attribution window.
  * A/B: sticky via localStorage key grow:ab:<experimentId>.
  */
@@ -83,7 +85,7 @@
     var body = JSON.stringify(payload);
     try {
       if (navigator.sendBeacon) {
-        navigator.sendBeacon(ENDPOINT, new Blob([body], { type: "application/json" }));
+        navigator.sendBeacon(ENDPOINT, new Blob([body], { type: "text/plain;charset=UTF-8" }));
         return;
       }
     } catch (e) {}
