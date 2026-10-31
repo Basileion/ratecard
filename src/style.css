@@ -93,3 +93,6 @@ body.embed main,#embed-main{padding-top:12px}
 .grid2>*,.grid3>*{min-width:0}
 #calc .filters label{flex:1 1 150px;min-width:0}
 #calc .filters input,#calc .filters select{width:100%;max-width:100%;box-sizing:border-box}
+/* RT-20261031-98: scheduled-change tags wrap instead of widening the calculator table */
+#c-res td:first-child{white-space:normal;min-width:200px}#c-res .chg{white-space:nowrap}
+@media(max-width:520px){#c-tbl th,#c-tbl td{padding:8px 5px}#c-tbl th{white-space:normal}#c-res td:first-child{min-width:150px}#c-res .chg{white-space:normal}}

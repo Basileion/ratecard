@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31T13:20:00.389Z",
+ "generated": "2026-10-31T18:21:01.299Z",
  "site": "https://ratecardai.pages.dev",
  "license": "CC-BY-4.0",
  "units": "USD per 1M tokens unless unit/other says otherwise",
@@ -37,7 +37,7 @@
    "name": "DeepSeek",
    "source": "https://api-docs.deepseek.com/quick_start/pricing",
    "checked": "2026-10-31",
-   "summary": "Off-peak pricing ~50% of peak. Search and Fetch APIs: $0.75 per 1,000 successful requests each, billed from 00:00 Beijing time 2026-11-01."
+   "summary": "Off-peak pricing ~50% of peak. Search and Fetch APIs: $0.75 per 1,000 successful requests each (standalone APIs billed per request); server-side tool calls via DeepSeek Harness, Claude Code and Codex billed from 00:00 Beijing time 2026-11-01."
   },
   {
    "id": "together",

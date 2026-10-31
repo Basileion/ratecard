@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31T13:20:00.389Z",
+ "generated": "2026-10-31T18:21:01.299Z",
  "site": "https://ratecardai.pages.dev",
  "license": "CC-BY-4.0",
  "units": "USD per 1M tokens unless unit/other says otherwise",
@@ -780,6 +780,48 @@
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
    "free": false,
    "context_source": "https://ai.google.dev/gemini-api/docs/models/gemini-4-argon",
+   "scheduled_changes": [
+    {
+     "dimension": "input",
+     "old": 2,
+     "new": 4,
+     "effective": "2026-12-01",
+     "source": "https://ai.google.dev/gemini-api/docs/pricing",
+     "checked": "2026-10-30"
+    },
+    {
+     "dimension": "output",
+     "old": 10,
+     "new": 20,
+     "effective": "2026-12-01",
+     "source": "https://ai.google.dev/gemini-api/docs/pricing",
+     "checked": "2026-10-30"
+    },
+    {
+     "dimension": "cached input",
+     "old": 0.1,
+     "new": 0.2,
+     "effective": "2026-12-01",
+     "source": "https://ai.google.dev/gemini-api/docs/pricing",
+     "checked": "2026-10-30"
+    },
+    {
+     "dimension": "batch input",
+     "old": 1,
+     "new": 2,
+     "effective": "2026-12-01",
+     "source": "https://ai.google.dev/gemini-api/docs/pricing",
+     "checked": "2026-10-31"
+    },
+    {
+     "dimension": "batch output",
+     "old": 5,
+     "new": 10,
+     "effective": "2026-12-01",
+     "source": "https://ai.google.dev/gemini-api/docs/pricing",
+     "checked": "2026-10-31"
+    }
+   ],
    "provider_id": "google"
   },
   {
@@ -801,6 +843,48 @@
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
    "free": true,
    "context_source": "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash",
+   "scheduled_changes": [
+    {
+     "dimension": "input",
+     "old": 0.75,
+     "new": 1.5,
+     "effective": "2027-01-01",
+     "source": "https://ai.google.dev/gemini-api/docs/pricing",
+     "checked": "2026-10-30"
+    },
+    {
+     "dimension": "output",
+     "old": 3.75,
+     "new": 7.5,
+     "effective": "2027-01-01",
+     "source": "https://ai.google.dev/gemini-api/docs/pricing",
+     "checked": "2026-10-30"
+    },
+    {
+     "dimension": "cached input",
+     "old": 0.075,
+     "new": 0.15,
+     "effective": "2027-01-01",
+     "source": "https://ai.google.dev/gemini-api/docs/pricing",
+     "checked": "2026-10-30"
+    },
+    {
+     "dimension": "batch input",
+     "old": 0.375,
+     "new": 0.75,
+     "effective": "2027-01-01",
+     "source": "https://ai.google.dev/gemini-api/docs/pricing",
+     "checked": "2026-10-31"
+    },
+    {
+     "dimension": "batch output",
+     "old": 1.875,
+     "new": 3.75,
+     "effective": "2027-01-01",
+     "source": "https://ai.google.dev/gemini-api/docs/pricing",
+     "checked": "2026-10-31"
+    }
+   ],
    "provider_id": "google"
   },
   {
@@ -821,6 +905,32 @@
    "checked": "2026-10-31",
    "source": "https://cloud.google.com/model-garden/pricing",
    "context_source": "https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash",
+   "scheduled_changes": [
+    {
+     "dimension": "input",
+     "old": 0.75,
+     "new": 1.5,
+     "effective": "2027-01-01",
+     "source": "https://cloud.google.com/model-garden/pricing",
+     "checked": "2026-10-31"
+    },
+    {
+     "dimension": "output",
+     "old": 3.75,
+     "new": 7.5,
+     "effective": "2027-01-01",
+     "source": "https://cloud.google.com/model-garden/pricing",
+     "checked": "2026-10-31"
+    },
+    {
+     "dimension": "cached input",
+     "old": 0.075,
+     "new": 0.15,
+     "effective": "2027-01-01",
+     "source": "https://cloud.google.com/model-garden/pricing",
+     "checked": "2026-10-31"
+    }
+   ],
    "provider_id": "google"
   },
   {
@@ -842,6 +952,48 @@
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
    "free": true,
    "context_source": "https://ai.google.dev/gemini-api/docs/models/gemini-3.6-flash",
+   "scheduled_changes": [
+    {
+     "dimension": "input",
+     "old": 0.75,
+     "new": 1.5,
+     "effective": "2027-01-01",
+     "source": "https://ai.google.dev/gemini-api/docs/pricing",
+     "checked": "2026-10-30"
+    },
+    {
+     "dimension": "output",
+     "old": 3.75,
+     "new": 7.5,
+     "effective": "2027-01-01",
+     "source": "https://ai.google.dev/gemini-api/docs/pricing",
+     "checked": "2026-10-30"
+    },
+    {
+     "dimension": "cached input",
+     "old": 0.075,
+     "new": 0.15,
+     "effective": "2027-01-01",
+     "source": "https://ai.google.dev/gemini-api/docs/pricing",
+     "checked": "2026-10-30"
+    },
+    {
+     "dimension": "batch input",
+     "old": 0.375,
+     "new": 0.75,
+     "effective": "2027-01-01",
+     "source": "https://ai.google.dev/gemini-api/docs/pricing",
+     "checked": "2026-10-31"
+    },
+    {
+     "dimension": "batch output",
+     "old": 1.875,
+     "new": 3.75,
+     "effective": "2027-01-01",
+     "source": "https://ai.google.dev/gemini-api/docs/pricing",
+     "checked": "2026-10-31"
+    }
+   ],
    "provider_id": "google"
   },
   {
@@ -1012,6 +1164,24 @@
    "checked": "2026-10-30",
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
    "free": true,
+   "scheduled_changes": [
+    {
+     "dimension": "input (text)",
+     "old": 0.5,
+     "new": 1,
+     "effective": "2027-01-01",
+     "source": "https://ai.google.dev/gemini-api/docs/pricing",
+     "checked": "2026-10-30"
+    },
+    {
+     "dimension": "output (audio)",
+     "old": 9,
+     "new": 18,
+     "effective": "2027-01-01",
+     "source": "https://ai.google.dev/gemini-api/docs/pricing",
+     "checked": "2026-10-30"
+    }
+   ],
    "provider_id": "google"
   },
   {
@@ -1032,6 +1202,24 @@
    "checked": "2026-10-30",
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
    "free": true,
+   "scheduled_changes": [
+    {
+     "dimension": "input (text)",
+     "old": 0.5,
+     "new": 1,
+     "effective": "2027-01-01",
+     "source": "https://ai.google.dev/gemini-api/docs/pricing",
+     "checked": "2026-10-30"
+    },
+    {
+     "dimension": "output (audio)",
+     "old": 6,
+     "new": 12,
+     "effective": "2027-01-01",
+     "source": "https://ai.google.dev/gemini-api/docs/pricing",
+     "checked": "2026-10-30"
+    }
+   ],
    "provider_id": "google"
   },
   {
@@ -1053,6 +1241,32 @@
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
    "free": true,
    "context_source": "https://ai.google.dev/gemini-api/docs/models/gemini-robotics-er-2-preview",
+   "scheduled_changes": [
+    {
+     "dimension": "input",
+     "old": 1,
+     "new": 2,
+     "effective": "2027-01-01",
+     "source": "https://ai.google.dev/gemini-api/docs/pricing",
+     "checked": "2026-10-30"
+    },
+    {
+     "dimension": "output",
+     "old": 5,
+     "new": 10,
+     "effective": "2027-01-01",
+     "source": "https://ai.google.dev/gemini-api/docs/pricing",
+     "checked": "2026-10-30"
+    },
+    {
+     "dimension": "cached input",
+     "old": 0.1,
+     "new": 0.2,
+     "effective": "2027-01-01",
+     "source": "https://ai.google.dev/gemini-api/docs/pricing",
+     "checked": "2026-10-30"
+    }
+   ],
    "provider_id": "google"
   },
   {
@@ -1074,6 +1288,24 @@
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
    "free": true,
    "context_source": "https://ai.google.dev/gemini-api/docs/models/gemini-robotics-er-2-streaming-preview",
+   "scheduled_changes": [
+    {
+     "dimension": "input",
+     "old": 1,
+     "new": 2,
+     "effective": "2027-01-01",
+     "source": "https://ai.google.dev/gemini-api/docs/pricing",
+     "checked": "2026-10-30"
+    },
+    {
+     "dimension": "output",
+     "old": 5,
+     "new": 10,
+     "effective": "2027-01-01",
+     "source": "https://ai.google.dev/gemini-api/docs/pricing",
+     "checked": "2026-10-30"
+    }
+   ],
    "provider_id": "google"
   },
   {
@@ -1172,7 +1404,7 @@
      "tool": "Search API",
      "usd_per_1k": 0.75,
      "unit": "per 1,000 successful requests",
-     "billing_start_utc": "2026-10-31T16:00:00Z",
+     "agent_tool_calls_billed_from_utc": "2026-10-31T16:00:00Z",
      "source": "https://api-docs.deepseek.com/quick_start/pricing",
      "rules_source": "https://api-docs.deepseek.com/guides/search"
     },
@@ -1180,7 +1412,7 @@
      "tool": "Fetch API",
      "usd_per_1k": 0.75,
      "unit": "per 1,000 successful requests",
-     "billing_start_utc": "2026-10-31T16:00:00Z",
+     "agent_tool_calls_billed_from_utc": "2026-10-31T16:00:00Z",
      "source": "https://api-docs.deepseek.com/quick_start/pricing",
      "rules_source": "https://api-docs.deepseek.com/guides/search"
     }
@@ -1217,7 +1449,7 @@
      "tool": "Search API",
      "usd_per_1k": 0.75,
      "unit": "per 1,000 successful requests",
-     "billing_start_utc": "2026-10-31T16:00:00Z",
+     "agent_tool_calls_billed_from_utc": "2026-10-31T16:00:00Z",
      "source": "https://api-docs.deepseek.com/quick_start/pricing",
      "rules_source": "https://api-docs.deepseek.com/guides/search"
     },
@@ -1225,7 +1457,7 @@
      "tool": "Fetch API",
      "usd_per_1k": 0.75,
      "unit": "per 1,000 successful requests",
-     "billing_start_utc": "2026-10-31T16:00:00Z",
+     "agent_tool_calls_billed_from_utc": "2026-10-31T16:00:00Z",
      "source": "https://api-docs.deepseek.com/quick_start/pricing",
      "rules_source": "https://api-docs.deepseek.com/guides/search"
     }

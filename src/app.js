@@ -4,28 +4,9 @@ const usd=(v,d)=>v==null||isNaN(v)?'—':'$'+(d!=null?v.toFixed(d):v>=100?Math.r
 const money=v=>v==null||isNaN(v)?'—':'$'+v.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
 const ctx=v=>v?(v>=1e6?(+(v/1e6).toFixed(2))+'M':Math.round(v/1e3)+'K'):'—';
 let DATA=null;const load=async()=>DATA||(DATA=await (await fetch('/api/models.json')).json()).models;
-/** Resolve standard vs long-context rates. promptTokens = typical prompt size (tokens). */
-export function rates(m,promptTokens=0){
-  const lc=m.long_context, use=!!(lc&&promptTokens>lc.threshold);
-  const input=use?lc.input:m.input, output=use?lc.output:m.output;
-  const cached=use?(lc.cached??lc.input):(m.cached??m.input);
-  const bi=use?(lc.batch_input??lc.input):(m.batch_input??m.input);
-  const bo=use?(lc.batch_output??lc.output):(m.batch_output??m.output);
-  const baseIn=use?lc.input:m.input, baseCached=use?lc.cached:m.cached, baseBi=use?lc.batch_input:m.batch_input;
-  const bc=baseCached!=null&&baseBi!=null&&baseIn?baseCached*baseBi/baseIn:cached;
-  return {input,output,cached,bi,bo,bc,tiered:use};
-}
-function tokenCost(m,{inM,outM,hit=0,batch=0,promptTokens=0}){
-  const r=rates(m,promptTokens);
-  const std=inM*((1-hit)*r.input+hit*r.cached)+outM*r.output, bat=inM*((1-hit)*r.bi+hit*r.bc)+outM*r.bo;
-  return (1-batch)*std+batch*bat}
-/** offpeak = share (0-1) of tokens billed at a published off-peak rate (DeepSeek); tools = Search/Fetch requests per month (billed only where the provider publishes a per-request fee). */
-export function toolFee(m,tools=0){return (m.tool_fees&&tools>0)?tools/1000*m.tool_fees[0].usd_per_1k:0}
-export function cost(m,{inM,outM,hit=0,batch=0,promptTokens=0,offpeak=0,tools=0}){if(m.input==null||m.output==null)return null;
-  const u={inM,outM,hit,batch,promptTokens},op=m.offpeak?Math.min(Math.max(offpeak,0),1):0;
-  const t=op?(1-op)*tokenCost(m,u)+op*tokenCost({...m,...m.offpeak,batch_input:null,batch_output:null,long_context:null},u):tokenCost(m,u);
-  return t+toolFee(m,tools)}
-window.Ratecard={cost,rates,toolFee,usd,money};
+import {rates,cost,toolFee,forecast,windowStart} from './pricing.js';
+export {rates,cost,toolFee,forecast};
+window.Ratecard={cost,rates,toolFee,forecast,usd,money};
 // ---- price table
 async function table(){const t=$('#models');if(!t)return;const ms=await load();const tb=$('tbody',t);
  const q=$('#q'),pv=$('#prov'),kd=$('#kind'),mc=$('#minctx'),st=$('#ver');let sortK='input',dir=1;
@@ -41,19 +22,26 @@ async function finder(){const f=$('#finder');if(!f)return;const ms=(await load()
   const r=ms.filter(m=>m.context>=need&&(unv||m.status==='verified')).map(m=>{const c=cost(m,{inM,outM,promptTokens:need}), tiered=!!(m.long_context&&need>m.long_context.threshold);return {m,c,tiered}}).sort((a,b)=>a.c-b.c||(a.m.status==='verified'?-1:1)).slice(0,5);
   $('#f-out-list').innerHTML=r.length?r.map((x,i)=>`<tr><td>${i+1}</td><td><a href="/models/${x.m.id}">${x.m.model}</a> <span class="mut">· ${x.m.provider}</span>${x.tiered?' <span class="tag k" title="Priced at long-context tier">long tier</span>':''}${x.m.status!=='verified'?' <span class="tag u" title="Price or context not verified against the official page">unverified</span>':''}</td><td class="n">${ctx(x.m.context)}</td><td class="n">${money(x.c)}</td></tr>`).join(''):`<tr><td colspan=4 class=mut>No ${unv?'':'verified '}model with a published context window meets this requirement.</td></tr>`};
  $$('input,select',f).forEach(e=>e.oninput=run);run();}
-// ---- calculator
+// ---- calculator (RT-20261031-98: "Next 12 months" applies scheduled list-price changes; savings + lowest pick use it; run-rate ×12 kept for reference)
+const localToday=()=>{const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`};
 async function calc(){const f=$('#calc');if(!f)return;const ms=(await load()).filter(m=>m.kind==='text'&&m.input!=null);
  const opts=ms.map(m=>`<option value="${m.id}">${m.provider} · ${m.model}</option>`).join('');$('#c-cur').innerHTML=opts;$$('.c-alt').forEach(s=>s.innerHTML='<option value="">—</option>'+opts);
  const p=new URLSearchParams(location.search);const set=(id,v)=>{if(v!=null&&$(id))$(id).value=v};
  set('#c-in',p.get('in'));set('#c-out',p.get('out'));set('#c-hit',p.get('hit'));set('#c-batch',p.get('batch'));set('#c-prompt',p.get('prompt'));set('#c-op',p.get('op'));set('#c-tools',p.get('tools'));
  $('#c-cur').value=p.get('cur')||'anthropic-claude-sonnet-4-6';(p.get('alt')||'anthropic-claude-sonnet-5-5,google-gemini-3-8-flash,deepseek-deepseek-flash-v4-1-flash').split(',').forEach((v,i)=>{const s=$$('.c-alt')[i];if(s)s.value=v});
+ const today=localToday(),from=/^\d{4}-\d{2}$/.test(p.get('from')||'')?p.get('from'):null,start=from||windowStart(today);let last=[];
  const run=()=>{const promptTokens=+$('#c-prompt')?.value||0;const u={inM:+$('#c-in').value||0,outM:+$('#c-out').value||0,hit:(+$('#c-hit').value||0)/100,batch:(+$('#c-batch').value||0)/100,promptTokens,offpeak:(+$('#c-op')?.value||0)/100,tools:+$('#c-tools')?.value||0};
-  const cur=ms.find(m=>m.id===$('#c-cur').value),base=cost(cur,u);const rows=[cur,...$$('.c-alt').map(s=>ms.find(m=>m.id===s.value)).filter(Boolean)];
-  $('#c-res').innerHTML=rows.map((m,i)=>{const c=cost(m,u),d=base-c,tiered=!!(m.long_context&&promptTokens>m.long_context.threshold);return `<tr><td>${i?'':'<span class="tag k">Current</span> '}<a href="/models/${m.id}">${m.model}</a> <span class="mut">· ${m.provider}</span>${tiered?' <span class="tag k">long tier</span>':''}${toolFee(m,u.tools)?` <span class="tag k" title="DeepSeek Search/Fetch: $0.75 per 1,000 successful requests">+${money(toolFee(m,u.tools))} tools</span>`:''}${m.offpeak&&u.offpeak?` <span class="tag k">${Math.round(u.offpeak*100)}% off-peak</span>`:''}</td><td class="n">${money(c)}</td><td class="n">${money(c*12)}</td><td class="n ${i?(d>=0?'pos':'neg'):''}">${i?(d>=0?money(d*12)+' saved':money(-d*12)+' more'):'—'}</td><td class="n">${i&&base?((d/base)*100).toFixed(1)+'%':'—'}</td><td class="src"><a href="${m.source}" target="_blank" rel="noopener">source</a> · ${m.checked}</td></tr>`}).join('');
-  $('#c-mo').textContent=money(base);$('#c-yr').textContent=money(base*12);
-  const q=new URLSearchParams({in:$('#c-in').value,out:$('#c-out').value,hit:$('#c-hit').value,batch:$('#c-batch').value,prompt:$('#c-prompt')?.value||'0',op:$('#c-op')?.value||'0',tools:$('#c-tools')?.value||'0',cur:$('#c-cur').value,alt:$$('.c-alt').map(s=>s.value).join(',')});history.replaceState(null,'','?'+q)};
+  const cur=ms.find(m=>m.id===$('#c-cur').value);const F=m=>({m,f:forecast(m,u,{today,start})});const C=F(cur),b12=C.f.total;
+  const alts=$$('.c-alt').map(s=>ms.find(m=>m.id===s.value)).filter(Boolean).map(F).sort((x,y)=>x.f.total-y.f.total);
+  const best=alts.length&&alts[0].f.total<b12?alts[0]:null;last=[C,...alts];
+  $('#c-res').innerHTML=last.map(({m,f},i)=>{const d=b12-f.total,tiered=!!(m.long_context&&promptTokens>m.long_context.threshold),nt=f.notes;
+   return `<tr><td>${i?'':'<span class="tag k">Current</span> '}${best&&best.m===m&&i?'<span class="tag">Lowest 12-mo</span> ':''}<a href="/models/${m.id}">${m.model}</a> <span class="mut">· ${m.provider}</span>${tiered?' <span class="tag k">long tier</span>':''}${toolFee(m,u.tools)?` <span class="tag k" title="DeepSeek Search/Fetch: $0.75 per 1,000 successful requests">+${money(toolFee(m,u.tools))} tools</span>`:''}${m.offpeak&&u.offpeak?` <span class="tag k">${Math.round(u.offpeak*100)}% off-peak</span>`:''}${nt.map(n=>` <span class="tag u chg" title="${n.text}">↑ ${n.short}${n.inWindow?'':' (after window)'}</span>`).join('')}</td><td class="n">${money(f.monthly)}</td><td class="n"><b>${money(f.total)}</b></td><td class="n mut">${money(f.runRate)}</td><td class="n ${i?(d>=0?'pos':'neg'):''}">${i?(d>=0?money(d)+' saved':money(-d)+' more'):'—'}</td><td class="n">${i&&b12?((d/b12)*100).toFixed(1)+'%':'—'}</td><td class="src"><a href="${m.source}" target="_blank" rel="noopener">source</a> · ${m.checked}</td></tr>`}).join('');
+  $('#c-mo').textContent=money(C.f.monthly);$('#c-12').textContent=money(b12);$('#c-yr').textContent=money(C.f.runRate);$('#c-win').textContent='('+C.f.label+')';
+  $('#c-chg').innerHTML=C.f.notes.length?' · '+C.f.notes.map(n=>`<span class="chg">${n.text}</span>`).join('; '):' · no scheduled change for this model';
+  $('#c-best').innerHTML=best?`Lowest 12-month cost of your alternatives: <b>${best.m.model}</b> at ${money(best.f.total)}, ${money(b12-best.f.total)} less than your current model over ${C.f.label}.`:(alts.length?'Your current model has the lowest 12-month cost of these options.':'');
+  const q=new URLSearchParams({in:$('#c-in').value,out:$('#c-out').value,hit:$('#c-hit').value,batch:$('#c-batch').value,prompt:$('#c-prompt')?.value||'0',op:$('#c-op')?.value||'0',tools:$('#c-tools')?.value||'0',cur:$('#c-cur').value,alt:$$('.c-alt').map(s=>s.value).join(',')});if(from)q.set('from',from);history.replaceState(null,'','?'+q)};
  $$('input,select',f).forEach(e=>e.oninput=run);run();
- $('#c-csv')&&($('#c-csv').onclick=()=>{const rows=[['model','provider','monthly_usd','annual_usd','source','checked']];$$('#c-res tr').forEach(tr=>{const td=$$('td',tr);rows.push([td[0].querySelector('a').textContent,td[0].querySelector('.mut').textContent.replace('· ',''),td[1].textContent,td[2].textContent,td[5].querySelector('a').href,td[5].textContent.split('· ')[1]])});const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([rows.map(r=>r.map(x=>'"'+String(x).replace(/"/g,'""')+'"').join(',')).join('\n')],{type:'text/csv'}));a.download='ratecard-estimate.csv';a.click()});}
+ $('#c-csv')&&($('#c-csv').onclick=()=>{const b12=last[0].f.total;const rows=[['model','provider','monthly_usd_now','next_12_months_usd','window','run_rate_x12_usd','savings_12mo_vs_current_usd','scheduled_changes','source','checked']];last.forEach(({m,f})=>rows.push([m.model,m.provider,f.monthly.toFixed(2),f.total.toFixed(2),f.label,f.runRate.toFixed(2),(b12-f.total).toFixed(2),f.notes.map(n=>n.text).join('; '),m.source,m.checked]));const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([rows.map(r=>r.map(x=>'"'+String(x).replace(/"/g,'""')+'"').join(',')).join('\n')],{type:'text/csv'}));a.download='ratecard-estimate.csv';a.click()});}
 // ---- compare
 async function compare(){const f=$('#cmp');if(!f)return;const ms=await load();const opts='<option value="">—</option>'+ms.map(m=>`<option value="${m.id}">${m.provider} · ${m.model}</option>`).join('');
  const sels=$$('select',f);sels.forEach(s=>s.innerHTML=opts);const init=(new URLSearchParams(location.search).get('m')||'openai-gpt-6-1-sol,anthropic-claude-sonnet-5-5,google-gemini-3-8-flash').split(',');sels.forEach((s,i)=>s.value=init[i]||'');

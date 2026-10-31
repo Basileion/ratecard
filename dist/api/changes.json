@@ -1,9 +1,17 @@
 {
- "generated": "2026-10-31T13:20:00.389Z",
+ "generated": "2026-10-31T18:21:01.299Z",
  "site": "https://ratecardai.pages.dev",
  "license": "CC-BY-4.0",
  "units": "USD per 1M tokens unless unit/other says otherwise",
  "changes": [
+  {
+   "date": "2026-10-31",
+   "kind": "correction",
+   "provider": "DeepSeek",
+   "summary": "Correction to our 2026-10-31 DeepSeek Search/Fetch entry and guide: DeepSeek bills Search and Fetch as standalone APIs per successful request ($0.75 per 1,000 each). Only server-side tool calls made through DeepSeek Harness, Claude Code and Codex were free until 00:00 Beijing time 2026-11-01 (2026-10-31 16:00 UTC). We had implied all Search/Fetch billing started then; the guide title, key stats, FAQ, llms-full.txt and the models.json tool_fees field (billing_start_utc renamed agent_tool_calls_billed_from_utc) are corrected.",
+   "source": "https://api-docs.deepseek.com/guides/search",
+   "observed": "2026-10-31"
+  },
   {
    "date": "2026-10-31",
    "kind": "correction",
@@ -32,7 +40,7 @@
    "date": "2026-11-01",
    "kind": "billing start",
    "provider": "DeepSeek",
-   "summary": "Search and Fetch APIs start per-request billing at 00:00 Beijing time 2026-11-01 (= 2026-10-31 16:00 UTC / 12:00 PM ET): $0.75 per 1,000 successful requests each ($0.00075 per request); failed requests, empty search results and timeouts are not billed. Server-side tool calls via DeepSeek Harness, Claude Code and Codex were free until then. Re-confirmed on the pricing page and Search & Fetch guide 2026-10-31; cost math at /guides/deepseek-search-fetch-pricing.",
+   "summary": "Server-side Search and Fetch tool calls made through DeepSeek Harness, Claude Code and Codex start per-request billing at 00:00 Beijing time 2026-11-01 (= 2026-10-31 16:00 UTC / 12:00 PM ET): $0.75 per 1,000 successful requests each ($0.00075 per request); failed requests, empty search results and timeouts are not billed. Direct Search and Fetch API calls are standalone APIs billed per request (not part of the free period). Re-confirmed on the pricing page and Search & Fetch guide 2026-10-31; cost math at /guides/deepseek-search-fetch-pricing.",
    "source": "https://api-docs.deepseek.com/quick_start/pricing",
    "observed": "2026-10-31"
   },

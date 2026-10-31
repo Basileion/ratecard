@@ -1115,7 +1115,7 @@
     "tool": "Search API",
     "usd_per_1k": 0.75,
     "unit": "per 1,000 successful requests",
-    "billing_start_utc": "2026-10-31T16:00:00Z",
+    "agent_tool_calls_billed_from_utc": "2026-10-31T16:00:00Z",
     "source": "https://api-docs.deepseek.com/quick_start/pricing",
     "rules_source": "https://api-docs.deepseek.com/guides/search"
    },
@@ -1123,7 +1123,7 @@
     "tool": "Fetch API",
     "usd_per_1k": 0.75,
     "unit": "per 1,000 successful requests",
-    "billing_start_utc": "2026-10-31T16:00:00Z",
+    "agent_tool_calls_billed_from_utc": "2026-10-31T16:00:00Z",
     "source": "https://api-docs.deepseek.com/quick_start/pricing",
     "rules_source": "https://api-docs.deepseek.com/guides/search"
    }
@@ -1159,7 +1159,7 @@
     "tool": "Search API",
     "usd_per_1k": 0.75,
     "unit": "per 1,000 successful requests",
-    "billing_start_utc": "2026-10-31T16:00:00Z",
+    "agent_tool_calls_billed_from_utc": "2026-10-31T16:00:00Z",
     "source": "https://api-docs.deepseek.com/quick_start/pricing",
     "rules_source": "https://api-docs.deepseek.com/guides/search"
    },
@@ -1167,7 +1167,7 @@
     "tool": "Fetch API",
     "usd_per_1k": 0.75,
     "unit": "per 1,000 successful requests",
-    "billing_start_utc": "2026-10-31T16:00:00Z",
+    "agent_tool_calls_billed_from_utc": "2026-10-31T16:00:00Z",
     "source": "https://api-docs.deepseek.com/quick_start/pricing",
     "rules_source": "https://api-docs.deepseek.com/guides/search"
    }

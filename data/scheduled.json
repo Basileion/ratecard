@@ -45,6 +45,34 @@
     },
     {
       "provider": "Google",
+      "model_id": "google-gemini-4-argon",
+      "model": "Gemini 4 Argon",
+      "tier": "batch (paid)",
+      "dimension": "batch input",
+      "old": 1,
+      "new": 2,
+      "unit": "$/1M tokens",
+      "effective": "2026-12-01",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "checked": "2026-10-31",
+      "note": "Batch rate; promotional rate ends, price applies through 2026-11-30."
+    },
+    {
+      "provider": "Google",
+      "model_id": "google-gemini-4-argon",
+      "model": "Gemini 4 Argon",
+      "tier": "batch (paid)",
+      "dimension": "batch output",
+      "old": 5,
+      "new": 10,
+      "unit": "$/1M tokens",
+      "effective": "2026-12-01",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "checked": "2026-10-31",
+      "note": "Batch rate; promotional rate ends, price applies through 2026-11-30."
+    },
+    {
+      "provider": "Google",
       "model_id": "google-gemini-3-8-flash",
       "model": "Gemini 3.8 Flash",
       "tier": "standard (paid)",
@@ -87,6 +115,34 @@
     },
     {
       "provider": "Google",
+      "model_id": "google-gemini-3-8-flash",
+      "model": "Gemini 3.8 Flash",
+      "tier": "batch (paid)",
+      "dimension": "batch input",
+      "old": 0.375,
+      "new": 0.75,
+      "unit": "$/1M tokens",
+      "effective": "2027-01-01",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "checked": "2026-10-31",
+      "note": "Batch rate."
+    },
+    {
+      "provider": "Google",
+      "model_id": "google-gemini-3-8-flash",
+      "model": "Gemini 3.8 Flash",
+      "tier": "batch (paid)",
+      "dimension": "batch output",
+      "old": 1.875,
+      "new": 3.75,
+      "unit": "$/1M tokens",
+      "effective": "2027-01-01",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "checked": "2026-10-31",
+      "note": "Batch rate."
+    },
+    {
+      "provider": "Google",
       "model_id": "google-gemini-3-6-flash",
       "model": "Gemini 3.6 Flash",
       "tier": "standard (paid)",
@@ -126,6 +182,34 @@
       "source": "https://ai.google.dev/gemini-api/docs/pricing",
       "checked": "2026-10-30",
       "note": ""
+    },
+    {
+      "provider": "Google",
+      "model_id": "google-gemini-3-6-flash",
+      "model": "Gemini 3.6 Flash",
+      "tier": "batch (paid)",
+      "dimension": "batch input",
+      "old": 0.375,
+      "new": 0.75,
+      "unit": "$/1M tokens",
+      "effective": "2027-01-01",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "checked": "2026-10-31",
+      "note": "Batch rate."
+    },
+    {
+      "provider": "Google",
+      "model_id": "google-gemini-3-6-flash",
+      "model": "Gemini 3.6 Flash",
+      "tier": "batch (paid)",
+      "dimension": "batch output",
+      "old": 1.875,
+      "new": 3.75,
+      "unit": "$/1M tokens",
+      "effective": "2027-01-01",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "checked": "2026-10-31",
+      "note": "Batch rate."
     },
     {
       "provider": "Google",
@@ -311,10 +395,10 @@
   "billing_rules": [
     {
       "provider": "DeepSeek",
-      "applies_to": "Search API and Fetch API (incl. server-side tool calls via DeepSeek Harness, Claude Code, Codex)",
+      "applies_to": "Server-side Search/Fetch tool calls made through DeepSeek Harness, Claude Code and Codex (direct Search and Fetch API calls are standalone APIs, already billed per request)",
       "effective": "2026-11-01",
       "effective_detail": "00:00 Beijing time on 2026-11-01 (= 2026-10-31 16:00 UTC)",
-      "change": "Server-side Search and Fetch tool calls, currently free, start per-request billing.",
+      "change": "Agent server-side Search and Fetch tool calls, free until then, start per-request billing. Direct Search/Fetch API calls were never in the free period.",
       "price": "$0.75 per 1,000 successful requests (Search); $0.75 per 1,000 successful requests (Fetch)",
       "source": "https://api-docs.deepseek.com/quick_start/pricing",
       "checked": "2026-10-31"
