@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T22:18:42.227Z",
+ "generated": "2026-10-31T06:14:23.003Z",
  "site": "https://ratecardai.pages.dev",
  "license": "CC-BY-4.0",
  "units": "USD per 1M tokens unless unit/other says otherwise",
@@ -22,22 +22,22 @@
    "id": "google",
    "name": "Google",
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "checked": "2026-10-30",
-   "summary": "Free tier on many Flash models (data may be used to improve products). Batch 50% off."
+   "checked": "2026-10-31",
+   "summary": "Free tier on many Flash models (data may be used to improve products). Batch 50% off. Gemini API pricing page shows 'Last updated 2026-10-30 UTC' (checked 2026-10-31). Google Cloud Agent Platform: from 2026-11-13, Gemini 4 completions over 32K tokens are billed for retrievable tokens even if the request times out."
   },
   {
    "id": "xai",
    "name": "xAI",
    "source": "https://docs.x.ai/docs/models",
-   "checked": "2026-10-30",
-   "summary": ""
+   "checked": "2026-10-31",
+   "summary": "grok-4.7: long-context tier above 200K tokens (2x); Batch API 20% off."
   },
   {
    "id": "deepseek",
    "name": "DeepSeek",
    "source": "https://api-docs.deepseek.com/quick_start/pricing",
-   "checked": "2026-10-30",
-   "summary": "Off-peak pricing ~50% of peak."
+   "checked": "2026-10-31",
+   "summary": "Off-peak pricing ~50% of peak. Search and Fetch APIs: $0.75 per 1,000 successful requests each, billed from 00:00 Beijing time 2026-11-01."
   },
   {
    "id": "together",

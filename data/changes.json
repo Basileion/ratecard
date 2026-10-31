@@ -110,5 +110,37 @@
     "summary": "Gemini Robotics ER 2 Preview and ER 2 Streaming Preview: input $1.00→$2.00, output $5.00→$10.00 per 1M tokens (ER 2 cached $0.10→$0.20). Rows added to the dataset.",
     "source": "https://ai.google.dev/gemini-api/docs/pricing",
     "observed": "2026-10-30"
+  },
+  {
+    "date": "2026-11-01",
+    "kind": "billing start",
+    "provider": "DeepSeek",
+    "summary": "Search and Fetch APIs start per-request billing at 00:00 Beijing time (2026-10-31 16:00 UTC): $0.75 per 1,000 successful requests each. Server-side tool calls via DeepSeek Harness, Claude Code and Codex were free until then.",
+    "source": "https://api-docs.deepseek.com/quick_start/pricing",
+    "observed": "2026-10-31"
+  },
+  {
+    "date": "2026-11-13",
+    "kind": "billing rule change",
+    "provider": "Google",
+    "summary": "Google Cloud Agent Platform: Gemini 4 (incl. Argon) completions over 32K tokens are charged for retrievable token usage even if the request fails on a client or server timeout.",
+    "source": "https://cloud.google.com/model-garden/pricing",
+    "observed": "2026-10-31"
+  },
+  {
+    "date": "2027-01-01",
+    "kind": "scheduled increase",
+    "provider": "Google",
+    "summary": "Gemini 3.7 Flash (Google Cloud Agent Platform, global): input $0.75→$1.50, output $3.75→$7.50, cached $0.075→$0.15 per 1M tokens. Row added to Ratecard.",
+    "source": "https://cloud.google.com/model-garden/pricing",
+    "observed": "2026-10-31"
+  },
+  {
+    "date": "2026-10-31",
+    "kind": "correction",
+    "provider": "xAI",
+    "summary": "grok-4.7 long-context tier added: above 200K prompt tokens $4.00 in / $12.00 out (cached $1.00); standard cached $0.50; Batch API 20% off. Finder/calculator now price long prompts at the higher tier (OpenRouter Grok 4.7 row too).",
+    "source": "https://docs.x.ai/developers/models",
+    "observed": "2026-10-31"
   }
 ]

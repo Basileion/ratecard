@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-30",
+  "checked": "2026-10-31",
   "increases": [
     {
       "provider": "Google",
@@ -252,6 +252,48 @@
       "source": "https://ai.google.dev/gemini-api/docs/pricing",
       "checked": "2026-10-30",
       "note": ""
+    },
+    {
+      "provider": "Google",
+      "model_id": "google-gemini-3-7-flash",
+      "model": "Gemini 3.7 Flash",
+      "tier": "standard (Agent Platform, global)",
+      "dimension": "input",
+      "old": 0.75,
+      "new": 1.5,
+      "unit": "$/1M tokens",
+      "effective": "2027-01-01",
+      "source": "https://cloud.google.com/model-garden/pricing",
+      "checked": "2026-10-31",
+      "note": "Introductory pricing through 2026-12-31 (Google Cloud Agent Platform)."
+    },
+    {
+      "provider": "Google",
+      "model_id": "google-gemini-3-7-flash",
+      "model": "Gemini 3.7 Flash",
+      "tier": "standard (Agent Platform, global)",
+      "dimension": "output",
+      "old": 3.75,
+      "new": 7.5,
+      "unit": "$/1M tokens",
+      "effective": "2027-01-01",
+      "source": "https://cloud.google.com/model-garden/pricing",
+      "checked": "2026-10-31",
+      "note": "Introductory pricing through 2026-12-31 (Google Cloud Agent Platform)."
+    },
+    {
+      "provider": "Google",
+      "model_id": "google-gemini-3-7-flash",
+      "model": "Gemini 3.7 Flash",
+      "tier": "standard (Agent Platform, global)",
+      "dimension": "cached input",
+      "old": 0.075,
+      "new": 0.15,
+      "unit": "$/1M tokens",
+      "effective": "2027-01-01",
+      "source": "https://cloud.google.com/model-garden/pricing",
+      "checked": "2026-10-31",
+      "note": "Introductory pricing through 2026-12-31 (Google Cloud Agent Platform)."
     }
   ],
   "promotions_without_new_price": [
@@ -264,6 +306,29 @@
       "note": "OpenAI has not published the post-promotion price; we will log it when it appears.",
       "source": "https://platform.openai.com/docs/pricing",
       "checked": "2026-10-30"
+    }
+  ],
+  "billing_rules": [
+    {
+      "provider": "DeepSeek",
+      "applies_to": "Search API and Fetch API (incl. server-side tool calls via DeepSeek Harness, Claude Code, Codex)",
+      "effective": "2026-11-01",
+      "effective_detail": "00:00 Beijing time on 2026-11-01 (= 2026-10-31 16:00 UTC)",
+      "change": "Server-side Search and Fetch tool calls, currently free, start per-request billing.",
+      "price": "$0.75 per 1,000 successful requests (Search); $0.75 per 1,000 successful requests (Fetch)",
+      "source": "https://api-docs.deepseek.com/quick_start/pricing",
+      "checked": "2026-10-31"
+    },
+    {
+      "provider": "Google",
+      "applies_to": "Gemini 4 (incl. Gemini 4 Argon) on Google Cloud Agent Platform",
+      "model_id": "google-gemini-4-argon",
+      "effective": "2026-11-13",
+      "effective_detail": "2026-11-13",
+      "change": "When a completion exceeds 32K tokens, retrievable token usage is charged even if the request ultimately fails due to client or server timeouts (today only 200 responses are charged).",
+      "price": "Standard token rates for retrievable tokens",
+      "source": "https://cloud.google.com/model-garden/pricing",
+      "checked": "2026-10-31"
     }
   ]
 }

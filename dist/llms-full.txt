@@ -1,6 +1,6 @@
 # Ratecard — full rate card
 
-89 models, 60 verified, 14 providers. Last checked 2026-10-30. License CC BY 4.0.
+90 models, 61 verified, 14 providers. Last checked 2026-10-31. License CC BY 4.0.
 
 ## Providers
 ### OpenAI
@@ -17,21 +17,21 @@
 
 ### Google
 - id: google
-- summary: Free tier on many Flash models (data may be used to improve products). Batch 50% off.
+- summary: Free tier on many Flash models (data may be used to improve products). Batch 50% off. Gemini API pricing page shows 'Last updated 2026-10-30 UTC' (checked 2026-10-31). Google Cloud Agent Platform: from 2026-11-13, Gemini 4 completions over 32K tokens are billed for retrievable tokens even if the request times out.
 - source: https://ai.google.dev/gemini-api/docs/pricing
-- checked: 2026-10-30
+- checked: 2026-10-31
 
 ### xAI
 - id: xai
-- summary: 
+- summary: grok-4.7: long-context tier above 200K tokens (2x); Batch API 20% off.
 - source: https://docs.x.ai/docs/models
-- checked: 2026-10-30
+- checked: 2026-10-31
 
 ### DeepSeek
 - id: deepseek
-- summary: Off-peak pricing ~50% of peak.
+- summary: Off-peak pricing ~50% of peak. Search and Fetch APIs: $0.75 per 1,000 successful requests each, billed from 00:00 Beijing time 2026-11-01.
 - source: https://api-docs.deepseek.com/quick_start/pricing
-- checked: 2026-10-30
+- checked: 2026-10-31
 
 ### Together
 - id: together
@@ -400,6 +400,18 @@
 - source: https://ai.google.dev/gemini-api/docs/pricing (2026-10-30)
 - notes: Rises to $1.50 / $7.50 on 2027-01-01 (cached $0.075→$0.15; batch $0.375→$0.75 in, $1.875→$3.75 out; cache storage $0.50→$1.00 per 1M tokens/hour). Free tier available.
 
+### Google Gemini 3.7 Flash
+- id: google-gemini-3-7-flash
+- kind: text
+- input/output/cached: 0.75 / 3.75 / 0.075
+- batch in/out: null / null
+- long_context: 
+- context: null
+- other: 
+- status: verified
+- source: https://cloud.google.com/model-garden/pricing (2026-10-31)
+- notes: Listed on Google Cloud Agent Platform (Vertex AI) pricing, global endpoint; non-global endpoints $0.825/$4.125 (cached $0.0825). Introductory price through 2026-12-31; rises to $1.50 / $7.50 (cached $0.15) on 2027-01-01. Not listed on the Gemini API (ai.google.dev) pricing page as of 2026-10-31.
+
 ### Google Gemini 3.6 Flash
 - id: google-gemini-3-6-flash
 - kind: text
@@ -547,14 +559,14 @@
 ### xAI grok-4.7
 - id: xai-grok-4-7
 - kind: text
-- input/output/cached: 2 / 6 / null
-- batch in/out: null / null
-- long_context: 
+- input/output/cached: 2 / 6 / 0.5
+- batch in/out: 1.6 / 4.8
+- long_context: {"threshold":200000,"input":4,"output":12,"cached":1,"batch_input":3.2,"batch_output":9.6}
 - context: 500000
 - other: 
 - status: verified
-- source: https://docs.x.ai/developers/models (2026-10-30)
-- notes: 
+- source: https://docs.x.ai/developers/models (2026-10-31)
+- notes: Long-context tier: prompts above 200K tokens bill $4.00 in / $12.00 out per 1M (cached $1.00), from xAI's model JSON (longContextThreshold 200000). Batch API 20% off (batchDiscountPercent 20); batch figures here are that discount applied. us-central-1 cluster lists +10% ($2.20/$6.60). Max prompt 500K tokens.
 
 ### xAI Grok Voice TTS
 - id: xai-grok-voice-tts
@@ -1149,14 +1161,18 @@
 - kind: text
 - input/output/cached: 2 / 6 / 0.5
 - batch in/out: null / null
-- long_context: 
+- long_context: {"threshold":200000,"input":4,"output":12,"cached":1}
 - context: 500000
 - other: 
 - status: verified
-- source: https://openrouter.ai/x-ai/grok-4.7 (2026-10-30)
-- notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.
+- source: https://openrouter.ai/x-ai/grok-4.7 (2026-10-31)
+- notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts. Pricing override for prompts of 200K+ tokens: $4.00 in / $12.00 out, cache read $1.00 per 1M.
 
 ## Changes
+- 2026-10-31 xAI (correction): grok-4.7 long-context tier added: above 200K prompt tokens $4.00 in / $12.00 out (cached $1.00); standard cached $0.50; Batch API 20% off. Finder/calculator now price long prompts at the higher tier (OpenRouter Grok 4.7 row too). [https://docs.x.ai/developers/models]
+- 2026-11-01 DeepSeek (billing start): Search and Fetch APIs start per-request billing at 00:00 Beijing time (2026-10-31 16:00 UTC): $0.75 per 1,000 successful requests each. Server-side tool calls via DeepSeek Harness, Claude Code and Codex were free until then. [https://api-docs.deepseek.com/quick_start/pricing]
+- 2026-11-13 Google (billing rule change): Google Cloud Agent Platform: Gemini 4 (incl. Argon) completions over 32K tokens are charged for retrievable token usage even if the request fails on a client or server timeout. [https://cloud.google.com/model-garden/pricing]
+- 2027-01-01 Google (scheduled increase): Gemini 3.7 Flash (Google Cloud Agent Platform, global): input $0.75→$1.50, output $3.75→$7.50, cached $0.075→$0.15 per 1M tokens. Row added to Ratecard. [https://cloud.google.com/model-garden/pricing]
 - 2026-10-30 OpenAI (correction): gpt-image-2 standard was incorrectly set to batch rates; corrected to $8/$30/$2 (batch $4/$15). [https://platform.openai.com/docs/pricing]
 - 2026-10-30 OpenAI (new model): Added gpt-image-2.5-flare at standard $8/$30/$2 (batch $4/$15). [https://platform.openai.com/docs/pricing]
 - 2026-10-30 Anthropic (logic): Haiku 5.5 long-context tier (>100K) now applied in finder/calculator via long_context field. [https://docs.anthropic.com/en/docs/about-claude/pricing]
@@ -1173,7 +1189,7 @@
 - 2027-01-01 Google (scheduled increase): Gemini 3.8 Flash paid tier: input $0.75→$1.50, output $3.75→$7.50, cached $0.075→$0.15 per 1M tokens. Gemini 3.8 Flash TTS doubles the same day ($0.50→$1.00 in, $9.00→$18.00 out). [https://ai.google.dev/gemini-api/docs/pricing]
 
 
-## Scheduled price increases (last checked 2026-10-30)
+## Scheduled price increases (last checked 2026-10-31)
 Page: https://ratecardai.pages.dev/scheduled-increases — data: https://ratecardai.pages.dev/api/scheduled.json
 - 2026-12-01 · Google Gemini 4 Argon · input: $2 → $4 per 1M tokens (+100%) · source https://ai.google.dev/gemini-api/docs/pricing
 - 2026-12-01 · Google Gemini 4 Argon · output: $10 → $20 per 1M tokens (+100%) · source https://ai.google.dev/gemini-api/docs/pricing
@@ -1193,4 +1209,11 @@ Page: https://ratecardai.pages.dev/scheduled-increases — data: https://ratecar
 - 2027-01-01 · Google Gemini Robotics ER 2 Preview · cached input: $0.1 → $0.2 per 1M tokens (+100%) · source https://ai.google.dev/gemini-api/docs/pricing
 - 2027-01-01 · Google Gemini Robotics ER 2 Streaming Preview · input: $1 → $2 per 1M tokens (+100%) · source https://ai.google.dev/gemini-api/docs/pricing
 - 2027-01-01 · Google Gemini Robotics ER 2 Streaming Preview · output: $5 → $10 per 1M tokens (+100%) · source https://ai.google.dev/gemini-api/docs/pricing
+- 2027-01-01 · Google Gemini 3.7 Flash · input: $0.75 → $1.5 per 1M tokens (+100%) · source https://cloud.google.com/model-garden/pricing
+- 2027-01-01 · Google Gemini 3.7 Flash · output: $3.75 → $7.5 per 1M tokens (+100%) · source https://cloud.google.com/model-garden/pricing
+- 2027-01-01 · Google Gemini 3.7 Flash · cached input: $0.075 → $0.15 per 1M tokens (+100%) · source https://cloud.google.com/model-garden/pricing
+
+## Billing rule changes
+- 2026-11-01 (00:00 Beijing time on 2026-11-01 (= 2026-10-31 16:00 UTC)) · DeepSeek · Search API and Fetch API (incl. server-side tool calls via DeepSeek Harness, Claude Code, Codex): Server-side Search and Fetch tool calls, currently free, start per-request billing. Price: $0.75 per 1,000 successful requests (Search); $0.75 per 1,000 successful requests (Fetch) · source https://api-docs.deepseek.com/quick_start/pricing (checked 2026-10-31)
+- 2026-11-13 (2026-11-13) · Google · Gemini 4 (incl. Gemini 4 Argon) on Google Cloud Agent Platform: When a completion exceeds 32K tokens, retrievable token usage is charged even if the request ultimately fails due to client or server timeouts (today only 200 responses are charged). Price: Standard token rates for retrievable tokens · source https://cloud.google.com/model-garden/pricing (checked 2026-10-31)
 - Promotion window · OpenAI gpt-5.6-sol: $4.00 in / $20.00 out per 1M tokens (promotional), at least through 2026-11-21; new price not yet published · source https://platform.openai.com/docs/pricing

@@ -1,6 +1,6 @@
 # Ratecard
 
-> Published AI API list prices (USD per 1M tokens), one row per model and provider, each with a source URL and check date. 89 rows, 60 verified, 14 providers. Last checked 2026-10-30.
+> Published AI API list prices (USD per 1M tokens), one row per model and provider, each with a source URL and check date. 90 rows, 61 verified, 14 providers. Last checked 2026-10-31.
 
 ## Methodology
 Prices come only from each provider's own pricing page, docs, or public pricing API. Unverified means we could not read a number on the check date — the cell stays blank. We never invent rates. Details: https://ratecardai.pages.dev/methodology
@@ -38,5 +38,7 @@ Prices come only from each provider's own pricing page, docs, or public pricing 
 - [Methodology](https://ratecardai.pages.dev/methodology)
 
 ## Scheduled price increases
-- [Scheduled AI API price increases](https://ratecardai.pages.dev/scheduled-increases): 18 announced price changes with effective dates, old → new prices, % change and sources (last checked 2026-10-30)
+- [Scheduled AI API price increases](https://ratecardai.pages.dev/scheduled-increases): 21 announced price changes with effective dates, old → new prices, % change and sources (last checked 2026-10-31)
 - [Scheduled increases (JSON)](https://ratecardai.pages.dev/api/scheduled.json)
+- Billing rule change 2026-11-01: DeepSeek — Server-side Search and Fetch tool calls, currently free, start per-request billing. $0.75 per 1,000 successful requests (Search); $0.75 per 1,000 successful requests (Fetch). Source: https://api-docs.deepseek.com/quick_start/pricing
+- Billing rule change 2026-11-13: Google — When a completion exceeds 32K tokens, retrievable token usage is charged even if the request ultimately fails due to client or server timeouts (today only 200 responses are charged). Standard token rates for retrievable tokens. Source: https://cloud.google.com/model-garden/pricing
