@@ -1,9 +1,17 @@
 {
- "generated": "2026-11-07T08:19:29.991Z",
+ "generated": "2026-11-07T09:14:53.228Z",
  "site": "https://ratecardai.pages.dev",
  "license": "CC-BY-4.0",
  "units": "USD per 1M tokens unless unit/other says otherwise",
  "changes": [
+  {
+   "date": "2026-11-07",
+   "kind": "feature",
+   "provider": "OpenAI",
+   "summary": "Added published cache-write fields: OpenAI cache_write_30m / cache_write_12h (30m from pricing table; 12h = 2.5× input per prompt-caching guide) and Anthropic cache_write_5m / cache_write_1h (1.25× / 2× input). Calculator Cache-write MTok/mo + TTL; model pages show the fields; new guide /guides/openai-anthropic-cache-write-pricing. Example: gpt-6-astra $12.50 / $25 per 1M (30m/12h).",
+   "source": "https://developers.openai.com/api/docs/pricing",
+   "observed": "2026-11-07"
+  },
   {
    "date": "2026-10-31",
    "kind": "correction",

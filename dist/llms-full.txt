@@ -1,6 +1,6 @@
 # Ratecard — full rate card
 
-99 models, 70 verified, 14 providers. Last checked 2026-10-31. License CC BY 4.0.
+99 models, 70 verified, 14 providers. Last checked 2026-11-07. License CC BY 4.0.
 
 ## Providers
 ### OpenAI
@@ -93,48 +93,48 @@
 - kind: text
 - input/output/cached: 10 / 50 / 1
 - batch in/out: 5 / 25
-- long_context: {"threshold":272000,"input":20,"output":75,"cached":2,"batch_input":10,"batch_output":37.5}
+- long_context: {"threshold":272000,"input":20,"output":75,"cached":2,"batch_input":10,"batch_output":37.5,"cache_write_30m":25,"cache_write_12h":50}
 - context: 1050000 (source: https://developers.openai.com/api/docs/models/gpt-6-astra)
 - other: 
 - status: verified
-- source: https://platform.openai.com/docs/pricing (2026-10-31)
-- notes: Flex/Batch tier shown as batch. Fast mode 2x, Ultrafast 6x standard. Data-residency endpoints +10%. Long-context (>272K input tokens): $20/$75.
+- source: https://platform.openai.com/docs/pricing (2026-11-07)
+- notes: Flex/Batch tier shown as batch. Fast mode 2x, Ultrafast 6x standard. Data-residency endpoints +10%. Long-context (>272K input tokens): $20/$75. 30-minute cache write $12.5; 12-hour cache write $25 (2.5× input per prompt-caching guide).
 
 ### OpenAI gpt-6.1-sol
 - id: openai-gpt-6-1-sol
 - kind: text
 - input/output/cached: 2 / 10 / 0.1
 - batch in/out: 1 / 5
-- long_context: {"threshold":272000,"input":4,"output":15,"cached":0.2,"batch_input":2,"batch_output":7.5}
+- long_context: {"threshold":272000,"input":4,"output":15,"cached":0.2,"batch_input":2,"batch_output":7.5,"cache_write_30m":5,"cache_write_12h":10}
 - context: 1050000 (source: https://developers.openai.com/api/docs/models/gpt-6.1-sol)
 - other: 
 - status: verified
-- source: https://platform.openai.com/docs/pricing (2026-10-31)
-- notes: Flex/Batch tier shown as batch. Fast mode 2x, Ultrafast 6x standard. Data-residency endpoints +10%. Long-context (>272K input tokens): $4/$15.
+- source: https://platform.openai.com/docs/pricing (2026-11-07)
+- notes: Flex/Batch tier shown as batch. Fast mode 2x, Ultrafast 6x standard. Data-residency endpoints +10%. Long-context (>272K input tokens): $4/$15. 30-minute cache write $2.5; 12-hour cache write $5 (2.5× input per prompt-caching guide).
 
 ### OpenAI gpt-6-luna
 - id: openai-gpt-6-luna
 - kind: text
 - input/output/cached: 0.1 / 0.5 / 0.01
 - batch in/out: 0.05 / 0.25
-- long_context: {"threshold":272000,"input":0.2,"output":0.75,"cached":0.02,"batch_input":0.1,"batch_output":0.375}
+- long_context: {"threshold":272000,"input":0.2,"output":0.75,"cached":0.02,"batch_input":0.1,"batch_output":0.375,"cache_write_30m":0.25,"cache_write_12h":0.5}
 - context: 1050000 (source: https://developers.openai.com/api/docs/models/gpt-6-luna)
 - other: 
 - status: verified
-- source: https://platform.openai.com/docs/pricing (2026-10-31)
-- notes: Flex/Batch tier shown as batch. Fast mode 2x, Ultrafast 6x standard. Data-residency endpoints +10%. Long-context (>272K input tokens): $0.2/$0.75.
+- source: https://platform.openai.com/docs/pricing (2026-11-07)
+- notes: Flex/Batch tier shown as batch. Fast mode 2x, Ultrafast 6x standard. Data-residency endpoints +10%. Long-context (>272K input tokens): $0.2/$0.75. 30-minute cache write $0.125; 12-hour cache write $0.25 (2.5× input per prompt-caching guide).
 
 ### OpenAI gpt-5.6-sol
 - id: openai-gpt-5-6-sol
 - kind: text
 - input/output/cached: 4 / 20 / 0.4
 - batch in/out: 2 / 10
-- long_context: {"threshold":272000,"input":8,"output":30,"cached":0.8,"batch_input":4,"batch_output":15}
+- long_context: {"threshold":272000,"input":8,"output":30,"cached":0.8,"batch_input":4,"batch_output":15,"cache_write_30m":10,"cache_write_12h":20}
 - context: 1050000 (source: https://developers.openai.com/api/docs/models/gpt-5.6-sol)
 - other: 
 - status: verified
-- source: https://platform.openai.com/docs/pricing (2026-10-31)
-- notes: Listed under Cyber models. Promotional pricing available at least through 2026-11-21. Long-context (>272K input tokens): $8/$30.
+- source: https://platform.openai.com/docs/pricing (2026-11-07)
+- notes: Listed under Cyber models. Promotional pricing available at least through 2026-11-21. Long-context (>272K input tokens): $8/$30. 30-minute cache write $5; 12-hour cache write $10 (2.5× input per prompt-caching guide).
 
 ### OpenAI gpt-5.3-codex
 - id: openai-gpt-5-3-codex
@@ -249,48 +249,48 @@
 - kind: text
 - input/output/cached: 1 / 5 / 0.05
 - batch in/out: 0.5 / 2.5
-- long_context: {"threshold":272000,"input":2,"output":7.5,"cached":0.1,"batch_input":1,"batch_output":3.75}
+- long_context: {"threshold":272000,"input":2,"output":7.5,"cached":0.1,"batch_input":1,"batch_output":3.75,"cache_write_30m":2.5,"cache_write_12h":5}
 - context: 1050000 (source: https://developers.openai.com/api/docs/models/gpt-6.1-terra)
 - other: 
 - status: verified
-- source: https://platform.openai.com/docs/pricing (2026-10-31)
-- notes: Flex/Batch tier shown as batch. Fast mode $2/$10. 30-minute cache write $1.25. Long-context (>272K input tokens): $2/$7.5 (cached $0.1); batch $1/$3.75. Data-residency endpoints +10%.
+- source: https://platform.openai.com/docs/pricing (2026-11-07)
+- notes: Flex/Batch tier shown as batch. Fast mode $2/$10. 30-minute cache write $1.25; 12-hour cache write $2.5 (2.5× input per prompt-caching guide).25. Long-context (>272K input tokens): $2/$7.5 (cached $0.1); batch $1/$3.75. Data-residency endpoints +10%.
 
 ### OpenAI gpt-6-sol
 - id: openai-gpt-6-sol
 - kind: text
 - input/output/cached: 2 / 10 / 0.2
 - batch in/out: 1 / 5
-- long_context: {"threshold":272000,"input":4,"output":15,"cached":0.4,"batch_input":2,"batch_output":7.5}
+- long_context: {"threshold":272000,"input":4,"output":15,"cached":0.4,"batch_input":2,"batch_output":7.5,"cache_write_30m":5,"cache_write_12h":10}
 - context: 1050000 (source: https://developers.openai.com/api/docs/models/gpt-6-sol)
 - other: 
 - status: verified
-- source: https://platform.openai.com/docs/pricing (2026-10-31)
-- notes: Flex/Batch tier shown as batch. Fast mode $4/$20. 30-minute cache write $2.5. Long-context (>272K input tokens): $4/$15 (cached $0.4); batch $2/$7.5. Data-residency endpoints +10%.
+- source: https://platform.openai.com/docs/pricing (2026-11-07)
+- notes: Flex/Batch tier shown as batch. Fast mode $4/$20. 30-minute cache write $2.5; 12-hour cache write $5 (2.5× input per prompt-caching guide).5. Long-context (>272K input tokens): $4/$15 (cached $0.4); batch $2/$7.5. Data-residency endpoints +10%.
 
 ### OpenAI gpt-5.6-terra
 - id: openai-gpt-5-6-terra
 - kind: text
 - input/output/cached: 2 / 12 / 0.2
 - batch in/out: 1 / 6
-- long_context: {"threshold":272000,"input":4,"output":18,"cached":0.4,"batch_input":2,"batch_output":9}
+- long_context: {"threshold":272000,"input":4,"output":18,"cached":0.4,"batch_input":2,"batch_output":9,"cache_write_30m":5,"cache_write_12h":10}
 - context: 1050000 (source: https://developers.openai.com/api/docs/models/gpt-5.6-terra)
 - other: 
 - status: verified
-- source: https://platform.openai.com/docs/pricing (2026-10-31)
-- notes: Flex/Batch tier shown as batch. Fast mode $4/$24. 30-minute cache write $2.5. Long-context (>272K input tokens): $4/$18 (cached $0.4); batch $2/$9. Data-residency endpoints +10%.
+- source: https://platform.openai.com/docs/pricing (2026-11-07)
+- notes: Flex/Batch tier shown as batch. Fast mode $4/$24. 30-minute cache write $2.5; 12-hour cache write $5 (2.5× input per prompt-caching guide).5. Long-context (>272K input tokens): $4/$18 (cached $0.4); batch $2/$9. Data-residency endpoints +10%.
 
 ### OpenAI gpt-5.6-luna
 - id: openai-gpt-5-6-luna
 - kind: text
 - input/output/cached: 0.2 / 1.2 / 0.02
 - batch in/out: 0.1 / 0.6
-- long_context: {"threshold":272000,"input":0.4,"output":1.8,"cached":0.04,"batch_input":0.2,"batch_output":0.9}
+- long_context: {"threshold":272000,"input":0.4,"output":1.8,"cached":0.04,"batch_input":0.2,"batch_output":0.9,"cache_write_30m":0.5,"cache_write_12h":1}
 - context: 1050000 (source: https://developers.openai.com/api/docs/models/gpt-5.6-luna)
 - other: 
 - status: verified
-- source: https://platform.openai.com/docs/pricing (2026-10-31)
-- notes: Flex/Batch tier shown as batch. Fast mode $0.4/$2.4. 30-minute cache write $0.25. Long-context (>272K input tokens): $0.4/$1.8 (cached $0.04); batch $0.2/$0.9. Data-residency endpoints +10%.
+- source: https://platform.openai.com/docs/pricing (2026-11-07)
+- notes: Flex/Batch tier shown as batch. Fast mode $0.4/$2.4. 30-minute cache write $0.25; 12-hour cache write $0.5 (2.5× input per prompt-caching guide).25. Long-context (>272K input tokens): $0.4/$1.8 (cached $0.04); batch $0.2/$0.9. Data-residency endpoints +10%.
 
 ### OpenAI gpt-5.5
 - id: openai-gpt-5-5
@@ -301,7 +301,7 @@
 - context: 1050000 (source: https://developers.openai.com/api/docs/models/gpt-5.5)
 - other: 
 - status: verified
-- source: https://platform.openai.com/docs/pricing (2026-10-31)
+- source: https://platform.openai.com/docs/pricing (2026-11-07)
 - notes: Flex/Batch tier shown as batch. Fast mode $12.5/$75. Long-context (>272K input tokens): $10/$45 (cached $1); batch $5/$22.5. Data-residency endpoints +10%.
 
 ### OpenAI gpt-5.5-pro
@@ -313,7 +313,7 @@
 - context: 1050000 (source: https://developers.openai.com/api/docs/models/gpt-5.5-pro)
 - other: 
 - status: verified
-- source: https://platform.openai.com/docs/pricing (2026-10-31)
+- source: https://platform.openai.com/docs/pricing (2026-11-07)
 - notes: Flex/Batch tier shown as batch. Long-context (>272K input tokens): $60/$270. Data-residency endpoints +10%.
 
 ### OpenAI gpt-5.4
@@ -325,7 +325,7 @@
 - context: 1050000 (source: https://developers.openai.com/api/docs/models/gpt-5.4)
 - other: 
 - status: verified
-- source: https://platform.openai.com/docs/pricing (2026-10-31)
+- source: https://platform.openai.com/docs/pricing (2026-11-07)
 - notes: Flex/Batch tier shown as batch. Fast mode $5/$30. Long-context (>272K input tokens): $5/$22.5 (cached $0.5); batch $2.5/$11.25. Data-residency endpoints +10%.
 
 ### OpenAI gpt-5.4-pro
@@ -337,7 +337,7 @@
 - context: 1050000 (source: https://developers.openai.com/api/docs/models/gpt-5.4-pro)
 - other: 
 - status: verified
-- source: https://platform.openai.com/docs/pricing (2026-10-31)
+- source: https://platform.openai.com/docs/pricing (2026-11-07)
 - notes: Flex/Batch tier shown as batch. Long-context (>272K input tokens): $60/$270; batch $30/$135. Data-residency endpoints +10%.
 
 ### OpenAI gpt-5.6-cyber
@@ -349,8 +349,8 @@
 - context: 400000 (source: https://developers.openai.com/api/docs/models/gpt-5.6-cyber)
 - other: 
 - status: verified
-- source: https://platform.openai.com/docs/pricing (2026-10-31)
-- notes: No Batch price published. 30-minute cache write $15.625. No long-context price published (shown as "-"). Listed under OpenAI "Cyber models" (Daybreak). Data-residency endpoints +10%.
+- source: https://platform.openai.com/docs/pricing (2026-11-07)
+- notes: No Batch price published. 30-minute cache write $15.625; 12-hour cache write $31.25 (2.5× input per prompt-caching guide).625. No long-context price published (shown as "-"). Listed under OpenAI "Cyber models" (Daybreak). Data-residency endpoints +10%.
 
 ### Anthropic Claude Fable 5.1
 - id: anthropic-claude-fable-5-1
@@ -361,7 +361,7 @@
 - context: 1000000 (source: https://platform.claude.com/docs/en/models/fable-5-1/overview)
 - other: 
 - status: verified
-- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-10-30)
+- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-11-07)
 - notes: Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x. Context per models overview.
 
 ### Anthropic Claude Opus 5.5
@@ -373,7 +373,7 @@
 - context: 1000000 (source: https://platform.claude.com/docs/en/models/opus-5-5/overview)
 - other: 
 - status: verified
-- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-10-30)
+- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-11-07)
 - notes: Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x. Context per models overview.
 
 ### Anthropic Claude Sonnet 5.5
@@ -385,7 +385,7 @@
 - context: 1000000 (source: https://platform.claude.com/docs/en/models/sonnet-5-5/overview)
 - other: 
 - status: verified
-- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-10-30)
+- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-11-07)
 - notes: Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x. Context per models overview.
 
 ### Anthropic Claude Haiku 5.5
@@ -393,11 +393,11 @@
 - kind: text
 - input/output/cached: 0.1 / 0.5 / 0.01
 - batch in/out: 0.05 / 0.25
-- long_context: {"threshold":100000,"input":0.5,"output":2.5,"cached":0.05,"batch_input":0.25,"batch_output":1.25}
+- long_context: {"threshold":100000,"input":0.5,"output":2.5,"cached":0.05,"batch_input":0.25,"batch_output":1.25,"cache_write_5m":0.625,"cache_write_1h":1}
 - context: 1000000 (source: https://platform.claude.com/docs/en/models/haiku-5-5/overview)
 - other: 
 - status: verified
-- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-10-30)
+- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-11-07)
 - notes: Prompts ≤100K: $0.10/$0.50. Prompts >100K: $0.50/$2.50 (cached $0.05; batch $0.25/$1.25). Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x. Context per models overview.
 
 ### Anthropic Claude Mythos 5.1
@@ -409,7 +409,7 @@
 - context: 1000000 (source: https://platform.claude.com/docs/en/models/mythos-5-1/overview)
 - other: 
 - status: verified
-- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-10-30)
+- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-11-07)
 - notes: Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x.
 
 ### Anthropic Claude Opus 5
@@ -421,7 +421,7 @@
 - context: 1000000 (source: https://platform.claude.com/docs/en/models/opus-5/overview)
 - other: 
 - status: verified
-- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-10-30)
+- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-11-07)
 - notes: Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x.
 
 ### Anthropic Claude Opus 4.8
@@ -433,7 +433,7 @@
 - context: 1000000 (source: https://platform.claude.com/docs/en/models/opus-4-8/overview)
 - other: 
 - status: verified
-- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-10-30)
+- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-11-07)
 - notes: Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x.
 
 ### Anthropic Claude Sonnet 5
@@ -445,7 +445,7 @@
 - context: 1000000 (source: https://platform.claude.com/docs/en/models/sonnet-5/overview)
 - other: 
 - status: verified
-- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-10-30)
+- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-11-07)
 - notes: Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x.
 
 ### Anthropic Claude Sonnet 4.6
@@ -457,7 +457,7 @@
 - context: 1000000 (source: https://platform.claude.com/docs/en/models/sonnet-4-6/overview)
 - other: 
 - status: verified
-- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-10-30)
+- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-11-07)
 - notes: Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x.
 
 ### Anthropic Claude Haiku 4.5
@@ -469,7 +469,7 @@
 - context: 200000 (source: https://platform.claude.com/docs/en/models/haiku-4-5/overview)
 - other: 
 - status: verified
-- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-10-30)
+- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-11-07)
 - notes: Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x.
 
 ### Anthropic Claude Opus 4.1
@@ -481,7 +481,7 @@
 - context: unpublished
 - other: 
 - status: verified
-- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-10-30)
+- source: https://docs.anthropic.com/en/docs/about-claude/pricing (2026-11-07)
 - notes: Cache writes 1.25x (5m) or 2x (1h) input. US-only inference 1.1x.
 
 ### Google Gemini 4 Argon
@@ -1277,6 +1277,7 @@
 - notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts. Pricing override for prompts of 200K+ tokens: $4.00 in / $12.00 out, cache read $1.00 per 1M.
 
 ## Changes
+- 2026-11-07 OpenAI (feature): Added published cache-write fields: OpenAI cache_write_30m / cache_write_12h (30m from pricing table; 12h = 2.5× input per prompt-caching guide) and Anthropic cache_write_5m / cache_write_1h (1.25× / 2× input). Calculator Cache-write MTok/mo + TTL; model pages show the fields; new guide /guides/openai-anthropic-cache-write-pricing. Example: gpt-6-astra $12.50 / $25 per 1M (30m/12h). [https://developers.openai.com/api/docs/pricing]
 - 2026-10-31 DeepSeek (correction): Correction to our 2026-10-31 DeepSeek Search/Fetch entry and guide: DeepSeek bills Search and Fetch as standalone APIs per successful request ($0.75 per 1,000 each). Only server-side tool calls made through DeepSeek Harness, Claude Code and Codex were free until 00:00 Beijing time 2026-11-01 (2026-10-31 16:00 UTC). We had implied all Search/Fetch billing started then; the guide title, key stats, FAQ, llms-full.txt and the models.json tool_fees field (billing_start_utc renamed agent_tool_calls_billed_from_utc) are corrected. [https://api-docs.deepseek.com/guides/search]
 - 2026-10-31 xAI (correction): grok-4.7 long-context tier added: above 200K prompt tokens $4.00 in / $12.00 out (cached $1.00); standard cached $0.50; Batch API 20% off. Finder/calculator now price long prompts at the higher tier (OpenRouter Grok 4.7 row too). [https://docs.x.ai/developers/models]
 - 2026-10-31 OpenAI (new model): Added 9 text models from OpenAI's pricing table (standard / batch per 1M tokens; long-context >272K input tokens where published): gpt-6.1-terra $1/$5 (cached $0.05; batch $0.50/$2.50; >272K $2/$7.50), gpt-6-sol $2/$10 (cached $0.20; >272K $4/$15), gpt-5.6-terra $2/$12 (>272K $4/$18), gpt-5.6-luna $0.20/$1.20 (>272K $0.40/$1.80), gpt-5.5 $5/$30 (>272K $10/$45), gpt-5.5-pro $30/$180 (>272K $60/$270), gpt-5.4 $2.50/$15 (>272K $5/$22.50), gpt-5.4-pro $30/$180 (>272K $60/$270), gpt-5.6-cyber $12.50/$75 (cached $1.25; no batch or long-context price listed). Context windows from each model page: 1,050,000 tokens (gpt-5.6-cyber 400,000). [https://platform.openai.com/docs/pricing]
@@ -1351,31 +1352,47 @@ Page: https://ratecardai.pages.dev/guides/deepseek-search-fetch-pricing
 - Per 1,000/10,000/100,000/1,000,000 successful requests: $0.7500 / $7.50 / $75.00 / $750.00 (per API).
 
 
+## OpenAI + Anthropic cache-write pricing (checked 2026-11-07)
+Page: https://ratecardai.pages.dev/guides/openai-anthropic-cache-write-pricing
+- Q: Do OpenAI cache writes cost extra?
+  A: OpenAI and Anthropic both charge for prompt cache writes. OpenAI (GPT-5.6+): 30-minute writes are published on the pricing table (gpt-6-astra $12.50 / 1M) and 12-hour writes are 2.5× uncached input ($25.00 / 1M for astra) per the prompt-caching guide — these are total write rates, not a surcharge on top of input. Anthropic: 5-minute writes are 1.25× input and 1-hour writes are 2× input (Claude Sonnet 5.5 $2.50 / $4.00 per 1M). Cached reads stay cheaper (OpenAI typically 0.1× input; Anthropic 0.1× with model-specific exceptions). Ratecard stores absolute $/1M on each model row and the calculator adds Cache-write MTok/mo when you enter a volume. Checked 2026-11-07.
+- Q: What is gpt-6-astra cache-write pricing?
+  A: As of 2026-11-07, OpenAI lists gpt-6-astra cache writes at $12.50 per 1M tokens for the 30-minute TTL and $25.00 per 1M for the 12-hour TTL (2.5× its $10 input). Long-context (>272K) writes are $25.00 / $50.00. Source: OpenAI pricing table + prompt-caching guide.
+- Q: What does Anthropic charge for cache writes?
+  A: Anthropic bills 1.25× base input for a 5-minute cache write and 2× base input for a 1-hour write. Example (checked 2026-11-07): Claude Sonnet 5.5 input $2 → 5m $2.50, 1h $4.00 per 1M. Cache reads are typically 0.1× input (0.05× on Opus 5.5 / Sonnet 5.5; 0.025× on Fable 5.1 / Mythos 5.1). Source: Anthropic pricing docs.
+- Q: How do I model cache writes in the Ratecard calculator?
+  A: Enter Cache-write tokens / month (M) and pick a TTL (Auto uses the short TTL). The write line uses the published absolute $/1M when the model has fields; otherwise it shows N/A. Write rates are total rates — enter only tokens billed as writes, not also in uncached input. Taxes and negotiated discounts are still excluded.
+- Q: Does Claude’s newer tokenizer change cache-write prices?
+  A: No. Anthropic notes that Claude 4.7+ (and Mythos Preview) use a tokenizer that produces about 30% more tokens for the same text, which raises billable token counts — it does not change the $/1M cache-write multipliers (still 1.25× / 2× input). Verify token counts on your own prompts.
+- OpenAI rows with writes: gpt-6-luna 30m 0.125 / 12h 0.25; gpt-5.6-luna 30m 0.25 / 12h 0.5; gpt-6.1-terra 30m 1.25 / 12h 2.5; gpt-6.1-sol 30m 2.5 / 12h 5; gpt-6-sol 30m 2.5 / 12h 5; gpt-5.6-terra 30m 2.5 / 12h 5; gpt-5.6-sol 30m 5 / 12h 10; gpt-6-astra 30m 12.5 / 12h 25; gpt-5.6-cyber 30m 15.625 / 12h 31.25
+- Anthropic rows with writes: Claude Haiku 5.5 5m 0.125 / 1h 0.2; Claude Haiku 4.5 5m 1.25 / 1h 2; Claude Sonnet 5.5 5m 2.5 / 1h 4; Claude Sonnet 5 5m 2.5 / 1h 4; Claude Sonnet 4.6 5m 3.75 / 1h 6; Claude Opus 5.5 5m 5 / 1h 8; Claude Opus 5 5m 6.25 / 1h 10; Claude Opus 4.8 5m 6.25 / 1h 10; Claude Fable 5.1 5m 12.5 / 1h 20; Claude Mythos 5.1 5m 12.5 / 1h 20; Claude Opus 4.1 5m 18.75 / 1h 30
+
+
 ## Cheapest by context (≥128K)
 1. OpenRouter Qwen3.7 Flash (Qwen) (openrouter-qwen3-7-flash-qwen): ctx 1000000, in 0.03, out 0.13, cached 0.006, tier std, source https://openrouter.ai/qwen/qwen3.7-flash, checked 2026-10-30
 2. OpenRouter Llama 4 Scout (Meta) (openrouter-llama-4-scout-meta): ctx 1310720, in 0.1, out 0.3, cached null, tier std, source https://openrouter.ai/meta-llama/llama-4-scout, checked 2026-10-30
-3. OpenAI gpt-6-luna (openai-gpt-6-luna): ctx 1050000, in 0.1, out 0.5, cached 0.01, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+3. OpenAI gpt-6-luna (openai-gpt-6-luna): ctx 1050000, in 0.1, out 0.5, cached 0.01, tier std, source https://platform.openai.com/docs/pricing, checked 2026-11-07
 4. Fireworks OpenAI GPT OSS 120B (fireworks-openai-gpt-oss-120b): ctx 131000, in 0.15, out 0.6, cached 0.015, tier std, source https://docs.fireworks.ai/serverless/pricing, checked 2026-10-30
 5. OpenRouter Mistral Small 4 (Mistral) (openrouter-mistral-small-4-mistral): ctx 262144, in 0.15, out 0.6, cached 0.015, tier std, source https://openrouter.ai/mistralai/mistral-small-2603, checked 2026-10-30
 6. OpenRouter Llama 4 Maverick (Meta) (openrouter-llama-4-maverick-meta): ctx 524288, in 0.1875, out 0.6525, cached 0.05, tier std, source https://openrouter.ai/meta-llama/llama-4-maverick, checked 2026-10-30
-7. OpenAI gpt-5.6-luna (openai-gpt-5-6-luna): ctx 1050000, in 0.2, out 1.2, cached 0.02, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+7. OpenAI gpt-5.6-luna (openai-gpt-5-6-luna): ctx 1050000, in 0.2, out 1.2, cached 0.02, tier std, source https://platform.openai.com/docs/pricing, checked 2026-11-07
 8. Google Gemini 3.1 Flash-Lite (google-gemini-3-1-flash-lite): ctx 1048576, in 0.25, out 1.5, cached 0.025, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
 9. OpenRouter Codestral 2508 (Mistral) (openrouter-codestral-2508-mistral): ctx 256000, in 0.3, out 0.9, cached 0.03, tier std, source https://openrouter.ai/mistralai/codestral-2508, checked 2026-10-30
 10. DeepSeek deepseek-flash (V4.1 Flash) (deepseek-deepseek-flash-v4-1-flash): ctx 1000000, in 0.3, out 1.2, cached 0.006, tier std, source https://api-docs.deepseek.com/quick_start/pricing, checked 2026-10-31
 11. Fireworks DeepSeek V4.1 Flash (fireworks-deepseek-v4-1-flash): ctx 1040000, in 0.3, out 1.2, cached 0.006, tier std, source https://docs.fireworks.ai/serverless/pricing, checked 2026-10-30
 12. OpenRouter Command A+ (Cohere) (openrouter-command-a-cohere): ctx 192000, in 0.3, out 1.5, cached 0.15, tier std, source https://openrouter.ai/cohere/command-a-plus, checked 2026-10-30
 13. Google Gemini 3.5 Flash-Lite (google-gemini-3-5-flash-lite): ctx 1048576, in 0.3, out 2.5, cached 0.03, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
-14. Anthropic Claude Haiku 5.5 (anthropic-claude-haiku-5-5): ctx 1000000, in 0.5, out 2.5, cached 0.05, tier long, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+14. Anthropic Claude Haiku 5.5 (anthropic-claude-haiku-5-5): ctx 1000000, in 0.5, out 2.5, cached 0.05, tier long, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
 15. Google Gemini 3 Flash Preview (google-gemini-3-flash-preview): ctx 1048576, in 0.5, out 3, cached 0.05, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
 16. Mistral Mistral Large 4 (mistral-mistral-large-4): ctx 1048576, in 0.7, out 2.1, cached 0.07, tier std, source https://mistral.ai/news/mistral-large-4-oss/, checked 2026-10-30
 17. OpenRouter Mistral Large 4 (Mistral) (openrouter-mistral-large-4-mistral): ctx 1048576, in 0.7, out 2.1, cached 0.07, tier std, source https://openrouter.ai/mistralai/mistral-large-4-0, checked 2026-10-30
 18. Google Gemini 3.6 Flash (google-gemini-3-6-flash): ctx 1048576, in 0.75, out 3.75, cached 0.075, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
 19. Google Gemini 3.7 Flash (google-gemini-3-7-flash): ctx 1048576, in 0.75, out 3.75, cached 0.075, tier std, source https://cloud.google.com/model-garden/pricing, checked 2026-10-31
 20. Google Gemini 3.8 Flash (google-gemini-3-8-flash): ctx 1048576, in 0.75, out 3.75, cached 0.075, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
-21. Anthropic Claude Haiku 4.5 (anthropic-claude-haiku-4-5): ctx 200000, in 1, out 5, cached 0.1, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+21. Anthropic Claude Haiku 4.5 (anthropic-claude-haiku-4-5): ctx 200000, in 1, out 5, cached 0.1, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
 22. Google Gemini Robotics ER 2 Preview (google-gemini-robotics-er-2-preview): ctx 131072, in 1, out 5, cached 0.1, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
 23. Google Gemini Robotics ER 2 Streaming Preview (google-gemini-robotics-er-2-streaming-preview): ctx 131072, in 1, out 5, cached null, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
-24. OpenAI gpt-6.1-terra (openai-gpt-6-1-terra): ctx 1050000, in 1, out 5, cached 0.05, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+24. OpenAI gpt-6.1-terra (openai-gpt-6-1-terra): ctx 1050000, in 1, out 5, cached 0.05, tier std, source https://platform.openai.com/docs/pricing, checked 2026-11-07
 25. DeepSeek deepseek-v4-pro (deepseek-deepseek-v4-pro): ctx 1000000, in 1.32, out 3.96, cached 0.044, tier std, source https://api-docs.deepseek.com/quick_start/pricing, checked 2026-10-31
 26. Fireworks GLM 5.3 (fireworks-glm-5-3): ctx 1040000, in 1.4, out 4.4, cached 0.26, tier std, source https://docs.fireworks.ai/serverless/pricing, checked 2026-10-30
 27. OpenRouter Mistral Medium 3.5 (Mistral) (openrouter-mistral-medium-3-5-mistral): ctx 262144, in 1.5, out 7.5, cached null, tier std, source https://openrouter.ai/mistralai/mistral-medium-3-5, checked 2026-10-30
@@ -1383,40 +1400,40 @@ Page: https://ratecardai.pages.dev/guides/deepseek-search-fetch-pricing
 29. OpenRouter Grok 4.7 (SpaceXAI) (openrouter-grok-4-7-spacexai): ctx 500000, in 2, out 6, cached 0.5, tier std, source https://openrouter.ai/x-ai/grok-4.7, checked 2026-10-31
 30. OpenRouter Qwen3.8 Max (0902) (Qwen) (openrouter-qwen3-8-max-0902-qwen): ctx 1000000, in 2, out 6, cached 0.25, tier std, source https://openrouter.ai/qwen/qwen3.8-max-0902, checked 2026-10-30
 31. xAI grok-4.7 (xai-grok-4-7): ctx 500000, in 2, out 6, cached 0.5, tier std, source https://docs.x.ai/developers/models, checked 2026-10-31
-32. Anthropic Claude Sonnet 5 (anthropic-claude-sonnet-5): ctx 1000000, in 2, out 10, cached 0.2, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
-33. Anthropic Claude Sonnet 5.5 (anthropic-claude-sonnet-5-5): ctx 1000000, in 2, out 10, cached 0.1, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+32. Anthropic Claude Sonnet 5 (anthropic-claude-sonnet-5): ctx 1000000, in 2, out 10, cached 0.2, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
+33. Anthropic Claude Sonnet 5.5 (anthropic-claude-sonnet-5-5): ctx 1000000, in 2, out 10, cached 0.1, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
 34. Google Gemini 4 Argon (google-gemini-4-argon): ctx 1048576, in 2, out 10, cached 0.1, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
-35. OpenAI gpt-6.1-sol (openai-gpt-6-1-sol): ctx 1050000, in 2, out 10, cached 0.1, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
-36. OpenAI gpt-6-sol (openai-gpt-6-sol): ctx 1050000, in 2, out 10, cached 0.2, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+35. OpenAI gpt-6.1-sol (openai-gpt-6-1-sol): ctx 1050000, in 2, out 10, cached 0.1, tier std, source https://platform.openai.com/docs/pricing, checked 2026-11-07
+36. OpenAI gpt-6-sol (openai-gpt-6-sol): ctx 1050000, in 2, out 10, cached 0.2, tier std, source https://platform.openai.com/docs/pricing, checked 2026-11-07
 37. OpenRouter Kimi K3.1 Pro (MoonshotAI) (openrouter-kimi-k3-1-pro-moonshotai): ctx 1048576, in 2, out 10, cached 0.2, tier std, source https://openrouter.ai/moonshotai/kimi-k3.1-pro, checked 2026-10-30
 38. Google Gemini 3.1 Pro Preview (google-gemini-3-1-pro-preview): ctx 1048576, in 2, out 12, cached 0.2, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
-39. OpenAI gpt-5.6-terra (openai-gpt-5-6-terra): ctx 1050000, in 2, out 12, cached 0.2, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
-40. OpenAI gpt-5.4 (openai-gpt-5-4): ctx 1050000, in 2.5, out 15, cached 0.25, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
-41. Anthropic Claude Sonnet 4.6 (anthropic-claude-sonnet-4-6): ctx 1000000, in 3, out 15, cached 0.3, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+39. OpenAI gpt-5.6-terra (openai-gpt-5-6-terra): ctx 1050000, in 2, out 12, cached 0.2, tier std, source https://platform.openai.com/docs/pricing, checked 2026-11-07
+40. OpenAI gpt-5.4 (openai-gpt-5-4): ctx 1050000, in 2.5, out 15, cached 0.25, tier std, source https://platform.openai.com/docs/pricing, checked 2026-11-07
+41. Anthropic Claude Sonnet 4.6 (anthropic-claude-sonnet-4-6): ctx 1000000, in 3, out 15, cached 0.3, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
 42. Fireworks Kimi K3 (fireworks-kimi-k3): ctx 1048576, in 3, out 15, cached 0.3, tier std, source https://docs.fireworks.ai/serverless/pricing, checked 2026-10-30
-43. Anthropic Claude Opus 5.5 (anthropic-claude-opus-5-5): ctx 1000000, in 4, out 20, cached 0.2, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
-44. OpenAI gpt-5.6-sol (openai-gpt-5-6-sol): ctx 1050000, in 4, out 20, cached 0.4, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
-45. Anthropic Claude Opus 4.8 (anthropic-claude-opus-4-8): ctx 1000000, in 5, out 25, cached 0.5, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
-46. Anthropic Claude Opus 5 (anthropic-claude-opus-5): ctx 1000000, in 5, out 25, cached 0.5, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+43. Anthropic Claude Opus 5.5 (anthropic-claude-opus-5-5): ctx 1000000, in 4, out 20, cached 0.2, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
+44. OpenAI gpt-5.6-sol (openai-gpt-5-6-sol): ctx 1050000, in 4, out 20, cached 0.4, tier std, source https://platform.openai.com/docs/pricing, checked 2026-11-07
+45. Anthropic Claude Opus 4.8 (anthropic-claude-opus-4-8): ctx 1000000, in 5, out 25, cached 0.5, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
+46. Anthropic Claude Opus 5 (anthropic-claude-opus-5): ctx 1000000, in 5, out 25, cached 0.5, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
 47. OpenAI chat-latest (openai-chat-latest): ctx 400000, in 5, out 30, cached 0.5, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-30
-48. OpenAI gpt-5.5 (openai-gpt-5-5): ctx 1050000, in 5, out 30, cached 0.5, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
-49. Anthropic Claude Fable 5.1 (anthropic-claude-fable-5-1): ctx 1000000, in 10, out 50, cached 0.25, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
-50. Anthropic Claude Mythos 5.1 (anthropic-claude-mythos-5-1): ctx 1000000, in 10, out 50, cached 0.25, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
-51. OpenAI gpt-6-astra (openai-gpt-6-astra): ctx 1050000, in 10, out 50, cached 1, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
-52. OpenAI gpt-5.6-cyber (openai-gpt-5-6-cyber): ctx 400000, in 12.5, out 75, cached 1.25, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
-53. OpenAI gpt-5.4-pro (openai-gpt-5-4-pro): ctx 1050000, in 30, out 180, cached null, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
-54. OpenAI gpt-5.5-pro (openai-gpt-5-5-pro): ctx 1050000, in 30, out 180, cached null, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+48. OpenAI gpt-5.5 (openai-gpt-5-5): ctx 1050000, in 5, out 30, cached 0.5, tier std, source https://platform.openai.com/docs/pricing, checked 2026-11-07
+49. Anthropic Claude Fable 5.1 (anthropic-claude-fable-5-1): ctx 1000000, in 10, out 50, cached 0.25, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
+50. Anthropic Claude Mythos 5.1 (anthropic-claude-mythos-5-1): ctx 1000000, in 10, out 50, cached 0.25, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
+51. OpenAI gpt-6-astra (openai-gpt-6-astra): ctx 1050000, in 10, out 50, cached 1, tier std, source https://platform.openai.com/docs/pricing, checked 2026-11-07
+52. OpenAI gpt-5.6-cyber (openai-gpt-5-6-cyber): ctx 400000, in 12.5, out 75, cached 1.25, tier std, source https://platform.openai.com/docs/pricing, checked 2026-11-07
+53. OpenAI gpt-5.4-pro (openai-gpt-5-4-pro): ctx 1050000, in 30, out 180, cached null, tier std, source https://platform.openai.com/docs/pricing, checked 2026-11-07
+54. OpenAI gpt-5.5-pro (openai-gpt-5-5-pro): ctx 1050000, in 30, out 180, cached null, tier std, source https://platform.openai.com/docs/pricing, checked 2026-11-07
 
 ## Cheapest by context (≥1M)
 1. OpenRouter Qwen3.7 Flash (Qwen) (openrouter-qwen3-7-flash-qwen): ctx 1000000, in 0.03, out 0.13, cached 0.006, tier std, source https://openrouter.ai/qwen/qwen3.7-flash, checked 2026-10-30
 2. OpenRouter Llama 4 Scout (Meta) (openrouter-llama-4-scout-meta): ctx 1310720, in 0.1, out 0.3, cached null, tier std, source https://openrouter.ai/meta-llama/llama-4-scout, checked 2026-10-30
-3. OpenAI gpt-6-luna (openai-gpt-6-luna): ctx 1050000, in 0.2, out 0.75, cached 0.02, tier long, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+3. OpenAI gpt-6-luna (openai-gpt-6-luna): ctx 1050000, in 0.2, out 0.75, cached 0.02, tier long, source https://platform.openai.com/docs/pricing, checked 2026-11-07
 4. Google Gemini 3.1 Flash-Lite (google-gemini-3-1-flash-lite): ctx 1048576, in 0.25, out 1.5, cached 0.025, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
 5. DeepSeek deepseek-flash (V4.1 Flash) (deepseek-deepseek-flash-v4-1-flash): ctx 1000000, in 0.3, out 1.2, cached 0.006, tier std, source https://api-docs.deepseek.com/quick_start/pricing, checked 2026-10-31
 6. Fireworks DeepSeek V4.1 Flash (fireworks-deepseek-v4-1-flash): ctx 1040000, in 0.3, out 1.2, cached 0.006, tier std, source https://docs.fireworks.ai/serverless/pricing, checked 2026-10-30
 7. Google Gemini 3.5 Flash-Lite (google-gemini-3-5-flash-lite): ctx 1048576, in 0.3, out 2.5, cached 0.03, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
-8. OpenAI gpt-5.6-luna (openai-gpt-5-6-luna): ctx 1050000, in 0.4, out 1.8, cached 0.04, tier long, source https://platform.openai.com/docs/pricing, checked 2026-10-31
-9. Anthropic Claude Haiku 5.5 (anthropic-claude-haiku-5-5): ctx 1000000, in 0.5, out 2.5, cached 0.05, tier long, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+8. OpenAI gpt-5.6-luna (openai-gpt-5-6-luna): ctx 1050000, in 0.4, out 1.8, cached 0.04, tier long, source https://platform.openai.com/docs/pricing, checked 2026-11-07
+9. Anthropic Claude Haiku 5.5 (anthropic-claude-haiku-5-5): ctx 1000000, in 0.5, out 2.5, cached 0.05, tier long, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
 10. Google Gemini 3 Flash Preview (google-gemini-3-flash-preview): ctx 1048576, in 0.5, out 3, cached 0.05, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
 11. Mistral Mistral Large 4 (mistral-mistral-large-4): ctx 1048576, in 0.7, out 2.1, cached 0.07, tier std, source https://mistral.ai/news/mistral-large-4-oss/, checked 2026-10-30
 12. OpenRouter Mistral Large 4 (Mistral) (openrouter-mistral-large-4-mistral): ctx 1048576, in 0.7, out 2.1, cached 0.07, tier std, source https://openrouter.ai/mistralai/mistral-large-4-0, checked 2026-10-30
@@ -1426,28 +1443,28 @@ Page: https://ratecardai.pages.dev/guides/deepseek-search-fetch-pricing
 16. DeepSeek deepseek-v4-pro (deepseek-deepseek-v4-pro): ctx 1000000, in 1.32, out 3.96, cached 0.044, tier std, source https://api-docs.deepseek.com/quick_start/pricing, checked 2026-10-31
 17. Fireworks GLM 5.3 (fireworks-glm-5-3): ctx 1040000, in 1.4, out 4.4, cached 0.26, tier std, source https://docs.fireworks.ai/serverless/pricing, checked 2026-10-30
 18. OpenRouter Qwen3.8 Max (0902) (Qwen) (openrouter-qwen3-8-max-0902-qwen): ctx 1000000, in 2, out 6, cached 0.25, tier std, source https://openrouter.ai/qwen/qwen3.8-max-0902, checked 2026-10-30
-19. OpenAI gpt-6.1-terra (openai-gpt-6-1-terra): ctx 1050000, in 2, out 7.5, cached 0.1, tier long, source https://platform.openai.com/docs/pricing, checked 2026-10-31
-20. Anthropic Claude Sonnet 5 (anthropic-claude-sonnet-5): ctx 1000000, in 2, out 10, cached 0.2, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
-21. Anthropic Claude Sonnet 5.5 (anthropic-claude-sonnet-5-5): ctx 1000000, in 2, out 10, cached 0.1, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+19. OpenAI gpt-6.1-terra (openai-gpt-6-1-terra): ctx 1050000, in 2, out 7.5, cached 0.1, tier long, source https://platform.openai.com/docs/pricing, checked 2026-11-07
+20. Anthropic Claude Sonnet 5 (anthropic-claude-sonnet-5): ctx 1000000, in 2, out 10, cached 0.2, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
+21. Anthropic Claude Sonnet 5.5 (anthropic-claude-sonnet-5-5): ctx 1000000, in 2, out 10, cached 0.1, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
 22. Google Gemini 4 Argon (google-gemini-4-argon): ctx 1048576, in 2, out 10, cached 0.1, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
 23. OpenRouter Kimi K3.1 Pro (MoonshotAI) (openrouter-kimi-k3-1-pro-moonshotai): ctx 1048576, in 2, out 10, cached 0.2, tier std, source https://openrouter.ai/moonshotai/kimi-k3.1-pro, checked 2026-10-30
-24. Anthropic Claude Sonnet 4.6 (anthropic-claude-sonnet-4-6): ctx 1000000, in 3, out 15, cached 0.3, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+24. Anthropic Claude Sonnet 4.6 (anthropic-claude-sonnet-4-6): ctx 1000000, in 3, out 15, cached 0.3, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
 25. Fireworks Kimi K3 (fireworks-kimi-k3): ctx 1048576, in 3, out 15, cached 0.3, tier std, source https://docs.fireworks.ai/serverless/pricing, checked 2026-10-30
-26. OpenAI gpt-6.1-sol (openai-gpt-6-1-sol): ctx 1050000, in 4, out 15, cached 0.2, tier long, source https://platform.openai.com/docs/pricing, checked 2026-10-31
-27. OpenAI gpt-6-sol (openai-gpt-6-sol): ctx 1050000, in 4, out 15, cached 0.4, tier long, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+26. OpenAI gpt-6.1-sol (openai-gpt-6-1-sol): ctx 1050000, in 4, out 15, cached 0.2, tier long, source https://platform.openai.com/docs/pricing, checked 2026-11-07
+27. OpenAI gpt-6-sol (openai-gpt-6-sol): ctx 1050000, in 4, out 15, cached 0.4, tier long, source https://platform.openai.com/docs/pricing, checked 2026-11-07
 28. Google Gemini 3.1 Pro Preview (google-gemini-3-1-pro-preview): ctx 1048576, in 4, out 18, cached 0.4, tier long, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
-29. OpenAI gpt-5.6-terra (openai-gpt-5-6-terra): ctx 1050000, in 4, out 18, cached 0.4, tier long, source https://platform.openai.com/docs/pricing, checked 2026-10-31
-30. Anthropic Claude Opus 5.5 (anthropic-claude-opus-5-5): ctx 1000000, in 4, out 20, cached 0.2, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
-31. OpenAI gpt-5.4 (openai-gpt-5-4): ctx 1050000, in 5, out 22.5, cached 0.5, tier long, source https://platform.openai.com/docs/pricing, checked 2026-10-31
-32. Anthropic Claude Opus 4.8 (anthropic-claude-opus-4-8): ctx 1000000, in 5, out 25, cached 0.5, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
-33. Anthropic Claude Opus 5 (anthropic-claude-opus-5): ctx 1000000, in 5, out 25, cached 0.5, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
-34. OpenAI gpt-5.6-sol (openai-gpt-5-6-sol): ctx 1050000, in 8, out 30, cached 0.8, tier long, source https://platform.openai.com/docs/pricing, checked 2026-10-31
-35. OpenAI gpt-5.5 (openai-gpt-5-5): ctx 1050000, in 10, out 45, cached 1, tier long, source https://platform.openai.com/docs/pricing, checked 2026-10-31
-36. Anthropic Claude Fable 5.1 (anthropic-claude-fable-5-1): ctx 1000000, in 10, out 50, cached 0.25, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
-37. Anthropic Claude Mythos 5.1 (anthropic-claude-mythos-5-1): ctx 1000000, in 10, out 50, cached 0.25, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
-38. OpenAI gpt-6-astra (openai-gpt-6-astra): ctx 1050000, in 20, out 75, cached 2, tier long, source https://platform.openai.com/docs/pricing, checked 2026-10-31
-39. OpenAI gpt-5.4-pro (openai-gpt-5-4-pro): ctx 1050000, in 60, out 270, cached null, tier long, source https://platform.openai.com/docs/pricing, checked 2026-10-31
-40. OpenAI gpt-5.5-pro (openai-gpt-5-5-pro): ctx 1050000, in 60, out 270, cached null, tier long, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+29. OpenAI gpt-5.6-terra (openai-gpt-5-6-terra): ctx 1050000, in 4, out 18, cached 0.4, tier long, source https://platform.openai.com/docs/pricing, checked 2026-11-07
+30. Anthropic Claude Opus 5.5 (anthropic-claude-opus-5-5): ctx 1000000, in 4, out 20, cached 0.2, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
+31. OpenAI gpt-5.4 (openai-gpt-5-4): ctx 1050000, in 5, out 22.5, cached 0.5, tier long, source https://platform.openai.com/docs/pricing, checked 2026-11-07
+32. Anthropic Claude Opus 4.8 (anthropic-claude-opus-4-8): ctx 1000000, in 5, out 25, cached 0.5, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
+33. Anthropic Claude Opus 5 (anthropic-claude-opus-5): ctx 1000000, in 5, out 25, cached 0.5, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
+34. OpenAI gpt-5.6-sol (openai-gpt-5-6-sol): ctx 1050000, in 8, out 30, cached 0.8, tier long, source https://platform.openai.com/docs/pricing, checked 2026-11-07
+35. OpenAI gpt-5.5 (openai-gpt-5-5): ctx 1050000, in 10, out 45, cached 1, tier long, source https://platform.openai.com/docs/pricing, checked 2026-11-07
+36. Anthropic Claude Fable 5.1 (anthropic-claude-fable-5-1): ctx 1000000, in 10, out 50, cached 0.25, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
+37. Anthropic Claude Mythos 5.1 (anthropic-claude-mythos-5-1): ctx 1000000, in 10, out 50, cached 0.25, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
+38. OpenAI gpt-6-astra (openai-gpt-6-astra): ctx 1050000, in 20, out 75, cached 2, tier long, source https://platform.openai.com/docs/pricing, checked 2026-11-07
+39. OpenAI gpt-5.4-pro (openai-gpt-5-4-pro): ctx 1050000, in 60, out 270, cached null, tier long, source https://platform.openai.com/docs/pricing, checked 2026-11-07
+40. OpenAI gpt-5.5-pro (openai-gpt-5-5-pro): ctx 1050000, in 60, out 270, cached null, tier long, source https://platform.openai.com/docs/pricing, checked 2026-11-07
 
 
 ## Legal

@@ -1,5 +1,13 @@
 [
  {
+  "date": "2026-11-07",
+  "kind": "feature",
+  "provider": "OpenAI",
+  "summary": "Added published cache-write fields: OpenAI cache_write_30m / cache_write_12h (30m from pricing table; 12h = 2.5\u00d7 input per prompt-caching guide) and Anthropic cache_write_5m / cache_write_1h (1.25\u00d7 / 2\u00d7 input). Calculator Cache-write MTok/mo + TTL; model pages show the fields; new guide /guides/openai-anthropic-cache-write-pricing. Example: gpt-6-astra $12.50 / $25 per 1M (30m/12h).",
+  "source": "https://developers.openai.com/api/docs/pricing",
+  "observed": "2026-11-07"
+ },
+ {
   "date": "2026-10-31",
   "kind": "correction",
   "provider": "DeepSeek",
@@ -11,7 +19,7 @@
   "date": "2026-12-01",
   "kind": "scheduled increase",
   "provider": "Google",
-  "summary": "Gemini 4 Argon promotional pricing ends: input $2.00→$4.00, output $10.00→$20.00, cached $0.10→$0.20 per 1M tokens.",
+  "summary": "Gemini 4 Argon promotional pricing ends: input $2.00\u2192$4.00, output $10.00\u2192$20.00, cached $0.10\u2192$0.20 per 1M tokens.",
   "source": "https://ai.google.dev/gemini-api/docs/pricing",
   "observed": "2026-10-26"
  },
@@ -19,7 +27,7 @@
   "date": "2027-01-01",
   "kind": "scheduled increase",
   "provider": "Google",
-  "summary": "Gemini 3.8 Flash paid tier: input $0.75→$1.50, output $3.75→$7.50, cached $0.075→$0.15 per 1M tokens. Gemini 3.8 Flash TTS doubles the same day ($0.50→$1.00 in, $9.00→$18.00 out).",
+  "summary": "Gemini 3.8 Flash paid tier: input $0.75\u2192$1.50, output $3.75\u2192$7.50, cached $0.075\u2192$0.15 per 1M tokens. Gemini 3.8 Flash TTS doubles the same day ($0.50\u2192$1.00 in, $9.00\u2192$18.00 out).",
   "source": "https://ai.google.dev/gemini-api/docs/pricing",
   "observed": "2026-10-26"
  },
@@ -91,7 +99,7 @@
   "date": "2026-10-30",
   "provider": "OpenRouter",
   "kind": "correction",
-  "summary": "Mistral Large 4 OpenRouter row $1.36/$4.18 → $0.70/$2.10 ($0.07 cached).",
+  "summary": "Mistral Large 4 OpenRouter row $1.36/$4.18 \u2192 $0.70/$2.10 ($0.07 cached).",
   "source": "https://openrouter.ai/mistralai/mistral-large-4-0",
   "observed": "2026-10-30"
  },
@@ -99,7 +107,7 @@
   "date": "2027-01-01",
   "kind": "scheduled increase",
   "provider": "Google",
-  "summary": "Gemini 3.6 Flash paid tier: input $0.75→$1.50, output $3.75→$7.50, cached $0.075→$0.15 per 1M tokens (batch $0.375→$0.75 / $1.875→$3.75).",
+  "summary": "Gemini 3.6 Flash paid tier: input $0.75\u2192$1.50, output $3.75\u2192$7.50, cached $0.075\u2192$0.15 per 1M tokens (batch $0.375\u2192$0.75 / $1.875\u2192$3.75).",
   "source": "https://ai.google.dev/gemini-api/docs/pricing",
   "observed": "2026-10-30"
  },
@@ -107,7 +115,7 @@
   "date": "2027-01-01",
   "kind": "scheduled increase",
   "provider": "Google",
-  "summary": "Gemini 3.8 Flash-Lite TTS paid tier: input $0.50→$1.00 (text), output $6.00→$12.00 (audio) per 1M tokens. Row added to the dataset.",
+  "summary": "Gemini 3.8 Flash-Lite TTS paid tier: input $0.50\u2192$1.00 (text), output $6.00\u2192$12.00 (audio) per 1M tokens. Row added to the dataset.",
   "source": "https://ai.google.dev/gemini-api/docs/pricing",
   "observed": "2026-10-30"
  },
@@ -115,7 +123,7 @@
   "date": "2027-01-01",
   "kind": "scheduled increase",
   "provider": "Google",
-  "summary": "Gemini Robotics ER 2 Preview and ER 2 Streaming Preview: input $1.00→$2.00, output $5.00→$10.00 per 1M tokens (ER 2 cached $0.10→$0.20). Rows added to the dataset.",
+  "summary": "Gemini Robotics ER 2 Preview and ER 2 Streaming Preview: input $1.00\u2192$2.00, output $5.00\u2192$10.00 per 1M tokens (ER 2 cached $0.10\u2192$0.20). Rows added to the dataset.",
   "source": "https://ai.google.dev/gemini-api/docs/pricing",
   "observed": "2026-10-30"
  },
@@ -139,7 +147,7 @@
   "date": "2027-01-01",
   "kind": "scheduled increase",
   "provider": "Google",
-  "summary": "Gemini 3.7 Flash (Google Cloud Agent Platform, global): input $0.75→$1.50, output $3.75→$7.50, cached $0.075→$0.15 per 1M tokens. Row added to Ratecard.",
+  "summary": "Gemini 3.7 Flash (Google Cloud Agent Platform, global): input $0.75\u2192$1.50, output $3.75\u2192$7.50, cached $0.075\u2192$0.15 per 1M tokens. Row added to Ratecard.",
   "source": "https://cloud.google.com/model-garden/pricing",
   "observed": "2026-10-31"
  },

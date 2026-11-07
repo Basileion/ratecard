@@ -8,7 +8,30 @@ export function rates(m,promptTokens=0){
   const bo=use?(lc.batch_output??lc.output):(m.batch_output??m.output);
   const baseIn=use?lc.input:m.input, baseCached=use?lc.cached:m.cached, baseBi=use?lc.batch_input:m.batch_input;
   const bc=baseCached!=null&&baseBi!=null&&baseIn?baseCached*baseBi/baseIn:cached;
-  return {input,output,cached,bi,bo,bc,tiered:use};
+  // Cache-write totals ($/1M). OpenAI: 30m / 12h. Anthropic: 5m / 1h. Prefer long-context fields when tiered.
+  const pick=(short,long)=>{const v=use&&lc&&lc[long]!=null?lc[long]:m[short];return v??null};
+  return {input,output,cached,bi,bo,bc,tiered:use,
+    cache_write_30m:pick('cache_write_30m','cache_write_30m'),
+    cache_write_12h:pick('cache_write_12h','cache_write_12h'),
+    cache_write_5m:pick('cache_write_5m','cache_write_5m'),
+    cache_write_1h:pick('cache_write_1h','cache_write_1h')};
+}
+/** Resolve which published cache-write rate to use. ttl: '30m'|'12h'|'5m'|'1h'|'auto'. Returns {rate,ttl,label} or null. */
+export function cacheWriteRate(m,promptTokens=0,ttl='auto'){
+  const r=rates(m,promptTokens);
+  const oa=[['30m',r.cache_write_30m],['12h',r.cache_write_12h]].filter(([,v])=>v!=null);
+  const an=[['5m',r.cache_write_5m],['1h',r.cache_write_1h]].filter(([,v])=>v!=null);
+  if(!oa.length&&!an.length)return null;
+  const want=ttl==='auto'?(oa.length?'30m':an.length?'5m':null):ttl;
+  const all=[...oa,...an];
+  const hit=all.find(([k])=>k===want)||all[0];
+  if(!hit)return null;
+  return {rate:hit[1],ttl:hit[0],label:hit[0]==='30m'?'30-minute write':hit[0]==='12h'?'12-hour write':hit[0]==='5m'?'5-minute write':'1-hour write'};
+}
+export function cacheWriteCost(m,{writeM=0,promptTokens=0,ttl='auto'}={}){
+  if(!(writeM>0))return 0;
+  const w=cacheWriteRate(m,promptTokens,ttl);
+  return w?writeM*w.rate:0;
 }
 function tokenCost(m,{inM,outM,hit=0,batch=0,promptTokens=0}){
   const r=rates(m,promptTokens);
@@ -16,10 +39,11 @@ function tokenCost(m,{inM,outM,hit=0,batch=0,promptTokens=0}){
   return (1-batch)*std+batch*bat}
 /** offpeak = share (0-1) of tokens billed at a published off-peak rate (DeepSeek); tools = Search/Fetch requests per month (billed only where the provider publishes a per-request fee). */
 export function toolFee(m,tools=0){return (m.tool_fees&&tools>0)?tools/1000*m.tool_fees[0].usd_per_1k:0}
-export function cost(m,{inM,outM,hit=0,batch=0,promptTokens=0,offpeak=0,tools=0}){if(m.input==null||m.output==null)return null;
+/** writeM = MTok/mo billed at the published cache-write rate (OpenAI/Anthropic total write rate, not a surcharge on top of input). Enter only tokens you expect billed as writes; do not also count them in uncached input. ttl selects 30m/12h (OpenAI) or 5m/1h (Anthropic); missing fields → write cost 0 (UI shows N/A). */
+export function cost(m,{inM,outM,hit=0,batch=0,promptTokens=0,offpeak=0,tools=0,writeM=0,ttl='auto'}={}){if(m.input==null||m.output==null)return null;
   const u={inM,outM,hit,batch,promptTokens},op=m.offpeak?Math.min(Math.max(offpeak,0),1):0;
   const t=op?(1-op)*tokenCost(m,u)+op*tokenCost({...m,...m.offpeak,batch_input:null,batch_output:null,long_context:null},u):tokenCost(m,u);
-  return t+toolFee(m,tools)}
+  return t+toolFee(m,tools)+cacheWriteCost(m,{writeM,promptTokens,ttl})}
 
 // ---- Next-12-months forecast (RT-20261031-98): apply officially scheduled list-price changes month by month.
 // Window rule: the 12 full calendar months starting with the first month that begins on or after today

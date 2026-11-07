@@ -97,6 +97,30 @@
        "null"
       ]
      },
+     "cache_write_30m": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "cache_write_12h": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "cache_write_5m": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "cache_write_1h": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
      "batch_input": {
       "type": [
        "number",
@@ -156,6 +180,30 @@
         ]
        },
        "batch_output": {
+        "type": [
+         "number",
+         "null"
+        ]
+       },
+       "cache_write_30m": {
+        "type": [
+         "number",
+         "null"
+        ]
+       },
+       "cache_write_12h": {
+        "type": [
+         "number",
+         "null"
+        ]
+       },
+       "cache_write_5m": {
+        "type": [
+         "number",
+         "null"
+        ]
+       },
+       "cache_write_1h": {
         "type": [
          "number",
          "null"
