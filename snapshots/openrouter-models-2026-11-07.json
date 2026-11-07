@@ -1,0 +1,162 @@
+{
+  "fetched": "2026-11-07T13:14:23.881Z",
+  "source": "https://openrouter.ai/api/v1/models",
+  "models": [
+    {
+      "ratecard_id": "openrouter-llama-4-maverick-meta",
+      "source": "https://openrouter.ai/meta-llama/llama-4-maverick",
+      "openrouter_id": "meta-llama/llama-4-maverick",
+      "pricing": {
+        "prompt": "0.00000035",
+        "completion": "0.000001",
+        "input_cache_read": "0.00000017"
+      },
+      "context_length": 524288,
+      "found": true
+    },
+    {
+      "ratecard_id": "openrouter-llama-4-scout-meta",
+      "source": "https://openrouter.ai/meta-llama/llama-4-scout",
+      "openrouter_id": "meta-llama/llama-4-scout",
+      "pricing": {
+        "prompt": "0.0000001",
+        "completion": "0.0000003"
+      },
+      "context_length": 1310720,
+      "found": true
+    },
+    {
+      "ratecard_id": "openrouter-mistral-large-4-mistral",
+      "source": "https://openrouter.ai/mistralai/mistral-large-4-0",
+      "openrouter_id": "mistralai/mistral-large-4-0",
+      "pricing": {
+        "prompt": "0.0000007",
+        "completion": "0.0000021",
+        "input_cache_read": "0.00000007"
+      },
+      "context_length": 1048576,
+      "found": true
+    },
+    {
+      "ratecard_id": "openrouter-mistral-medium-3-5-mistral",
+      "source": "https://openrouter.ai/mistralai/mistral-medium-3-5",
+      "openrouter_id": "mistralai/mistral-medium-3-5",
+      "pricing": {
+        "prompt": "0.0000015",
+        "completion": "0.0000075"
+      },
+      "context_length": 262144,
+      "found": true
+    },
+    {
+      "ratecard_id": "openrouter-mistral-small-4-mistral",
+      "source": "https://openrouter.ai/mistralai/mistral-small-2603",
+      "openrouter_id": "mistralai/mistral-small-2603",
+      "pricing": {
+        "prompt": "0.00000015",
+        "completion": "0.0000006",
+        "input_cache_read": "0.000000015"
+      },
+      "context_length": 262144,
+      "found": true
+    },
+    {
+      "ratecard_id": "openrouter-codestral-2508-mistral",
+      "source": "https://openrouter.ai/mistralai/codestral-2508",
+      "openrouter_id": "mistralai/codestral-2508",
+      "pricing": {
+        "prompt": "0.0000003",
+        "completion": "0.0000009",
+        "input_cache_read": "0.00000003"
+      },
+      "context_length": 256000,
+      "found": true
+    },
+    {
+      "ratecard_id": "openrouter-command-a-cohere",
+      "source": "https://openrouter.ai/cohere/command-a-plus",
+      "openrouter_id": "cohere/command-a-plus",
+      "pricing": {
+        "prompt": "0.0000003",
+        "completion": "0.0000015",
+        "input_cache_read": "0.00000015"
+      },
+      "context_length": 192000,
+      "found": true
+    },
+    {
+      "ratecard_id": "openrouter-qwen3-8-max-0902-qwen",
+      "source": "https://openrouter.ai/qwen/qwen3.8-max-0902",
+      "openrouter_id": "qwen/qwen3.8-max-0902",
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.000006",
+        "input_cache_read": "0.00000025"
+      },
+      "context_length": 1000000,
+      "found": true
+    },
+    {
+      "ratecard_id": "openrouter-qwen3-7-flash-qwen",
+      "source": "https://openrouter.ai/qwen/qwen3.7-flash",
+      "openrouter_id": "qwen/qwen3.7-flash",
+      "pricing": {
+        "prompt": "0.00000003",
+        "completion": "0.00000013",
+        "input_cache_read": "0.000000006",
+        "input_cache_write": "0.000000038",
+        "overrides": [
+          {
+            "min_prompt_tokens": 32000,
+            "prompt": "0.0000001",
+            "completion": "0.0000004",
+            "input_cache_read": "0.00000002",
+            "input_cache_write": "0.000000125"
+          },
+          {
+            "min_prompt_tokens": 256000,
+            "prompt": "0.0000002",
+            "completion": "0.0000008",
+            "input_cache_read": "0.00000004",
+            "input_cache_write": "0.00000025"
+          }
+        ]
+      },
+      "context_length": 1000000,
+      "found": true
+    },
+    {
+      "ratecard_id": "openrouter-kimi-k3-1-pro-moonshotai",
+      "source": "https://openrouter.ai/moonshotai/kimi-k3.1-pro",
+      "openrouter_id": "moonshotai/kimi-k3.1-pro",
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.00001",
+        "input_cache_read": "0.0000002"
+      },
+      "context_length": 1048576,
+      "found": true
+    },
+    {
+      "ratecard_id": "openrouter-grok-4-7-spacexai",
+      "source": "https://openrouter.ai/x-ai/grok-4.7",
+      "openrouter_id": "x-ai/grok-4.7",
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.000006",
+        "web_search": "0.005",
+        "input_cache_read": "0.0000005",
+        "overrides": [
+          {
+            "min_prompt_tokens": 200000,
+            "prompt": "0.000004",
+            "completion": "0.000012",
+            "input_cache_read": "0.000001"
+          }
+        ]
+      },
+      "context_length": 500000,
+      "found": true
+    }
+  ]
+}

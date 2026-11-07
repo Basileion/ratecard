@@ -1,178 +1,186 @@
 [
- {
-  "date": "2026-11-07",
-  "kind": "feature",
-  "provider": "OpenAI",
-  "summary": "Added published cache-write fields: OpenAI cache_write_30m / cache_write_12h (30m from pricing table; 12h = 2.5\u00d7 input per prompt-caching guide) and Anthropic cache_write_5m / cache_write_1h (1.25\u00d7 / 2\u00d7 input). Calculator Cache-write MTok/mo + TTL; model pages show the fields; new guide /guides/openai-anthropic-cache-write-pricing. Example: gpt-6-astra $12.50 / $25 per 1M (30m/12h).",
-  "source": "https://developers.openai.com/api/docs/pricing",
-  "observed": "2026-11-07"
- },
- {
-  "date": "2026-10-31",
-  "kind": "correction",
-  "provider": "DeepSeek",
-  "summary": "Correction to our 2026-10-31 DeepSeek Search/Fetch entry and guide: DeepSeek bills Search and Fetch as standalone APIs per successful request ($0.75 per 1,000 each). Only server-side tool calls made through DeepSeek Harness, Claude Code and Codex were free until 00:00 Beijing time 2026-11-01 (2026-10-31 16:00 UTC). We had implied all Search/Fetch billing started then; the guide title, key stats, FAQ, llms-full.txt and the models.json tool_fees field (billing_start_utc renamed agent_tool_calls_billed_from_utc) are corrected.",
-  "source": "https://api-docs.deepseek.com/guides/search",
-  "observed": "2026-10-31"
- },
- {
-  "date": "2026-12-01",
-  "kind": "scheduled increase",
-  "provider": "Google",
-  "summary": "Gemini 4 Argon promotional pricing ends: input $2.00\u2192$4.00, output $10.00\u2192$20.00, cached $0.10\u2192$0.20 per 1M tokens.",
-  "source": "https://ai.google.dev/gemini-api/docs/pricing",
-  "observed": "2026-10-26"
- },
- {
-  "date": "2027-01-01",
-  "kind": "scheduled increase",
-  "provider": "Google",
-  "summary": "Gemini 3.8 Flash paid tier: input $0.75\u2192$1.50, output $3.75\u2192$7.50, cached $0.075\u2192$0.15 per 1M tokens. Gemini 3.8 Flash TTS doubles the same day ($0.50\u2192$1.00 in, $9.00\u2192$18.00 out).",
-  "source": "https://ai.google.dev/gemini-api/docs/pricing",
-  "observed": "2026-10-26"
- },
- {
-  "date": "2026-11-21",
-  "kind": "promotion end (earliest)",
-  "provider": "OpenAI",
-  "summary": "GPT-5.6 Sol promotional pricing guaranteed \"at least through November 21, 2026\" ($4.00 in / $20.00 out).",
-  "source": "https://platform.openai.com/docs/pricing",
-  "observed": "2026-10-26"
- },
- {
-  "date": "2026-10-05",
-  "kind": "billing start",
-  "provider": "OpenAI",
-  "summary": "Billing for gpt-rosalind-research began ($5.00 in / $25.00 out per 1M tokens).",
-  "source": "https://platform.openai.com/docs/pricing",
-  "observed": "2026-10-26"
- },
- {
-  "date": "2026-07-30",
-  "kind": "tier renamed",
-  "provider": "OpenAI",
-  "summary": "\"Priority processing\" renamed \"Fast mode\" (2x standard token price).",
-  "source": "https://platform.openai.com/docs/pricing",
-  "observed": "2026-10-26"
- },
- {
-  "date": "2026-10-30",
-  "provider": "OpenAI",
-  "kind": "correction",
-  "summary": "gpt-image-2 standard was incorrectly set to batch rates; corrected to $8/$30/$2 (batch $4/$15).",
-  "source": "https://platform.openai.com/docs/pricing",
-  "observed": "2026-10-30"
- },
- {
-  "date": "2026-10-30",
-  "provider": "OpenAI",
-  "kind": "new model",
-  "summary": "Added gpt-image-2.5-flare at standard $8/$30/$2 (batch $4/$15).",
-  "source": "https://platform.openai.com/docs/pricing",
-  "observed": "2026-10-30"
- },
- {
-  "date": "2026-10-30",
-  "provider": "Anthropic",
-  "kind": "logic",
-  "summary": "Haiku 5.5 long-context tier (>100K) now applied in finder/calculator via long_context field.",
-  "source": "https://docs.anthropic.com/en/docs/about-claude/pricing",
-  "observed": "2026-10-30"
- },
- {
-  "date": "2026-10-30",
-  "provider": "Google",
-  "kind": "logic",
-  "summary": "Gemini 3.1 Pro Preview long-context tier (>200K) now applied via long_context field.",
-  "source": "https://ai.google.dev/gemini-api/docs/pricing",
-  "observed": "2026-10-30"
- },
- {
-  "date": "2026-10-30",
-  "provider": "Mistral",
-  "kind": "correction",
-  "summary": "Filled Mistral Large 4 first-party row from 2026-10-29 launch post: $0.70/$2.10 ($0.07 cached).",
-  "source": "https://mistral.ai/news/mistral-large-4-oss/",
-  "observed": "2026-10-30"
- },
- {
-  "date": "2026-10-30",
-  "provider": "OpenRouter",
-  "kind": "correction",
-  "summary": "Mistral Large 4 OpenRouter row $1.36/$4.18 \u2192 $0.70/$2.10 ($0.07 cached).",
-  "source": "https://openrouter.ai/mistralai/mistral-large-4-0",
-  "observed": "2026-10-30"
- },
- {
-  "date": "2027-01-01",
-  "kind": "scheduled increase",
-  "provider": "Google",
-  "summary": "Gemini 3.6 Flash paid tier: input $0.75\u2192$1.50, output $3.75\u2192$7.50, cached $0.075\u2192$0.15 per 1M tokens (batch $0.375\u2192$0.75 / $1.875\u2192$3.75).",
-  "source": "https://ai.google.dev/gemini-api/docs/pricing",
-  "observed": "2026-10-30"
- },
- {
-  "date": "2027-01-01",
-  "kind": "scheduled increase",
-  "provider": "Google",
-  "summary": "Gemini 3.8 Flash-Lite TTS paid tier: input $0.50\u2192$1.00 (text), output $6.00\u2192$12.00 (audio) per 1M tokens. Row added to the dataset.",
-  "source": "https://ai.google.dev/gemini-api/docs/pricing",
-  "observed": "2026-10-30"
- },
- {
-  "date": "2027-01-01",
-  "kind": "scheduled increase",
-  "provider": "Google",
-  "summary": "Gemini Robotics ER 2 Preview and ER 2 Streaming Preview: input $1.00\u2192$2.00, output $5.00\u2192$10.00 per 1M tokens (ER 2 cached $0.10\u2192$0.20). Rows added to the dataset.",
-  "source": "https://ai.google.dev/gemini-api/docs/pricing",
-  "observed": "2026-10-30"
- },
- {
-  "date": "2026-11-01",
-  "kind": "billing start",
-  "provider": "DeepSeek",
-  "summary": "Server-side Search and Fetch tool calls made through DeepSeek Harness, Claude Code and Codex start per-request billing at 00:00 Beijing time 2026-11-01 (= 2026-10-31 16:00 UTC / 12:00 PM ET): $0.75 per 1,000 successful requests each ($0.00075 per request); failed requests, empty search results and timeouts are not billed. Direct Search and Fetch API calls are standalone APIs billed per request (not part of the free period). Re-confirmed on the pricing page and Search & Fetch guide 2026-10-31; cost math at /guides/deepseek-search-fetch-pricing.",
-  "source": "https://api-docs.deepseek.com/quick_start/pricing",
-  "observed": "2026-10-31"
- },
- {
-  "date": "2026-11-13",
-  "kind": "billing rule change",
-  "provider": "Google",
-  "summary": "Google Cloud Agent Platform: Gemini 4 (incl. Argon) completions over 32K tokens are charged for retrievable token usage even if the request fails on a client or server timeout.",
-  "source": "https://cloud.google.com/model-garden/pricing",
-  "observed": "2026-10-31"
- },
- {
-  "date": "2027-01-01",
-  "kind": "scheduled increase",
-  "provider": "Google",
-  "summary": "Gemini 3.7 Flash (Google Cloud Agent Platform, global): input $0.75\u2192$1.50, output $3.75\u2192$7.50, cached $0.075\u2192$0.15 per 1M tokens. Row added to Ratecard.",
-  "source": "https://cloud.google.com/model-garden/pricing",
-  "observed": "2026-10-31"
- },
- {
-  "date": "2026-10-31",
-  "kind": "correction",
-  "provider": "xAI",
-  "summary": "grok-4.7 long-context tier added: above 200K prompt tokens $4.00 in / $12.00 out (cached $1.00); standard cached $0.50; Batch API 20% off. Finder/calculator now price long prompts at the higher tier (OpenRouter Grok 4.7 row too).",
-  "source": "https://docs.x.ai/developers/models",
-  "observed": "2026-10-31"
- },
- {
-  "date": "2026-10-31",
-  "kind": "new model",
-  "provider": "OpenAI",
-  "summary": "Added 9 text models from OpenAI's pricing table (standard / batch per 1M tokens; long-context >272K input tokens where published): gpt-6.1-terra $1/$5 (cached $0.05; batch $0.50/$2.50; >272K $2/$7.50), gpt-6-sol $2/$10 (cached $0.20; >272K $4/$15), gpt-5.6-terra $2/$12 (>272K $4/$18), gpt-5.6-luna $0.20/$1.20 (>272K $0.40/$1.80), gpt-5.5 $5/$30 (>272K $10/$45), gpt-5.5-pro $30/$180 (>272K $60/$270), gpt-5.4 $2.50/$15 (>272K $5/$22.50), gpt-5.4-pro $30/$180 (>272K $60/$270), gpt-5.6-cyber $12.50/$75 (cached $1.25; no batch or long-context price listed). Context windows from each model page: 1,050,000 tokens (gpt-5.6-cyber 400,000).",
-  "source": "https://platform.openai.com/docs/pricing",
-  "observed": "2026-10-31"
- },
- {
-  "date": "2026-10-31",
-  "kind": "data",
-  "provider": "All",
-  "summary": "Context windows filled for 32 priced text rows from vendor model pages (OpenAI 1,050,000 for GPT-6.x/5.6 Sol, 400,000 for gpt-5.3-codex and chat-latest; Gemini 1,048,576, Robotics ER 2 131,072; Anthropic 1M, Haiku 4.5 200K; Fireworks and Together model tables; Cohere 128k). The cheapest-model finder now includes OpenAI and Google and shows verified rows only by default. 14 rows with no readable context are flagged unpublished, including Claude Opus 4.1, which Anthropic lists as retired on 2026-08-05.",
-  "source": "https://ratecardai.pages.dev/methodology",
-  "observed": "2026-10-31"
- }
+  {
+    "date": "2026-11-07",
+    "kind": "correction",
+    "provider": "OpenRouter",
+    "summary": "Correction: OpenRouter Qwen3.7 Flash was listed at $0.03/$0.13 on ≥128K and ≥1M cheapest pages, the home finder, the calculator and llms.txt. Those rates apply only under 32K prompt tokens. OpenRouter publishes pricing.overrides: ≥32K $0.10/$0.40 (cached $0.02), ≥256K $0.20/$0.80 (cached $0.04). We now ingest multi-tier long_context_tiers for OpenRouter overrides; at ≥128K/≥1M the true #1 verified text model is Llama 4 Scout at $0.10/$0.30. Also refreshed Llama 4 Maverick from $0.1875/$0.6525/cached $0.05 to live API $0.35/$1.00/cached $0.17, and re-checked all 11 OpenRouter rows on 2026-11-07.",
+    "source": "https://openrouter.ai/api/v1/models",
+    "observed": "2026-11-07"
+  },
+  {
+    "date": "2026-11-07",
+    "kind": "feature",
+    "provider": "OpenAI",
+    "summary": "Added published cache-write fields: OpenAI cache_write_30m / cache_write_12h (30m from pricing table; 12h = 2.5× input per prompt-caching guide) and Anthropic cache_write_5m / cache_write_1h (1.25× / 2× input). Calculator Cache-write MTok/mo + TTL; model pages show the fields; new guide /guides/openai-anthropic-cache-write-pricing. Example: gpt-6-astra $12.50 / $25 per 1M (30m/12h).",
+    "source": "https://developers.openai.com/api/docs/pricing",
+    "observed": "2026-11-07"
+  },
+  {
+    "date": "2026-10-31",
+    "kind": "correction",
+    "provider": "DeepSeek",
+    "summary": "Correction to our 2026-10-31 DeepSeek Search/Fetch entry and guide: DeepSeek bills Search and Fetch as standalone APIs per successful request ($0.75 per 1,000 each). Only server-side tool calls made through DeepSeek Harness, Claude Code and Codex were free until 00:00 Beijing time 2026-11-01 (2026-10-31 16:00 UTC). We had implied all Search/Fetch billing started then; the guide title, key stats, FAQ, llms-full.txt and the models.json tool_fees field (billing_start_utc renamed agent_tool_calls_billed_from_utc) are corrected.",
+    "source": "https://api-docs.deepseek.com/guides/search",
+    "observed": "2026-10-31"
+  },
+  {
+    "date": "2026-12-01",
+    "kind": "scheduled increase",
+    "provider": "Google",
+    "summary": "Gemini 4 Argon promotional pricing ends: input $2.00→$4.00, output $10.00→$20.00, cached $0.10→$0.20 per 1M tokens.",
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
+    "observed": "2026-10-26"
+  },
+  {
+    "date": "2027-01-01",
+    "kind": "scheduled increase",
+    "provider": "Google",
+    "summary": "Gemini 3.8 Flash paid tier: input $0.75→$1.50, output $3.75→$7.50, cached $0.075→$0.15 per 1M tokens. Gemini 3.8 Flash TTS doubles the same day ($0.50→$1.00 in, $9.00→$18.00 out).",
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
+    "observed": "2026-10-26"
+  },
+  {
+    "date": "2026-11-21",
+    "kind": "promotion end (earliest)",
+    "provider": "OpenAI",
+    "summary": "GPT-5.6 Sol promotional pricing guaranteed \"at least through November 21, 2026\" ($4.00 in / $20.00 out).",
+    "source": "https://platform.openai.com/docs/pricing",
+    "observed": "2026-10-26"
+  },
+  {
+    "date": "2026-10-05",
+    "kind": "billing start",
+    "provider": "OpenAI",
+    "summary": "Billing for gpt-rosalind-research began ($5.00 in / $25.00 out per 1M tokens).",
+    "source": "https://platform.openai.com/docs/pricing",
+    "observed": "2026-10-26"
+  },
+  {
+    "date": "2026-07-30",
+    "kind": "tier renamed",
+    "provider": "OpenAI",
+    "summary": "\"Priority processing\" renamed \"Fast mode\" (2x standard token price).",
+    "source": "https://platform.openai.com/docs/pricing",
+    "observed": "2026-10-26"
+  },
+  {
+    "date": "2026-10-30",
+    "provider": "OpenAI",
+    "kind": "correction",
+    "summary": "gpt-image-2 standard was incorrectly set to batch rates; corrected to $8/$30/$2 (batch $4/$15).",
+    "source": "https://platform.openai.com/docs/pricing",
+    "observed": "2026-10-30"
+  },
+  {
+    "date": "2026-10-30",
+    "provider": "OpenAI",
+    "kind": "new model",
+    "summary": "Added gpt-image-2.5-flare at standard $8/$30/$2 (batch $4/$15).",
+    "source": "https://platform.openai.com/docs/pricing",
+    "observed": "2026-10-30"
+  },
+  {
+    "date": "2026-10-30",
+    "provider": "Anthropic",
+    "kind": "logic",
+    "summary": "Haiku 5.5 long-context tier (>100K) now applied in finder/calculator via long_context field.",
+    "source": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+    "observed": "2026-10-30"
+  },
+  {
+    "date": "2026-10-30",
+    "provider": "Google",
+    "kind": "logic",
+    "summary": "Gemini 3.1 Pro Preview long-context tier (>200K) now applied via long_context field.",
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
+    "observed": "2026-10-30"
+  },
+  {
+    "date": "2026-10-30",
+    "provider": "Mistral",
+    "kind": "correction",
+    "summary": "Filled Mistral Large 4 first-party row from 2026-10-29 launch post: $0.70/$2.10 ($0.07 cached).",
+    "source": "https://mistral.ai/news/mistral-large-4-oss/",
+    "observed": "2026-10-30"
+  },
+  {
+    "date": "2026-10-30",
+    "provider": "OpenRouter",
+    "kind": "correction",
+    "summary": "Mistral Large 4 OpenRouter row $1.36/$4.18 → $0.70/$2.10 ($0.07 cached).",
+    "source": "https://openrouter.ai/mistralai/mistral-large-4-0",
+    "observed": "2026-10-30"
+  },
+  {
+    "date": "2027-01-01",
+    "kind": "scheduled increase",
+    "provider": "Google",
+    "summary": "Gemini 3.6 Flash paid tier: input $0.75→$1.50, output $3.75→$7.50, cached $0.075→$0.15 per 1M tokens (batch $0.375→$0.75 / $1.875→$3.75).",
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
+    "observed": "2026-10-30"
+  },
+  {
+    "date": "2027-01-01",
+    "kind": "scheduled increase",
+    "provider": "Google",
+    "summary": "Gemini 3.8 Flash-Lite TTS paid tier: input $0.50→$1.00 (text), output $6.00→$12.00 (audio) per 1M tokens. Row added to the dataset.",
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
+    "observed": "2026-10-30"
+  },
+  {
+    "date": "2027-01-01",
+    "kind": "scheduled increase",
+    "provider": "Google",
+    "summary": "Gemini Robotics ER 2 Preview and ER 2 Streaming Preview: input $1.00→$2.00, output $5.00→$10.00 per 1M tokens (ER 2 cached $0.10→$0.20). Rows added to the dataset.",
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
+    "observed": "2026-10-30"
+  },
+  {
+    "date": "2026-11-01",
+    "kind": "billing start",
+    "provider": "DeepSeek",
+    "summary": "Server-side Search and Fetch tool calls made through DeepSeek Harness, Claude Code and Codex start per-request billing at 00:00 Beijing time 2026-11-01 (= 2026-10-31 16:00 UTC / 12:00 PM ET): $0.75 per 1,000 successful requests each ($0.00075 per request); failed requests, empty search results and timeouts are not billed. Direct Search and Fetch API calls are standalone APIs billed per request (not part of the free period). Re-confirmed on the pricing page and Search & Fetch guide 2026-10-31; cost math at /guides/deepseek-search-fetch-pricing.",
+    "source": "https://api-docs.deepseek.com/quick_start/pricing",
+    "observed": "2026-10-31"
+  },
+  {
+    "date": "2026-11-13",
+    "kind": "billing rule change",
+    "provider": "Google",
+    "summary": "Google Cloud Agent Platform: Gemini 4 (incl. Argon) completions over 32K tokens are charged for retrievable token usage even if the request fails on a client or server timeout.",
+    "source": "https://cloud.google.com/model-garden/pricing",
+    "observed": "2026-10-31"
+  },
+  {
+    "date": "2027-01-01",
+    "kind": "scheduled increase",
+    "provider": "Google",
+    "summary": "Gemini 3.7 Flash (Google Cloud Agent Platform, global): input $0.75→$1.50, output $3.75→$7.50, cached $0.075→$0.15 per 1M tokens. Row added to Ratecard.",
+    "source": "https://cloud.google.com/model-garden/pricing",
+    "observed": "2026-10-31"
+  },
+  {
+    "date": "2026-10-31",
+    "kind": "correction",
+    "provider": "xAI",
+    "summary": "grok-4.7 long-context tier added: above 200K prompt tokens $4.00 in / $12.00 out (cached $1.00); standard cached $0.50; Batch API 20% off. Finder/calculator now price long prompts at the higher tier (OpenRouter Grok 4.7 row too).",
+    "source": "https://docs.x.ai/developers/models",
+    "observed": "2026-10-31"
+  },
+  {
+    "date": "2026-10-31",
+    "kind": "new model",
+    "provider": "OpenAI",
+    "summary": "Added 9 text models from OpenAI's pricing table (standard / batch per 1M tokens; long-context >272K input tokens where published): gpt-6.1-terra $1/$5 (cached $0.05; batch $0.50/$2.50; >272K $2/$7.50), gpt-6-sol $2/$10 (cached $0.20; >272K $4/$15), gpt-5.6-terra $2/$12 (>272K $4/$18), gpt-5.6-luna $0.20/$1.20 (>272K $0.40/$1.80), gpt-5.5 $5/$30 (>272K $10/$45), gpt-5.5-pro $30/$180 (>272K $60/$270), gpt-5.4 $2.50/$15 (>272K $5/$22.50), gpt-5.4-pro $30/$180 (>272K $60/$270), gpt-5.6-cyber $12.50/$75 (cached $1.25; no batch or long-context price listed). Context windows from each model page: 1,050,000 tokens (gpt-5.6-cyber 400,000).",
+    "source": "https://platform.openai.com/docs/pricing",
+    "observed": "2026-10-31"
+  },
+  {
+    "date": "2026-10-31",
+    "kind": "data",
+    "provider": "All",
+    "summary": "Context windows filled for 32 priced text rows from vendor model pages (OpenAI 1,050,000 for GPT-6.x/5.6 Sol, 400,000 for gpt-5.3-codex and chat-latest; Gemini 1,048,576, Robotics ER 2 131,072; Anthropic 1M, Haiku 4.5 200K; Fireworks and Together model tables; Cohere 128k). The cheapest-model finder now includes OpenAI and Google and shows verified rows only by default. 14 rows with no readable context are flagged unpublished, including Claude Opus 4.1, which Anthropic lists as retired on 2026-08-05.",
+    "source": "https://ratecardai.pages.dev/methodology",
+    "observed": "2026-10-31"
+  }
 ]
