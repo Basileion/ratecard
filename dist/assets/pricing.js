@@ -1,7 +1,19 @@
 // Ratecard pricing core (pure, no DOM): shared by the browser calculator and the build guards.
-/** Resolve standard vs long-context rates. promptTokens = typical prompt size (tokens). */
+/** All published long-context tiers for a model (multi-tier preferred; single long_context as fallback). */
+export function longContextTiers(m){
+  if(Array.isArray(m.long_context_tiers)&&m.long_context_tiers.length)return m.long_context_tiers.filter(t=>t&&t.threshold>0&&t.input!=null&&t.output!=null);
+  if(m.long_context&&m.long_context.threshold>0)return [m.long_context];
+  return [];
+}
+/** Highest long-context tier whose threshold the prompt exceeds (promptTokens > threshold). Null = standard rates. */
+export function pickLongContext(m,promptTokens=0){
+  const hit=longContextTiers(m).filter(t=>promptTokens>t.threshold);
+  if(!hit.length)return null;
+  return hit.reduce((a,b)=>a.threshold>=b.threshold?a:b);
+}
+/** Resolve standard vs long-context rates. promptTokens = typical prompt size (tokens). Supports long_context_tiers[]. */
 export function rates(m,promptTokens=0){
-  const lc=m.long_context, use=!!(lc&&promptTokens>lc.threshold);
+  const lc=pickLongContext(m,promptTokens), use=!!lc;
   const input=use?lc.input:m.input, output=use?lc.output:m.output;
   const cached=use?(lc.cached??lc.input):(m.cached??m.input);
   const bi=use?(lc.batch_input??lc.input):(m.batch_input??m.input);
@@ -10,7 +22,7 @@ export function rates(m,promptTokens=0){
   const bc=baseCached!=null&&baseBi!=null&&baseIn?baseCached*baseBi/baseIn:cached;
   // Cache-write totals ($/1M). OpenAI: 30m / 12h. Anthropic: 5m / 1h. Prefer long-context fields when tiered.
   const pick=(short,long)=>{const v=use&&lc&&lc[long]!=null?lc[long]:m[short];return v??null};
-  return {input,output,cached,bi,bo,bc,tiered:use,
+  return {input,output,cached,bi,bo,bc,tiered:use,lc_threshold:use?lc.threshold:null,
     cache_write_30m:pick('cache_write_30m','cache_write_30m'),
     cache_write_12h:pick('cache_write_12h','cache_write_12h'),
     cache_write_5m:pick('cache_write_5m','cache_write_5m'),
@@ -42,7 +54,7 @@ export function toolFee(m,tools=0){return (m.tool_fees&&tools>0)?tools/1000*m.to
 /** writeM = MTok/mo billed at the published cache-write rate (OpenAI/Anthropic total write rate, not a surcharge on top of input). Enter only tokens you expect billed as writes; do not also count them in uncached input. ttl selects 30m/12h (OpenAI) or 5m/1h (Anthropic); missing fields → write cost 0 (UI shows N/A). */
 export function cost(m,{inM,outM,hit=0,batch=0,promptTokens=0,offpeak=0,tools=0,writeM=0,ttl='auto'}={}){if(m.input==null||m.output==null)return null;
   const u={inM,outM,hit,batch,promptTokens},op=m.offpeak?Math.min(Math.max(offpeak,0),1):0;
-  const t=op?(1-op)*tokenCost(m,u)+op*tokenCost({...m,...m.offpeak,batch_input:null,batch_output:null,long_context:null},u):tokenCost(m,u);
+  const t=op?(1-op)*tokenCost(m,u)+op*tokenCost({...m,...m.offpeak,batch_input:null,batch_output:null,long_context:null,long_context_tiers:null},u):tokenCost(m,u);
   return t+toolFee(m,tools)+cacheWriteCost(m,{writeM,promptTokens,ttl})}
 
 // ---- Next-12-months forecast (RT-20261031-98): apply officially scheduled list-price changes month by month.

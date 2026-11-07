@@ -157,6 +157,7 @@
        "object",
        "null"
       ],
+      "description": "Lowest published long-context tier (display compat). Prefer long_context_tiers when present.",
       "properties": {
        "threshold": {
         "type": "integer"
@@ -185,6 +186,12 @@
          "null"
         ]
        },
+       "cache_write": {
+        "type": [
+         "number",
+         "null"
+        ]
+       },
        "cache_write_30m": {
         "type": [
          "number",
@@ -208,6 +215,75 @@
          "number",
          "null"
         ]
+       }
+      }
+     },
+     "long_context_tiers": {
+      "type": [
+       "array",
+       "null"
+      ],
+      "description": "All published long-context tiers ascending by threshold. rates() picks the highest tier with promptTokens > threshold.",
+      "items": {
+       "type": "object",
+       "properties": {
+        "threshold": {
+         "type": "integer"
+        },
+        "input": {
+         "type": "number"
+        },
+        "output": {
+         "type": "number"
+        },
+        "cached": {
+         "type": [
+          "number",
+          "null"
+         ]
+        },
+        "batch_input": {
+         "type": [
+          "number",
+          "null"
+         ]
+        },
+        "batch_output": {
+         "type": [
+          "number",
+          "null"
+         ]
+        },
+        "cache_write": {
+         "type": [
+          "number",
+          "null"
+         ]
+        },
+        "cache_write_30m": {
+         "type": [
+          "number",
+          "null"
+         ]
+        },
+        "cache_write_12h": {
+         "type": [
+          "number",
+          "null"
+         ]
+        },
+        "cache_write_5m": {
+         "type": [
+          "number",
+          "null"
+         ]
+        },
+        "cache_write_1h": {
+         "type": [
+          "number",
+          "null"
+         ]
+        }
        }
       }
      },

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T09:14:53.228Z",
+ "generated": "2026-11-07T13:16:09.588Z",
  "site": "https://ratecardai.pages.dev",
  "license": "CC-BY-4.0",
  "units": "USD per 1M tokens unless unit/other says otherwise",
@@ -2238,9 +2238,9 @@
    "provider": "OpenRouter",
    "model": "Llama 4 Maverick (Meta)",
    "kind": "text",
-   "input": 0.1875,
-   "output": 0.6525,
-   "cached": 0.05,
+   "input": 0.35,
+   "output": 1,
+   "cached": 0.17,
    "batch_input": null,
    "batch_output": null,
    "context": 524288,
@@ -2248,7 +2248,7 @@
    "other": null,
    "notes": "OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.",
    "status": "verified",
-   "checked": "2026-10-30",
+   "checked": "2026-11-07",
    "source": "https://openrouter.ai/meta-llama/llama-4-maverick",
    "context_source": "https://openrouter.ai/meta-llama/llama-4-maverick",
    "provider_id": "openrouter"
@@ -2268,7 +2268,7 @@
    "other": null,
    "notes": "OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.",
    "status": "verified",
-   "checked": "2026-10-30",
+   "checked": "2026-11-07",
    "source": "https://openrouter.ai/meta-llama/llama-4-scout",
    "context_source": "https://openrouter.ai/meta-llama/llama-4-scout",
    "provider_id": "openrouter"
@@ -2286,9 +2286,9 @@
    "context": 1048576,
    "unit": "$/1M tokens",
    "other": null,
-   "notes": "OpenRouter list price from its public /api/v1/models endpoint (matches Mistral first-party launch price); may route to multiple upstream hosts.",
+   "notes": "OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.",
    "status": "verified",
-   "checked": "2026-10-30",
+   "checked": "2026-11-07",
    "source": "https://openrouter.ai/mistralai/mistral-large-4-0",
    "context_source": "https://openrouter.ai/mistralai/mistral-large-4-0",
    "provider_id": "openrouter"
@@ -2308,7 +2308,7 @@
    "other": null,
    "notes": "OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.",
    "status": "verified",
-   "checked": "2026-10-30",
+   "checked": "2026-11-07",
    "source": "https://openrouter.ai/mistralai/mistral-medium-3-5",
    "context_source": "https://openrouter.ai/mistralai/mistral-medium-3-5",
    "provider_id": "openrouter"
@@ -2328,7 +2328,7 @@
    "other": null,
    "notes": "OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.",
    "status": "verified",
-   "checked": "2026-10-30",
+   "checked": "2026-11-07",
    "source": "https://openrouter.ai/mistralai/mistral-small-2603",
    "context_source": "https://openrouter.ai/mistralai/mistral-small-2603",
    "provider_id": "openrouter"
@@ -2348,7 +2348,7 @@
    "other": null,
    "notes": "OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.",
    "status": "verified",
-   "checked": "2026-10-30",
+   "checked": "2026-11-07",
    "source": "https://openrouter.ai/mistralai/codestral-2508",
    "context_source": "https://openrouter.ai/mistralai/codestral-2508",
    "provider_id": "openrouter"
@@ -2368,7 +2368,7 @@
    "other": null,
    "notes": "OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.",
    "status": "verified",
-   "checked": "2026-10-30",
+   "checked": "2026-11-07",
    "source": "https://openrouter.ai/cohere/command-a-plus",
    "context_source": "https://openrouter.ai/cohere/command-a-plus",
    "provider_id": "openrouter"
@@ -2388,7 +2388,7 @@
    "other": null,
    "notes": "OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.",
    "status": "verified",
-   "checked": "2026-10-30",
+   "checked": "2026-11-07",
    "source": "https://openrouter.ai/qwen/qwen3.8-max-0902",
    "context_source": "https://openrouter.ai/qwen/qwen3.8-max-0902",
    "provider_id": "openrouter"
@@ -2406,11 +2406,34 @@
    "context": 1000000,
    "unit": "$/1M tokens",
    "other": null,
-   "notes": "OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.",
+   "notes": "OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts. $0.03/$0.13 applies only under 32K prompt tokens; ≥32K $0.10/$0.40; ≥256K $0.20/$0.80 (OpenRouter pricing.overrides). Cache write: under 32K $0.038; ≥32K $0.125; ≥256K $0.25 per 1M.",
    "status": "verified",
-   "checked": "2026-10-30",
+   "checked": "2026-11-07",
    "source": "https://openrouter.ai/qwen/qwen3.7-flash",
    "context_source": "https://openrouter.ai/qwen/qwen3.7-flash",
+   "long_context": {
+    "threshold": 32000,
+    "input": 0.1,
+    "output": 0.4,
+    "cached": 0.02,
+    "cache_write": 0.125
+   },
+   "long_context_tiers": [
+    {
+     "threshold": 32000,
+     "input": 0.1,
+     "output": 0.4,
+     "cached": 0.02,
+     "cache_write": 0.125
+    },
+    {
+     "threshold": 256000,
+     "input": 0.2,
+     "output": 0.8,
+     "cached": 0.04,
+     "cache_write": 0.25
+    }
+   ],
    "provider_id": "openrouter"
   },
   {
@@ -2428,7 +2451,7 @@
    "other": null,
    "notes": "OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.",
    "status": "verified",
-   "checked": "2026-10-30",
+   "checked": "2026-11-07",
    "source": "https://openrouter.ai/moonshotai/kimi-k3.1-pro",
    "context_source": "https://openrouter.ai/moonshotai/kimi-k3.1-pro",
    "provider_id": "openrouter"
@@ -2446,9 +2469,9 @@
    "context": 500000,
    "unit": "$/1M tokens",
    "other": null,
-   "notes": "OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts. Pricing override for prompts of 200K+ tokens: $4.00 in / $12.00 out, cache read $1.00 per 1M.",
+   "notes": "OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts. Pricing overrides (prompt tokens): ≥200K $4/$12 (cached $1) (OpenRouter pricing.overrides).",
    "status": "verified",
-   "checked": "2026-10-31",
+   "checked": "2026-11-07",
    "source": "https://openrouter.ai/x-ai/grok-4.7",
    "long_context": {
     "threshold": 200000,
@@ -2457,6 +2480,14 @@
     "cached": 1
    },
    "context_source": "https://openrouter.ai/x-ai/grok-4.7",
+   "long_context_tiers": [
+    {
+     "threshold": 200000,
+     "input": 4,
+     "output": 12,
+     "cached": 1
+    }
+   ],
    "provider_id": "openrouter"
   }
  ]

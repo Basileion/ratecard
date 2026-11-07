@@ -16,19 +16,19 @@ Prices come only from each provider's own pricing page, docs, or public pricing 
 
 ## Dataset summary
 - Units: USD per 1M tokens (unless unit/other says otherwise)
-- Fields: input, output, cached, cache_write_30m/12h (OpenAI), cache_write_5m/1h (Anthropic), batch_input, batch_output, context, long_context, status, source, checked
-- Cheapest verified text (in+out): OpenRouter Qwen3.7 Flash (Qwen) ($0.030 / $0.13)
+- Fields: input, output, cached, cache_write_30m/12h (OpenAI), cache_write_5m/1h (Anthropic), batch_input, batch_output, context, long_context, long_context_tiers, status, source, checked
+- Cheapest verified text (base in+out): OpenRouter Qwen3.7 Flash (Qwen) ($0.030 / $0.13 — has long_context tier(s); ≥128K/≥1M lists use long rates)
 
 ## Cheapest verified text models (input+output per 1M)
-- OpenRouter Qwen3.7 Flash (Qwen): in $0.030, out $0.13 (source https://openrouter.ai/qwen/qwen3.7-flash, 2026-10-30)
+- OpenRouter Qwen3.7 Flash (Qwen): in $0.030, out $0.13 (source https://openrouter.ai/qwen/qwen3.7-flash, 2026-11-07)
 - Fireworks NVIDIA Nemotron 3.5 Lightning 30B A3B: in $0.050, out $0.20 (source https://docs.fireworks.ai/serverless/pricing, 2026-10-30)
-- OpenRouter Llama 4 Scout (Meta): in $0.10, out $0.30 (source https://openrouter.ai/meta-llama/llama-4-scout, 2026-10-30)
+- OpenRouter Llama 4 Scout (Meta): in $0.10, out $0.30 (source https://openrouter.ai/meta-llama/llama-4-scout, 2026-11-07)
 - OpenAI gpt-6-luna: in $0.10, out $0.50 (source https://platform.openai.com/docs/pricing, 2026-11-07)
 - Anthropic Claude Haiku 5.5: in $0.10, out $0.50 (source https://docs.anthropic.com/en/docs/about-claude/pricing, 2026-11-07)
 - Fireworks OpenAI GPT OSS 120B: in $0.15, out $0.60 (source https://docs.fireworks.ai/serverless/pricing, 2026-10-30)
-- OpenRouter Mistral Small 4 (Mistral): in $0.15, out $0.60 (source https://openrouter.ai/mistralai/mistral-small-2603, 2026-10-30)
-- OpenRouter Llama 4 Maverick (Meta): in $0.19, out $0.65 (source https://openrouter.ai/meta-llama/llama-4-maverick, 2026-10-30)
-- OpenRouter Codestral 2508 (Mistral): in $0.30, out $0.90 (source https://openrouter.ai/mistralai/codestral-2508, 2026-10-30)
+- OpenRouter Mistral Small 4 (Mistral): in $0.15, out $0.60 (source https://openrouter.ai/mistralai/mistral-small-2603, 2026-11-07)
+- OpenRouter Codestral 2508 (Mistral): in $0.30, out $0.90 (source https://openrouter.ai/mistralai/codestral-2508, 2026-11-07)
+- OpenRouter Llama 4 Maverick (Meta): in $0.35, out $1.00 (source https://openrouter.ai/meta-llama/llama-4-maverick, 2026-11-07)
 - OpenAI gpt-5.6-luna: in $0.20, out $1.20 (source https://platform.openai.com/docs/pricing, 2026-11-07)
 
 ## Pages
@@ -56,7 +56,7 @@ Prices come only from each provider's own pricing page, docs, or public pricing 
 - [OpenAI + Anthropic cache-write pricing](https://ratecardai.pages.dev/guides/openai-anthropic-cache-write-pricing): OpenAI 30m/12h (astra $12.50/$25.00); Anthropic 5m/1h = 1.25×/2× input (Sonnet 5.5 $2.50/$4.00). Calculator Cache-write MTok/mo.
 
 ## Cheapest by context (verified text, ranked by input then output $/1M)
-- [≥128K context](https://ratecardai.pages.dev/cheapest/128k-context): 54 models; cheapest OpenRouter Qwen3.7 Flash (Qwen) $0.030/$0.13 (as of 2026-11-07)
-- [≥1M context](https://ratecardai.pages.dev/cheapest/1m-context): 40 models; cheapest OpenRouter Qwen3.7 Flash (Qwen) $0.030/$0.13 (as of 2026-11-07)
+- [≥128K context](https://ratecardai.pages.dev/cheapest/128k-context): 54 models; cheapest OpenRouter Llama 4 Scout (Meta) $0.10/$0.30 (as of 2026-11-07)
+- [≥1M context](https://ratecardai.pages.dev/cheapest/1m-context): 40 models; cheapest OpenRouter Llama 4 Scout (Meta) $0.10/$0.30 (as of 2026-11-07)
 - [Index](https://ratecardai.pages.dev/cheapest/)
-- Rule: when the page threshold exceeds a model long_context.threshold, long-tier rates are shown. OpenRouter = gateway list price.
+- Rule: when the page threshold exceeds a model long_context threshold (highest of long_context_tiers when present), long-tier rates are shown. OpenRouter = gateway list price.

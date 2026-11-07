@@ -94,6 +94,7 @@
 - input/output/cached: 10 / 50 / 1
 - batch in/out: 5 / 25
 - long_context: {"threshold":272000,"input":20,"output":75,"cached":2,"batch_input":10,"batch_output":37.5,"cache_write_30m":25,"cache_write_12h":50}
+- long_context_tiers: 
 - context: 1050000 (source: https://developers.openai.com/api/docs/models/gpt-6-astra)
 - other: 
 - status: verified
@@ -106,6 +107,7 @@
 - input/output/cached: 2 / 10 / 0.1
 - batch in/out: 1 / 5
 - long_context: {"threshold":272000,"input":4,"output":15,"cached":0.2,"batch_input":2,"batch_output":7.5,"cache_write_30m":5,"cache_write_12h":10}
+- long_context_tiers: 
 - context: 1050000 (source: https://developers.openai.com/api/docs/models/gpt-6.1-sol)
 - other: 
 - status: verified
@@ -118,6 +120,7 @@
 - input/output/cached: 0.1 / 0.5 / 0.01
 - batch in/out: 0.05 / 0.25
 - long_context: {"threshold":272000,"input":0.2,"output":0.75,"cached":0.02,"batch_input":0.1,"batch_output":0.375,"cache_write_30m":0.25,"cache_write_12h":0.5}
+- long_context_tiers: 
 - context: 1050000 (source: https://developers.openai.com/api/docs/models/gpt-6-luna)
 - other: 
 - status: verified
@@ -130,6 +133,7 @@
 - input/output/cached: 4 / 20 / 0.4
 - batch in/out: 2 / 10
 - long_context: {"threshold":272000,"input":8,"output":30,"cached":0.8,"batch_input":4,"batch_output":15,"cache_write_30m":10,"cache_write_12h":20}
+- long_context_tiers: 
 - context: 1050000 (source: https://developers.openai.com/api/docs/models/gpt-5.6-sol)
 - other: 
 - status: verified
@@ -142,6 +146,7 @@
 - input/output/cached: 1.75 / 14 / 0.175
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 400000 (source: https://developers.openai.com/api/docs/models/gpt-5.3-codex)
 - other: 
 - status: verified
@@ -154,6 +159,7 @@
 - input/output/cached: 5 / 30 / 0.5
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 400000 (source: https://developers.openai.com/api/docs/models/chat-latest)
 - other: 
 - status: verified
@@ -166,6 +172,7 @@
 - input/output/cached: 32 / 64 / 0.4
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 
 - other: 
 - status: verified
@@ -178,6 +185,7 @@
 - input/output/cached: 10 / 20 / 0.3
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 
 - other: 
 - status: verified
@@ -190,6 +198,7 @@
 - input/output/cached: null / null / null
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 
 - other: $0.0045 / min
 - status: verified
@@ -202,6 +211,7 @@
 - input/output/cached: 1.25 / 5 / null
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 
 - other: ≈$0.003 / min
 - status: verified
@@ -214,6 +224,7 @@
 - input/output/cached: 8 / 30 / 2
 - batch in/out: 4 / 15
 - long_context: 
+- long_context_tiers: 
 - context: 
 - other: 
 - status: verified
@@ -226,6 +237,7 @@
 - input/output/cached: 8 / 30 / 2
 - batch in/out: 4 / 15
 - long_context: 
+- long_context_tiers: 
 - context: 
 - other: 
 - status: verified
@@ -238,6 +250,7 @@
 - input/output/cached: 8 / 30 / 2
 - batch in/out: 4 / 15
 - long_context: 
+- long_context_tiers: 
 - context: 
 - other: 
 - status: verified
@@ -250,6 +263,7 @@
 - input/output/cached: 1 / 5 / 0.05
 - batch in/out: 0.5 / 2.5
 - long_context: {"threshold":272000,"input":2,"output":7.5,"cached":0.1,"batch_input":1,"batch_output":3.75,"cache_write_30m":2.5,"cache_write_12h":5}
+- long_context_tiers: 
 - context: 1050000 (source: https://developers.openai.com/api/docs/models/gpt-6.1-terra)
 - other: 
 - status: verified
@@ -262,6 +276,7 @@
 - input/output/cached: 2 / 10 / 0.2
 - batch in/out: 1 / 5
 - long_context: {"threshold":272000,"input":4,"output":15,"cached":0.4,"batch_input":2,"batch_output":7.5,"cache_write_30m":5,"cache_write_12h":10}
+- long_context_tiers: 
 - context: 1050000 (source: https://developers.openai.com/api/docs/models/gpt-6-sol)
 - other: 
 - status: verified
@@ -274,6 +289,7 @@
 - input/output/cached: 2 / 12 / 0.2
 - batch in/out: 1 / 6
 - long_context: {"threshold":272000,"input":4,"output":18,"cached":0.4,"batch_input":2,"batch_output":9,"cache_write_30m":5,"cache_write_12h":10}
+- long_context_tiers: 
 - context: 1050000 (source: https://developers.openai.com/api/docs/models/gpt-5.6-terra)
 - other: 
 - status: verified
@@ -286,6 +302,7 @@
 - input/output/cached: 0.2 / 1.2 / 0.02
 - batch in/out: 0.1 / 0.6
 - long_context: {"threshold":272000,"input":0.4,"output":1.8,"cached":0.04,"batch_input":0.2,"batch_output":0.9,"cache_write_30m":0.5,"cache_write_12h":1}
+- long_context_tiers: 
 - context: 1050000 (source: https://developers.openai.com/api/docs/models/gpt-5.6-luna)
 - other: 
 - status: verified
@@ -298,6 +315,7 @@
 - input/output/cached: 5 / 30 / 0.5
 - batch in/out: 2.5 / 15
 - long_context: {"threshold":272000,"input":10,"output":45,"cached":1,"batch_input":5,"batch_output":22.5}
+- long_context_tiers: 
 - context: 1050000 (source: https://developers.openai.com/api/docs/models/gpt-5.5)
 - other: 
 - status: verified
@@ -310,6 +328,7 @@
 - input/output/cached: 30 / 180 / null
 - batch in/out: 15 / 90
 - long_context: {"threshold":272000,"input":60,"output":270,"cached":null}
+- long_context_tiers: 
 - context: 1050000 (source: https://developers.openai.com/api/docs/models/gpt-5.5-pro)
 - other: 
 - status: verified
@@ -322,6 +341,7 @@
 - input/output/cached: 2.5 / 15 / 0.25
 - batch in/out: 1.25 / 7.5
 - long_context: {"threshold":272000,"input":5,"output":22.5,"cached":0.5,"batch_input":2.5,"batch_output":11.25}
+- long_context_tiers: 
 - context: 1050000 (source: https://developers.openai.com/api/docs/models/gpt-5.4)
 - other: 
 - status: verified
@@ -334,6 +354,7 @@
 - input/output/cached: 30 / 180 / null
 - batch in/out: 15 / 90
 - long_context: {"threshold":272000,"input":60,"output":270,"cached":null,"batch_input":30,"batch_output":135}
+- long_context_tiers: 
 - context: 1050000 (source: https://developers.openai.com/api/docs/models/gpt-5.4-pro)
 - other: 
 - status: verified
@@ -346,6 +367,7 @@
 - input/output/cached: 12.5 / 75 / 1.25
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 400000 (source: https://developers.openai.com/api/docs/models/gpt-5.6-cyber)
 - other: 
 - status: verified
@@ -358,6 +380,7 @@
 - input/output/cached: 10 / 50 / 0.25
 - batch in/out: 5 / 25
 - long_context: 
+- long_context_tiers: 
 - context: 1000000 (source: https://platform.claude.com/docs/en/models/fable-5-1/overview)
 - other: 
 - status: verified
@@ -370,6 +393,7 @@
 - input/output/cached: 4 / 20 / 0.2
 - batch in/out: 2 / 10
 - long_context: 
+- long_context_tiers: 
 - context: 1000000 (source: https://platform.claude.com/docs/en/models/opus-5-5/overview)
 - other: 
 - status: verified
@@ -382,6 +406,7 @@
 - input/output/cached: 2 / 10 / 0.1
 - batch in/out: 1 / 5
 - long_context: 
+- long_context_tiers: 
 - context: 1000000 (source: https://platform.claude.com/docs/en/models/sonnet-5-5/overview)
 - other: 
 - status: verified
@@ -394,6 +419,7 @@
 - input/output/cached: 0.1 / 0.5 / 0.01
 - batch in/out: 0.05 / 0.25
 - long_context: {"threshold":100000,"input":0.5,"output":2.5,"cached":0.05,"batch_input":0.25,"batch_output":1.25,"cache_write_5m":0.625,"cache_write_1h":1}
+- long_context_tiers: 
 - context: 1000000 (source: https://platform.claude.com/docs/en/models/haiku-5-5/overview)
 - other: 
 - status: verified
@@ -406,6 +432,7 @@
 - input/output/cached: 10 / 50 / 0.25
 - batch in/out: 5 / 25
 - long_context: 
+- long_context_tiers: 
 - context: 1000000 (source: https://platform.claude.com/docs/en/models/mythos-5-1/overview)
 - other: 
 - status: verified
@@ -418,6 +445,7 @@
 - input/output/cached: 5 / 25 / 0.5
 - batch in/out: 2.5 / 12.5
 - long_context: 
+- long_context_tiers: 
 - context: 1000000 (source: https://platform.claude.com/docs/en/models/opus-5/overview)
 - other: 
 - status: verified
@@ -430,6 +458,7 @@
 - input/output/cached: 5 / 25 / 0.5
 - batch in/out: 2.5 / 12.5
 - long_context: 
+- long_context_tiers: 
 - context: 1000000 (source: https://platform.claude.com/docs/en/models/opus-4-8/overview)
 - other: 
 - status: verified
@@ -442,6 +471,7 @@
 - input/output/cached: 2 / 10 / 0.2
 - batch in/out: 1 / 5
 - long_context: 
+- long_context_tiers: 
 - context: 1000000 (source: https://platform.claude.com/docs/en/models/sonnet-5/overview)
 - other: 
 - status: verified
@@ -454,6 +484,7 @@
 - input/output/cached: 3 / 15 / 0.3
 - batch in/out: 1.5 / 7.5
 - long_context: 
+- long_context_tiers: 
 - context: 1000000 (source: https://platform.claude.com/docs/en/models/sonnet-4-6/overview)
 - other: 
 - status: verified
@@ -466,6 +497,7 @@
 - input/output/cached: 1 / 5 / 0.1
 - batch in/out: 0.5 / 2.5
 - long_context: 
+- long_context_tiers: 
 - context: 200000 (source: https://platform.claude.com/docs/en/models/haiku-4-5/overview)
 - other: 
 - status: verified
@@ -478,6 +510,7 @@
 - input/output/cached: 15 / 75 / 1.5
 - batch in/out: 7.5 / 37.5
 - long_context: 
+- long_context_tiers: 
 - context: unpublished
 - other: 
 - status: verified
@@ -490,6 +523,7 @@
 - input/output/cached: 2 / 10 / 0.1
 - batch in/out: 1 / 5
 - long_context: 
+- long_context_tiers: 
 - context: 1048576 (source: https://ai.google.dev/gemini-api/docs/models/gemini-4-argon)
 - other: 
 - status: verified
@@ -502,6 +536,7 @@
 - input/output/cached: 0.75 / 3.75 / 0.075
 - batch in/out: 0.375 / 1.875
 - long_context: 
+- long_context_tiers: 
 - context: 1048576 (source: https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash)
 - other: 
 - status: verified
@@ -514,6 +549,7 @@
 - input/output/cached: 0.75 / 3.75 / 0.075
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 1048576 (source: https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash)
 - other: 
 - status: verified
@@ -526,6 +562,7 @@
 - input/output/cached: 0.75 / 3.75 / 0.075
 - batch in/out: 0.375 / 1.875
 - long_context: 
+- long_context_tiers: 
 - context: 1048576 (source: https://ai.google.dev/gemini-api/docs/models/gemini-3.6-flash)
 - other: 
 - status: verified
@@ -538,6 +575,7 @@
 - input/output/cached: 0.3 / 2.5 / 0.03
 - batch in/out: 0.15 / 1.25
 - long_context: 
+- long_context_tiers: 
 - context: 1048576 (source: https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash-lite)
 - other: 
 - status: verified
@@ -550,6 +588,7 @@
 - input/output/cached: 0.25 / 1.5 / 0.025
 - batch in/out: 0.125 / 0.75
 - long_context: 
+- long_context_tiers: 
 - context: 1048576 (source: https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite)
 - other: 
 - status: verified
@@ -562,6 +601,7 @@
 - input/output/cached: 2 / 12 / 0.2
 - batch in/out: 1 / 6
 - long_context: {"threshold":200000,"input":4,"output":18,"cached":0.4,"batch_input":2,"batch_output":9}
+- long_context_tiers: 
 - context: 1048576 (source: https://ai.google.dev/gemini-api/docs/models/gemini-3.1-pro-preview)
 - other: 
 - status: verified
@@ -574,6 +614,7 @@
 - input/output/cached: 0.5 / 3 / 0.05
 - batch in/out: 0.25 / 1.5
 - long_context: 
+- long_context_tiers: 
 - context: 1048576 (source: https://ai.google.dev/gemini-api/docs/models/gemini-3-flash-preview)
 - other: 
 - status: verified
@@ -586,6 +627,7 @@
 - input/output/cached: 1.5 / 30 / null
 - batch in/out: 0.75 / 15
 - long_context: 
+- long_context_tiers: 
 - context: 
 - other: $0.0336 per 1K image
 - status: verified
@@ -598,6 +640,7 @@
 - input/output/cached: 0.5 / 60 / null
 - batch in/out: 0.25 / 30
 - long_context: 
+- long_context_tiers: 
 - context: 
 - other: $0.067 per 1K image
 - status: verified
@@ -610,6 +653,7 @@
 - input/output/cached: 2 / 12 / null
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 
 - other: ≈$0.003/min in + $0.002/min out
 - status: verified
@@ -622,6 +666,7 @@
 - input/output/cached: 0.5 / 9 / null
 - batch in/out: 0.25 / 4.5
 - long_context: 
+- long_context_tiers: 
 - context: 
 - other: ≈$0.00225 per 10s audio
 - status: verified
@@ -634,6 +679,7 @@
 - input/output/cached: 0.5 / 6 / null
 - batch in/out: 0.25 / 3
 - long_context: 
+- long_context_tiers: 
 - context: 
 - other: ≈$0.0015 per 10s audio
 - status: verified
@@ -646,6 +692,7 @@
 - input/output/cached: 1 / 5 / 0.1
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 131072 (source: https://ai.google.dev/gemini-api/docs/models/gemini-robotics-er-2-preview)
 - other: 
 - status: verified
@@ -658,6 +705,7 @@
 - input/output/cached: 1 / 5 / null
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 131072 (source: https://ai.google.dev/gemini-api/docs/models/gemini-robotics-er-2-streaming-preview)
 - other: 
 - status: verified
@@ -670,6 +718,7 @@
 - input/output/cached: 2 / 6 / 0.5
 - batch in/out: 1.6 / 4.8
 - long_context: {"threshold":200000,"input":4,"output":12,"cached":1,"batch_input":3.2,"batch_output":9.6}
+- long_context_tiers: 
 - context: 500000 (source: https://docs.x.ai/developers/models)
 - other: 
 - status: verified
@@ -682,6 +731,7 @@
 - input/output/cached: null / null / null
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 
 - other: $15.00 / 1M chars
 - status: unverified
@@ -694,6 +744,7 @@
 - input/output/cached: null / null / null
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 
 - other: from $0.02 / image
 - status: unverified
@@ -706,6 +757,7 @@
 - input/output/cached: 0.3 / 1.2 / 0.006
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 1000000 (source: https://api-docs.deepseek.com/quick_start/pricing)
 - other: 
 - status: verified
@@ -718,6 +770,7 @@
 - input/output/cached: 1.32 / 3.96 / 0.044
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 1000000 (source: https://api-docs.deepseek.com/quick_start/pricing)
 - other: 
 - status: verified
@@ -730,6 +783,7 @@
 - input/output/cached: 3 / 15 / 0.3
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 1048576 (source: https://docs.together.ai/docs/serverless/models)
 - other: 
 - status: unverified
@@ -742,6 +796,7 @@
 - input/output/cached: 2 / 6 / 0.25
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: unpublished
 - other: 
 - status: unverified
@@ -754,6 +809,7 @@
 - input/output/cached: 1.4 / 4.4 / 0.26
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 1048575 (source: https://docs.together.ai/docs/serverless/models)
 - other: 
 - status: unverified
@@ -766,6 +822,7 @@
 - input/output/cached: 0.3 / 1.2 / 0.006
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 1000000 (source: https://docs.together.ai/docs/serverless/models)
 - other: 
 - status: unverified
@@ -778,6 +835,7 @@
 - input/output/cached: 1.32 / 3.96 / 0.13
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 1048576 (source: https://docs.together.ai/docs/serverless/models)
 - other: 
 - status: unverified
@@ -790,6 +848,7 @@
 - input/output/cached: 0.15 / 0.6 / null
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 131072 (source: https://docs.together.ai/docs/serverless/models)
 - other: 
 - status: unverified
@@ -802,6 +861,7 @@
 - input/output/cached: 0.3 / 1.2 / 0.06
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: unpublished
 - other: 
 - status: unverified
@@ -814,6 +874,7 @@
 - input/output/cached: 0.14 / 0.14 / null
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: unpublished
 - other: 
 - status: unverified
@@ -826,6 +887,7 @@
 - input/output/cached: 0.6 / 3.6 / 0.35
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: unpublished
 - other: 
 - status: unverified
@@ -838,6 +900,7 @@
 - input/output/cached: null / null / null
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 
 - other: $0.03 / image
 - status: unverified
@@ -850,6 +913,7 @@
 - input/output/cached: 3 / 15 / 0.3
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 1048576 (source: https://fireworks.ai/models/fireworks/kimi-k3)
 - other: 
 - status: verified
@@ -862,6 +926,7 @@
 - input/output/cached: 0.3 / 1.2 / 0.006
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 1040000 (source: https://fireworks.ai/models/deepseek-ai/deepseek-v4p1-flash)
 - other: 
 - status: verified
@@ -874,6 +939,7 @@
 - input/output/cached: 1.4 / 4.4 / 0.26
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 1040000 (source: https://fireworks.ai/models/fireworks/glm-5p3)
 - other: 
 - status: verified
@@ -886,6 +952,7 @@
 - input/output/cached: 0.15 / 0.6 / 0.015
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 131000 (source: https://fireworks.ai/models/fireworks/gpt-oss-120b)
 - other: 
 - status: verified
@@ -898,6 +965,7 @@
 - input/output/cached: 0.05 / 0.2 / 0.01
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: unpublished
 - other: 
 - status: verified
@@ -910,6 +978,7 @@
 - input/output/cached: 2 / 6 / 0.25
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: unpublished
 - other: 
 - status: verified
@@ -922,6 +991,7 @@
 - input/output/cached: 0.016 / 0 / null
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 
 - other: 
 - status: verified
@@ -934,6 +1004,7 @@
 - input/output/cached: 0.15 / 0.6 / null
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 131072 (source: https://console.groq.com/docs/models)
 - other: 
 - status: unverified
@@ -946,6 +1017,7 @@
 - input/output/cached: 0.075 / 0.3 / null
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 131072 (source: https://console.groq.com/docs/models)
 - other: 
 - status: unverified
@@ -958,6 +1030,7 @@
 - input/output/cached: null / null / null
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 
 - other: $0.04 / hour
 - status: unverified
@@ -970,6 +1043,7 @@
 - input/output/cached: null / null / null
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 131072 (source: https://console.groq.com/docs/models)
 - other: 
 - status: unverified
@@ -982,6 +1056,7 @@
 - input/output/cached: 0.25 / 2.5 / 0.0625
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: unpublished
 - other: 
 - status: unverified
@@ -994,6 +1069,7 @@
 - input/output/cached: 0.03 / 0 / null
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 
 - other: 
 - status: unverified
@@ -1006,6 +1082,7 @@
 - input/output/cached: 0.004 / 0 / null
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 
 - other: 
 - status: unverified
@@ -1018,6 +1095,7 @@
 - input/output/cached: null / null / null
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 
 - other: 
 - status: unverified
@@ -1030,6 +1108,7 @@
 - input/output/cached: 2.5 / 10 / null
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 128000 (source: https://docs.cohere.com/docs/models)
 - other: 
 - status: unverified
@@ -1042,6 +1121,7 @@
 - input/output/cached: 10 / 50 / 1
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: unpublished
 - other: 
 - status: unverified
@@ -1054,6 +1134,7 @@
 - input/output/cached: 2 / 10 / 0.1
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: unpublished
 - other: 
 - status: unverified
@@ -1066,6 +1147,7 @@
 - input/output/cached: 0.1 / 0.5 / 0.01
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: unpublished
 - other: 
 - status: unverified
@@ -1078,6 +1160,7 @@
 - input/output/cached: 0.11 / 0.55 / 0.011
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: unpublished
 - other: 
 - status: unverified
@@ -1090,6 +1173,7 @@
 - input/output/cached: 0.62 / 1.85 / null
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: unpublished
 - other: 
 - status: unverified
@@ -1102,6 +1186,7 @@
 - input/output/cached: 0.5 / 1.5 / null
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: unpublished
 - other: 
 - status: unverified
@@ -1114,6 +1199,7 @@
 - input/output/cached: null / null / null
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 
 - other: 
 - status: unverified
@@ -1126,6 +1212,7 @@
 - input/output/cached: null / null / null
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 
 - other: 
 - status: unverified
@@ -1138,6 +1225,7 @@
 - input/output/cached: 0.7 / 2.1 / 0.07
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 1048576 (source: https://mistral.ai/news/mistral-large-4-oss/)
 - other: 
 - status: verified
@@ -1147,13 +1235,14 @@
 ### OpenRouter Llama 4 Maverick (Meta)
 - id: openrouter-llama-4-maverick-meta
 - kind: text
-- input/output/cached: 0.1875 / 0.6525 / 0.05
+- input/output/cached: 0.35 / 1 / 0.17
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 524288 (source: https://openrouter.ai/meta-llama/llama-4-maverick)
 - other: 
 - status: verified
-- source: https://openrouter.ai/meta-llama/llama-4-maverick (2026-10-30)
+- source: https://openrouter.ai/meta-llama/llama-4-maverick (2026-11-07)
 - notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.
 
 ### OpenRouter Llama 4 Scout (Meta)
@@ -1162,10 +1251,11 @@
 - input/output/cached: 0.1 / 0.3 / null
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 1310720 (source: https://openrouter.ai/meta-llama/llama-4-scout)
 - other: 
 - status: verified
-- source: https://openrouter.ai/meta-llama/llama-4-scout (2026-10-30)
+- source: https://openrouter.ai/meta-llama/llama-4-scout (2026-11-07)
 - notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.
 
 ### OpenRouter Mistral Large 4 (Mistral)
@@ -1174,11 +1264,12 @@
 - input/output/cached: 0.7 / 2.1 / 0.07
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 1048576 (source: https://openrouter.ai/mistralai/mistral-large-4-0)
 - other: 
 - status: verified
-- source: https://openrouter.ai/mistralai/mistral-large-4-0 (2026-10-30)
-- notes: OpenRouter list price from its public /api/v1/models endpoint (matches Mistral first-party launch price); may route to multiple upstream hosts.
+- source: https://openrouter.ai/mistralai/mistral-large-4-0 (2026-11-07)
+- notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.
 
 ### OpenRouter Mistral Medium 3.5 (Mistral)
 - id: openrouter-mistral-medium-3-5-mistral
@@ -1186,10 +1277,11 @@
 - input/output/cached: 1.5 / 7.5 / null
 - batch in/out: 0.75 / 3.75
 - long_context: 
+- long_context_tiers: 
 - context: 262144 (source: https://openrouter.ai/mistralai/mistral-medium-3-5)
 - other: 
 - status: verified
-- source: https://openrouter.ai/mistralai/mistral-medium-3-5 (2026-10-30)
+- source: https://openrouter.ai/mistralai/mistral-medium-3-5 (2026-11-07)
 - notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.
 
 ### OpenRouter Mistral Small 4 (Mistral)
@@ -1198,10 +1290,11 @@
 - input/output/cached: 0.15 / 0.6 / 0.015
 - batch in/out: 0.075 / 0.3
 - long_context: 
+- long_context_tiers: 
 - context: 262144 (source: https://openrouter.ai/mistralai/mistral-small-2603)
 - other: 
 - status: verified
-- source: https://openrouter.ai/mistralai/mistral-small-2603 (2026-10-30)
+- source: https://openrouter.ai/mistralai/mistral-small-2603 (2026-11-07)
 - notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.
 
 ### OpenRouter Codestral 2508 (Mistral)
@@ -1210,10 +1303,11 @@
 - input/output/cached: 0.3 / 0.9 / 0.03
 - batch in/out: 0.15 / 0.45
 - long_context: 
+- long_context_tiers: 
 - context: 256000 (source: https://openrouter.ai/mistralai/codestral-2508)
 - other: 
 - status: verified
-- source: https://openrouter.ai/mistralai/codestral-2508 (2026-10-30)
+- source: https://openrouter.ai/mistralai/codestral-2508 (2026-11-07)
 - notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.
 
 ### OpenRouter Command A+ (Cohere)
@@ -1222,10 +1316,11 @@
 - input/output/cached: 0.3 / 1.5 / 0.15
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 192000 (source: https://openrouter.ai/cohere/command-a-plus)
 - other: 
 - status: verified
-- source: https://openrouter.ai/cohere/command-a-plus (2026-10-30)
+- source: https://openrouter.ai/cohere/command-a-plus (2026-11-07)
 - notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.
 
 ### OpenRouter Qwen3.8 Max (0902) (Qwen)
@@ -1234,10 +1329,11 @@
 - input/output/cached: 2 / 6 / 0.25
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 1000000 (source: https://openrouter.ai/qwen/qwen3.8-max-0902)
 - other: 
 - status: verified
-- source: https://openrouter.ai/qwen/qwen3.8-max-0902 (2026-10-30)
+- source: https://openrouter.ai/qwen/qwen3.8-max-0902 (2026-11-07)
 - notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.
 
 ### OpenRouter Qwen3.7 Flash (Qwen)
@@ -1245,12 +1341,13 @@
 - kind: text
 - input/output/cached: 0.03 / 0.13 / 0.006
 - batch in/out: null / null
-- long_context: 
+- long_context: {"threshold":32000,"input":0.1,"output":0.4,"cached":0.02,"cache_write":0.125}
+- long_context_tiers: [{"threshold":32000,"input":0.1,"output":0.4,"cached":0.02,"cache_write":0.125},{"threshold":256000,"input":0.2,"output":0.8,"cached":0.04,"cache_write":0.25}]
 - context: 1000000 (source: https://openrouter.ai/qwen/qwen3.7-flash)
 - other: 
 - status: verified
-- source: https://openrouter.ai/qwen/qwen3.7-flash (2026-10-30)
-- notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.
+- source: https://openrouter.ai/qwen/qwen3.7-flash (2026-11-07)
+- notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts. $0.03/$0.13 applies only under 32K prompt tokens; ≥32K $0.10/$0.40; ≥256K $0.20/$0.80 (OpenRouter pricing.overrides). Cache write: under 32K $0.038; ≥32K $0.125; ≥256K $0.25 per 1M.
 
 ### OpenRouter Kimi K3.1 Pro (MoonshotAI)
 - id: openrouter-kimi-k3-1-pro-moonshotai
@@ -1258,10 +1355,11 @@
 - input/output/cached: 2 / 10 / 0.2
 - batch in/out: null / null
 - long_context: 
+- long_context_tiers: 
 - context: 1048576 (source: https://openrouter.ai/moonshotai/kimi-k3.1-pro)
 - other: 
 - status: verified
-- source: https://openrouter.ai/moonshotai/kimi-k3.1-pro (2026-10-30)
+- source: https://openrouter.ai/moonshotai/kimi-k3.1-pro (2026-11-07)
 - notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts.
 
 ### OpenRouter Grok 4.7 (SpaceXAI)
@@ -1270,13 +1368,15 @@
 - input/output/cached: 2 / 6 / 0.5
 - batch in/out: null / null
 - long_context: {"threshold":200000,"input":4,"output":12,"cached":1}
+- long_context_tiers: [{"threshold":200000,"input":4,"output":12,"cached":1}]
 - context: 500000 (source: https://openrouter.ai/x-ai/grok-4.7)
 - other: 
 - status: verified
-- source: https://openrouter.ai/x-ai/grok-4.7 (2026-10-31)
-- notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts. Pricing override for prompts of 200K+ tokens: $4.00 in / $12.00 out, cache read $1.00 per 1M.
+- source: https://openrouter.ai/x-ai/grok-4.7 (2026-11-07)
+- notes: OpenRouter list price from its public /api/v1/models endpoint; may route to multiple upstream hosts. Pricing overrides (prompt tokens): ≥200K $4/$12 (cached $1) (OpenRouter pricing.overrides).
 
 ## Changes
+- 2026-11-07 OpenRouter (correction): Correction: OpenRouter Qwen3.7 Flash was listed at $0.03/$0.13 on ≥128K and ≥1M cheapest pages, the home finder, the calculator and llms.txt. Those rates apply only under 32K prompt tokens. OpenRouter publishes pricing.overrides: ≥32K $0.10/$0.40 (cached $0.02), ≥256K $0.20/$0.80 (cached $0.04). We now ingest multi-tier long_context_tiers for OpenRouter overrides; at ≥128K/≥1M the true #1 verified text model is Llama 4 Scout at $0.10/$0.30. Also refreshed Llama 4 Maverick from $0.1875/$0.6525/cached $0.05 to live API $0.35/$1.00/cached $0.17, and re-checked all 11 OpenRouter rows on 2026-11-07. [https://openrouter.ai/api/v1/models]
 - 2026-11-07 OpenAI (feature): Added published cache-write fields: OpenAI cache_write_30m / cache_write_12h (30m from pricing table; 12h = 2.5× input per prompt-caching guide) and Anthropic cache_write_5m / cache_write_1h (1.25× / 2× input). Calculator Cache-write MTok/mo + TTL; model pages show the fields; new guide /guides/openai-anthropic-cache-write-pricing. Example: gpt-6-astra $12.50 / $25 per 1M (30m/12h). [https://developers.openai.com/api/docs/pricing]
 - 2026-10-31 DeepSeek (correction): Correction to our 2026-10-31 DeepSeek Search/Fetch entry and guide: DeepSeek bills Search and Fetch as standalone APIs per successful request ($0.75 per 1,000 each). Only server-side tool calls made through DeepSeek Harness, Claude Code and Codex were free until 00:00 Beijing time 2026-11-01 (2026-10-31 16:00 UTC). We had implied all Search/Fetch billing started then; the guide title, key stats, FAQ, llms-full.txt and the models.json tool_fees field (billing_start_utc renamed agent_tool_calls_billed_from_utc) are corrected. [https://api-docs.deepseek.com/guides/search]
 - 2026-10-31 xAI (correction): grok-4.7 long-context tier added: above 200K prompt tokens $4.00 in / $12.00 out (cached $1.00); standard cached $0.50; Batch API 20% off. Finder/calculator now price long prompts at the higher tier (OpenRouter Grok 4.7 row too). [https://docs.x.ai/developers/models]
@@ -1369,23 +1469,23 @@ Page: https://ratecardai.pages.dev/guides/openai-anthropic-cache-write-pricing
 
 
 ## Cheapest by context (≥128K)
-1. OpenRouter Qwen3.7 Flash (Qwen) (openrouter-qwen3-7-flash-qwen): ctx 1000000, in 0.03, out 0.13, cached 0.006, tier std, source https://openrouter.ai/qwen/qwen3.7-flash, checked 2026-10-30
-2. OpenRouter Llama 4 Scout (Meta) (openrouter-llama-4-scout-meta): ctx 1310720, in 0.1, out 0.3, cached null, tier std, source https://openrouter.ai/meta-llama/llama-4-scout, checked 2026-10-30
+1. OpenRouter Llama 4 Scout (Meta) (openrouter-llama-4-scout-meta): ctx 1310720, in 0.1, out 0.3, cached null, tier std, source https://openrouter.ai/meta-llama/llama-4-scout, checked 2026-11-07
+2. OpenRouter Qwen3.7 Flash (Qwen) (openrouter-qwen3-7-flash-qwen): ctx 1000000, in 0.1, out 0.4, cached 0.02, tier long, source https://openrouter.ai/qwen/qwen3.7-flash, checked 2026-11-07
 3. OpenAI gpt-6-luna (openai-gpt-6-luna): ctx 1050000, in 0.1, out 0.5, cached 0.01, tier std, source https://platform.openai.com/docs/pricing, checked 2026-11-07
 4. Fireworks OpenAI GPT OSS 120B (fireworks-openai-gpt-oss-120b): ctx 131000, in 0.15, out 0.6, cached 0.015, tier std, source https://docs.fireworks.ai/serverless/pricing, checked 2026-10-30
-5. OpenRouter Mistral Small 4 (Mistral) (openrouter-mistral-small-4-mistral): ctx 262144, in 0.15, out 0.6, cached 0.015, tier std, source https://openrouter.ai/mistralai/mistral-small-2603, checked 2026-10-30
-6. OpenRouter Llama 4 Maverick (Meta) (openrouter-llama-4-maverick-meta): ctx 524288, in 0.1875, out 0.6525, cached 0.05, tier std, source https://openrouter.ai/meta-llama/llama-4-maverick, checked 2026-10-30
-7. OpenAI gpt-5.6-luna (openai-gpt-5-6-luna): ctx 1050000, in 0.2, out 1.2, cached 0.02, tier std, source https://platform.openai.com/docs/pricing, checked 2026-11-07
-8. Google Gemini 3.1 Flash-Lite (google-gemini-3-1-flash-lite): ctx 1048576, in 0.25, out 1.5, cached 0.025, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
-9. OpenRouter Codestral 2508 (Mistral) (openrouter-codestral-2508-mistral): ctx 256000, in 0.3, out 0.9, cached 0.03, tier std, source https://openrouter.ai/mistralai/codestral-2508, checked 2026-10-30
-10. DeepSeek deepseek-flash (V4.1 Flash) (deepseek-deepseek-flash-v4-1-flash): ctx 1000000, in 0.3, out 1.2, cached 0.006, tier std, source https://api-docs.deepseek.com/quick_start/pricing, checked 2026-10-31
-11. Fireworks DeepSeek V4.1 Flash (fireworks-deepseek-v4-1-flash): ctx 1040000, in 0.3, out 1.2, cached 0.006, tier std, source https://docs.fireworks.ai/serverless/pricing, checked 2026-10-30
-12. OpenRouter Command A+ (Cohere) (openrouter-command-a-cohere): ctx 192000, in 0.3, out 1.5, cached 0.15, tier std, source https://openrouter.ai/cohere/command-a-plus, checked 2026-10-30
-13. Google Gemini 3.5 Flash-Lite (google-gemini-3-5-flash-lite): ctx 1048576, in 0.3, out 2.5, cached 0.03, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
+5. OpenRouter Mistral Small 4 (Mistral) (openrouter-mistral-small-4-mistral): ctx 262144, in 0.15, out 0.6, cached 0.015, tier std, source https://openrouter.ai/mistralai/mistral-small-2603, checked 2026-11-07
+6. OpenAI gpt-5.6-luna (openai-gpt-5-6-luna): ctx 1050000, in 0.2, out 1.2, cached 0.02, tier std, source https://platform.openai.com/docs/pricing, checked 2026-11-07
+7. Google Gemini 3.1 Flash-Lite (google-gemini-3-1-flash-lite): ctx 1048576, in 0.25, out 1.5, cached 0.025, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
+8. OpenRouter Codestral 2508 (Mistral) (openrouter-codestral-2508-mistral): ctx 256000, in 0.3, out 0.9, cached 0.03, tier std, source https://openrouter.ai/mistralai/codestral-2508, checked 2026-11-07
+9. DeepSeek deepseek-flash (V4.1 Flash) (deepseek-deepseek-flash-v4-1-flash): ctx 1000000, in 0.3, out 1.2, cached 0.006, tier std, source https://api-docs.deepseek.com/quick_start/pricing, checked 2026-10-31
+10. Fireworks DeepSeek V4.1 Flash (fireworks-deepseek-v4-1-flash): ctx 1040000, in 0.3, out 1.2, cached 0.006, tier std, source https://docs.fireworks.ai/serverless/pricing, checked 2026-10-30
+11. OpenRouter Command A+ (Cohere) (openrouter-command-a-cohere): ctx 192000, in 0.3, out 1.5, cached 0.15, tier std, source https://openrouter.ai/cohere/command-a-plus, checked 2026-11-07
+12. Google Gemini 3.5 Flash-Lite (google-gemini-3-5-flash-lite): ctx 1048576, in 0.3, out 2.5, cached 0.03, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
+13. OpenRouter Llama 4 Maverick (Meta) (openrouter-llama-4-maverick-meta): ctx 524288, in 0.35, out 1, cached 0.17, tier std, source https://openrouter.ai/meta-llama/llama-4-maverick, checked 2026-11-07
 14. Anthropic Claude Haiku 5.5 (anthropic-claude-haiku-5-5): ctx 1000000, in 0.5, out 2.5, cached 0.05, tier long, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
 15. Google Gemini 3 Flash Preview (google-gemini-3-flash-preview): ctx 1048576, in 0.5, out 3, cached 0.05, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
 16. Mistral Mistral Large 4 (mistral-mistral-large-4): ctx 1048576, in 0.7, out 2.1, cached 0.07, tier std, source https://mistral.ai/news/mistral-large-4-oss/, checked 2026-10-30
-17. OpenRouter Mistral Large 4 (Mistral) (openrouter-mistral-large-4-mistral): ctx 1048576, in 0.7, out 2.1, cached 0.07, tier std, source https://openrouter.ai/mistralai/mistral-large-4-0, checked 2026-10-30
+17. OpenRouter Mistral Large 4 (Mistral) (openrouter-mistral-large-4-mistral): ctx 1048576, in 0.7, out 2.1, cached 0.07, tier std, source https://openrouter.ai/mistralai/mistral-large-4-0, checked 2026-11-07
 18. Google Gemini 3.6 Flash (google-gemini-3-6-flash): ctx 1048576, in 0.75, out 3.75, cached 0.075, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
 19. Google Gemini 3.7 Flash (google-gemini-3-7-flash): ctx 1048576, in 0.75, out 3.75, cached 0.075, tier std, source https://cloud.google.com/model-garden/pricing, checked 2026-10-31
 20. Google Gemini 3.8 Flash (google-gemini-3-8-flash): ctx 1048576, in 0.75, out 3.75, cached 0.075, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
@@ -1395,17 +1495,17 @@ Page: https://ratecardai.pages.dev/guides/openai-anthropic-cache-write-pricing
 24. OpenAI gpt-6.1-terra (openai-gpt-6-1-terra): ctx 1050000, in 1, out 5, cached 0.05, tier std, source https://platform.openai.com/docs/pricing, checked 2026-11-07
 25. DeepSeek deepseek-v4-pro (deepseek-deepseek-v4-pro): ctx 1000000, in 1.32, out 3.96, cached 0.044, tier std, source https://api-docs.deepseek.com/quick_start/pricing, checked 2026-10-31
 26. Fireworks GLM 5.3 (fireworks-glm-5-3): ctx 1040000, in 1.4, out 4.4, cached 0.26, tier std, source https://docs.fireworks.ai/serverless/pricing, checked 2026-10-30
-27. OpenRouter Mistral Medium 3.5 (Mistral) (openrouter-mistral-medium-3-5-mistral): ctx 262144, in 1.5, out 7.5, cached null, tier std, source https://openrouter.ai/mistralai/mistral-medium-3-5, checked 2026-10-30
+27. OpenRouter Mistral Medium 3.5 (Mistral) (openrouter-mistral-medium-3-5-mistral): ctx 262144, in 1.5, out 7.5, cached null, tier std, source https://openrouter.ai/mistralai/mistral-medium-3-5, checked 2026-11-07
 28. OpenAI gpt-5.3-codex (openai-gpt-5-3-codex): ctx 400000, in 1.75, out 14, cached 0.175, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-30
-29. OpenRouter Grok 4.7 (SpaceXAI) (openrouter-grok-4-7-spacexai): ctx 500000, in 2, out 6, cached 0.5, tier std, source https://openrouter.ai/x-ai/grok-4.7, checked 2026-10-31
-30. OpenRouter Qwen3.8 Max (0902) (Qwen) (openrouter-qwen3-8-max-0902-qwen): ctx 1000000, in 2, out 6, cached 0.25, tier std, source https://openrouter.ai/qwen/qwen3.8-max-0902, checked 2026-10-30
+29. OpenRouter Grok 4.7 (SpaceXAI) (openrouter-grok-4-7-spacexai): ctx 500000, in 2, out 6, cached 0.5, tier std, source https://openrouter.ai/x-ai/grok-4.7, checked 2026-11-07
+30. OpenRouter Qwen3.8 Max (0902) (Qwen) (openrouter-qwen3-8-max-0902-qwen): ctx 1000000, in 2, out 6, cached 0.25, tier std, source https://openrouter.ai/qwen/qwen3.8-max-0902, checked 2026-11-07
 31. xAI grok-4.7 (xai-grok-4-7): ctx 500000, in 2, out 6, cached 0.5, tier std, source https://docs.x.ai/developers/models, checked 2026-10-31
 32. Anthropic Claude Sonnet 5 (anthropic-claude-sonnet-5): ctx 1000000, in 2, out 10, cached 0.2, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
 33. Anthropic Claude Sonnet 5.5 (anthropic-claude-sonnet-5-5): ctx 1000000, in 2, out 10, cached 0.1, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
 34. Google Gemini 4 Argon (google-gemini-4-argon): ctx 1048576, in 2, out 10, cached 0.1, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
 35. OpenAI gpt-6.1-sol (openai-gpt-6-1-sol): ctx 1050000, in 2, out 10, cached 0.1, tier std, source https://platform.openai.com/docs/pricing, checked 2026-11-07
 36. OpenAI gpt-6-sol (openai-gpt-6-sol): ctx 1050000, in 2, out 10, cached 0.2, tier std, source https://platform.openai.com/docs/pricing, checked 2026-11-07
-37. OpenRouter Kimi K3.1 Pro (MoonshotAI) (openrouter-kimi-k3-1-pro-moonshotai): ctx 1048576, in 2, out 10, cached 0.2, tier std, source https://openrouter.ai/moonshotai/kimi-k3.1-pro, checked 2026-10-30
+37. OpenRouter Kimi K3.1 Pro (MoonshotAI) (openrouter-kimi-k3-1-pro-moonshotai): ctx 1048576, in 2, out 10, cached 0.2, tier std, source https://openrouter.ai/moonshotai/kimi-k3.1-pro, checked 2026-11-07
 38. Google Gemini 3.1 Pro Preview (google-gemini-3-1-pro-preview): ctx 1048576, in 2, out 12, cached 0.2, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
 39. OpenAI gpt-5.6-terra (openai-gpt-5-6-terra): ctx 1050000, in 2, out 12, cached 0.2, tier std, source https://platform.openai.com/docs/pricing, checked 2026-11-07
 40. OpenAI gpt-5.4 (openai-gpt-5-4): ctx 1050000, in 2.5, out 15, cached 0.25, tier std, source https://platform.openai.com/docs/pricing, checked 2026-11-07
@@ -1425,9 +1525,9 @@ Page: https://ratecardai.pages.dev/guides/openai-anthropic-cache-write-pricing
 54. OpenAI gpt-5.5-pro (openai-gpt-5-5-pro): ctx 1050000, in 30, out 180, cached null, tier std, source https://platform.openai.com/docs/pricing, checked 2026-11-07
 
 ## Cheapest by context (≥1M)
-1. OpenRouter Qwen3.7 Flash (Qwen) (openrouter-qwen3-7-flash-qwen): ctx 1000000, in 0.03, out 0.13, cached 0.006, tier std, source https://openrouter.ai/qwen/qwen3.7-flash, checked 2026-10-30
-2. OpenRouter Llama 4 Scout (Meta) (openrouter-llama-4-scout-meta): ctx 1310720, in 0.1, out 0.3, cached null, tier std, source https://openrouter.ai/meta-llama/llama-4-scout, checked 2026-10-30
-3. OpenAI gpt-6-luna (openai-gpt-6-luna): ctx 1050000, in 0.2, out 0.75, cached 0.02, tier long, source https://platform.openai.com/docs/pricing, checked 2026-11-07
+1. OpenRouter Llama 4 Scout (Meta) (openrouter-llama-4-scout-meta): ctx 1310720, in 0.1, out 0.3, cached null, tier std, source https://openrouter.ai/meta-llama/llama-4-scout, checked 2026-11-07
+2. OpenAI gpt-6-luna (openai-gpt-6-luna): ctx 1050000, in 0.2, out 0.75, cached 0.02, tier long, source https://platform.openai.com/docs/pricing, checked 2026-11-07
+3. OpenRouter Qwen3.7 Flash (Qwen) (openrouter-qwen3-7-flash-qwen): ctx 1000000, in 0.2, out 0.8, cached 0.04, tier long, source https://openrouter.ai/qwen/qwen3.7-flash, checked 2026-11-07
 4. Google Gemini 3.1 Flash-Lite (google-gemini-3-1-flash-lite): ctx 1048576, in 0.25, out 1.5, cached 0.025, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
 5. DeepSeek deepseek-flash (V4.1 Flash) (deepseek-deepseek-flash-v4-1-flash): ctx 1000000, in 0.3, out 1.2, cached 0.006, tier std, source https://api-docs.deepseek.com/quick_start/pricing, checked 2026-10-31
 6. Fireworks DeepSeek V4.1 Flash (fireworks-deepseek-v4-1-flash): ctx 1040000, in 0.3, out 1.2, cached 0.006, tier std, source https://docs.fireworks.ai/serverless/pricing, checked 2026-10-30
@@ -1436,18 +1536,18 @@ Page: https://ratecardai.pages.dev/guides/openai-anthropic-cache-write-pricing
 9. Anthropic Claude Haiku 5.5 (anthropic-claude-haiku-5-5): ctx 1000000, in 0.5, out 2.5, cached 0.05, tier long, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
 10. Google Gemini 3 Flash Preview (google-gemini-3-flash-preview): ctx 1048576, in 0.5, out 3, cached 0.05, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
 11. Mistral Mistral Large 4 (mistral-mistral-large-4): ctx 1048576, in 0.7, out 2.1, cached 0.07, tier std, source https://mistral.ai/news/mistral-large-4-oss/, checked 2026-10-30
-12. OpenRouter Mistral Large 4 (Mistral) (openrouter-mistral-large-4-mistral): ctx 1048576, in 0.7, out 2.1, cached 0.07, tier std, source https://openrouter.ai/mistralai/mistral-large-4-0, checked 2026-10-30
+12. OpenRouter Mistral Large 4 (Mistral) (openrouter-mistral-large-4-mistral): ctx 1048576, in 0.7, out 2.1, cached 0.07, tier std, source https://openrouter.ai/mistralai/mistral-large-4-0, checked 2026-11-07
 13. Google Gemini 3.6 Flash (google-gemini-3-6-flash): ctx 1048576, in 0.75, out 3.75, cached 0.075, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
 14. Google Gemini 3.7 Flash (google-gemini-3-7-flash): ctx 1048576, in 0.75, out 3.75, cached 0.075, tier std, source https://cloud.google.com/model-garden/pricing, checked 2026-10-31
 15. Google Gemini 3.8 Flash (google-gemini-3-8-flash): ctx 1048576, in 0.75, out 3.75, cached 0.075, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
 16. DeepSeek deepseek-v4-pro (deepseek-deepseek-v4-pro): ctx 1000000, in 1.32, out 3.96, cached 0.044, tier std, source https://api-docs.deepseek.com/quick_start/pricing, checked 2026-10-31
 17. Fireworks GLM 5.3 (fireworks-glm-5-3): ctx 1040000, in 1.4, out 4.4, cached 0.26, tier std, source https://docs.fireworks.ai/serverless/pricing, checked 2026-10-30
-18. OpenRouter Qwen3.8 Max (0902) (Qwen) (openrouter-qwen3-8-max-0902-qwen): ctx 1000000, in 2, out 6, cached 0.25, tier std, source https://openrouter.ai/qwen/qwen3.8-max-0902, checked 2026-10-30
+18. OpenRouter Qwen3.8 Max (0902) (Qwen) (openrouter-qwen3-8-max-0902-qwen): ctx 1000000, in 2, out 6, cached 0.25, tier std, source https://openrouter.ai/qwen/qwen3.8-max-0902, checked 2026-11-07
 19. OpenAI gpt-6.1-terra (openai-gpt-6-1-terra): ctx 1050000, in 2, out 7.5, cached 0.1, tier long, source https://platform.openai.com/docs/pricing, checked 2026-11-07
 20. Anthropic Claude Sonnet 5 (anthropic-claude-sonnet-5): ctx 1000000, in 2, out 10, cached 0.2, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
 21. Anthropic Claude Sonnet 5.5 (anthropic-claude-sonnet-5-5): ctx 1000000, in 2, out 10, cached 0.1, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
 22. Google Gemini 4 Argon (google-gemini-4-argon): ctx 1048576, in 2, out 10, cached 0.1, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
-23. OpenRouter Kimi K3.1 Pro (MoonshotAI) (openrouter-kimi-k3-1-pro-moonshotai): ctx 1048576, in 2, out 10, cached 0.2, tier std, source https://openrouter.ai/moonshotai/kimi-k3.1-pro, checked 2026-10-30
+23. OpenRouter Kimi K3.1 Pro (MoonshotAI) (openrouter-kimi-k3-1-pro-moonshotai): ctx 1048576, in 2, out 10, cached 0.2, tier std, source https://openrouter.ai/moonshotai/kimi-k3.1-pro, checked 2026-11-07
 24. Anthropic Claude Sonnet 4.6 (anthropic-claude-sonnet-4-6): ctx 1000000, in 3, out 15, cached 0.3, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-11-07
 25. Fireworks Kimi K3 (fireworks-kimi-k3): ctx 1048576, in 3, out 15, cached 0.3, tier std, source https://docs.fireworks.ai/serverless/pricing, checked 2026-10-30
 26. OpenAI gpt-6.1-sol (openai-gpt-6-1-sol): ctx 1050000, in 4, out 15, cached 0.2, tier long, source https://platform.openai.com/docs/pricing, checked 2026-11-07

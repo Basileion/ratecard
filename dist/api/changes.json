@@ -1,9 +1,17 @@
 {
- "generated": "2026-11-07T09:14:53.228Z",
+ "generated": "2026-11-07T13:16:09.588Z",
  "site": "https://ratecardai.pages.dev",
  "license": "CC-BY-4.0",
  "units": "USD per 1M tokens unless unit/other says otherwise",
  "changes": [
+  {
+   "date": "2026-11-07",
+   "kind": "correction",
+   "provider": "OpenRouter",
+   "summary": "Correction: OpenRouter Qwen3.7 Flash was listed at $0.03/$0.13 on ≥128K and ≥1M cheapest pages, the home finder, the calculator and llms.txt. Those rates apply only under 32K prompt tokens. OpenRouter publishes pricing.overrides: ≥32K $0.10/$0.40 (cached $0.02), ≥256K $0.20/$0.80 (cached $0.04). We now ingest multi-tier long_context_tiers for OpenRouter overrides; at ≥128K/≥1M the true #1 verified text model is Llama 4 Scout at $0.10/$0.30. Also refreshed Llama 4 Maverick from $0.1875/$0.6525/cached $0.05 to live API $0.35/$1.00/cached $0.17, and re-checked all 11 OpenRouter rows on 2026-11-07.",
+   "source": "https://openrouter.ai/api/v1/models",
+   "observed": "2026-11-07"
+  },
   {
    "date": "2026-11-07",
    "kind": "feature",
