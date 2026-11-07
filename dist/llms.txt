@@ -35,6 +35,9 @@ Prices come only from each provider's own pricing page, docs, or public pricing 
 - [Calculator](https://ratecardai.pages.dev/calculator)
 - [Compare](https://ratecardai.pages.dev/compare)
 - [Developers / cite](https://ratecardai.pages.dev/developers)
+- [Cheapest ≥128K context](https://ratecardai.pages.dev/cheapest/128k-context)
+- [Cheapest ≥1M context](https://ratecardai.pages.dev/cheapest/1m-context)
+- [Cheapest by context (index)](https://ratecardai.pages.dev/cheapest/)
 - [Methodology](https://ratecardai.pages.dev/methodology)
 - [About](https://ratecardai.pages.dev/about)
 - [Privacy](https://ratecardai.pages.dev/privacy)
@@ -49,3 +52,9 @@ Prices come only from each provider's own pricing page, docs, or public pricing 
 
 ## Guides
 - [DeepSeek Search & Fetch API pricing](https://ratecardai.pages.dev/guides/deepseek-search-fetch-pricing): $0.75 per 1,000 successful requests each (standalone APIs billed per request; Harness/Claude Code/Codex agent tool calls billed from 2026-10-31 16:00 UTC).
+
+## Cheapest by context (verified text, ranked by input then output $/1M)
+- [≥128K context](https://ratecardai.pages.dev/cheapest/128k-context): 54 models; cheapest OpenRouter Qwen3.7 Flash (Qwen) $0.030/$0.13 (as of 2026-10-31)
+- [≥1M context](https://ratecardai.pages.dev/cheapest/1m-context): 40 models; cheapest OpenRouter Qwen3.7 Flash (Qwen) $0.030/$0.13 (as of 2026-10-31)
+- [Index](https://ratecardai.pages.dev/cheapest/)
+- Rule: when the page threshold exceeds a model long_context.threshold, long-tier rates are shown. OpenRouter = gateway list price.

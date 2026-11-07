@@ -1351,6 +1351,105 @@ Page: https://ratecardai.pages.dev/guides/deepseek-search-fetch-pricing
 - Per 1,000/10,000/100,000/1,000,000 successful requests: $0.7500 / $7.50 / $75.00 / $750.00 (per API).
 
 
+## Cheapest by context (≥128K)
+1. OpenRouter Qwen3.7 Flash (Qwen) (openrouter-qwen3-7-flash-qwen): ctx 1000000, in 0.03, out 0.13, cached 0.006, tier std, source https://openrouter.ai/qwen/qwen3.7-flash, checked 2026-10-30
+2. OpenRouter Llama 4 Scout (Meta) (openrouter-llama-4-scout-meta): ctx 1310720, in 0.1, out 0.3, cached null, tier std, source https://openrouter.ai/meta-llama/llama-4-scout, checked 2026-10-30
+3. OpenAI gpt-6-luna (openai-gpt-6-luna): ctx 1050000, in 0.1, out 0.5, cached 0.01, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+4. Fireworks OpenAI GPT OSS 120B (fireworks-openai-gpt-oss-120b): ctx 131000, in 0.15, out 0.6, cached 0.015, tier std, source https://docs.fireworks.ai/serverless/pricing, checked 2026-10-30
+5. OpenRouter Mistral Small 4 (Mistral) (openrouter-mistral-small-4-mistral): ctx 262144, in 0.15, out 0.6, cached 0.015, tier std, source https://openrouter.ai/mistralai/mistral-small-2603, checked 2026-10-30
+6. OpenRouter Llama 4 Maverick (Meta) (openrouter-llama-4-maverick-meta): ctx 524288, in 0.1875, out 0.6525, cached 0.05, tier std, source https://openrouter.ai/meta-llama/llama-4-maverick, checked 2026-10-30
+7. OpenAI gpt-5.6-luna (openai-gpt-5-6-luna): ctx 1050000, in 0.2, out 1.2, cached 0.02, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+8. Google Gemini 3.1 Flash-Lite (google-gemini-3-1-flash-lite): ctx 1048576, in 0.25, out 1.5, cached 0.025, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
+9. OpenRouter Codestral 2508 (Mistral) (openrouter-codestral-2508-mistral): ctx 256000, in 0.3, out 0.9, cached 0.03, tier std, source https://openrouter.ai/mistralai/codestral-2508, checked 2026-10-30
+10. DeepSeek deepseek-flash (V4.1 Flash) (deepseek-deepseek-flash-v4-1-flash): ctx 1000000, in 0.3, out 1.2, cached 0.006, tier std, source https://api-docs.deepseek.com/quick_start/pricing, checked 2026-10-31
+11. Fireworks DeepSeek V4.1 Flash (fireworks-deepseek-v4-1-flash): ctx 1040000, in 0.3, out 1.2, cached 0.006, tier std, source https://docs.fireworks.ai/serverless/pricing, checked 2026-10-30
+12. OpenRouter Command A+ (Cohere) (openrouter-command-a-cohere): ctx 192000, in 0.3, out 1.5, cached 0.15, tier std, source https://openrouter.ai/cohere/command-a-plus, checked 2026-10-30
+13. Google Gemini 3.5 Flash-Lite (google-gemini-3-5-flash-lite): ctx 1048576, in 0.3, out 2.5, cached 0.03, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
+14. Anthropic Claude Haiku 5.5 (anthropic-claude-haiku-5-5): ctx 1000000, in 0.5, out 2.5, cached 0.05, tier long, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+15. Google Gemini 3 Flash Preview (google-gemini-3-flash-preview): ctx 1048576, in 0.5, out 3, cached 0.05, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
+16. Mistral Mistral Large 4 (mistral-mistral-large-4): ctx 1048576, in 0.7, out 2.1, cached 0.07, tier std, source https://mistral.ai/news/mistral-large-4-oss/, checked 2026-10-30
+17. OpenRouter Mistral Large 4 (Mistral) (openrouter-mistral-large-4-mistral): ctx 1048576, in 0.7, out 2.1, cached 0.07, tier std, source https://openrouter.ai/mistralai/mistral-large-4-0, checked 2026-10-30
+18. Google Gemini 3.6 Flash (google-gemini-3-6-flash): ctx 1048576, in 0.75, out 3.75, cached 0.075, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
+19. Google Gemini 3.7 Flash (google-gemini-3-7-flash): ctx 1048576, in 0.75, out 3.75, cached 0.075, tier std, source https://cloud.google.com/model-garden/pricing, checked 2026-10-31
+20. Google Gemini 3.8 Flash (google-gemini-3-8-flash): ctx 1048576, in 0.75, out 3.75, cached 0.075, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
+21. Anthropic Claude Haiku 4.5 (anthropic-claude-haiku-4-5): ctx 200000, in 1, out 5, cached 0.1, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+22. Google Gemini Robotics ER 2 Preview (google-gemini-robotics-er-2-preview): ctx 131072, in 1, out 5, cached 0.1, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
+23. Google Gemini Robotics ER 2 Streaming Preview (google-gemini-robotics-er-2-streaming-preview): ctx 131072, in 1, out 5, cached null, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
+24. OpenAI gpt-6.1-terra (openai-gpt-6-1-terra): ctx 1050000, in 1, out 5, cached 0.05, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+25. DeepSeek deepseek-v4-pro (deepseek-deepseek-v4-pro): ctx 1000000, in 1.32, out 3.96, cached 0.044, tier std, source https://api-docs.deepseek.com/quick_start/pricing, checked 2026-10-31
+26. Fireworks GLM 5.3 (fireworks-glm-5-3): ctx 1040000, in 1.4, out 4.4, cached 0.26, tier std, source https://docs.fireworks.ai/serverless/pricing, checked 2026-10-30
+27. OpenRouter Mistral Medium 3.5 (Mistral) (openrouter-mistral-medium-3-5-mistral): ctx 262144, in 1.5, out 7.5, cached null, tier std, source https://openrouter.ai/mistralai/mistral-medium-3-5, checked 2026-10-30
+28. OpenAI gpt-5.3-codex (openai-gpt-5-3-codex): ctx 400000, in 1.75, out 14, cached 0.175, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-30
+29. OpenRouter Grok 4.7 (SpaceXAI) (openrouter-grok-4-7-spacexai): ctx 500000, in 2, out 6, cached 0.5, tier std, source https://openrouter.ai/x-ai/grok-4.7, checked 2026-10-31
+30. OpenRouter Qwen3.8 Max (0902) (Qwen) (openrouter-qwen3-8-max-0902-qwen): ctx 1000000, in 2, out 6, cached 0.25, tier std, source https://openrouter.ai/qwen/qwen3.8-max-0902, checked 2026-10-30
+31. xAI grok-4.7 (xai-grok-4-7): ctx 500000, in 2, out 6, cached 0.5, tier std, source https://docs.x.ai/developers/models, checked 2026-10-31
+32. Anthropic Claude Sonnet 5 (anthropic-claude-sonnet-5): ctx 1000000, in 2, out 10, cached 0.2, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+33. Anthropic Claude Sonnet 5.5 (anthropic-claude-sonnet-5-5): ctx 1000000, in 2, out 10, cached 0.1, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+34. Google Gemini 4 Argon (google-gemini-4-argon): ctx 1048576, in 2, out 10, cached 0.1, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
+35. OpenAI gpt-6.1-sol (openai-gpt-6-1-sol): ctx 1050000, in 2, out 10, cached 0.1, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+36. OpenAI gpt-6-sol (openai-gpt-6-sol): ctx 1050000, in 2, out 10, cached 0.2, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+37. OpenRouter Kimi K3.1 Pro (MoonshotAI) (openrouter-kimi-k3-1-pro-moonshotai): ctx 1048576, in 2, out 10, cached 0.2, tier std, source https://openrouter.ai/moonshotai/kimi-k3.1-pro, checked 2026-10-30
+38. Google Gemini 3.1 Pro Preview (google-gemini-3-1-pro-preview): ctx 1048576, in 2, out 12, cached 0.2, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
+39. OpenAI gpt-5.6-terra (openai-gpt-5-6-terra): ctx 1050000, in 2, out 12, cached 0.2, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+40. OpenAI gpt-5.4 (openai-gpt-5-4): ctx 1050000, in 2.5, out 15, cached 0.25, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+41. Anthropic Claude Sonnet 4.6 (anthropic-claude-sonnet-4-6): ctx 1000000, in 3, out 15, cached 0.3, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+42. Fireworks Kimi K3 (fireworks-kimi-k3): ctx 1048576, in 3, out 15, cached 0.3, tier std, source https://docs.fireworks.ai/serverless/pricing, checked 2026-10-30
+43. Anthropic Claude Opus 5.5 (anthropic-claude-opus-5-5): ctx 1000000, in 4, out 20, cached 0.2, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+44. OpenAI gpt-5.6-sol (openai-gpt-5-6-sol): ctx 1050000, in 4, out 20, cached 0.4, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+45. Anthropic Claude Opus 4.8 (anthropic-claude-opus-4-8): ctx 1000000, in 5, out 25, cached 0.5, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+46. Anthropic Claude Opus 5 (anthropic-claude-opus-5): ctx 1000000, in 5, out 25, cached 0.5, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+47. OpenAI chat-latest (openai-chat-latest): ctx 400000, in 5, out 30, cached 0.5, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-30
+48. OpenAI gpt-5.5 (openai-gpt-5-5): ctx 1050000, in 5, out 30, cached 0.5, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+49. Anthropic Claude Fable 5.1 (anthropic-claude-fable-5-1): ctx 1000000, in 10, out 50, cached 0.25, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+50. Anthropic Claude Mythos 5.1 (anthropic-claude-mythos-5-1): ctx 1000000, in 10, out 50, cached 0.25, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+51. OpenAI gpt-6-astra (openai-gpt-6-astra): ctx 1050000, in 10, out 50, cached 1, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+52. OpenAI gpt-5.6-cyber (openai-gpt-5-6-cyber): ctx 400000, in 12.5, out 75, cached 1.25, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+53. OpenAI gpt-5.4-pro (openai-gpt-5-4-pro): ctx 1050000, in 30, out 180, cached null, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+54. OpenAI gpt-5.5-pro (openai-gpt-5-5-pro): ctx 1050000, in 30, out 180, cached null, tier std, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+
+## Cheapest by context (≥1M)
+1. OpenRouter Qwen3.7 Flash (Qwen) (openrouter-qwen3-7-flash-qwen): ctx 1000000, in 0.03, out 0.13, cached 0.006, tier std, source https://openrouter.ai/qwen/qwen3.7-flash, checked 2026-10-30
+2. OpenRouter Llama 4 Scout (Meta) (openrouter-llama-4-scout-meta): ctx 1310720, in 0.1, out 0.3, cached null, tier std, source https://openrouter.ai/meta-llama/llama-4-scout, checked 2026-10-30
+3. OpenAI gpt-6-luna (openai-gpt-6-luna): ctx 1050000, in 0.2, out 0.75, cached 0.02, tier long, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+4. Google Gemini 3.1 Flash-Lite (google-gemini-3-1-flash-lite): ctx 1048576, in 0.25, out 1.5, cached 0.025, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
+5. DeepSeek deepseek-flash (V4.1 Flash) (deepseek-deepseek-flash-v4-1-flash): ctx 1000000, in 0.3, out 1.2, cached 0.006, tier std, source https://api-docs.deepseek.com/quick_start/pricing, checked 2026-10-31
+6. Fireworks DeepSeek V4.1 Flash (fireworks-deepseek-v4-1-flash): ctx 1040000, in 0.3, out 1.2, cached 0.006, tier std, source https://docs.fireworks.ai/serverless/pricing, checked 2026-10-30
+7. Google Gemini 3.5 Flash-Lite (google-gemini-3-5-flash-lite): ctx 1048576, in 0.3, out 2.5, cached 0.03, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
+8. OpenAI gpt-5.6-luna (openai-gpt-5-6-luna): ctx 1050000, in 0.4, out 1.8, cached 0.04, tier long, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+9. Anthropic Claude Haiku 5.5 (anthropic-claude-haiku-5-5): ctx 1000000, in 0.5, out 2.5, cached 0.05, tier long, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+10. Google Gemini 3 Flash Preview (google-gemini-3-flash-preview): ctx 1048576, in 0.5, out 3, cached 0.05, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
+11. Mistral Mistral Large 4 (mistral-mistral-large-4): ctx 1048576, in 0.7, out 2.1, cached 0.07, tier std, source https://mistral.ai/news/mistral-large-4-oss/, checked 2026-10-30
+12. OpenRouter Mistral Large 4 (Mistral) (openrouter-mistral-large-4-mistral): ctx 1048576, in 0.7, out 2.1, cached 0.07, tier std, source https://openrouter.ai/mistralai/mistral-large-4-0, checked 2026-10-30
+13. Google Gemini 3.6 Flash (google-gemini-3-6-flash): ctx 1048576, in 0.75, out 3.75, cached 0.075, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
+14. Google Gemini 3.7 Flash (google-gemini-3-7-flash): ctx 1048576, in 0.75, out 3.75, cached 0.075, tier std, source https://cloud.google.com/model-garden/pricing, checked 2026-10-31
+15. Google Gemini 3.8 Flash (google-gemini-3-8-flash): ctx 1048576, in 0.75, out 3.75, cached 0.075, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
+16. DeepSeek deepseek-v4-pro (deepseek-deepseek-v4-pro): ctx 1000000, in 1.32, out 3.96, cached 0.044, tier std, source https://api-docs.deepseek.com/quick_start/pricing, checked 2026-10-31
+17. Fireworks GLM 5.3 (fireworks-glm-5-3): ctx 1040000, in 1.4, out 4.4, cached 0.26, tier std, source https://docs.fireworks.ai/serverless/pricing, checked 2026-10-30
+18. OpenRouter Qwen3.8 Max (0902) (Qwen) (openrouter-qwen3-8-max-0902-qwen): ctx 1000000, in 2, out 6, cached 0.25, tier std, source https://openrouter.ai/qwen/qwen3.8-max-0902, checked 2026-10-30
+19. OpenAI gpt-6.1-terra (openai-gpt-6-1-terra): ctx 1050000, in 2, out 7.5, cached 0.1, tier long, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+20. Anthropic Claude Sonnet 5 (anthropic-claude-sonnet-5): ctx 1000000, in 2, out 10, cached 0.2, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+21. Anthropic Claude Sonnet 5.5 (anthropic-claude-sonnet-5-5): ctx 1000000, in 2, out 10, cached 0.1, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+22. Google Gemini 4 Argon (google-gemini-4-argon): ctx 1048576, in 2, out 10, cached 0.1, tier std, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
+23. OpenRouter Kimi K3.1 Pro (MoonshotAI) (openrouter-kimi-k3-1-pro-moonshotai): ctx 1048576, in 2, out 10, cached 0.2, tier std, source https://openrouter.ai/moonshotai/kimi-k3.1-pro, checked 2026-10-30
+24. Anthropic Claude Sonnet 4.6 (anthropic-claude-sonnet-4-6): ctx 1000000, in 3, out 15, cached 0.3, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+25. Fireworks Kimi K3 (fireworks-kimi-k3): ctx 1048576, in 3, out 15, cached 0.3, tier std, source https://docs.fireworks.ai/serverless/pricing, checked 2026-10-30
+26. OpenAI gpt-6.1-sol (openai-gpt-6-1-sol): ctx 1050000, in 4, out 15, cached 0.2, tier long, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+27. OpenAI gpt-6-sol (openai-gpt-6-sol): ctx 1050000, in 4, out 15, cached 0.4, tier long, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+28. Google Gemini 3.1 Pro Preview (google-gemini-3-1-pro-preview): ctx 1048576, in 4, out 18, cached 0.4, tier long, source https://ai.google.dev/gemini-api/docs/pricing, checked 2026-10-30
+29. OpenAI gpt-5.6-terra (openai-gpt-5-6-terra): ctx 1050000, in 4, out 18, cached 0.4, tier long, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+30. Anthropic Claude Opus 5.5 (anthropic-claude-opus-5-5): ctx 1000000, in 4, out 20, cached 0.2, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+31. OpenAI gpt-5.4 (openai-gpt-5-4): ctx 1050000, in 5, out 22.5, cached 0.5, tier long, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+32. Anthropic Claude Opus 4.8 (anthropic-claude-opus-4-8): ctx 1000000, in 5, out 25, cached 0.5, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+33. Anthropic Claude Opus 5 (anthropic-claude-opus-5): ctx 1000000, in 5, out 25, cached 0.5, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+34. OpenAI gpt-5.6-sol (openai-gpt-5-6-sol): ctx 1050000, in 8, out 30, cached 0.8, tier long, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+35. OpenAI gpt-5.5 (openai-gpt-5-5): ctx 1050000, in 10, out 45, cached 1, tier long, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+36. Anthropic Claude Fable 5.1 (anthropic-claude-fable-5-1): ctx 1000000, in 10, out 50, cached 0.25, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+37. Anthropic Claude Mythos 5.1 (anthropic-claude-mythos-5-1): ctx 1000000, in 10, out 50, cached 0.25, tier std, source https://docs.anthropic.com/en/docs/about-claude/pricing, checked 2026-10-30
+38. OpenAI gpt-6-astra (openai-gpt-6-astra): ctx 1050000, in 20, out 75, cached 2, tier long, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+39. OpenAI gpt-5.4-pro (openai-gpt-5-4-pro): ctx 1050000, in 60, out 270, cached null, tier long, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+40. OpenAI gpt-5.5-pro (openai-gpt-5-5-pro): ctx 1050000, in 60, out 270, cached null, tier long, source https://platform.openai.com/docs/pricing, checked 2026-10-31
+
+
 ## Legal
 - About: https://ratecardai.pages.dev/about
 - Privacy: https://ratecardai.pages.dev/privacy
