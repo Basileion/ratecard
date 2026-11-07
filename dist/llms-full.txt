@@ -1349,3 +1349,10 @@ Page: https://ratecardai.pages.dev/guides/deepseek-search-fetch-pricing
 - Q: Do DeepSeek off-peak discounts apply to Search and Fetch?
   A: DeepSeek’s pricing page lists one flat Search/Fetch price; its “off-peak rates are half of the peak rates” note is attached to the token price table. We model tool fees at the flat rate at all hours.
 - Per 1,000/10,000/100,000/1,000,000 successful requests: $0.7500 / $7.50 / $75.00 / $750.00 (per API).
+
+
+## Legal
+- About: https://ratecardai.pages.dev/about
+- Privacy: https://ratecardai.pages.dev/privacy
+- Terms: https://ratecardai.pages.dev/terms
+- Contact: basileion.ops@gmail.com

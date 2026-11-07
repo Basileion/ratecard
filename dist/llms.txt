@@ -36,6 +36,10 @@ Prices come only from each provider's own pricing page, docs, or public pricing 
 - [Compare](https://ratecardai.pages.dev/compare)
 - [Developers / cite](https://ratecardai.pages.dev/developers)
 - [Methodology](https://ratecardai.pages.dev/methodology)
+- [About](https://ratecardai.pages.dev/about)
+- [Privacy](https://ratecardai.pages.dev/privacy)
+- [Terms](https://ratecardai.pages.dev/terms)
+- [Pro](https://ratecardai.pages.dev/pro)
 
 ## Scheduled price increases
 - [Scheduled AI API price increases](https://ratecardai.pages.dev/scheduled-increases): 27 announced price changes with effective dates, old → new prices, % change and sources (last checked 2026-10-31)

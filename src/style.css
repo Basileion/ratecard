@@ -96,3 +96,13 @@ body.embed main,#embed-main{padding-top:12px}
 /* RT-20261031-98: scheduled-change tags wrap instead of widening the calculator table */
 #c-res td:first-child{white-space:normal;min-width:200px}#c-res .chg{white-space:nowrap}
 @media(max-width:520px){#c-tbl th,#c-tbl td{padding:8px 5px}#c-tbl th{white-space:normal}#c-res td:first-child{min-width:150px}#c-res .chg{white-space:normal}}
+
+/* Legal + Pro honesty (RT-64 / RT-13) */
+.narrow h1{max-width:none}
+.legal-prose h2,.legal-prose .h3{margin-top:1.4em}
+.cta-row{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
+.micro{font-size:13px;color:var(--mute);margin:8px 0 0}
+.ticks{list-style:none;padding:0;margin:0 0 var(--s4,16px)}.ticks li{padding:8px 0 8px 26px;position:relative;border-top:1px solid var(--line)}.ticks li::before{content:"✓";position:absolute;left:4px;color:var(--acc);font-weight:700}
+footer.ds-foot .wrap,footer .wrap{grid-template-columns:2fr 1fr 1fr 1fr 1fr}
+@media(max-width:820px){footer.ds-foot .wrap,footer .wrap{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){footer.ds-foot .wrap,footer .wrap{grid-template-columns:1fr}}
